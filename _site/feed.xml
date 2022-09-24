@@ -1,0 +1,232 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://0.0.0.0:4000/</id>
+  <title>DaVes github pages</title>
+  <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
+  <updated>2022-09-24T13:31:58+02:00</updated>
+  <author>
+    <name>Kim David Hauser</name>
+    <uri>http://0.0.0.0:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://0.0.0.0:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
+  <rights> © 2022 Kim David Hauser </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Unreal Engine - WeaponSysBasePlugin</title>
+    <link href="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" rel="alternate" type="text/html" title="Unreal Engine - WeaponSysBasePlugin" />
+    <published>2022-09-23T10:02:33+02:00</published>
+  
+    <updated>2022-09-23T10:02:33+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/</id>
+    <content src="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="UnrealEngine" />
+    
+    <category term="Plugins" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The UE4 WeaponSysBase Plugin provides you with many base classes and features to quickly and easily creating and implementing your own weapon system for your Unreal Engine Game
+
+Description
+The “Weapon System Base” provides you with some very basic and useful classes and features to create your own Weapon System for a UE4 game. You’ll find base classes for WeaponTypes, Weapons, Projectiles as w...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Unreal Engine - PlayerStartPlugin</title>
+    <link href="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" rel="alternate" type="text/html" title="Unreal Engine - PlayerStartPlugin" />
+    <published>2022-05-08T20:42:33+02:00</published>
+  
+    <updated>2022-05-08T20:42:33+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/</id>
+    <content src="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="UnrealEngine" />
+    
+    <category term="Plugins" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+PlayerStartPlugin in the WorldSettings Editor
+
+The PlayStartPlugin for Unreal Engine version 4 or 5 enables you to easily setup, manage and switch between multiple PlayerStarts for your Maps / Levels in a Game. This is done via the WorldSettings in the Editor Outliner.
+
+Description
+You can inherit your Projects WorldSettings Class from the custom PlayerStartWorldSettings class pro...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Welcome to DaVe's github pages</title>
+    <link href="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" rel="alternate" type="text/html" title="Welcome to DaVe's github pages" />
+    <published>2022-05-05T20:42:33+02:00</published>
+  
+    <updated>2022-05-05T20:42:33+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/welcome-to-my-github-pages/</id>
+    <content src="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="General" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
+
+Jekyll requires blog post files to be named according to the following format:
+
+YEAR-MONTH-DAY-title.MAR...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>macOS - iVaccination Game</title>
+    <link href="http://0.0.0.0:4000/posts/ivaccination-game-macos/" rel="alternate" type="text/html" title="macOS - iVaccination Game" />
+    <published>2021-10-23T20:42:33+02:00</published>
+  
+    <updated>2021-10-23T20:42:33+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/ivaccination-game-macos/</id>
+    <content src="http://0.0.0.0:4000/posts/ivaccination-game-macos/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Games" />
+    
+    <category term="macOS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+PlayerStartPlugin in the WorldSettings Editor
+
+The PlayStartPlugin for Unreal Engine version 4 or 5 enables you to easily setup, manage and switch between multiple PlayerStarts for your Maps / Levels in a Game. This is done via the WorldSettings in the Editor Outliner.
+
+Description
+You can inherit your Projects WorldSettings Class from the custom PlayerStartWorldSettings class pro...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Enable Google Page Views</title>
+    <link href="http://0.0.0.0:4000/posts/enable-google-pv/" rel="alternate" type="text/html" title="Enable Google Page Views" />
+    <published>2021-01-04T00:32:00+01:00</published>
+  
+    <updated>2022-09-24T13:27:31+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/enable-google-pv/</id>
+    <content src="http://0.0.0.0:4000/posts/enable-google-pv/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep the google_analytics.pv.* empty unless you have a good reason. If your website has low traffic, the page views count would discourage you to write more blogs. With that said, let’s start with the setup.
+
+Set up Google Analytics
+
+Create GA account a...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
