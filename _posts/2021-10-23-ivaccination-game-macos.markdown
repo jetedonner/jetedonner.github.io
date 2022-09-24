@@ -8,8 +8,7 @@ tags: [Games, macOS]
 ---
 
 ## Introduction
-![PlayerStartPlugin](../..//assets/img/projects/ivaccination/firstlevel_resized_transparent.png){: width="1593" height="703" }
-_PlayerStartPlugin in the WorldSettings Editor_
+The world needs your help!
 
 The PlayStartPlugin for Unreal Engine version 4 or 5 enables you to easily setup, manage and switch between multiple PlayerStarts for your Maps / Levels in a Game. This is done via the WorldSettings in the Editor Outliner.
 
