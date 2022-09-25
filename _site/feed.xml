@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-09-25T15:49:36+02:00</updated>
+  <updated>2022-09-25T15:59:58+02:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" rel="alternate" type="text/html" title="Unreal Engine - WeaponSysBasePlugin" />
     <published>2022-09-23T10:02:33+02:00</published>
   
-    <updated>2022-09-23T10:02:33+02:00</updated>
+    <updated>2022-09-25T15:55:13+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" />
@@ -63,7 +63,7 @@ The “Weapon System Base” provides you with some very basic and useful classe
     <link href="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" rel="alternate" type="text/html" title="Unreal Engine - PlayerStartPlugin" />
     <published>2022-05-08T20:42:33+02:00</published>
   
-    <updated>2022-05-08T20:42:33+02:00</updated>
+    <updated>2022-09-25T15:55:13+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" />
@@ -106,7 +106,7 @@ You can inherit your Projects WorldSettings Class from the custom PlayerStartWor
     <link href="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" rel="alternate" type="text/html" title="Welcome to DaVe's github pages" />
     <published>2022-05-05T20:42:33+02:00</published>
   
-    <updated>2022-05-05T20:42:33+02:00</updated>
+    <updated>2022-09-25T15:55:13+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/welcome-to-my-github-pages/</id>
     <content src="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" />
@@ -144,7 +144,7 @@ YEAR-MONTH-DAY-title.MAR...
     <link href="http://0.0.0.0:4000/posts/ivaccination-game-macos/" rel="alternate" type="text/html" title="macOS - iVaccination Game" />
     <published>2021-10-23T20:42:33+02:00</published>
   
-    <updated>2021-10-23T20:42:33+02:00</updated>
+    <updated>2022-09-25T15:55:13+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/ivaccination-game-macos/</id>
     <content src="http://0.0.0.0:4000/posts/ivaccination-game-macos/" />
@@ -172,11 +172,11 @@ YEAR-MONTH-DAY-title.MAR...
 
 First level of iVaccination game
 
-Save the world population …
+The world needs your help! Save the world population …
 The world needs you as it’s suffering a deadly disease … take action now!
 
 Description
-iVaccination is a small but fun game for all friends of vaccines. You can save the world from a deadly disease by vaccinating infected zombies and build up trust by collecting vaccination certificates. You can save your scores and ach...
+iVaccination is a small but fun game for all friends of vaccines. You can save the world from a deadly disease by vaccinating infected zombies and build up trust by collecting vaccination certificates. You c...
     </summary>
   
 
