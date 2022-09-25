@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://0.0.0.0:4000/</id>
-  <title>DaVes github pages</title>
-  <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
-  <updated>2022-09-24T13:31:58+02:00</updated>
+  <title>DaVe's github pages</title>
+  <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
+  <updated>2022-09-25T15:49:36+02:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -33,8 +33,6 @@
     </author>
 
   
-    
-    <category term="Projects" />
     
     <category term="UnrealEngine" />
     
@@ -74,8 +72,6 @@ The “Weapon System Base” provides you with some very basic and useful classe
     </author>
 
   
-    
-    <category term="Projects" />
     
     <category term="UnrealEngine" />
     
@@ -120,7 +116,7 @@ You can inherit your Projects WorldSettings Class from the custom PlayerStartWor
 
   
     
-    <category term="General" />
+    <category term="Personal" />
     
   
 
@@ -162,8 +158,6 @@ YEAR-MONTH-DAY-title.MAR...
     
     <category term="Games" />
     
-    <category term="macOS" />
-    
   
 
   
@@ -176,12 +170,13 @@ YEAR-MONTH-DAY-title.MAR...
 
       Introduction
 
-PlayerStartPlugin in the WorldSettings Editor
+First level of iVaccination game
 
-The PlayStartPlugin for Unreal Engine version 4 or 5 enables you to easily setup, manage and switch between multiple PlayerStarts for your Maps / Levels in a Game. This is done via the WorldSettings in the Editor Outliner.
+Save the world population …
+The world needs you as it’s suffering a deadly disease … take action now!
 
 Description
-You can inherit your Projects WorldSettings Class from the custom PlayerStartWorldSettings class pro...
+iVaccination is a small but fun game for all friends of vaccines. You can save the world from a deadly disease by vaccinating infected zombies and build up trust by collecting vaccination certificates. You can save your scores and ach...
     </summary>
   
 
@@ -193,7 +188,7 @@ You can inherit your Projects WorldSettings Class from the custom PlayerStartWor
     <link href="http://0.0.0.0:4000/posts/enable-google-pv/" rel="alternate" type="text/html" title="Enable Google Page Views" />
     <published>2021-01-04T00:32:00+01:00</published>
   
-    <updated>2022-09-24T13:27:31+02:00</updated>
+    <updated>2022-09-24T13:34:12+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/enable-google-pv/</id>
     <content src="http://0.0.0.0:4000/posts/enable-google-pv/" />

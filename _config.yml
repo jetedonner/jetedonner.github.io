@@ -21,12 +21,14 @@ timezone: Europe/Zurich
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: DaVes github pages                          # the main title
+title: DaVe's github pages                          # the main title
 
-tagline: All public github projects of Kim David Hauser   # it will display as the sub-title
+tagline: Overview of my public github projects   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  This Github pages site is for all private projects of Kim David Hauser.ch
+  You will find a broad variety of source code for the last 20 years of my
+  Software development process. You are free to leav a feedback or update.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://jetedonner.github.io'

@@ -3,43 +3,42 @@ layout: post
 title:  "macOS - iVaccination Game"
 author: dave
 date:   2021-10-23 20:42:33 +0200
-categories: Projects Games macOS
+categories: Projects Games
 tags: [Games, macOS]
 ---
 
 ## Introduction
-![PlayerStartPlugin](../..//assets/img/projects/ivaccination/firstlevel_resized_transparent.png){: width="1593" height="703" }
-_PlayerStartPlugin in the WorldSettings Editor_
+![iVaccination - First Level](../..//assets/img/projects/ivaccination/firstlevel_resized_transparent.png){: width="1593" height="703" }
+_First level of iVaccination game_
 
-The PlayStartPlugin for Unreal Engine version 4 or 5 enables you to easily setup, manage and switch between multiple PlayerStarts for your Maps / Levels in a Game. This is done via the WorldSettings in the Editor Outliner.
+Save the world population ...
+The world needs you as it's suffering a deadly disease ... take action now!
 
 ## Description
-You can inherit your Projects WorldSettings Class from the custom PlayerStartWorldSettings class provided by this Plugin. The system then automatically loads all available PlayerStarts and you can choose your default with a ComboBox in the WorldSettings in the Editor Outliner. Please check out the following documentation on how to include and implement and use the PlayStartPlugin in your own projects.
+iVaccination is a small but fun game for all friends of vaccines. You can save the world from a deadly disease by vaccinating infected zombies and build up trust by collecting vaccination certificates. You can save your scores and achievements online and compete with your friends for the best results.
 
-## Install the PlayerStartPlugin
-1. Fire up the Epic Game Launcher
-2. Goto Marketplace and search for PlayerStartPlugin - Add it to your cart and checkout
-3. After the Plugin is downloaded you can add it to your projects by opening the PluginManager in the Unreal Editor and searching for PlayerStartPlugin and activating it
+## iVaccination resources
+### iVaccination - macOS App Download
+You can download and test the current beta version of iVaccination for macOS. All you need to do is enter your email address and you will get a link to the current beta verion of the iVaccination app.
+We will NOT use or share your email address for advertisement or anything else.
+Also visit <http://kimhauser.ch> or contact the developer Kim David Hauser (<kim@kimhauser.ch>) by mail if you have any question or feedback. Thank you!
+- <http://ivaccination.kimhauser.ch/?task=download> - Latest macOS App download of iVaccination game
 
-## Use in your own projects
+### iVaccination - Github source
+- <https://github.com/jetedonner/iVaccinationGame> - Latest source code of iVaccination game
 
-1. To get the plugins functionality you need to use the customized WorldSettings for your map / level
-Open ProjectSettings and setup the custom WorldSettings PSWorldSettingsBase as default - you can also create a own subclass and use that as WorldSettings.
-2. Restart the Project / Unreal Editor (Important!)
-To automatically start the level from your selected PlayerStart you have to use the custom GameMode PlayerStartGameModeBase the plugin provides - or you can create a own subclass of this GameMode Class and then use that as GameMode.
-3. Now you can add your PlayerStarts to the map / level and they will be available for selection in the Editor Outliner
-4. After that you can set your disiered PlayerStart in the Editor Outliner like so
-5. Now your all setup! You can start the game with the Play button to test the setup PlayerStart or you can discover and goto the selected PlayerStart in Edit Mode by clicking on the GoTo PlayerStart button in the Editor Outliner
+### iVaccination - Scoreboard online
+- <http://ivaccination.kimhauser.ch/?task=score> - The online scoreboard with scores and achievements of all players of iVaccination (that enabled the online scoreboard in their settings)
 
-
-## Setup without removing Player Character from Map
-If you don't want to remove your Player Character from the map you can setup the plugin with the following procedure:
-- Create a child class (Blueprint) of PlayerStartGameModeBase and set this class as GameMode Override in the WorldSettings in your maps Editor Outliner.
-- Set your Player Character as Default Pawn Class in the Selected Game Mode Details > This way you can keep your Player Character on the map and use the functionality of the PlayerStartPlugin at the same time
+### iVaccination - Contact
+- <http://ivaccination.kimhauser.ch/?task=contact> - Contact the developer (Me - Kim David Hauser) of iVaccination to give me your feedback or for any other requests
 
 
-## Youtube Tutorial
+## Youtube iVaccination Trailer
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sWwcMc0H-MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## More iVaccination Movies
+- <http://ivaccination.kimhauser.ch/?task=preview>
 
 <!--
 ## Source code download

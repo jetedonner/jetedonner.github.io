@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Art of Kim David Hauser"
+author: dave
+date:   2020-05-09 22:06:09 +0200
+categories: Personal Art
+tags: [Personal, Art]
+---
+
+## Introduction
+![Cover Image of my Website](../..//assets/img/art/img69.jpeg){: width="963" height="722" }
+_Yet very simple but one of my favourites_
