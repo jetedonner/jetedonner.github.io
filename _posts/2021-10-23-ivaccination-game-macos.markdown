@@ -11,7 +11,7 @@ tags: [Games, macOS]
 ![iVaccination - First Level](../..//assets/img/projects/ivaccination/firstlevel_resized_transparent.png){: width="1593" height="703" }
 _First level of iVaccination game_
 
-Save the world population ...
+The world needs your help! Save the world population ...
 The world needs you as it's suffering a deadly disease ... take action now!
 
 ## Description
