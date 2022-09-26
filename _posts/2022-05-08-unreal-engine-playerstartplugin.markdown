@@ -39,7 +39,7 @@ If you don't want to remove your Player Character from the map you can setup the
 
 
 ## Youtube Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AiyZcPeSFOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="95vw" src="https://www.youtube.com/embed/AiyZcPeSFOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Source code download
