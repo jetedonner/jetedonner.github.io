@@ -42,7 +42,6 @@ If you don't want to remove your Player Character from the map you can setup the
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/AiyZcPeSFOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-
 ## Source code download
 - <https://github.com/jetedonner/PlayerStartPlugin> - Plugin Source
 - <https://github.com/jetedonner/UE4_PlayerStartDemo> - Demo Source (UE4)
