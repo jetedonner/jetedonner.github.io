@@ -37,9 +37,10 @@ If you don't want to remove your Player Character from the map you can setup the
 - Create a child class (Blueprint) of PlayerStartGameModeBase and set this class as GameMode Override in the WorldSettings in your maps Editor Outliner.
 - Set your Player Character as Default Pawn Class in the Selected Game Mode Details > This way you can keep your Player Character on the map and use the functionality of the PlayerStartPlugin at the same time
 
-
 ## Youtube Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AiyZcPeSFOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="container-responsive-iframe">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/AiyZcPeSFOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 
 ## Source code download

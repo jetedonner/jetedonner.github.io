@@ -5,7 +5,7 @@ order: 4
 ---
 
 ![Kim David Hauser](KimDavidHauserRound_326x326.png){: width="256" height="256" }
-_That's me_
+_That's me - Kim David Hauser_
 
 # Kim David Hauser
 Appealing software solutions customized for your kind of business - requirements and platforms. With over 30 years of experience in IT project conception, realization, and maintenance. This provides you with a high quality and a valuable resource of knowledge and information. My passion is everything about IT, software development, and IT security.
