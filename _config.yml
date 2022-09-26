@@ -202,3 +202,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# ------------ The following options are for the image gallery (no plugin) ------------------
+
+imagesurl: "/imgs/"
+thumbsurl: "/thumbs/"

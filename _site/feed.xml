@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-09-26T09:08:49+02:00</updated>
+  <updated>2022-09-26T11:17:50+02:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" rel="alternate" type="text/html" title="Unreal Engine - WeaponSysBasePlugin" />
     <published>2022-09-23T10:02:33+02:00</published>
   
-    <updated>2022-09-25T15:55:13+02:00</updated>
+    <updated>2022-09-23T10:02:33+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" />
@@ -63,7 +63,7 @@ The “Weapon System Base” provides you with some very basic and useful classe
     <link href="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" rel="alternate" type="text/html" title="Unreal Engine - PlayerStartPlugin" />
     <published>2022-05-08T20:42:33+02:00</published>
   
-    <updated>2022-09-25T15:55:13+02:00</updated>
+    <updated>2022-05-08T20:42:33+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" />
@@ -106,7 +106,7 @@ You can inherit your Projects WorldSettings Class from the custom PlayerStartWor
     <link href="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" rel="alternate" type="text/html" title="Welcome to DaVe's github pages" />
     <published>2022-05-05T20:42:33+02:00</published>
   
-    <updated>2022-09-25T15:55:13+02:00</updated>
+    <updated>2022-05-05T20:42:33+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/welcome-to-my-github-pages/</id>
     <content src="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" />
@@ -140,11 +140,55 @@ YEAR-MONTH-DAY-title.MAR...
 
   
   <entry>
+    <title>My online movies</title>
+    <link href="http://0.0.0.0:4000/posts/my-youtube-channel/" rel="alternate" type="text/html" title="My online movies" />
+    <published>2022-02-01T09:06:09+01:00</published>
+  
+    <updated>2022-02-01T09:06:09+01:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/my-youtube-channel/</id>
+    <content src="http://0.0.0.0:4000/posts/my-youtube-channel/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Movies" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      For some of my projects I have created online movies which most of them are available on my youtube channel and other platforms or my own website. Here you have an overview of the publicly available online movies from and/or featuring me as actor and/or as narrator.
+
+Youtube Channel
+
+  All my Youtube videos
+
+
+006,9 - James Blond (Hunt for Urinella)
+This is the outcome of a video project we did ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>macOS - iVaccination Game</title>
     <link href="http://0.0.0.0:4000/posts/ivaccination-game-macos/" rel="alternate" type="text/html" title="macOS - iVaccination Game" />
     <published>2021-10-23T20:42:33+02:00</published>
   
-    <updated>2022-09-25T16:00:03+02:00</updated>
+    <updated>2021-10-23T20:42:33+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/ivaccination-game-macos/</id>
     <content src="http://0.0.0.0:4000/posts/ivaccination-game-macos/" />
@@ -177,46 +221,6 @@ The world needs you as it’s suffering a deadly disease … take action now!
 
 Description
 iVaccination is a small but fun game for all friends of vaccines. You can save the world from a deadly disease by vaccinating infected zombies and build up trust by collecting vaccination certificates. You c...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Enable Google Page Views</title>
-    <link href="http://0.0.0.0:4000/posts/enable-google-pv/" rel="alternate" type="text/html" title="Enable Google Page Views" />
-    <published>2021-01-04T00:32:00+01:00</published>
-  
-    <updated>2022-09-24T13:34:12+02:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/enable-google-pv/</id>
-    <content src="http://0.0.0.0:4000/posts/enable-google-pv/" />
-    <author>
-      <name>dave</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep the google_analytics.pv.* empty unless you have a good reason. If your website has low traffic, the page views count would discourage you to write more blogs. With that said, let’s start with the setup.
-
-Set up Google Analytics
-
-Create GA account a...
     </summary>
   
 

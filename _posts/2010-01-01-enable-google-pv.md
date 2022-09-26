@@ -1,7 +1,7 @@
 ---
 title: Enable Google Page Views
 author: dave
-date: 2021-01-03 18:32:00 -0500
+date: 2010-01-01 18:32:00 -0500
 categories: [Blogging, Tutorial]
 tags: [google analytics, pageviews]
 ---

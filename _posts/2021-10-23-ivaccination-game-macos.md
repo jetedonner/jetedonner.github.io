@@ -8,7 +8,7 @@ tags: [Games, macOS]
 ---
 
 ## Introduction
-![iVaccination - First Level](../..//assets/img/projects/ivaccination/firstlevel_resized_transparent.png){: width="1593" height="703" }
+![iVaccination - First Level](../../assets/img/projects/ivaccination/firstlevel_resized_transparent.png){: width="1593" height="703" }
 _First level of iVaccination game_
 
 The world needs your help! Save the world population ...
@@ -35,7 +35,9 @@ Also visit <http://kimhauser.ch> or contact the developer Kim David Hauser (<kim
 
 
 ## Youtube iVaccination Trailer
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sWwcMc0H-MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="container-responsive-iframe">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sWwcMc0H-MU" title="Youtube iVaccination Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## More iVaccination Movies
 - <http://ivaccination.kimhauser.ch/?task=preview>
