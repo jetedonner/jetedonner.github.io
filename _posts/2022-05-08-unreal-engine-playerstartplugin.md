@@ -31,6 +31,9 @@ To automatically start the level from your selected PlayerStart you have to use 
 4. After that you can set your disiered PlayerStart in the Editor Outliner like so
 5. Now your all setup! You can start the game with the Play button to test the setup PlayerStart or you can discover and goto the selected PlayerStart in Edit Mode by clicking on the GoTo PlayerStart button in the Editor Outliner
 
+### Credits and licensing
+The UE PlayerStartPlugin is released under the [_Unreal® Engine End User License Agreement For Publishing_](https://www.unrealengine.com/en-US/eula/unreal?sessionInvalidated=true). Please make sure to read through the license agreement before releasing your projects using the PlayerStartPlugin. Credits and references to the author are highly appreciated - thank you!
+
 
 ## Setup without removing Player Character from Map
 If you don't want to remove your Player Character from the map you can setup the plugin with the following procedure:

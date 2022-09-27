@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-09-27T04:43:02+02:00</updated>
+  <updated>2022-09-27T18:55:50+02:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -63,7 +63,7 @@ The “Weapon System Base” provides you with some very basic and useful classe
     <link href="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" rel="alternate" type="text/html" title="Unreal Engine - PlayerStartPlugin" />
     <published>2022-05-08T20:42:33+02:00</published>
   
-    <updated>2022-05-08T20:42:33+02:00</updated>
+    <updated>2022-09-27T18:50:31+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" />
