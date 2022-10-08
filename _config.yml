@@ -23,7 +23,7 @@ timezone: Europe/Zurich
 
 title: DaVe's github pages                          # the main title
 
-tagline: Overview of my public github projects   # it will display as the sub-title
+tagline: My public github projects   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   This Github pages site is for all private projects of Kim David Hauser.ch
@@ -49,6 +49,8 @@ social:
     - http://kimhauser.ch
     - https://twitter.com/kim_hauser      # change to your twitter homepage
     - https://github.com/jetedonner       # change to your github homepage
+    - https://www.linkedin.com/in/kimdhauser
+    - https://www.facebook.com/kim.d.hauser
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username

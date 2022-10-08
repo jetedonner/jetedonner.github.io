@@ -5,21 +5,21 @@ platforms:
   -
     type: Twitter
     icon: "fab fa-twitter"
-    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
+    link: "https://twitter.com/intent/tweet?text=DaVes%20Git%20page&url=https://jetedonner.github.io"
   -
     type: Facebook
     icon: "fab fa-facebook-square"
-    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+    link: "https://www.facebook.com/sharer/sharer.php?title=DaVes%20Git%20page&u=https://jetedonner.github.io"
   -
     type: Telegram
     icon: "fab fa-telegram"
-    link: "https://t.me/share/url?url=URL&text=TITLE"
+    link: "https://t.me/share/url?url=https://jetedonner.github.io&text=DaVes%20Git%20page"
 
   # Uncomment below if you need to.
-  # -
-  #   type: Linkedin
-  #   icon: "fab fa-linkedin"
-  #   link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
+  -
+    type: Linkedin
+    icon: "fab fa-linkedin"
+    link: "https://www.linkedin.com/sharing/share-offsite/?url=https://jetedonner.github.io"
   #
   # -
   #   type: Weibo

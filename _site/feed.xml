@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-09-27T18:55:50+02:00</updated>
+  <updated>2022-10-08T19:10:54+02:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -17,6 +17,99 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Unreal Engine - UETeleportPlugin</title>
+    <link href="http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/" rel="alternate" type="text/html" title="Unreal Engine - UETeleportPlugin" />
+    <published>2022-10-08T10:42:33+02:00</published>
+  
+    <updated>2022-10-08T10:42:33+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/</id>
+    <content src="http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="UnrealEngine" />
+    
+    <category term="Plugins" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+UETeleportPlugin first impression
+
+The UETeleportPlugin lets you easily implement your own Teleportation System in your Unreal Engine game. It features Portals and Wormhole as well as a dissolve effect for the transported character.
+
+Description
+…
+
+Install the UETeleportPlugin
+
+  Fire up the Epic Game Launcher
+  Goto Marketplace and search for UETeleportPlugin - Add it to your car...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>3D Models by Kim Hauser</title>
+    <link href="http://0.0.0.0:4000/posts/3d-models-by-me/" rel="alternate" type="text/html" title="3D Models by Kim Hauser" />
+    <published>2022-10-04T04:42:33+02:00</published>
+  
+    <updated>2022-10-04T04:42:33+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/3d-models-by-me/</id>
+    <content src="http://0.0.0.0:4000/posts/3d-models-by-me/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term=""3D" />
+    
+    <category term="Models"" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+Start view of Suake3D game
+
+Get an impression of the world, models and gameplay of Suake3D here. Visit http://suake3d.kimhauser.ch or write a mail to the developer kim@kimhauser.ch (Kim David Hauser).
+
+Description
+Suake3D is actually a variant of an app I often use to get familiar with a new technology or programming language I try to get into. It all started at programming school...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -63,7 +156,7 @@ The “Weapon System Base” provides you with some very basic and useful classe
     <link href="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" rel="alternate" type="text/html" title="Unreal Engine - PlayerStartPlugin" />
     <published>2022-05-08T20:42:33+02:00</published>
   
-    <updated>2022-09-27T18:50:31+02:00</updated>
+    <updated>2022-09-27T18:57:14+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" />
@@ -133,94 +226,6 @@ You can inherit your Projects WorldSettings Class from the custom PlayerStartWor
 Jekyll requires blog post files to be named according to the following format:
 
 YEAR-MONTH-DAY-title.MAR...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>My online movies</title>
-    <link href="http://0.0.0.0:4000/posts/my-youtube-channel/" rel="alternate" type="text/html" title="My online movies" />
-    <published>2022-02-01T09:06:09+01:00</published>
-  
-    <updated>2022-02-01T09:06:09+01:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/my-youtube-channel/</id>
-    <content src="http://0.0.0.0:4000/posts/my-youtube-channel/" />
-    <author>
-      <name>dave</name>
-    </author>
-
-  
-    
-    <category term="Projects" />
-    
-    <category term="Movies" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      For some of my projects I have created online movies which most of them are available on my youtube channel and other platforms or my own website. Here you have an overview of the publicly available online movies from and/or featuring me as actor and/or as narrator.
-
-Youtube Channel
-
-  All my Youtube videos
-
-
-006,9 - James Blond (Hunt for Urinella)
-This is the outcome of a video project we did ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>macOS - iVaccination Game</title>
-    <link href="http://0.0.0.0:4000/posts/ivaccination-game-macos/" rel="alternate" type="text/html" title="macOS - iVaccination Game" />
-    <published>2021-10-23T20:42:33+02:00</published>
-  
-    <updated>2021-10-23T20:42:33+02:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/ivaccination-game-macos/</id>
-    <content src="http://0.0.0.0:4000/posts/ivaccination-game-macos/" />
-    <author>
-      <name>dave</name>
-    </author>
-
-  
-    
-    <category term="Projects" />
-    
-    <category term="Games" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Introduction
-
-First level of iVaccination game
-
-The world needs your help! Save the world population …
-The world needs you as it’s suffering a deadly disease … take action now!
-
-Description
-iVaccination is a small but fun game for all friends of vaccines. You can save the world from a deadly disease by vaccinating infected zombies and build up trust by collecting vaccination certificates. You c...
     </summary>
   
 

@@ -19,14 +19,13 @@ kimhauser.ch is a small IT business based in Zurich - Switzerland. I'm passionat
 ### Broad experience in a wide spread field of software engineering topics
 I can look back at a widespread field of different successful software projects in various areas. I develop for all major platforms and use the latest frameworks and APIs. Working independently gives me joy just the same as working in a team with other fellows. This may happen in an agile environment - or simply for piecework. Please make sure to check out my projects, articles, resume, and other references.
 
-
 ## Other resources
-- <https://github.com/jetedonner/PlayerStartPlugin> - Plugin Source
-
+- <https://github.com/jetedonner> - Github repositories of Kim David Hauser
 - <http://kimhauser.ch> - My main website
+- <http://job.kimhauser.ch> - My job search related website
 - <http://suake3d.kimhauser.ch> - Intro site for the Swift game Suake3D
 - <http://ivaccination.kimhauser.ch> - Intro site for the Swift 2D game iVaccination
-- <http://chessclub.kimhauser.ch> - Night shift chessclub site - PHP website for recording chess game results for my chess club
-<!-- - <http://covidfeedback.kimhauser.ch> - COVID-Feedback - Web tool for giving the Swiss government feedback about the COVID management -->
 - <http://art.kimhauser.ch> - Art gallery site - Website with images of my paintings
-- <http://youtube.com> - My Youtube channel - personal channel on youtube.com
+- <http://chessclub.kimhauser.ch> - Night shift chessclub site - WebApp for recording chess game results for my chess club
+- <https://www.youtube.com/channel/UCl07bgN24I-9twgFsTLyMjw> - My Youtube channel - personal channel on youtube.com
+<!-- - <http://covidfeedback.kimhauser.ch> - COVID-Feedback - Web tool for giving the Swiss government feedback about the COVID management -->
