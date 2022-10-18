@@ -28,7 +28,7 @@ This is basically a portal model I got from someone else. What I did was splitti
 
 ### Teleportation Portal (Ring)
 ![Ring Teleporter Model](../../assets/img/projects/ueteleportplugin/Teleporter_RingTeleporter_UE4_Screenshot_01.png){: width="502" height="410" }
-Ring Teleporter Model_
+_Ring Teleporter Model_
 <div class="creators-embed-wrapper"><iframe allow="camera" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F2022104%2F6634901966365969%2F6634901966365969.glb&autorotate=true&json-data=1664884030647&decrypt=1&tv=135" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none; width: 95%; height: 400px;"></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F2022104%2F6634901966365969%2F6634901966365969.glb&autorotate=true&json-data=1664884030647&decrypt=1&tv=135" target="_blank" style="font-weight: bold; color: #64FFDA;">Visit Model</a> by <a target="_blank" style="font-weight: bold; color: #64FFDA;" href="https://www.creators3d.com/artist/34082/KimDavidHauser">KimDavidHauser</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=34082" target="_blank" style="font-weight: bold; color: #64FFDA;">Creators3D</a></p></div>  
 
 ### Teleportation Portal (Flat)
