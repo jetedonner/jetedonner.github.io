@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-10-08T19:10:54+02:00</updated>
+  <updated>2022-10-18T11:04:13+02:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -102,10 +102,7 @@ Install the UETeleportPlugin
 
 Start view of Suake3D game
 
-Get an impression of the world, models and gameplay of Suake3D here. Visit http://suake3d.kimhauser.ch or write a mail to the developer kim@kimhauser.ch (Kim David Hauser).
-
-Description
-Suake3D is actually a variant of an app I often use to get familiar with a new technology or programming language I try to get into. It all started at programming school...
+Here you see a small overview of my publicly available 3D models - most of them are created with Blender and the source files are ready for for download and free to copy and extend as you need. All files are licensed on a “as is” basis and come with no warranty of any kind. But if you have any question, problem or feedback please feel free to contact me...
     </summary>
   
 
@@ -117,7 +114,7 @@ Suake3D is actually a variant of an app I often use to get familiar with a new t
     <link href="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" rel="alternate" type="text/html" title="Unreal Engine - WeaponSysBasePlugin" />
     <published>2022-09-23T10:02:33+02:00</published>
   
-    <updated>2022-09-23T10:02:33+02:00</updated>
+    <updated>2022-10-08T19:40:55+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" />
@@ -156,7 +153,7 @@ The “Weapon System Base” provides you with some very basic and useful classe
     <link href="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" rel="alternate" type="text/html" title="Unreal Engine - PlayerStartPlugin" />
     <published>2022-05-08T20:42:33+02:00</published>
   
-    <updated>2022-09-27T18:57:14+02:00</updated>
+    <updated>2022-10-08T19:40:55+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" />

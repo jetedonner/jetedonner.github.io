@@ -23,7 +23,7 @@ timezone: Europe/Zurich
 
 title: DaVe's github pages                          # the main title
 
-tagline: My public github projects   # it will display as the sub-title
+tagline: My public (github) projects   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   This Github pages site is for all private projects of Kim David Hauser.ch
