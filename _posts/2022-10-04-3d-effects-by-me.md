@@ -8,13 +8,18 @@ tags: [Projects, 3D Effects]
 ---
 
 ## Introduction
-![WormHole Effect - No03](../../assets/img/projects/3deffects/WormHoleEffectRendered_No3_Preview_4_Youtube_01.png){: width="1279" height="766" }
+![WormHole Effect - No03](../../assets/img/projects/3deffects/WormHoleEffectRendered_No3_Preview_4_Youtube_01_edt.png){: width="1279" height="766" }
 _WormHole Effect - No03_
 
 Here you'll find 3D Effects created - most of them with Blender 3.2.2 - by me. They are animated and available as .blend files as well as movie version ready for download. All files are licensed on a "as is" basis and come with no warranty of any kind. But if you have any question, problem or feedback please feel free to contact me via <kim@kimhauser.ch> or visit <http://kimhauser.ch>
 
 ## 3D Effects
 ### WornHole Effect No02
+![Ring Teleporter Model](../../assets/img/projects/3deffects/WormHoleEffectRendered_No2_Preview_4_Youtube_01_edt.png){: width="502" height="410" }
+_WormHole Effect No03_
+<div class="container-responsive-iframe" style="padding-top: 0px;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sk30VfT2ids" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <!--
 ![Fancy Teleporter Model](../../assets/img/projects/ueteleportplugin/Teleporter_FancyTeleporter_UE4_Screenshot_01.png){: width="350" height="264" }
 _Fancy Teleporter Model_
@@ -26,7 +31,7 @@ This is basically a portal model I got from someone else. What I did was splitti
 -->
 
 ### WornHole Effect No03
-![Ring Teleporter Model](../../assets/img/projects/3deffects/WormHoleEffectRendered_No3_Preview_4_Youtube_01.png){: width="502" height="410" }
+![Ring Teleporter Model](../../assets/img/projects/3deffects/WormHoleEffectRendered_No3_Preview_4_Youtube_01_edt.png){: width="502" height="410" }
 _WormHole Effect No03_
 <div class="container-responsive-iframe" style="padding-top: 0px;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mfRPdREQWj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
