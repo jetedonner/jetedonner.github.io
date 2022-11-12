@@ -209,6 +209,3 @@ jekyll-archives:
 
 imagesurl: "/imgs/"
 thumbsurl: "/thumbs/"
-
-plugins:
-  - jemoji
