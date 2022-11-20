@@ -5,7 +5,7 @@ author: dave
 date:   2022-11-19 13:12:33 +0200
 categories: Personal Ideas
 tags: [Personal, Ideas]
-pin: true
+published: false
 ---
 
 # All my theses
