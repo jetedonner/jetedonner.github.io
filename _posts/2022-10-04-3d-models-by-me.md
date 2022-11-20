@@ -3,7 +3,7 @@ layout: post
 title:  "3D Models by Kim Hauser"
 author: dave
 date:   2022-10-04 04:42:33 +0200
-categories: Projects [3D Models]
+categories: [Projects, 3D Models]
 tags: [Projects, 3D Models]
 ---
 
