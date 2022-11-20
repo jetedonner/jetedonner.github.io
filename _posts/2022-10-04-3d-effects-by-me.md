@@ -17,8 +17,8 @@ Here you'll find 3D Effects created - most of them with Blender 3.2.2 - by me. T
 ### WornHole Effect No02
 ![Ring Teleporter Model](../../assets/img/projects/3deffects/WormHoleEffectRendered_No2_Preview_4_Youtube_01_edt.png){: width="502" height="410" }
 _WormHole Effect No03_
-<div class="container-responsive-iframe" style="padding-top: 0px;">
-<iframe class="responsive-iframe" style="border: none;" src="https://www.youtube.com/embed/sk30VfT2ids" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/sk30VfT2ids" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <!--
 ![Fancy Teleporter Model](../../assets/img/projects/ueteleportplugin/Teleporter_FancyTeleporter_UE4_Screenshot_01.png){: width="350" height="264" }
@@ -33,8 +33,8 @@ This is basically a portal model I got from someone else. What I did was splitti
 ### WornHole Effect No03
 ![Ring Teleporter Model](../../assets/img/projects/3deffects/WormHoleEffectRendered_No3_Preview_4_Youtube_01_edt.png){: width="502" height="410" }
 _WormHole Effect No03_
-<div class="container-responsive-iframe" style="padding-top: 0px;">
-<iframe class="responsive-iframe" style="border: none;" src="https://www.youtube.com/embed/mfRPdREQWj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/mfRPdREQWj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <!--
 <div class="creators-embed-wrapper"><iframe allow="camera" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F2022104%2F6634901966365969%2F6634901966365969.glb&autorotate=true&json-data=1664884030647&decrypt=1&tv=135" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none; width: 95%; height: 400px;"></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F2022104%2F6634901966365969%2F6634901966365969.glb&autorotate=true&json-data=1664884030647&decrypt=1&tv=135" target="_blank" style="font-weight: bold; color: #64FFDA;">Visit Model</a> by <a target="_blank" style="font-weight: bold; color: #64FFDA;" href="https://www.creators3d.com/artist/34082/KimDavidHauser">KimDavidHauser</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=34082" target="_blank" style="font-weight: bold; color: #64FFDA;">Creators3D</a></p></div>  
