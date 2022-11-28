@@ -20,7 +20,6 @@ Here you'll find 3D Effects created - most of them with Blender 3.2.2 - by me. T
 </div>
 _WormHole Effect No02_
 
-
 ### WornHole Effect No03
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/mfRPdREQWj0" title="WormHole Effect No03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
