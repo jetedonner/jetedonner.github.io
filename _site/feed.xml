@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-10-18T11:04:13+02:00</updated>
+  <updated>2022-11-29T20:00:56+01:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -20,11 +20,89 @@
 
   
   <entry>
+    <title>KnApp - Infos</title>
+    <link href="http://0.0.0.0:4000/posts/KnApp-Informations-about-k-and-a-zuerich/" rel="alternate" type="text/html" title="KnApp - Infos" />
+    <published>2022-11-29T18:52:36+01:00</published>
+  
+    <updated>2022-11-29T18:52:36+01:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/KnApp-Informations-about-k-and-a-zuerich/</id>
+    <content src="http://0.0.0.0:4000/posts/KnApp-Informations-about-k-and-a-zuerich/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="KnA" />
+    
+    <category term="Projects" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      KnApp - Project
+KnaApp is a recent project I’m realizing and maintaining for a special section of the social departement of the city of zurich. The social departement provides a service called Kontakt und Anlaufstelle which aims to provide low-threshold offers to secure the life and survival of marginalized adults living in zurich
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>3D Effects by Kim Hauser</title>
+    <link href="http://0.0.0.0:4000/posts/3d-effects-by-me/" rel="alternate" type="text/html" title="3D Effects by Kim Hauser" />
+    <published>2022-11-07T19:01:01+01:00</published>
+  
+    <updated>2022-11-28T22:12:53+01:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/3d-effects-by-me/</id>
+    <content src="http://0.0.0.0:4000/posts/3d-effects-by-me/" />
+    <author>
+      <name>dave</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="3D Models" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+WormHole Effect - No03
+
+Here you’ll find 3D Effects created - most of them with Blender 3.2.2 - by me. They are animated and available as .blend files as well as movie version ready for download. All files are licensed on a “as is” basis and come with no warranty of any kind. But if you have any question, problem or feedback please feel free to contact me via kim@kimhauser.ch or v...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Unreal Engine - UETeleportPlugin</title>
     <link href="http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/" rel="alternate" type="text/html" title="Unreal Engine - UETeleportPlugin" />
     <published>2022-10-08T10:42:33+02:00</published>
   
-    <updated>2022-10-08T10:42:33+02:00</updated>
+    <updated>2022-10-29T15:33:07+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/</id>
     <content src="http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/" />
@@ -72,7 +150,7 @@ Install the UETeleportPlugin
     <link href="http://0.0.0.0:4000/posts/3d-models-by-me/" rel="alternate" type="text/html" title="3D Models by Kim Hauser" />
     <published>2022-10-04T04:42:33+02:00</published>
   
-    <updated>2022-10-04T04:42:33+02:00</updated>
+    <updated>2022-11-20T23:32:16+01:00</updated>
   
     <id>http://0.0.0.0:4000/posts/3d-models-by-me/</id>
     <content src="http://0.0.0.0:4000/posts/3d-models-by-me/" />
@@ -84,9 +162,7 @@ Install the UETeleportPlugin
     
     <category term="Projects" />
     
-    <category term=""3D" />
-    
-    <category term="Models"" />
+    <category term="3D Models" />
     
   
 
@@ -142,87 +218,6 @@ Here you see a small overview of my publicly available 3D models - most of them 
 
 Description
 The “Weapon System Base” provides you with some very basic and useful classes and features to create your own Weapon System for a UE4 game. You’ll find base classes for WeaponTypes, Weapons, Projectiles as w...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Unreal Engine - PlayerStartPlugin</title>
-    <link href="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" rel="alternate" type="text/html" title="Unreal Engine - PlayerStartPlugin" />
-    <published>2022-05-08T20:42:33+02:00</published>
-  
-    <updated>2022-10-08T19:40:55+02:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/</id>
-    <content src="http://0.0.0.0:4000/posts/unreal-engine-playerstartplugin/" />
-    <author>
-      <name>dave</name>
-    </author>
-
-  
-    
-    <category term="UnrealEngine" />
-    
-    <category term="Plugins" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Introduction
-
-PlayerStartPlugin in the WorldSettings Editor
-
-The PlayStartPlugin for Unreal Engine version 4 or 5 enables you to easily setup, manage and switch between multiple PlayerStarts for your Maps / Levels in a Game. This is done via the WorldSettings in the Editor Outliner.
-
-Description
-You can inherit your Projects WorldSettings Class from the custom PlayerStartWorldSettings class pro...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Welcome to DaVe's github pages</title>
-    <link href="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" rel="alternate" type="text/html" title="Welcome to DaVe's github pages" />
-    <published>2022-05-05T20:42:33+02:00</published>
-  
-    <updated>2022-05-05T20:42:33+02:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/welcome-to-my-github-pages/</id>
-    <content src="http://0.0.0.0:4000/posts/welcome-to-my-github-pages/" />
-    <author>
-      <name>dave</name>
-    </author>
-
-  
-    
-    <category term="Personal" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
-
-Jekyll requires blog post files to be named according to the following format:
-
-YEAR-MONTH-DAY-title.MAR...
     </summary>
   
 
