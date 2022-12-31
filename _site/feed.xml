@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://0.0.0.0:4000/</id>
+  <id>http://localhost:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-11-29T20:00:56+01:00</updated>
+  <updated>2022-12-31T12:43:20+01:00</updated>
   <author>
     <name>Kim David Hauser</name>
-    <uri>http://0.0.0.0:4000/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://0.0.0.0:4000/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
   <rights> © 2022 Kim David Hauser </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>KnApp - Infos</title>
-    <link href="http://0.0.0.0:4000/posts/KnApp-Informations-about-k-and-a-zuerich/" rel="alternate" type="text/html" title="KnApp - Infos" />
+    <link href="http://localhost:4000/posts/KnApp-Informations-about-k-and-a-zuerich/" rel="alternate" type="text/html" title="KnApp - Infos" />
     <published>2022-11-29T18:52:36+01:00</published>
   
-    <updated>2022-11-29T18:52:36+01:00</updated>
+    <updated>2022-12-23T11:13:17+01:00</updated>
   
-    <id>http://0.0.0.0:4000/posts/KnApp-Informations-about-k-and-a-zuerich/</id>
-    <content src="http://0.0.0.0:4000/posts/KnApp-Informations-about-k-and-a-zuerich/" />
+    <id>http://localhost:4000/posts/KnApp-Informations-about-k-and-a-zuerich/</id>
+    <content src="http://localhost:4000/posts/KnApp-Informations-about-k-and-a-zuerich/" />
     <author>
       <name>dave</name>
     </author>
@@ -49,7 +49,9 @@
 
 
       KnApp - Project
-KnaApp is a recent project I’m realizing and maintaining for a special section of the social departement of the city of zurich. The social departement provides a service called Kontakt und Anlaufstelle which aims to provide low-threshold offers to secure the life and survival of marginalized adults living in zurich
+KnaApp is a recent project I’m realizing and maintaining for a special section of the social departement of the city of zurich. The social departement provides a service called Kontakt und Anlaufstelle which aims to provide low-threshold offers to secure the life and survival of marginalized adults living in zurich.
+
+Development website of the KnApp
 
     </summary>
   
@@ -59,13 +61,13 @@ KnaApp is a recent project I’m realizing and maintaining for a special section
   
   <entry>
     <title>3D Effects by Kim Hauser</title>
-    <link href="http://0.0.0.0:4000/posts/3d-effects-by-me/" rel="alternate" type="text/html" title="3D Effects by Kim Hauser" />
+    <link href="http://localhost:4000/posts/3d-effects-by-me/" rel="alternate" type="text/html" title="3D Effects by Kim Hauser" />
     <published>2022-11-07T19:01:01+01:00</published>
   
-    <updated>2022-11-28T22:12:53+01:00</updated>
+    <updated>2022-12-31T11:32:38+01:00</updated>
   
-    <id>http://0.0.0.0:4000/posts/3d-effects-by-me/</id>
-    <content src="http://0.0.0.0:4000/posts/3d-effects-by-me/" />
+    <id>http://localhost:4000/posts/3d-effects-by-me/</id>
+    <content src="http://localhost:4000/posts/3d-effects-by-me/" />
     <author>
       <name>dave</name>
     </author>
@@ -99,13 +101,13 @@ Here you’ll find 3D Effects created - most of them with Blender 3.2.2 - by me.
   
   <entry>
     <title>Unreal Engine - UETeleportPlugin</title>
-    <link href="http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/" rel="alternate" type="text/html" title="Unreal Engine - UETeleportPlugin" />
+    <link href="http://localhost:4000/posts/unreal-engine-teleportplugin/" rel="alternate" type="text/html" title="Unreal Engine - UETeleportPlugin" />
     <published>2022-10-08T10:42:33+02:00</published>
   
     <updated>2022-10-29T15:33:07+02:00</updated>
   
-    <id>http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/</id>
-    <content src="http://0.0.0.0:4000/posts/unreal-engine-teleportplugin/" />
+    <id>http://localhost:4000/posts/unreal-engine-teleportplugin/</id>
+    <content src="http://localhost:4000/posts/unreal-engine-teleportplugin/" />
     <author>
       <name>dave</name>
     </author>
@@ -147,13 +149,13 @@ Install the UETeleportPlugin
   
   <entry>
     <title>3D Models by Kim Hauser</title>
-    <link href="http://0.0.0.0:4000/posts/3d-models-by-me/" rel="alternate" type="text/html" title="3D Models by Kim Hauser" />
+    <link href="http://localhost:4000/posts/3d-models-by-me/" rel="alternate" type="text/html" title="3D Models by Kim Hauser" />
     <published>2022-10-04T04:42:33+02:00</published>
   
     <updated>2022-11-20T23:32:16+01:00</updated>
   
-    <id>http://0.0.0.0:4000/posts/3d-models-by-me/</id>
-    <content src="http://0.0.0.0:4000/posts/3d-models-by-me/" />
+    <id>http://localhost:4000/posts/3d-models-by-me/</id>
+    <content src="http://localhost:4000/posts/3d-models-by-me/" />
     <author>
       <name>dave</name>
     </author>
@@ -187,13 +189,13 @@ Here you see a small overview of my publicly available 3D models - most of them 
   
   <entry>
     <title>Unreal Engine - WeaponSysBasePlugin</title>
-    <link href="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" rel="alternate" type="text/html" title="Unreal Engine - WeaponSysBasePlugin" />
+    <link href="http://localhost:4000/posts/unreal-engine-weaponsysbaseplugin/" rel="alternate" type="text/html" title="Unreal Engine - WeaponSysBasePlugin" />
     <published>2022-09-23T10:02:33+02:00</published>
   
     <updated>2022-10-08T19:40:55+02:00</updated>
   
-    <id>http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/</id>
-    <content src="http://0.0.0.0:4000/posts/unreal-engine-weaponsysbaseplugin/" />
+    <id>http://localhost:4000/posts/unreal-engine-weaponsysbaseplugin/</id>
+    <content src="http://localhost:4000/posts/unreal-engine-weaponsysbaseplugin/" />
     <author>
       <name>dave</name>
     </author>

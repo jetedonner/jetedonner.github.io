@@ -47,7 +47,7 @@ const resource = [
 const allowedDomains = [
   
 
-  '0.0.0.0:4000',
+  'localhost:4000',
 
   
 
