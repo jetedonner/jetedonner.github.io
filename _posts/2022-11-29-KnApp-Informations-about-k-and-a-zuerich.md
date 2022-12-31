@@ -9,4 +9,7 @@ published: true
 ---
 
 # KnApp - Project
-KnaApp is a recent project I'm realizing and maintaining for a special section of the social departement of the city of zurich. The social departement provides a service called __Kontakt und Anlaufstelle__ which aims to provide low-threshold offers to secure the life and survival of marginalized adults living in zurich
+KnaApp is a recent project I'm realizing and maintaining for a special section of the social departement of the city of zurich. The social departement provides a service called __Kontakt und Anlaufstelle__ which aims to provide low-threshold offers to secure the life and survival of marginalized adults living in zurich. 
+
+
+[_Development website of the KnApp_](http://knapp.kimhauser.ch)
