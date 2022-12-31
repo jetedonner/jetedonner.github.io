@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>DaVe's github pages</title>
   <subtitle>This Github pages site is for all private projects of Kim David Hauser.ch You will find a broad variety of source code for the last 20 years of my Software development process. You are free to leav a feedback or update.</subtitle>
-  <updated>2022-12-31T12:43:20+01:00</updated>
+  <updated>2022-12-31T12:46:32+01:00</updated>
   <author>
     <name>Kim David Hauser</name>
     <uri>http://localhost:4000/</uri>
@@ -64,7 +64,7 @@ Development website of the KnApp
     <link href="http://localhost:4000/posts/3d-effects-by-me/" rel="alternate" type="text/html" title="3D Effects by Kim Hauser" />
     <published>2022-11-07T19:01:01+01:00</published>
   
-    <updated>2022-12-31T11:32:38+01:00</updated>
+    <updated>2022-12-31T12:45:59+01:00</updated>
   
     <id>http://localhost:4000/posts/3d-effects-by-me/</id>
     <content src="http://localhost:4000/posts/3d-effects-by-me/" />
