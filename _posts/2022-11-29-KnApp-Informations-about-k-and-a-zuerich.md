@@ -1,4 +1,4 @@
-6---
+---
 layout: post
 title:  "KnApp - Infos"
 author: dave
