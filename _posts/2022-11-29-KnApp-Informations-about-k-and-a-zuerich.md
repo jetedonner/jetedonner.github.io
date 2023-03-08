@@ -3,8 +3,8 @@ layout: post
 title:  "KnApp - Infos"
 author: dave
 date:   2022-11-29 19:52:36 +0200
-categories: KnA Projects
-tags: [KnA, Projects]
+categories: Projects KnA
+tags: [Projects, KnA]
 published: true
 ---
 
@@ -16,5 +16,9 @@ The mobile App called _KnApp_ (in fact a responsive Website) provides basic info
 ![KnApp - Home page](../../assets/img/projects/Screenshot_20230107_152806_Chrome.jpg){: width="420" height="840" }
 _KnApp Home page_
 
+## Final release
+- [_Visit kundainfo.ch_](https://kundainfo.ch)
+
+## Websites
 - [_Development website of the KnApp_](http://knapp.kimhauser.ch/?layout=ng)
 - [_Official Website of K&amp;A Zurich_](https://www.stadt-zuerich.ch/sd/de/index/unterstuetzung/drogen/kontaktundanlaufstellen.html)
