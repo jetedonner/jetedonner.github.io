@@ -8,8 +8,11 @@ tags: [Projects HTML]
 published: true
 ---
 
+![Startpage of kundainfo.ch](../../assets/img/projects/kundainfo.ch/kundainfo.ch-MainSite-2023-03-08-02.png){: width="333" height="462" }
+_Startpage of kundainfo.ch_
+
 # kundainfo.ch
-The latest project of mine for the social department of the city of Zurich Switzerland. This Web-App is a neat information tool for the K&A locations in Zurich. It's mainly intend is to show opening hours, special hours, special closings, one on one situations and to provide the clients a posibillity to give a feedback to the staff.
+The latest project of mine for the social department of the city of Zurich Switzerland. This Web-App is a neat information tool for the K&A locations in Zurich. It's main intend is to show opening hours, special hours, special closings, one on one situations and to provide the clients a posibillity to give a feedback to the staff.
 - [_Visit kundainfo.ch_](https://kundainfo.ch)
 
 ## Implementation
