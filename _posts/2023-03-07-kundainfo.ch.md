@@ -42,4 +42,4 @@ The Web-App is implemented using the following technologies:
 - jQuery / Vanilla JS
 
 ## Credits
-The Author of this Web-App is [_Kim David Hauser_](http://kimhauser.ch)
+The Author of this Web-App is [_Kim David Hauser_](http://kimhauser.ch){:target="_blank" rel="noopener"}

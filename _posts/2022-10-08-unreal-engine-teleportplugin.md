@@ -29,8 +29,8 @@ The UETeleportPlugin lets you easily implement your own Teleportation System in 
 
 
 ### Credits and licensing
-The UETeleportPlugin is released under the [_Unreal® Engine End User License Agreement For Publishing_](https://www.unrealengine.com/en-US/eula/unreal?sessionInvalidated=true). Please make sure to read through the license agreement before releasing your projects using the UETeleportPlugin. Credits and references to the author are highly appreciated - thank you!
-- [Local version of the UE End User License For Publishing](/assets/docs/ue/LICENSE)
+The UETeleportPlugin is released under the [_Unreal® Engine End User License Agreement For Publishing_](https://www.unrealengine.com/en-US/eula/unreal?sessionInvalidated=true){:target="_blank" rel="noopener"}. Please make sure to read through the license agreement before releasing your projects using the UETeleportPlugin. Credits and references to the author are highly appreciated - thank you!
+- [Local version of the UE End User License For Publishing](/assets/docs/ue/LICENSE){:target="_blank" rel="noopener"}
 
 
 ## Youtube Clips
@@ -45,6 +45,6 @@ The UETeleportPlugin is released under the [_Unreal® Engine End User License Ag
 </div>
 
 ## Source code download
-- [Plugin source code](https://github.com/jetedonner/PlayerStartPlugin) - Github repository
-- [Demo project source UE4](https://github.com/jetedonner/UE4_PlayerStartDemo) - Demo Source (UE4)
-- [Demo project source UE5](https://github.com/jetedonner/UE5_PlayerStartDemo) - Demo Source (UE5)
+- [Plugin source code](https://github.com/jetedonner/PlayerStartPlugin){:target="_blank" rel="noopener"} - Github repository
+- [Demo project source UE4](https://github.com/jetedonner/UE4_PlayerStartDemo){:target="_blank" rel="noopener"} - Demo Source (UE4)
+- [Demo project source UE5](https://github.com/jetedonner/UE5_PlayerStartDemo){:target="_blank" rel="noopener"} - Demo Source (UE5)

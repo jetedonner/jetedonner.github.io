@@ -18,5 +18,5 @@ The menu expands on hover and the burger icon of the menu button animates to an 
 
 Use and ammend the code as you like. The source is provided "AS IS" no warranty. The source is free for all your projects and plans whether it's' free or commercial. A reference to the author is highly appreciated.
 
-- [_Codepen.io article / SourceCode_](https://codepen.io/kimdhauser/pen/PodNZeQ)
-- [_Youtube Demo Video_](https://youtu.be/WS7bLdwmnsM)
+- [_Codepen.io article / SourceCode_](https://codepen.io/kimdhauser/pen/PodNZeQ){:target="_blank" rel="noopener"}
+- [_Youtube Demo Video_](https://youtu.be/WS7bLdwmnsM){:target="_blank" rel="noopener"}
