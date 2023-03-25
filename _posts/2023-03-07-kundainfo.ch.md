@@ -13,7 +13,7 @@ _Startpage of kundainfo.ch_
 
 # kundainfo.ch
 The latest project of mine for the social department of the city of Zurich Switzerland. This Web-App is a neat information tool for the K&A locations in Zurich. It's main intend is to show opening hours, special hours, special closings, one on one situations and to provide the clients a posibillity to give a feedback to the staff.
-- [_Visit kundainfo.ch_](https://kundainfo.ch)
+- [_Visit kundainfo.ch_](https://kundainfo.ch){:target="_blank" rel="noopener"}
 
 ## Pages
 ### News for K&A
