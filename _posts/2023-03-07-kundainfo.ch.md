@@ -19,7 +19,7 @@ The latest project of mine for the social department of the city of Zurich Switz
 ### News for K&A
 This page shows the actual news for the K&A in Zurich. You can view only the recent news or select to also display older and archived news.
 
-![Newspage of kundainfo.ch](../../assets/img/projects/kundainfo.ch/kundainfo.ch-NewsPage-2023-03-27-01.png){: width="333" height="462" }
+![Newspage of kundainfo.ch](../../assets/img/projects/kundainfo.ch/kundainfo.ch-NewsPage-2023-03-27-02.png){: width="333" height="462" }
 _Newspage of kundainfo.ch_
 
 ### Feedback for K&A
