@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "kundainfo.ch - K&A Öffnungszeiten und Infos"
+title:  "kimhauser.ch - SSL and Server-Migration"
 author: dave
 date:   2023-03-29 00:58:27 +0200
 categories: Projects Website
