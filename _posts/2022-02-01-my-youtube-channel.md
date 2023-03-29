@@ -33,7 +33,7 @@ This is the outcome of a video project we did with some girls and boys in a summ
 
 [youtube-videos]: https://www.youtube.com/channel/UCl07bgN24I-9twgFsTLyMjw
 [james-vimeo]: https://vimeo.com/1554154
-[james-kim]: http://kimhauser.ch/index.php/personal/private-projects/james-blond-006-9
+[james-kim]: https://kimhauser.ch/index.php/personal/private-projects/james-blond-006-9
 [playerstartplugin]: https://www.youtube.com/watch?v=AiyZcPeSFOo
 [ivaccination-video-v2]: https://www.youtube.com/watch?v=sWwcMc0H-MU
 [ivaccination-video]: https://www.youtube.com/watch?v=3_yCJG52TXw

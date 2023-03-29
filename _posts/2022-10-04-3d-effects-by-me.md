@@ -11,7 +11,7 @@ tags: [Projects, 3D Effects]
 ![WormHole Effect - No03](../../assets/img/projects/3deffects/WormHoleEffectRendered_No3_Preview_4_Youtube_01_edt.png){: width="1279" height="766" }
 _WormHole Effect - No03_
 
-Here you'll find 3D Effects created - most of them with Blender 3.2.2 - by me. They are animated and available as .blend files as well as movie version ready for download. All files are licensed on a "as is" basis and come with no warranty of any kind. But if you have any question, problem or feedback please feel free to contact me via <kim@kimhauser.ch> or visit <http://kimhauser.ch>
+Here you'll find 3D Effects created - most of them with Blender 3.2.2 - by me. They are animated and available as .blend files as well as movie version ready for download. All files are licensed on a "as is" basis and come with no warranty of any kind. But if you have any question, problem or feedback please feel free to contact me via <kim@kimhauser.ch> or visit <https://kimhauser.ch>
 
 ## 3D Effects
 ### WornHole Effect No02

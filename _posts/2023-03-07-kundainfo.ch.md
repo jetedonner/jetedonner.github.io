@@ -45,4 +45,4 @@ The Web-App is implemented using the following technologies:
 [![kundainfo.ch - Android App](../..//assets/img/Get_it_on_Google_play_180x62px.png){: width="180" height="62" }](https://play.google.com/store/apps/details?id=ch.kundainfo.cordova.kickstartwebsite){:target="_blank" rel="noopener"}
 
 ## Credits
-The Author of this Web-App is [_Kim David Hauser_](http://kimhauser.ch){:target="_blank" rel="noopener"}
+The Author of this Web-App is [_Kim David Hauser_](https://kimhauser.ch){:target="_blank" rel="noopener"}

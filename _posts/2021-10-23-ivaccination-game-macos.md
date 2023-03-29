@@ -21,17 +21,17 @@ iVaccination is a small but fun game for all friends of vaccines. You can save t
 ### iVaccination - macOS App Download
 You can download and test the current beta version of iVaccination for macOS. All you need to do is enter your email address and you will get a link to the current beta verion of the iVaccination app.
 We will NOT use or share your email address for advertisement or anything else.
-Also visit <http://kimhauser.ch> or contact the developer Kim David Hauser (<kim@kimhauser.ch>) by mail if you have any question or feedback. Thank you!
-- <http://ivaccination.kimhauser.ch/?task=download> - Latest macOS App download of iVaccination game
+Also visit <https://kimhauser.ch> or contact the developer Kim David Hauser (<kim@kimhauser.ch>) by mail if you have any question or feedback. Thank you!
+- <https://ivaccination.kimhauser.ch/?task=download> - Latest macOS App download of iVaccination game
 
 ### iVaccination - Github source
 - <https://github.com/jetedonner/iVaccinationGame> - Latest source code of iVaccination game
 
 ### iVaccination - Scoreboard online
-- <http://ivaccination.kimhauser.ch/?task=score> - The online scoreboard with scores and achievements of all players of iVaccination (that enabled the online scoreboard in their settings)
+- <https://ivaccination.kimhauser.ch/?task=score> - The online scoreboard with scores and achievements of all players of iVaccination (that enabled the online scoreboard in their settings)
 
 ### iVaccination - Contact
-- <http://ivaccination.kimhauser.ch/?task=contact> - Contact the developer (Me - Kim David Hauser) of iVaccination to give me your feedback or for any other requests
+- <https://ivaccination.kimhauser.ch/?task=contact> - Contact the developer (Me - Kim David Hauser) of iVaccination to give me your feedback or for any other requests
 
 
 ## Youtube iVaccination Trailer
@@ -40,4 +40,4 @@ Also visit <http://kimhauser.ch> or contact the developer Kim David Hauser (<kim
 </div>
 
 ## More iVaccination Movies
-- <http://ivaccination.kimhauser.ch/?task=preview>
+- <https://ivaccination.kimhauser.ch/?task=preview>

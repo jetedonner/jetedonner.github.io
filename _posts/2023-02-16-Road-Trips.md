@@ -17,5 +17,5 @@ This winter we - a highly motivated group of friends from K&A Selnau Zürich - w
 
 {% include googleDrivePlayer.html id=page.driveId %}
 
-- [_Download KandA-Skitag-2023-02-16.mp4_](http://kimhauser.ch/downloads/KandA-Skitag-2023-02-16.mp4)
+- [_Download KandA-Skitag-2023-02-16.mp4_](https://kimhauser.ch/downloads/KandA-Skitag-2023-02-16.mp4)
 - [_Official Website of K&amp;A Zurich_](https://www.stadt-zuerich.ch/sd/de/index/unterstuetzung/drogen/kontaktundanlaufstellen.html)
