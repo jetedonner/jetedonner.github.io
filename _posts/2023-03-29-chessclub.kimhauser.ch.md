@@ -2,13 +2,13 @@
 layout: post
 title:  "Nightshift Chess - Reporting tool for chessclub"
 author: dave
-date:   2023-03-29 23:51:40 +0200
+date:   2021-05-08 20:14:06 +0200
 categories: Projects Private
 tags: [Projects, Private]
 published: true
 ---
 
-![Startpage of chessclub.kimhauser.ch](../../assets/img/projects/kundainfo.ch/kundainfo.ch-MainSite-2023-03-27-01.png){: width="333" height="462" }
+![Startpage of chessclub.kimhauser.ch](../../assets/img/projects/chessclub/01-Chessclub-Add-Game-View-2023-03-30.png){: width="333" height="462" }
 _Startpage of chessclub.kimhauser.ch_
 
 # Nightshift Chess - chessclub.kimhauser.ch
