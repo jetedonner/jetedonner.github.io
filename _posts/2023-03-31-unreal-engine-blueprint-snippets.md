@@ -26,6 +26,16 @@ This UE5.1 Blueprint Function is meant for Portal pairs to convert a input direc
 
 - [PortalConvertDirection on blueprintue.com](https://blueprintue.com/blueprint/schzg-gp/){:target="_blank" rel="noopener"}
 
+# C++ Example
+
+```cpp
+int main() {
+  int y = SOME_MACRO_REFERENCE;
+  int x = 5 + 6;
+  cout << "Hello World! " << x << std::endl();
+}
+```
+
 
 ### PortalConvertLocation
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input location from the current portal to the traget portal.
