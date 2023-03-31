@@ -8,16 +8,16 @@ tags: [UnrealEngine, Snippets]
 published: true
 ---
 
-![Startpage of kundainfo.ch](../../assets/img/projects/ue/UE-Code-Snippets-On-blueprintue_com.png){: width="444" height="462" }
-_Code snippets on blueprintue.com_
+![UE code snippets on blueprintue.com](../../assets/img/projects/ue/UE-Code-Snippets-On-blueprintue_com.png){: width="444" height="462" }
+_UE Code snippets on blueprintue.com_
 
 
 # Unreal Engine Snippets
 This page shows some - maybe - usefull code and Blueprint snippets for the Unreal Engine
-- [_Unreal Engine Snippets_](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"}
+- [_Unreal Engine Snippets on blueprintue.com by DaVe_](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"}
 
 ## Portal Helper-Functions
-This functions can help you with the calcualtions needed for teleporting Actors like Characters or Bullets through Teleportation-Portals. The snippets are hosted on [blueprintue.com](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"}
+This functions can help you with the calcualtions needed for teleporting Actors like Characters or Bullets through Teleportation-Portals. The snippets are hosted on [blueprintue.com](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"} and created by me with the help of [wiki.unrealengine.com](https://michaeljcole.github.io/wiki.unrealengine.com/Simple_Portals/#Overview){:target="_blank" rel="noopener"}
 
 ### PortalConvertDirection
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input direction from the current portal to the traget portal.
