@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Unreal Engine - Snippets"
+title:  "Unreal Engine - Code Snippets (BP / C++)"
 author: dave
 date:   2023-03-31 22:13:04 +0200
 categories: UnrealEngine Snippets
@@ -14,7 +14,7 @@ _UE Code snippets on blueprintue.com_
 
 # Unreal Engine Snippets
 This page shows some - maybe - usefull code and Blueprint snippets for the Unreal Engine
-- [_Unreal Engine Snippets on blueprintue.com by DaVe_](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"}
+- [_Unreal Engine Snippets by DaVe on blueprintue.com_](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"}
 
 ## Portal Helper-Functions
 This functions can help you with the calcualtions needed for teleporting Actors like Characters or Bullets through Teleportation-Portals. The snippets are hosted on [blueprintue.com](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"} and created by me with the help of [wiki.unrealengine.com](https://michaeljcole.github.io/wiki.unrealengine.com/Simple_Portals/#Overview){:target="_blank" rel="noopener"}
