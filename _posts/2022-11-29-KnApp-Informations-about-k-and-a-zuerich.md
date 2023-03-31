@@ -8,7 +8,7 @@ tags: [Projects, KnA]
 published: true
 ---
 
-**This prototype was replaced and released as project kundainfo.ch** [_Visit kundainfo.ch_](https://kundainfo.ch){:target="_blank" rel="noopener"}
+**This prototype was replaced and released as project [_kundainfo.ch_](https://jetedonner.github.io/posts/kundainfo.ch/)** [_Visit kundainfo.ch_](https://kundainfo.ch){:target="_blank" rel="noopener"}
 
 # KnApp - Project
 KnaApp is a recent prototype I'm realizing and maintaining for a special section of the social departement of the city of zurich. The social departement provides a great and intensively used service called __Kontakt und Anlaufstelle__. This service aims to provide low-threshold offers to secure the life and survival of marginalized adults living in zurich.
