@@ -22,7 +22,7 @@ This functions can help you with the calcualtions needed for teleporting Actors 
 ### PortalConvertDirection
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input direction from the current portal to the traget portal.
 
-<iframe src="https://blueprintue.com/render/schzg-gp/" scrolling="no" width="100%" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/schzg-gp/" scrolling="no" width="100%" height="640" allowfullscreen></iframe>
 
 - [PortalConvertDirection on blueprintue.com](https://blueprintue.com/blueprint/schzg-gp/){:target="_blank" rel="noopener"}
 
@@ -30,7 +30,7 @@ This UE5.1 Blueprint Function is meant for Portal pairs to convert a input direc
 ### PortalConvertLocation
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input location from the current portal to the traget portal.
 
-<iframe src="https://blueprintue.com/render/px7---nm/" scrolling="no" width="100%" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/px7---nm/" scrolling="no" width="100%" height="640" allowfullscreen></iframe>
 
 - [PortalConvertLocation on blueprintue.com](https://blueprintue.com/blueprint/px7---nm/){:target="_blank" rel="noopener"}
 
@@ -38,7 +38,7 @@ This UE5.1 Blueprint Function is meant for Portal pairs to convert a input locat
 ### PortalConvertMirroredLocation
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input location from the current portal mirrored to the traget portal.
 
-<iframe src="https://blueprintue.com/render/py9v4574/" scrolling="no" width="100%" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/py9v4574/" scrolling="no" width="100%" height="640" allowfullscreen></iframe>
 
 - [PortalConvertMirroredLocation on blueprintue.com](https://blueprintue.com/blueprint/py9v4574/){:target="_blank" rel="noopener"}
 
@@ -46,7 +46,7 @@ This UE5.1 Blueprint Function is meant for Portal pairs to convert a input locat
 ### PortalConvertRotation
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input rotation from the current portal to the traget portal.
 
-<iframe src="https://blueprintue.com/render/rbaz1sm6/" scrolling="no" width="100%" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/rbaz1sm6/" scrolling="no" width="100%" height="640" allowfullscreen></iframe>
 
 - [PortalConvertRotation on blueprintue.com](https://blueprintue.com/blueprint/rbaz1sm6/){:target="_blank" rel="noopener"}
 
@@ -54,7 +54,7 @@ This UE5.1 Blueprint Function is meant for Portal pairs to convert a input rotat
 ### PortalConvertVelocity
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input velocity from the current portal to the traget portal.
 
-<iframe src="https://blueprintue.com/render/i44d0_gg/" scrolling="no" width="100%" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/i44d0_gg/" scrolling="no" width="100%" height="640" allowfullscreen></iframe>
 
 - [PortalConvertVelocity on blueprintue.com](https://blueprintue.com/blueprint/i44d0_gg/){:target="_blank" rel="noopener"}
 
