@@ -20,6 +20,15 @@ kimhauser.ch is a small IT business based in Zurich - Switzerland. I'm passionat
 I can look back at a widespread field of different successful software projects in various areas. I develop for all major platforms and use the latest frameworks and APIs. Working independently gives me joy just the same as working in a team with other fellows. This may happen in an agile environment - or simply for piecework. Please make sure to check out my projects, articles, resume, and other references.
 
 ## Other resources
+- [_github.com/jetedonner_](https://github.com/jetedonner){:target="_blank" rel="noopener"} - Github repositories of Kim David Hauser
+- [_kimhauser.ch_](https://kimhauser.ch){:target="_blank" rel="noopener"} - My main website
+- [_job.kimhauser.ch_](https://job.kimhauser.ch){:target="_blank" rel="noopener"} - My job search related website
+- [_suake3d.kimhauser.ch_](https://suake3d.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for the Swift game Suake3D
+- [_ivaccination.kimhauser.ch_](https://ivaccination.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for the Swift 2D game iVaccination
+- [_art.kimhauser.ch_](https://art.kimhauser.ch){:target="_blank" rel="noopener"} - Art gallery site - Website with images of my paintings
+- [_chessclub.kimhauser.ch_](https://chessclub.kimhauser.ch){:target="_blank" rel="noopener"} - Night shift chessclub site - WebApp for recording chess game results for my chess club
+- [_youtube.com/channel/UCl07bgN24I-9twgFsTLyMjw_](https://youtube.com/channel/UCl07bgN24I-9twgFsTLyMjw){:target="_blank" rel="noopener"} - My Youtube channel - personal channel on youtube.com
+<!--
 - <https://github.com/jetedonner> - Github repositories of Kim David Hauser
 - <https://kimhauser.ch> - My main website
 - <https://job.kimhauser.ch> - My job search related website
@@ -27,5 +36,5 @@ I can look back at a widespread field of different successful software projects 
 - <https://ivaccination.kimhauser.ch> - Intro site for the Swift 2D game iVaccination
 - <https://art.kimhauser.ch> - Art gallery site - Website with images of my paintings
 - <https://chessclub.kimhauser.ch> - Night shift chessclub site - WebApp for recording chess game results for my chess club
-- <https://www.youtube.com/channel/UCl07bgN24I-9twgFsTLyMjw> - My Youtube channel - personal channel on youtube.com
+- <https://www.youtube.com/channel/UCl07bgN24I-9twgFsTLyMjw> - My Youtube channel - personal channel on youtube.com -->
 <!-- - <http://covidfeedback.kimhauser.ch> - COVID-Feedback - Web tool for giving the Swiss government feedback about the COVID management -->
