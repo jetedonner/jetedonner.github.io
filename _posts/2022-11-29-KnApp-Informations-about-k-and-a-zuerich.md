@@ -10,8 +10,8 @@ published: true
 
 **This prototype was replaced and released as project kundainfo.ch**
 
-- [_Visit new project kundainfo.ch_](https://jetedonner.github.io/posts/kundainfo.ch/){:target="_blank" rel="noopener"}
-- [_Visit kundainfo.ch_](https://kundainfo.ch){:target="_blank" rel="noopener"}
+- [_Visit new project kundainfo.ch github pages_](https://jetedonner.github.io/posts/kundainfo.ch/){:target="_blank" rel="noopener"}
+- [_Visit kundainfo.ch Website_](https://kundainfo.ch){:target="_blank" rel="noopener"}
 
 
 # KnApp - Project
@@ -26,5 +26,5 @@ _KnApp Home page_
 - [_Visit kundainfo.ch_](https://kundainfo.ch){:target="_blank" rel="noopener"}
 
 ## Websites
-- [_Development website of the KnApp_](https://knapp.kimhauser.ch){:target="_blank" rel="noopener"}
+- [_Development website of the KnApp_](https://knapp.kimhauser.ch){:target="_blank" rel="noopener"} (deprecated - 302 Redirect)
 - [_Official Website of K&amp;A Zurich_](https://www.stadt-zuerich.ch/sd/de/index/unterstuetzung/drogen/kontaktundanlaufstellen.html){:target="_blank" rel="noopener"}
