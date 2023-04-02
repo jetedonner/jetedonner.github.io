@@ -21,11 +21,11 @@ I can look back at a widespread field of different successful software projects 
 
 ## Other resources
 - <https://github.com/jetedonner> - Github repositories of Kim David Hauser
-- <http://kimhauser.ch> - My main website
-- <http://job.kimhauser.ch> - My job search related website
-- <http://suake3d.kimhauser.ch> - Intro site for the Swift game Suake3D
-- <http://ivaccination.kimhauser.ch> - Intro site for the Swift 2D game iVaccination
-- <http://art.kimhauser.ch> - Art gallery site - Website with images of my paintings
-- <http://chessclub.kimhauser.ch> - Night shift chessclub site - WebApp for recording chess game results for my chess club
+- <https://kimhauser.ch> - My main website
+- <https://job.kimhauser.ch> - My job search related website
+- <https://suake3d.kimhauser.ch> - Intro site for the Swift game Suake3D
+- <https://ivaccination.kimhauser.ch> - Intro site for the Swift 2D game iVaccination
+- <https://art.kimhauser.ch> - Art gallery site - Website with images of my paintings
+- <https://chessclub.kimhauser.ch> - Night shift chessclub site - WebApp for recording chess game results for my chess club
 - <https://www.youtube.com/channel/UCl07bgN24I-9twgFsTLyMjw> - My Youtube channel - personal channel on youtube.com
 <!-- - <http://covidfeedback.kimhauser.ch> - COVID-Feedback - Web tool for giving the Swiss government feedback about the COVID management -->
