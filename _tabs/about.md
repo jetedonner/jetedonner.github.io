@@ -8,19 +8,19 @@ order: 4
 _That's me - Kim David Hauser_
 
 # Kim David Hauser
-Appealing software solutions customized for your kind of business - requirements and platforms. With over 30 years of experience in IT project conception, realization, and maintenance. This provides you with a high quality and a valuable resource of knowledge and information. My passion is everything about IT, software development, and IT security.
+Appealing software solutions customized for your kind of business, requirements and platforms. With over 30 years of experience in IT project conception, realization, and maintenance I can deliver you a professional and high quality - broad spread IT services. This provides you with a valuable resource of knowledge and information. My passion is everything about information technology, software development and IT security.
 
 ## My story
-kimhauser.ch is a small IT business based in Zurich - Switzerland. I'm passionate about finding high quality but yet easy to use and economic solutions for my customer's complex challenges.
+[_kimhauser.ch_](https://kimhauser.ch){:target="_blank" rel="noopener"} is a small IT business based in Zurich - Switzerland. I'm passionate about finding high quality but yet easy to use and also economic solutions for my customers complex challenges.
 
-> Just as the saying: "Don't shoot sparrows with cannons" I try to find the perfect concept for your software solution. I choose the optimal platform, API, language, tools, and setup for your project's requirements. Your quality requirements, price, and time budgets are my main focus while conception. Development takes place with ongoing and close feedback and quality control with you as my project partner. 
+> Just as the saying: "Don't shoot sparrows with cannons" I try to find the perfect concept for your software solution. I choose the optimal platform, API, language, tools and setup for your projects requirements. Your quality requirements, price, and time budgets are my main focus while conception. Development takes place with ongoing and close feedback and quality control with you as my project partner. 
 
 ## My Services
 ### Broad experience in a wide spread field of software engineering topics
 I can look back at a widespread field of different successful software projects in various areas. I develop for all major platforms and use the latest frameworks and APIs. Working independently gives me joy just the same as working in a team with other fellows. This may happen in an agile environment - or simply for piecework. Please make sure to check out my projects, articles, resume, and other references.
 
 ## Other resources
-- [_github.com/jetedonner_](https://github.com/jetedonner){:target="_blank" rel="noopener"} - Github repositories of Kim David Hauser
+- [_github.com/jetedonner_](https://github.com/jetedonner){:target="_blank" rel="noopener"} - My Github repositories
 - [_kimhauser.ch_](https://kimhauser.ch){:target="_blank" rel="noopener"} - My main website
 - [_job.kimhauser.ch_](https://job.kimhauser.ch){:target="_blank" rel="noopener"} - My job search related website
 - [_suake3d.kimhauser.ch_](https://suake3d.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for the Swift game Suake3D
