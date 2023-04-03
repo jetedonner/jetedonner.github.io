@@ -32,6 +32,10 @@ A online tool for reporting the results of chessgames. This project initially wa
 A site for presenting some of my paintings - another hobby of mine.
 - [_Visit art.kimhauser.ch_](https://art.kimhauser.ch){:target="_blank" rel="noopener"}
 
+## covid.kimhauser.ch
+A feedback assistant for giving the swiss government a personal feedback about their COVID-19 management.
+- [_Visit covid.kimhauser.ch_](https://covid.kimhauser.ch){:target="_blank" rel="noopener"}
+
 ## wpsignup.kimhauser.ch
 This is a online tool for creating / requesting mandates for my Android App "WaypointNG".
 - [_Visit wpsignup.kimhauser.ch_](https://wpsignup.kimhauser.ch){:target="_blank" rel="noopener"}

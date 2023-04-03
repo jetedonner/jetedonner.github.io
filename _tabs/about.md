@@ -27,6 +27,7 @@ I can look back at a widespread field of different successful software projects 
 - [_ivaccination.kimhauser.ch_](https://ivaccination.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for the Swift 2D game iVaccination
 - [_art.kimhauser.ch_](https://art.kimhauser.ch){:target="_blank" rel="noopener"} - Art gallery site - Website with images of my paintings
 - [_chessclub.kimhauser.ch_](https://chessclub.kimhauser.ch){:target="_blank" rel="noopener"} - Night shift chessclub site - WebApp for recording chess game results for my chess club
+- [_covid.kimhauser.ch_](https://covid.kimhauser.ch){:target="_blank" rel="noopener"} - A feedback assistant for giving the swiss government a personal feedback about their COVID-19 management
 - [_youtube.com/@kimdhauser_](https://www.youtube.com/@kimdhauser){:target="_blank" rel="noopener"} - My Youtube channel - personal channel on youtube.com
 
 <!-- - <http://covidfeedback.kimhauser.ch> - COVID-Feedback - Web tool for giving the Swiss government feedback about the COVID management -->
