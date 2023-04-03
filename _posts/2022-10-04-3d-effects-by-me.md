@@ -3,8 +3,8 @@ layout: post
 title:  "3D Effects by Kim Hauser"
 author: dave
 date:   2022-11-07 20:01:01 +0200
-categories: [Projects, 3D Models]
-tags: [Projects, 3D Effects, Games, Movies]
+categories: [Projects, 3D Art]
+tags: [Projects, 3D Art, Games, Movies, Art]
 ---
 
 ## Introduction
