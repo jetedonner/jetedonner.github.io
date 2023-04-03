@@ -46,7 +46,7 @@ social:
   email: kim@kimhauser.ch             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - http://kimhauser.ch
+    - https://kimhauser.ch
     - https://twitter.com/kim_hauser      # change to your twitter homepage
     - https://github.com/jetedonner       # change to your github homepage
     - https://www.linkedin.com/in/kimdhauser
@@ -55,7 +55,8 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification:               # fill in to your verification string
+google-site-verification: google78fc16cd9960ddac.html   # fill in to your verification string
+
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
