@@ -6,6 +6,7 @@ date:   2023-03-29 00:58:27 +0200
 categories: Projects Website
 tags: [Projects, Website]
 published: true
+comments: true
 ---
 
 # kimhauser.ch - SSL / Migration
