@@ -46,5 +46,5 @@ The UETeleportPlugin is released under the [_Unreal® Engine End User License Ag
 
 ## Source code download
 - [Plugin source code](https://github.com/jetedonner/PlayerStartPlugin){:target="_blank" rel="noopener"} - Github repository
-- [Demo project source UE4](https://github.com/jetedonner/UE4_PlayerStartDemo){:target="_blank" rel="noopener"} - Demo Source (UE4)
-- [Demo project source UE5](https://github.com/jetedonner/UE5_PlayerStartDemo){:target="_blank" rel="noopener"} - Demo Source (UE5)
+- [Demo project source UE4](https://github.com/jetedonner/UE4_PlayerStartDemo){:target="_blank" rel="noopener"} - Demo Source (UE4) - Github repository
+- [Demo project source UE5](https://github.com/jetedonner/UE5_PlayerStartDemo){:target="_blank" rel="noopener"} - Demo Source (UE5) - Github repository
