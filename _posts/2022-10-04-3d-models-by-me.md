@@ -41,3 +41,10 @@ _Flat Teleporter Model_
  hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=34082" target="_blank" style="font-weight: bold; color: #64FFDA;">Creators3D</a>
 </p>
 </div>
+
+### 3D Rat Model (Multi Animation, FBX, Blender)
+This video features a first preview of a animated 3D model of a Rat with different poses and with four different moves (Idle, Roaring, Jumping and Swimming). The model is created and animated with Blender 3. It's available for download as FBX and as Blend file from my website kimhauser.ch or sketchfab (https://sketchfab.com/3d-models/rat-multi-animations-textured-c344c6ea50aa49a1b0a2719eac8593a0). Feel free to download, use and amend  it as you please.
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/na9RJR-v7CY" title="WormHole Effect No03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+_First Preview of 3D Rat Model (Multi Animation, FBX, Blender)_
