@@ -46,7 +46,7 @@ The UETeleportPlugin is released under the [_Unreal® Engine End User License Ag
 
 ### Latest demo movie (New demo project)
 <div class="container-responsive-iframe">
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Oz6SvIbWTR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/xWy-9v87HAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Source code download
