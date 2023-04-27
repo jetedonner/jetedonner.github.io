@@ -50,3 +50,6 @@ In this example the script searches for all ".h" and ".cpp" files in a directory
 
 ### How to use the script
 Paste the code into a "replaceHeader.sh" file, and adjust the nessesary variables (search, '*.h' and '*.cpp'). Then make it executable with console command "chmod +x replaceHeader.sh" and then execute it in the parent directory of the location where the files you want to amend are placed in.
+
+### Download script
+[_Download replaceHeader.sh script_](https://kimhauser.ch/downloads/github/replaceHeader.sh)
