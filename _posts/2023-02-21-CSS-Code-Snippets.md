@@ -8,7 +8,7 @@ tags: [Projects, Snippets, HTML]
 published: true
 ---
 
-# Code Snippets
+# CSS Code Snippets
 Some small and simple code snippets from me.
 
 ## CSS (only) Floating Menu Button
@@ -24,27 +24,3 @@ Use and ammend the code as you like. The source is provided "AS IS" no warranty.
 
 - [_Codepen.io article / SourceCode_](https://codepen.io/kimdhauser/pen/PodNZeQ){:target="_blank" rel="noopener"}
 - [_Youtube Demo Video_](https://youtu.be/WS7bLdwmnsM){:target="_blank" rel="noopener"}
-
-
-## Bash script to replace a string in a file with the filename 
-This was usefull for me to replace some header comments for .h / .cpp files when I used copy paste to insert a standart header to the sourcfiles and then wanted to adjust the text reflecting the filename.
-
-```console
-for f in $(find . -name '*.h'); 
-do 
-	search="Dbg.h"
-	full="$f"
-	basename "$f"
-	n="$(basename -- $f)"
-	sed -i '' -e "s/  \\"$search"/  \\"$n"/g" "$full"
-done
-
-for f in $(find . -name '*.cpp'); 
-do 
-	search="Dbg.cpp"
-	full="$f"
-	basename "$f"
-	n="$(basename -- $f)"
-	sed -i '' -e "s/  \\"$search"/  \\"$n"/g" "$full"
-done
-```
