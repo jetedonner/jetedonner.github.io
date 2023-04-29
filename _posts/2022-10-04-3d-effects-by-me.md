@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "3D Effects by Kim Hauser"
+title:  "3D Effects (Wormholes rendered)"
 author: dave
 date:   2022-11-07 20:01:01 +0200
 categories: [Projects, 3D Art]
@@ -13,7 +13,21 @@ _WormHole Effect - No03_
 
 Here you'll find 3D Effects created - most of them with Blender 3.2.2 - by me. They are animated and available as .blend files as well as movie version ready for download. All files are licensed on a "as is" basis and come with no warranty of any kind. But if you have any question, problem or feedback please feel free to contact me via <kim@kimhauser.ch> or visit <https://kimhauser.ch>
 
-## 3D Effects
+
+## Wormhole Effects - Blender only with Torus and shaders
+This is another Blender Project featuring a different kind of wormhole effect made with a centered torus and a animated camera as well as some shader effects as texture for the wormhole. Check it out - you can download the rendered video file or the source Blender file and adjust the settings as you like and do with it anything you want.
+
+### Github repos with Blender project files
+<https://github.com/kimhauser/Blender-Effects-Wormholes-Rendered>
+
+### WornHole Effect - Lila and Green
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/_uW_xgeJsVA" title="Rendered Wormhole - Only with Blender - Torus (Lila / Green)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+_Rendered Wormhole - Only with Blender - Torus (Lila / Green)_
+
+
+## Wormhole Effects - First try
 ### WornHole Effect No02
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sk30VfT2ids" title="WormHole Effect No02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
