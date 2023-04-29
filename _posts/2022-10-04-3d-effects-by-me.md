@@ -18,7 +18,8 @@ Here you'll find 3D Effects created - most of them with Blender 3.2.2 - by me. T
 This is another Blender Project featuring a different kind of wormhole effect made with a centered torus and a animated camera as well as some shader effects as texture for the wormhole. Check it out - you can download the rendered video file or the source Blender file and adjust the settings as you like and do with it anything you want.
 
 ### Github repos with Blender project files
-![Github repo](../../assets/img/github.png){: width="64" height="64" } <https://github.com/kimhauser/Blender-Effects-Wormholes-Rendered>
+![Github repo](../../assets/img/github.png){: width="64" height="64" }
+<https://github.com/kimhauser/Blender-Effects-Wormholes-Rendered>
 
 ### WormHole Effect - Lila and Green
 <div class="container-responsive-iframe">
