@@ -29,7 +29,7 @@ With this page the clients have the ability to send a feedback to the K&A team. 
 _Feedbackpage of kundainfo.ch_
 
 ### Infos and Credits for K&A
-The infos page display some gerneal informations about the terms and how to use the app to the clients. You'll also see the privacy policy, the terms and conditions for usage and the version history as well as the credits for the used ressources for this project.
+The info page displays some general informations about the terms and conditions and how to use the app. You'll also see the privacy policy, the disclaimer for usage and the version history as well as the credits for the used ressources for this project.
 
 ![Creditspage of kundainfo.ch](../../assets/img/projects/kundainfo.ch/kundainfo.ch-CreditsPage-2023-03-27-01.png){: width="333" height="462" }
 _Creditspage of kundainfo.ch_
@@ -43,6 +43,7 @@ The Web-App is implemented using the following technologies:
 
 ## Download Google Play Store
 [![kundainfo.ch - Android App](../..//assets/img/Get_it_on_Google_play_180x62px.png){: width="180" height="62" }](https://play.google.com/store/apps/details?id=ch.kundainfo.cordova.kickstartwebsite){:target="_blank" rel="noopener"}
+You can find an Android Kick-start App for the WebApp in the Google Play Store. This App places a shortcut on the homescreen of Your mobile and crank up the kundainfo.ch WebApp in a WebView. The App is basically a wrapper and functions as shortcut.
 
 ## Credits
 The Author of this Web-App is [_Kim David Hauser_](https://kimhauser.ch){:target="_blank" rel="noopener"}
