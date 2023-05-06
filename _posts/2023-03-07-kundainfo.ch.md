@@ -43,6 +43,7 @@ The Web-App is implemented using the following technologies:
 
 ## Download Google Play Store
 [![kundainfo.ch - Android App](../..//assets/img/Get_it_on_Google_play_180x62px.png){: width="180" height="62" }](https://play.google.com/store/apps/details?id=ch.kundainfo.cordova.kickstartwebsite){:target="_blank" rel="noopener"}
+
 You can find an Android Kick-start App for the WebApp in the Google Play Store. This App places a shortcut on the homescreen of Your mobile and crank up the kundainfo.ch WebApp in a WebView. The App is basically a wrapper and functions as shortcut.
 
 ## Credits
