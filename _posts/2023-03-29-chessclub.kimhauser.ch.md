@@ -30,5 +30,8 @@ The report function also shows all analysises in a datatable view which you can 
 
 ![Datatable result report](../../assets/img/projects/chessclub/04-Chessclub-Report-Games-TableView-2023-03-30.png){: width="444" height="462" }
 
+### Roadmap / Planning
+It is planed to ammend the existing Web-App in a way that it can be released to the public so anyone can download and install it on their own server. The public release will be free and available on github. A release date is yet to be defined.
+
 ## Credits
 The Author of this Web-App is [_Kim David Hauser_](https://kimhauser.ch){:target="_blank" rel="noopener"}
