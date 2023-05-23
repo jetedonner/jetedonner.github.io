@@ -51,6 +51,7 @@ _First Preview of 3D Rat Model (Multi Animation, FBX, Blender)_
 
 ### 3D Snake / Cobra Model (Basic Animation, FBX, Blender)
 This is an animated and textured model of a cobra I found on the web. I imoported the base model into blender,  rigged, textured and animated it so it will show a basic movement along a sine spline. You can download the BLEND file and use or amend it as you like for free in any of your projects (commercial or free)
+_First Preview of 3D Snake / Cobra Model (Basic Animation, FBX, Blender)_
 
 <div class="creators-embed-wrapper"><iframe allow="camera" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230523%2F1168975639308617%2F1168975639308617.glb&autorotate=true&json-data=1684867105426&decrypt=1&tv=147" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none; width: 95%; height: 400px;"></iframe>
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
@@ -59,7 +60,5 @@ This is an animated and textured model of a cobra I found on the web. I imoporte
  hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=34082" target="_blank" style="font-weight: bold; color: #64FFDA;">Creators3D</a>
 </p>
 </div>
-
-_First Preview of 3D Snake / Cobra Model (Basic Animation, FBX, Blender)_
 
 It's available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch) or [Sketchfab](https://sketchfab.com/3d-models/snake-cobra-animated-base-model-e2e55fd17aad4309ac4782b1d3e67c2f). Feel free to download, use and amend  it as you please.
