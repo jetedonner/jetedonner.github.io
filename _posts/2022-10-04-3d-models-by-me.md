@@ -55,10 +55,25 @@ _First Preview of 3D Snake / Cobra Model (Basic Animation, FBX, Blender)_
 
 <div class="creators-embed-wrapper"><iframe allow="camera" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230523%2F1168975639308617%2F1168975639308617.glb&autorotate=true&json-data=1684867105426&decrypt=1&tv=147" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none; width: 95%; height: 400px;"></iframe>
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-<a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20221010%2F1155154898042712%2F1155154898042712.glb&autorotate=true&json-data=1665399184605&decrypt=1&tv=135" target="_blank" style="font-weight: bold; color: #64FFDA;">Visit Model</a>
+<a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230523%2F1168975639308617%2F1168975639308617.glb&autorotate=true&json-data=1684867105426&decrypt=1&tv=147" target="_blank" style="font-weight: bold; color: #64FFDA;">Visit Model</a>
  by <a target="_blank" style="font-weight: bold; color: #64FFDA;" href="https://www.creators3d.com/artist/34082/KimDavidHauser">KimDavidHauser</a>
  hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=34082" target="_blank" style="font-weight: bold; color: #64FFDA;">Creators3D</a>
 </p>
 </div>
 
-It's available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch) or [Sketchfab](https://sketchfab.com/3d-models/snake-cobra-animated-base-model-e2e55fd17aad4309ac4782b1d3e67c2f). Feel free to download, use and amend  it as you please.
+Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials. I just added a simple snake skin to the whole model. You are free to skin the model to your needs or as you like in Blender.
+
+The model available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch) or [Sketchfab](https://sketchfab.com/3d-models/snake-cobra-animated-base-model-e2e55fd17aad4309ac4782b1d3e67c2f). Feel free to download, use and amend  it as you please.
+
+#### 3D Snake / Cobra Model (Head Raised Up)
+The same snake model with a different pose setup.
+
+<div class="creators-embed-wrapper"><iframe allow="camera" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230523%2F2219239320224599%2F2219239320224599.glb&autorotate=true&json-data=1684875371475&decrypt=1&tv=147" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none; width: 95%; height: 400px;"></iframe>
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+<a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230523%2F2219239320224599%2F2219239320224599.glb&autorotate=true&json-data=1684875371475&decrypt=1&tv=147" target="_blank" style="font-weight: bold; color: #64FFDA;">Visit Model</a>
+ by <a target="_blank" style="font-weight: bold; color: #64FFDA;" href="https://www.creators3d.com/artist/34082/KimDavidHauser">KimDavidHauser</a>
+ hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=34082" target="_blank" style="font-weight: bold; color: #64FFDA;">Creators3D</a>
+</p>
+</div>
+
+Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials. I just added a simple snake skin to the whole model. You are free to skin the model to your needs or as you like in Blender.
