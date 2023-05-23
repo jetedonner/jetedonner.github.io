@@ -43,11 +43,14 @@ _Flat Teleporter Model_
 </div>
 
 ### 3D Rat Model (Multi Animation, FBX, Blender)
-This video features a first preview of a animated 3D model of a Rat with different poses and with four different moves (Idle, Roaring, Jumping and Swimming). The model is created and animated with Blender 3. It's available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch) or [Sketchfab](https://sketchfab.com/3d-models/rat-multi-animations-textured-c344c6ea50aa49a1b0a2719eac8593a0). Feel free to download, use and amend  it as you please.
+This video features a first preview of a animated 3D model of a Rat with different poses and with four different moves (Idle, Roaring, Jumping and Swimming). The model is created and animated with Blender 3. It's available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch){:target="_blank" rel="noopener"} or [Sketchfab](https://sketchfab.com/3d-models/rat-multi-animations-textured-c344c6ea50aa49a1b0a2719eac8593a0){:target="_blank" rel="noopener"}. Feel free to download, use and amend  it as you please.
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/na9RJR-v7CY" title="WormHole Effect No03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 _First Preview of 3D Rat Model (Multi Animation, FBX, Blender)_
+
+#### Downloads
+- [Download RAT files from my Google-Drive](https://drive.google.com/drive/folders/1-TeME0ZWePI_759PF8supBGDe3B3ADbm){:target="_blank" rel="noopener"}
 
 ### 3D Snake / Cobra Model (Basic Animation, FBX, Blender)
 This is an animated and textured model of a cobra I found on the web. I imoported the base model into blender,  rigged, textured and animated it so it will show a basic movement along a sine spline. You can download the BLEND file and use or amend it as you like for free in any of your projects (commercial or free)
@@ -63,7 +66,7 @@ _First Preview of 3D Snake / Cobra Model (Basic Animation, FBX, Blender)_
 
 Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials. I just added a simple snake skin to the whole model. You are free to skin the model to your needs or as you like in Blender.
 
-The model is available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch) or [Sketchfab](https://sketchfab.com/3d-models/snake-cobra-animated-base-model-e2e55fd17aad4309ac4782b1d3e67c2f). Feel free to download, use and amend  it as you please.
+The model is available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch){:target="_blank" rel="noopener"} or [Sketchfab](https://sketchfab.com/3d-models/snake-cobra-animated-base-model-e2e55fd17aad4309ac4782b1d3e67c2f){:target="_blank" rel="noopener"}. Feel free to download, use and amend  it as you please.
 
 #### 3D Snake / Cobra Model (Head Raised Up)
 The same snake model with a different pose setup.
@@ -79,4 +82,4 @@ The same snake model with a different pose setup.
 Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials - same as above.
 
 #### Downloads
-- [Download files from my Google-Drive](https://drive.google.com/drive/folders/1-T_uXVBT-rI8wlq_6O5FYB7Vjidf5ICa?usp=sharing)
+- [Download SNAKE files from my Google-Drive](https://drive.google.com/drive/folders/1-T_uXVBT-rI8wlq_6O5FYB7Vjidf5ICa?usp=sharing){:target="_blank" rel="noopener"}
