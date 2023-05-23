@@ -77,3 +77,6 @@ The same snake model with a different pose setup.
 </div>
 
 Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials - same as above.
+
+#### Downloads
+- [Download files from my Google-Drive](https://drive.google.com/drive/folders/1-T_uXVBT-rI8wlq_6O5FYB7Vjidf5ICa?usp=sharing)
