@@ -63,7 +63,7 @@ _First Preview of 3D Snake / Cobra Model (Basic Animation, FBX, Blender)_
 
 Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials. I just added a simple snake skin to the whole model. You are free to skin the model to your needs or as you like in Blender.
 
-The model available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch) or [Sketchfab](https://sketchfab.com/3d-models/snake-cobra-animated-base-model-e2e55fd17aad4309ac4782b1d3e67c2f). Feel free to download, use and amend  it as you please.
+The model is available for download as FBX and as Blend file from my website [kimhauser.ch](https://kimhauser.ch) or [Sketchfab](https://sketchfab.com/3d-models/snake-cobra-animated-base-model-e2e55fd17aad4309ac4782b1d3e67c2f). Feel free to download, use and amend  it as you please.
 
 #### 3D Snake / Cobra Model (Head Raised Up)
 The same snake model with a different pose setup.
@@ -76,4 +76,4 @@ The same snake model with a different pose setup.
 </p>
 </div>
 
-Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials. I just added a simple snake skin to the whole model. You are free to skin the model to your needs or as you like in Blender.
+Textures Info: Sorry guys but this basic 3d model features no detailed texures / materials - same as above.
