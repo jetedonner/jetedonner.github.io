@@ -8,7 +8,7 @@ tags: [UnrealEngine, Plugins, Games, Movies]
 ---
 
 ## Introduction
-![UE5_TeleportDemo](../../assets/img/projects/ueteleportplugin/TeleporterIntro_MainImage_1920x1080.png){: width="284" height="284" }
+![UE5\_TeleportDemo](../../assets/img/projects/ueteleportplugin/TeleporterIntro_MainImage_1920x1080.png){: width="284" height="284" }
 _UETeleportPlugin first impression_
 
 The UE5_TeleportDemo lets you easily implement a custom Teleportation System in your own Unreal Engine project. It features Portals with meshes, textures / materials, dissolving and wormhole effects and more. Please make sure you checkout the Demo-Project to get familiar with how to setup and use the plugin.
@@ -27,35 +27,35 @@ The UE5_TeleportDemo comes with 9 different ready made portals. This includes th
 ### Included portals
 
 1. RipplePortal
-![RipplePortal](../../assets/img/projects/ueteleportplugin/readme/001_RipplePortal.png)
+![RipplePortal](../../assets/img/projects/ueteleportplugin/readme/001_RipplePortal.png){: width="284" height="284" }
 
 2. FlatPortal
-![FlatPortal](../../assets/img/projects/ueteleportplugin/readme/002_FlatPortal.png)
+![FlatPortal](../../assets/img/projects/ueteleportplugin/readme/002_FlatPortal.png){: width="284" height="284" }
 
 3. ButtonPortal
-![ButtonPortal](../../assets/img/projects/ueteleportplugin/readme/003_ButtonPortal.png)
+![ButtonPortal](../../assets/img/projects/ueteleportplugin/readme/003_ButtonPortal.png){: width="284" height="284" }
 
 4. RingPortal
-![RingPortal](../../assets/img/projects/ueteleportplugin/readme/004_RingPortal.png)
+![RingPortal](../../assets/img/projects/ueteleportplugin/readme/004_RingPortal.png){: width="284" height="284" }
 
 5. BlackholePortal
-![BlackholePortal](../../assets/img/projects/ueteleportplugin/readme/005_BlackholePortal.png)
+![BlackholePortal](../../assets/img/projects/ueteleportplugin/readme/005_BlackholePortal.png){: width="284" height="284" }
 
 6. DragonPortal
-![DragonPortal](../../assets/img/projects/ueteleportplugin/readme/006_DragonPortal.png)
+![DragonPortal](../../assets/img/projects/ueteleportplugin/readme/006_DragonPortal.png){: width="284" height="284" }
 
 7. SpinningPortal
-![SpinningPortal](../../assets/img/projects/ueteleportplugin/readme/007_SpinningPortal.png)
+![SpinningPortal](../../assets/img/projects/ueteleportplugin/readme/007_SpinningPortal.png){: width="284" height="284" }
 
 8. StargateLikishPortal
-![StargateLikishPortal](../../assets/img/projects/ueteleportplugin/readme/008_StargateLikishPortal.png)
+![StargateLikishPortal](../../assets/img/projects/ueteleportplugin/readme/008_StargateLikishPortal.png){: width="284" height="284" }
 
 9. SceneCapturePortal
-![SceneCapturePortal](../../assets/img/projects/ueteleportplugin/readme/009_SceneCapturePortal.png)
+![SceneCapturePortal](../../assets/img/projects/ueteleportplugin/readme/009_SceneCapturePortal.png){: width="284" height="284" }
 
 
 ### Credits and licensing
-The UETeleportPlugin is released under the [_Unreal® Engine End User License Agreement For Publishing_](https://www.unrealengine.com/en-US/eula/unreal?sessionInvalidated=true){:target="_blank" rel="noopener"}. Please make sure to read through the license agreement before releasing your projects using the UETeleportPlugin. Credits and references to the author are highly appreciated - thank you!
+The UE5_TeleportPlugin is released under the [_Unreal® Engine End User License Agreement For Publishing_](https://www.unrealengine.com/en-US/eula/unreal?sessionInvalidated=true){:target="_blank" rel="noopener"}. Please make sure to read through the license agreement before releasing your projects using the UETeleportPlugin. Credits and references to the author are highly appreciated - thank you!
 - [Local version of the UE End User License For Publishing](/assets/docs/ue/LICENSE){:target="_blank" rel="noopener"}
 
 
