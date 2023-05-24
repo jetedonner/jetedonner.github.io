@@ -8,24 +8,50 @@ tags: [UnrealEngine, Plugins, Games, Movies]
 ---
 
 ## Introduction
-![UETeleportPlugin](../../assets/img/projects/ueteleportplugin/TeleporterIntro_MainImage_1920x1080.png){: width="284" height="284" }
+![UE5_TeleportDemo](../../assets/img/projects/ueteleportplugin/TeleporterIntro_MainImage_1920x1080.png){: width="284" height="284" }
 _UETeleportPlugin first impression_
 
-The UETeleportPlugin lets you easily implement your own Teleportation System in your Unreal Engine game. It features Portals and Wormhole as well as a dissolve effect for the transported character.
+The UE5_TeleportDemo lets you easily implement a custom Teleportation System in your own Unreal Engine project. It features Portals with meshes, textures / materials, dissolving and wormhole effects and more. Please make sure you checkout the Demo-Project to get familiar with how to setup and use the plugin.
 
 ## Description
 ...
 
 ## Install the UETeleportPlugin
 1. Fire up the Epic Game Launcher
-2. Goto Marketplace and search for UETeleportPlugin - Add it to your cart and checkout
-3. After the Plugin is downloaded you can add it to your projects by opening the PluginManager in the Unreal Editor and searching for *UETeleportPlugin* and activating it.
+2. Goto Marketplace and search for UE5_TeleportDemo - Add it to your cart and checkout
+3. After the Plugin is downloaded you can add it to your (new) projects by opening the PluginManager in the Unreal Editor and searching for *UE5_TeleportDemo* and activating it. You will have to restart the UnrealEditor to fully activate the Plugin for your project.
 
-## Use in your own projects
+## Use the Plugin in your own project
+The UE5_TeleportDemo comes with 9 different ready made portals. This includes the 3D models, textures / materials as well as the Blueprint for easily adding it to your level. If you like you can use this portals as they are in your project, but your free to amend them to your needs or take them as examples or guides to build you own teleport portals.
 
-1. ...
-2. ...
-3. ...
+### Included portals
+
+1. RipplePortal
+![RipplePortal](../../assets/img/projects/ueteleportplugin/readme/001_RipplePortal.png)
+
+2. FlatPortal
+![FlatPortal](../../assets/img/projects/ueteleportplugin/readme/002_FlatPortal.png)
+
+3. ButtonPortal
+![ButtonPortal](../../assets/img/projects/ueteleportplugin/readme/003_ButtonPortal.png)
+
+4. RingPortal
+![RingPortal](../../assets/img/projects/ueteleportplugin/readme/004_RingPortal.png)
+
+5. BlackholePortal
+![BlackholePortal](../../assets/img/projects/ueteleportplugin/readme/005_BlackholePortal.png)
+
+6. DragonPortal
+![DragonPortal](../../assets/img/projects/ueteleportplugin/readme/006_DragonPortal.png)
+
+7. SpinningPortal
+![SpinningPortal](../../assets/img/projects/ueteleportplugin/readme/007_SpinningPortal.png)
+
+8. StargateLikishPortal
+![StargateLikishPortal](../../assets/img/projects/ueteleportplugin/readme/008_StargateLikishPortal.png)
+
+9. SceneCapturePortal
+![SceneCapturePortal](../../assets/img/projects/ueteleportplugin/readme/009_SceneCapturePortal.png)
 
 
 ### Credits and licensing
