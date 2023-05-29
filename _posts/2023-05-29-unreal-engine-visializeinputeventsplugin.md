@@ -21,6 +21,7 @@ This first release version of the plugin shows keyboard and mouse click events o
 - Visualize Keyboard KeyPresses / MouseClicks
 - Show Events in Editor while Development as Notification
 - Show Events in Gameplay Viewport as OInScreenMessage while GamePlay
+- Show Events in OutputLog while development and Gameplay
 
 #### The Plugin captures events from all Editors
 - Level Editor
