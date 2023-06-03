@@ -61,11 +61,20 @@ This first release version of the plugin shows keyboard and mouse click events o
 ## Youtube-Movies
 
 ### Introduction / Demos
-- <https://youtu.be/fcvcSzapRgE>
-- <https://youtu.be/v8Az2MHcF_g>
+- <https://youtu.be/86D41ReECyU> - (First Intro)
 
-### Documentation / How-To use UE_InputEventVisualizerPlugin
-- <https://youtu.be/v8Az2MHcF_g>
+---
+
+## Documentation / How-To use UE_InputEventVisualizerPlugin
+### Installation of the Plugin
+1. First visit the EPIC Marketplace with the EPIC Launcher and Search for **UE Visualize Input Event Plugin** (The marketplace URL of the plugin is: "com.epicgames.launcher://ue/marketplace/product/26796b2f61ac41509e0195402d4d386f")
+2. Download and install the Plugin to your Unreal Engine
+3. Run the Unreal Engine and create a new project or open an existing one
+4. Goto menu **Edit>Plugins** and search for **UE Visualize Input Event Plugin**. Activate it. After that you will have to restart the Unreal Engine to successfully load the plugin. Do so.
+5. After the resstart you will see a new icon in the menubar of the Unreal Editor.
+
+
+
 
 Created by Kim David Hauser, https://kimhauser.ch - 2023-05-27 (Unreal Engine 5.1)
 
