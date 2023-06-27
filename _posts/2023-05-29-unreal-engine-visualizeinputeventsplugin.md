@@ -18,24 +18,25 @@ Anyway I really appreciate that you download the plugin and give it a test. If y
 ## Details
 
 ### Features
-- Visualize Keyboard KeyPresses / MouseClicks
+- Visualize Keyboard Key Presses, Mouse Clicks and Game Pad Events
 - Show Events in Editor while Development as Notification
-- Show Events in Gameplay Viewport as OInScreenMessage while GamePlay
-- Show Events in OutputLog while development and Gameplay
+- Show Events in Level Viewport as OnScreenMessage while Development
+- Show Events in OutputLog while development
 
 #### The Plugin captures events from all Editors
 - Level Editor
 - Blueprint Editor
 - Material Editor
 - Particle Editor
-- (all other editors)
+- etc
 
 #### Extensively configurable using config ini file
 - Enable / Disable Plugin for Project
 - Enable / Disable showing Keyboard Events
 - Enable / Disable showing Mouse Clicks
-- Choose whether to show as Notification in Editor mode or not
-- Choose whether to show as OnScreenMessage in GamePlay mode or not
+- Enable / Disable showing Game Pad Events
+- Choose whether to show as Notification in Editor mode
+- Choose whether to show as OnScreenMessage in Editor mode
 - Choose the timeout of how long to display the information
 
 ### Code Modules
@@ -62,6 +63,10 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 ### Introduction / Demo
 - [VIE Plugin Introduction on Youtube](https://youtu.be/6OgjshVsDx8){:target="_blank" rel="noopener"} - Github repository
 
+<div class="container-responsive-iframe">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/6OgjshVsDx8" title="YouTube video player" width="90%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ---
 
 ## Documentation UE Visualize Input Event Plugin
@@ -71,7 +76,6 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 3. Run the Unreal Engine and create a new project or open an existing one
 4. Goto menu **Edit>Plugins** and search for **UE Visualize Input Event Plugin**. Activate it. After that you will have to restart the Unreal Engine to successfully load the plugin. Do so.
 5. After the resstart you will see a new icon in the menubar of the Unreal Editor.
-
 
 
 Created by Kim David Hauser, https://kimhauser.ch - 2023-06-27 (Unreal Engine 5.2)
