@@ -8,7 +8,7 @@ tags: [UnrealEngine, Plugins, Games, Movies]
 ---
 
 ## Introduction
-![UE\_VIEPlugin\_Demo](../../assets/img/projects/uevisualizeinputeventplugin/UE_VIE_Plugin-Screen-Featured-1920x1080-2023-06-27.png){: width="65vw" }
+![UE\_VIEPlugin\_Demo](../../assets/img/projects/uevisualizeinputeventplugin/UE_VIE_Plugin-Screen-Featured-1920x1080-2023-06-27.png){: width="65%" }
 _UEVisualizeInputEventPlugin first impression_
 
 Unreal Engine Visualize Input Event Plugin. This Plugin visualizes Input Events such as KeyPresses and This Plugin visualizes Input Events such as Key-Presses, Mouse-Clicks and Gamepad Events from all the Unreal Engine Editors as well as all the Level Viewports. The functionality is useful specially if you are making learning videos or tutorials and want the viewers to see which Keyboard-Key you pressed, which Mouse-Button you clicked or Gamepad Event was fired. The functionality of the plugin is extensively configurable through its settings from the plugin toolbar menu which are saved in a config ini file. Checkout this documentation for more informations. Even though there is a somewhat similar yet very basic functionality built into Unreal Engine, this Plugin offers quite a few more options and settings to customize your visualization of the input events from UE. Give it a try and enjoy this helpful Unreal Engine extension.
