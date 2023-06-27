@@ -7,15 +7,13 @@ categories: UnrealEngine Plugins
 tags: [UnrealEngine, Plugins, Games, Movies]
 ---
 
-!!! UNDER CONSTRUCTION - STAY TUNED !!!
-
 ## Introduction
-![UE\_VIEPlugin\_Demo](../../assets/img/projects/uevisualizeinputeventplugin/UE_EKP_Screen-Featured-894x488-2023-05-28.png){: width="284" height="284" }
+![UE\_VIEPlugin\_Demo](../../assets/img/projects/uevisualizeinputeventplugin/UE_VIE_Plugin-Screen-Featured-1920x1080-2023-06-27.png){: width="65vw" }
 _UEVisualizeInputEventPlugin first impression_
 
-Unreal Engine Visualize Input Event Plugin. This Plugin visualizes Input Events such as KeyPresses and MouseClicks from all the Editor as well as all the Gameplay Viewports. The functionality is useful specially if you are making learning videos or tutorials and want the viewers to see which Keyboard-Key you pressed or which Mouse-Button you clicked. The functionality of the plugin is extensively configurable through its settings saved in a config ini file. Checkout the documentation.
+Unreal Engine Visualize Input Event Plugin. This Plugin visualizes Input Events such as KeyPresses and This Plugin visualizes Input Events such as Key-Presses, Mouse-Clicks and Gamepad Events from all the Unreal Engine Editors as well as all the Level Viewports. The functionality is useful specially if you are making learning videos or tutorials and want the viewers to see which Keyboard-Key you pressed, which Mouse-Button you clicked or Gamepad Event was fired. The functionality of the plugin is extensively configurable through its settings from the plugin toolbar menu which are saved in a config ini file. Checkout this documentation for more informations. Even though there is a somewhat similar yet very basic functionality built into Unreal Engine, this Plugin offers quite a few more options and settings to customize your visualization of the input events from UE. Give it a try and enjoy this helpful Unreal Engine extension.
 
-This first release version of the plugin shows keyboard and mouse click events at the moment, but it's planed to support more input devices and events in a further version pretty soon. Anyway I really appreciate that you download the plugin and give it a test. If you experience any problem or missing functionality please don't hesitate to contact me directly and tell me about your urge. Also - on the other hand - if you are comfortable with the extension and you are confident with it's features and functionality it would of course be great if you could give me a short feedback as well and / or drop a comment on the Plugin-Page of the EPIC Marketplace. Any feedback is really welcome.
+Anyway I really appreciate that you download the plugin and give it a test. If you experience any problem or missing functionality please don't hesitate to contact me directly and tell me about your urge. Also - on the other hand - if you are comfortable with the extension and you are confident with it's features and functionality it would of course be great if you could give me a short feedback as well and / or drop a comment on the Plugin-Page of the EPIC Marketplace. Any feedback is really welcome.
 
 ## Details
 
@@ -41,6 +39,7 @@ This first release version of the plugin shows keyboard and mouse click events a
 - Choose the timeout of how long to display the information
 
 ### Code Modules
+The Plugin is fully written in C++ and OpenSource. You can amend the source if you like and tweak or extend it to your needs or whishes.
 
 #### UEVisualizeInputEventPlugin
 - Type: Editor
@@ -58,14 +57,14 @@ This first release version of the plugin shows keyboard and mouse click events a
 - Documentation: https://jetedonner.github.io/projects/ue/ueinputvisualizerplugin/
 - Example Project: https://github.com/jetedonner/ueinputvisualizerplugin
 
-## Youtube-Movies
+## Youtube-Movie
 
-### Introduction / Demos
-- <https://youtu.be/86D41ReECyU> - (First Intro)
+### Introduction / Demo
+- [VIE Plugin Introduction on Youtube](https://youtu.be/6OgjshVsDx8){:target="_blank" rel="noopener"} - Github repository
 
 ---
 
-## Documentation / How-To use UE_InputEventVisualizerPlugin
+## Documentation UE Visualize Input Event Plugin
 ### Installation of the Plugin
 1. First visit the EPIC Marketplace with the EPIC Launcher and Search for **UE Visualize Input Event Plugin** (The marketplace URL of the plugin is: "com.epicgames.launcher://ue/marketplace/product/26796b2f61ac41509e0195402d4d386f")
 2. Download and install the Plugin to your Unreal Engine
@@ -75,19 +74,9 @@ This first release version of the plugin shows keyboard and mouse click events a
 
 
 
+Created by Kim David Hauser, https://kimhauser.ch - 2023-06-27 (Unreal Engine 5.2)
 
-Created by Kim David Hauser, https://kimhauser.ch - 2023-05-27 (Unreal Engine 5.1)
-
-
-## Install the UEVisualizeInputEventPlugin
-1. Fire up the Epic Game Launcher
-2. Goto Marketplace and search for UEVisualizeInputEventPlugin - Add it to your cart and checkout
-3. After the Plugin is downloaded you can add it to your (new) projects by opening the PluginManager in the Unreal Editor and searching for *UEVisualizeInputEventPlugin* and activating it. You will have to restart the UnrealEditor to fully activate the Plugin for your project.
-
-## Plugin Content
-The UE5_TeleportDemo comes with 9 different ready made portals. This includes the 3D models, textures / materials as well as the Blueprint for easily adding it to your level. If you like you can use this portals as they are in your project, but your free to amend them to your needs or take them as examples or guides to build you own teleport portals.
-
-
+<!--
 ### Latest demo movie (New demo project)
 <div class="container-responsive-iframe">
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/M2Sblqx3VVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -97,5 +86,5 @@ The UE5_TeleportDemo comes with 9 different ready made portals. This includes th
 - [Plugin source code](https://github.com/jetedonner/PlayerStartPlugin){:target="_blank" rel="noopener"} - Github repository
 
 ## About / Credits
-- Created by Kim David Hauser, https://kimhauser.ch - 2023-05-27 (Unreal Engine 5.1)
+- Created by Kim David Hauser, https://kimhauser.ch - 2023-05-27 (Unreal Engine 5.1) -->
 	
