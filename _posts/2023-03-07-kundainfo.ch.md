@@ -14,7 +14,7 @@ _Startpage of kundainfo.ch_
 # kundainfo.ch
 The latest project of mine for the social department of the city of Zurich Switzerland. This Web-App is a neat information tool for the K&A locations in Zurich. It's main intend is to show opening hours, special hours, special closings, one on one situations and to provide the clients a posibillity to give a feedback to the staff.
 - [_Visit kundainfo.ch_](https://kundainfo.ch){:target="_blank" rel="noopener"}
-- [_Factsheet kundainfo.ch (DocVer. 0.0.1 - 2023-07-01)_](https://kimhauser.ch/downloads/projects/kundainfo/Factsheet%20kundainfo.ch%20-%20v0.0.1%20-%202023-07-01-01.pdf){:target="_blank" rel="noopener"}
+- [_Factsheet kundainfo.ch (DocVer. 0.0.1 - 2023-07-01)_](https://kimhauser.ch/downloads/projects/kundainfo/Factsheet%20kundainfo.ch%20-%20v0.0.1%20-%202023-07-01-02.pdf){:target="_blank" rel="noopener"}
 
 ## Pages
 ### News for K&A
