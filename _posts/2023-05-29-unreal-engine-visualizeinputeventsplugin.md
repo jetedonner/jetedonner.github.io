@@ -81,4 +81,4 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 5. After the resstart you will see a new icon in the menubar of the Unreal Editor.
 
 
-Created by Kim David Hauser, https://kimhauser.ch - 2023-07-03 (Unreal Engine 5.2)
+Created by Kim David Hauser, [https://kimhauser.ch](https://kimhauser.ch){:target="_blank" rel="noopener"} - 2023-07-03 (Unreal Engine 5.2)
