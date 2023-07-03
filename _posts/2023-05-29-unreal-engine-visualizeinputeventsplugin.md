@@ -65,7 +65,7 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 
 ## Youtube-Movie
 ### Introduction / Demo
-- [VIE Plugin Introduction on Youtube](https://youtu.be/eqyuU1cIx8I){:target="_blank" rel="noopener"} - Github repository
+- [VIE Plugin Introduction on Youtube](https://youtu.be/eqyuU1cIx8I){:target="_blank" rel="noopener"}
 
 <div class="container-responsive-iframe">
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/eqyuU1cIx8I" title="YouTube video player" width="90%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -82,17 +82,4 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 5. After the resstart you will see a new icon in the menubar of the Unreal Editor.
 
 
-Created by Kim David Hauser, https://kimhauser.ch - 2023-06-27 (Unreal Engine 5.2)
-
-<!--
-### Latest demo movie (New demo project)
-<div class="container-responsive-iframe">
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/M2Sblqx3VVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-## Source code download
-- [Plugin source code](https://github.com/jetedonner/PlayerStartPlugin){:target="_blank" rel="noopener"} - Github repository
-
-## About / Credits
-- Created by Kim David Hauser, https://kimhauser.ch - 2023-05-27 (Unreal Engine 5.1) -->
-	
+Created by Kim David Hauser, https://kimhauser.ch - 2023-07-03 (Unreal Engine 5.2)
