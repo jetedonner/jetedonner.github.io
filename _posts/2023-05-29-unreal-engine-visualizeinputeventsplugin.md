@@ -23,7 +23,7 @@ I really appreciate that you download the plugin and give it a test. If you expe
 - Show Events in Level Viewport as OnScreenMessage while Development
 - Show Events in OutputLog while development
 
-#### The Plugin captures events from all Editors
+#### The Plugin captures events from all Editors and Viewports
 - Level Editor
 - Blueprint Editor
 - Material Editor
@@ -52,15 +52,15 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 
 ### Other Details
 - Number of C++ Classes: 8
-- Network Replicated: No - no need
-- Supported Development Platforms: macOS
-- Supported Target Build Platforms: macOS, Linux, Win32, Win64
-- Documentation: https://jetedonner.github.io/projects/ue/ueinputvisualizerplugin/
-- Example Project: https://github.com/jetedonner/ueinputvisualizerplugin
+- Network Replicated: No - not needed
+- Supported Development Platforms: macOS, Linux, Win64
+- Supported Target Build Platforms: macOS, Linux, Win64
+- Documentation: [https://jetedonner.github.io/projects/ue/ueinputvisualizerplugin](https://jetedonner.github.io/projects/ue/ueinputvisualizerplugin){:target="_blank" rel="noopener"}
+- Example Project: [https://github.com/jetedonner/ueinputvisualizerplugin](https://github.com/jetedonner/ueinputvisualizerplugin){:target="_blank" rel="noopener"}
 
 
 ## EPIC Marketplace Download
-- [Download the Visualize Input Event Plugin from the EPIC Marketplace](https://www.unrealengine.com/marketplace/en-US/product/26796b2f61ac41509e0195402d4d386f){:target="_blank" rel="noopener"}
+- [Download Visualize Input Event Plugin](https://www.unrealengine.com/marketplace/en-US/product/26796b2f61ac41509e0195402d4d386f){:target="_blank" rel="noopener"} - Download Plugin from EPIC Marketplace
 
 
 ## Youtube-Movie
