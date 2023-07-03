@@ -58,6 +58,11 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 - Documentation: https://jetedonner.github.io/projects/ue/ueinputvisualizerplugin/
 - Example Project: https://github.com/jetedonner/ueinputvisualizerplugin
 
+
+## EPIC Marketplace Download
+- [Download the Visualize Input Event Plugin from the EPIC Marketplace](https://www.unrealengine.com/marketplace/en-US/product/26796b2f61ac41509e0195402d4d386f){:target="_blank" rel="noopener"}
+
+
 ## Youtube-Movie
 
 ### Introduction / Demo
