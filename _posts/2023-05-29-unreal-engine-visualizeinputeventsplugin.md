@@ -55,8 +55,7 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 - Network Replicated: No - not needed
 - Supported Development Platforms: macOS, Linux, Win64
 - Supported Target Build Platforms: macOS, Linux, Win64
-- Documentation: [https://jetedonner.github.io/projects/ue/ueinputvisualizerplugin](https://jetedonner.github.io/projects/ue/ueinputvisualizerplugin){:target="_blank" rel="noopener"}
-- Example Project: [https://github.com/jetedonner/ueinputvisualizerplugin](https://github.com/jetedonner/ueinputvisualizerplugin){:target="_blank" rel="noopener"}
+- Documentation: [https://kimhauser.ch/index.php/projects/unreal-engine/visualize-input-event-plugin](https://kimhauser.ch/index.php/projects/unreal-engine/visualize-input-event-plugin){:target="_blank" rel="noopener"}
 
 
 ## EPIC Marketplace Download
