@@ -67,7 +67,7 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 - [VIE Plugin Introduction on Youtube](https://youtu.be/eqyuU1cIx8I){:target="_blank" rel="noopener"}
 
 <div class="container-responsive-iframe">
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/eqyuU1cIx8I" title="YouTube video player" width="90%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/eqyuU1cIx8I" title="YouTube video player" width="90%" style="height: 90%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---
