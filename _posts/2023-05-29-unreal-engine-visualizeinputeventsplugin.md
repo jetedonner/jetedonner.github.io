@@ -24,23 +24,23 @@ I really appreciate that you download the plugin and give it a test. If you expe
 - Show Events in OutputLog while development
 
 #### The Plugin captures events from all Editors and Viewports
-- Level Editor
-- Blueprint Editor
-- Material Editor
-- Particle Editor
-- etc. ....
+- All Editors
+- All Viewports
+- etc. ...
 
 #### Extensively configurable using config ini file
-- Enable / Disable Plugin for Project
-- Enable / Disable showing Keyboard Events
-- Enable / Disable showing Mouse Clicks
-- Enable / Disable showing Game Pad Events
+- Enable / Disable Plugin for whole Project
+- Enable / Disable show Keyboard Events
+- Enable / Disable show Mouse Clicks
+- Enable / Disable show Game Pad Events
 - Choose whether to show as Notification in Editor mode
 - Choose whether to show as OnScreenMessage in Editor mode
+- Choose whether to show in OutputLog
 - Choose the timeout of how long to display the information
+- Many other detail settings for the different logging functionalities (see online documentation below)
 
 ### Code Modules
-The Plugin is fully written in C++ and OpenSource. You can amend the source if you like and tweak or extend it to your needs or whishes.
+The Plugin is fully written in C++ and OpenSource. You can amend the source if you like and tweak or extend it to your needs and whishes.
 
 #### VisualizeInputEventPlugin
 - Type: Editor
@@ -55,11 +55,11 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 - Network Replicated: No - not needed
 - Supported Development Platforms: macOS, Linux, Win64
 - Supported Target Build Platforms: macOS, Linux, Win64
-- Documentation: [https://kimhauser.ch/index.php/projects/unreal-engine/visualize-input-event-plugin](https://kimhauser.ch/index.php/projects/unreal-engine/visualize-input-event-plugin){:target="_blank" rel="noopener"}
+- Documentation: [VIE Plugin Documentation](https://kimhauser.ch/index.php/projects/unreal-engine/visualize-input-event-plugin){:target="_blank" rel="noopener"}
 
 
 ## EPIC Marketplace Download
-- [Download Visualize Input Event Plugin](https://www.unrealengine.com/marketplace/en-US/product/26796b2f61ac41509e0195402d4d386f){:target="_blank" rel="noopener"} - Download Plugin from EPIC Marketplace
+- [Download Visualize Input Event Plugin (VIE Plugin)](https://www.unrealengine.com/marketplace/en-US/product/26796b2f61ac41509e0195402d4d386f){:target="_blank" rel="noopener"} - From EPIC Marketplace
 
 
 ## Youtube-Movie
