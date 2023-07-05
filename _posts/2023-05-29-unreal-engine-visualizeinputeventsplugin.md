@@ -46,7 +46,7 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 - Type: Editor
 - LoadingPhase: Default
 
-#### EditorKeyPressedInput
+#### VisualizeInputEventInput
 - Type: Editor
 - LoadingPhase: PostEngineInit
 
@@ -80,5 +80,8 @@ The Plugin is fully written in C++ and OpenSource. You can amend the source if y
 4. Goto menu **Edit>Plugins** and search for **Visualize Input Event Plugin**. Activate it. After that you will have to restart the Unreal Engine to successfully load the plugin. Do so.
 5. After the resstart you will see a new icon in the menubar of the Unreal Editor.
 
+## Version history 
+### 1.0.0 / 1.0.0a - 2023-07-04
+Initial release version of the plugin for Unreal Engine 5.1 (1.0.0) and Unreal Engine 5.2 (1.0.0a).
 
 Created by Kim David Hauser, [https://kimhauser.ch](https://kimhauser.ch){:target="_blank" rel="noopener"} - 2023-07-03 (Unreal Engine 5.2)
