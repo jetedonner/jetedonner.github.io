@@ -24,7 +24,7 @@ The *Teleport System Base* provides essential functionalities (C++ classes, func
 3. After the Plugin is downloaded you can add it to your (new) projects by opening the PluginManager in the Unreal Editor and searching for *TeleportSysBase* and activating it. You will have to restart the UnrealEditor to fully activate the Plugin for your project.
 
 ## Plugin Content
-The UE5_TeleportDemo comes with 9 different ready made portals. This includes the 3D models, textures / materials as well as the Blueprint for easily adding it to your level. If you like you can use this portals as they are in your project, but your free to amend them to your needs or take them as examples or guides to build you own teleport portals.
+The UE5_TeleportDemo comes with 9 different ready made portals. This includes the 3D models, textures / materials as well as the Blueprint for easily adding it to your level. If you like you can use this portals as they are in your project, but your free to amend them to your needs or take them as examples or guides to build you own teleporting portals.
 
 ### Included portals
 
