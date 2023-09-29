@@ -15,7 +15,7 @@ One of my most loved hobbies is to express my feelings through painting on canva
 _Yet very simple but one of my favourites_
 
 ## Gallery teaser
-{% include my-gallery2.html folder="/assets/img/roadtrips/2020-07-04-Furkapass" %}
+{% include my-gallery2.html folder="/assets/img/roadtrips/2020-07-04-Furkapass/" %}
 
 ## My Complete Online Gallery
 - <https://art.kimhauser.ch>
