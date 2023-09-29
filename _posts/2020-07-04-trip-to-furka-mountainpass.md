@@ -3,8 +3,8 @@ layout: post
 title:  "Trip to Furka"
 author: dave
 date:   2020-07-04 22:06:09 +0200
-categories: Private RoadTrip
-tags: [Private, Art]
+categories: Private Road Trip
+tags: [Private, Road Trips]
 ---
 
 ## Introduction
