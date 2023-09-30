@@ -9,7 +9,7 @@ published: true
 ---
 
 ## Introduction
-This picture gallery is about my maternal uncle's funeral. His last wish was that his ashes be scattered on the Furka Pass, the place where he hiked many times and climbed many walls. My entire maternal family paid their last respects to Him that day.
+Some impressions of the anual sale at the Sukkulenten Sammlung Zurich. My long time friend Pascale invited me to this event and we spent a wonderful and joyful afternoon together in Zurich. 
 
 
 ![Cover Image of my Website](../../assets/img/roadtrips/2023-06-03-Sukkulenten-Sammlung/20230603_094402.jpg){: width="963" height="722" }
