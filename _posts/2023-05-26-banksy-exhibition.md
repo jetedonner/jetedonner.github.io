@@ -12,11 +12,11 @@ published: true
 This picture gallery is about my maternal uncle's funeral. His last wish was that his ashes be scattered on the Furka Pass, the place where he hiked many times and climbed many walls. My entire maternal family paid their last respects to Him that day.
 
 
-![Cover Image of my Website](../../assets/img/roadtrips/2020-07-04-Furkapass/WhatsApp%20Image%202020-07-04%20at%2022.03.28.jpeg){: width="963" height="722" }
+![Cover Image of my Website](../../assets/img/roadtrips/2023-05-26-Banksy-Exhibition/20230526_150928.jpg){: width="963" height="722" }
 _My family and I at the funeral of my uncle_
 
 ## Gallery
-{% include my-gallery2.html folder="/assets/img/roadtrips/2023-05-26-Banksy-Exhibition/" %}
+{% include my-gallery3.html folder="/assets/img/roadtrips/2023-05-26-Banksy-Exhibition/" %}
 
 ## Credits / Copyright
 All this images represent my own personal work and are only online available to the public. &copy; 1991-2023 by Kim David Hauser.
