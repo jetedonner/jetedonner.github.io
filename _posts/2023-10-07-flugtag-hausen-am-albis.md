@@ -18,6 +18,13 @@ _View from the entrance towards the runway of the airfield Hausen a.A._
 ## Gallery
 {% include my-gallery6.html folder="/assets/img/roadtrips/2023-10-07-Flugtag-Hausen-Am-Albis/" %}
 
+## Video-Clips
+
+<video width="640" height="315" controls>
+  <source src="../../assets/img/roadtrips/2023-10-07-Flugtag-Hausen-Am-Albis/_vidz/20231007_093959.mp4" type="video/mp4">
+  Your browser does not support the video tag (edit).
+</video>
+
 ## Credits / Copyright
 All this images represent my own personal work and are only online available to the public. &copy; 1991-2023 by Kim David Hauser.
 
