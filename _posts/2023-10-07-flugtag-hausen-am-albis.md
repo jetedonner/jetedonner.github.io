@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Sukkulenten Sammlung"
+title:  "Flugtag Hausen am Albis"
 author: dave
-date:   2023-06-03 14:00:11 +0200
+date:   2023-10-07 10:00:00 +0200
 categories: [Private, Road Trips]
 tags: [Private, Road Trips]
 published: true
 ---
 
 ## Introduction
-Some impressions of the anual sale at the Sukkulenten Sammlung Zurich. My long time friend Pascale invited me to this event and we spent a wonderful and joyful afternoon together in Zurich. Pascale is a former Gardeneress and really in love with all catis and succulents.
+Today was the anual model flight show of the model flight club Affoltern Am Albis in Hausen Am Albis. Hundreds of interested model flight enthusiasts, along with my uncle and me, went to the airfield in Hausen Am Albis early this Saturday morning to witness the spectacle. And we weren't disappointed, the show was, in short, unique.
 
 
-![Cover Image of my Website](../../assets/img/roadtrips/2023-06-03-Sukkulenten-Sammlung/20230603_094402.jpg){: width="963" height="722" }
-_My family and I at the funeral of my uncle_
+![Cover Image of my Website](../../assets/img/roadtrips/2023-10-07-Flugtag-Hausen-Am-Albis/20231007_090259_898x674.jpg){: width="963" height="722" }
+_View from the entrance towards the runway of the airfield Hausen a.A._
 
 ## Gallery
 {% include my-gallery4.html folder="/assets/img/roadtrips/2023-06-03-Sukkulenten-Sammlung/" %}
