@@ -16,7 +16,7 @@ Today was the anual model flight show of the model flight club Affoltern Am Albi
 _View from the entrance towards the runway of the airfield Hausen a.A._
 
 ## Gallery
-{% include my-gallery4.html folder="/assets/img/roadtrips/2023-06-03-Sukkulenten-Sammlung/" %}
+{% include my-gallery6.html folder="/assets/img/roadtrips/2023-10-07-Flugtag-Hausen-Am-Albis/" %}
 
 ## Credits / Copyright
 All this images represent my own personal work and are only online available to the public. &copy; 1991-2023 by Kim David Hauser.
