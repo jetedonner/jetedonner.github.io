@@ -23,50 +23,17 @@ This is another Blender Project featuring a more realistic - almost cinematic - 
 
 ### WormHole Effect - Red, Orange and Yellow
 <div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/cZJsDXzJNWs" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow))" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/DoOF8QHW_M0" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow))" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 _Rendered Wormhole - Cinematic with Blender (Red-Orange-Yellow)_
 
 
-## Wormhole Effects - First try
+## Wormhole Effects - Cinematic
 ### WornHole Effect No02
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sk30VfT2ids" title="WormHole Effect No02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 _WormHole Effect No02_
 
-### WornHole Effect No03
-<div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/mfRPdREQWj0" title="WormHole Effect No03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-_WormHole Effect No03_
-
-### WornHole Effect No04
-<div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/7gUhf0WXGAg" title="WormHole Effect No04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-_WormHole Effect No04_
-
-### WornHole Effect No05
-<div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/68tubfcUC6M" title="WormHole Effect No05" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-_WormHole Effect No05_
-
-### WornHole Effect No06
-<div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/xZhMITQs7Xk" title="WormHole Effect No06" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-_WormHole Effect No06_
-
-### WornHole Effect No07
-<div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/250OzJy9x-8" title="WormHole Effect No07" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-_WormHole Effect No07_
-
-### WornHole Effect No08
-<div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/oRcz1JVnJSo" title="WormHole Effect No08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-_WormHole Effect No08_
+## Credits
+- [Wormhole VFX : Animate UV’s | Blender Tutorial](https://www.youtube.com/watch?v=K2WTH016rfk) - by CG Masters
