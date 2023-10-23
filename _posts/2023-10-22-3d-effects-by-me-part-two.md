@@ -8,8 +8,8 @@ tags: [Projects, 3D Art, Games, Movies, Art]
 ---
 
 ## Introduction
-![WormHole Cinematic - No01](../../assets/img/projects/3dWormholesPartTwo/0001.png){: width="960" height="540" }
-_WormHole Cinematic - No01_
+![WormHole Cinematic - (Red-Orange-Yellow)](../../assets/img/projects/3dWormholesPartTwo/0001.png){: width="960" height="540" }
+_WormHole Cinematic - (Red-Orange-Yellow)_
 
 This is the sencond edition article of my endeavor in creating 3D Wormhole Effects with Blender 3.2.2. They are animated and available as .blend files (Source Files) as well as movie file version (.mp4) ready for download and usage. All files are licensed on a "as is" basis and come with no warranty of any kind and what so ever. (But) if you have any question, problem or feedback please feel free to contact me by e-mailing to <kim@kimhauser.ch> or visit <https://kimhauser.ch> and use the contact form
 
@@ -23,17 +23,17 @@ This is another Blender Project featuring a more realistic - almost cinematic - 
 
 ### WormHole Effect - Red, Orange and Yellow
 <div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/DoOF8QHW_M0" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow))" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/DoOF8QHW_M0" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 _Rendered Wormhole - Cinematic with Blender (Red-Orange-Yellow)_
 
 
 ## Wormhole Effects - Cinematic
-### WornHole Effect No02
+### Rendered Wormhole - Cinematic with Blender - (Blue-Purple)
 <div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/sk30VfT2ids" title="WormHole Effect No02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/QAyCmUJYX6A" title="Rendered Wormhole - Cinematic with Blender - (Blue-Purple)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-_WormHole Effect No02_
+_Rendered Wormhole - Cinematic with Blender - (Blue-Purple)_
 
 ## Credits
 - [Wormhole VFX : Animate UV’s | Blender Tutorial](https://www.youtube.com/watch?v=K2WTH016rfk) - by CG Masters
