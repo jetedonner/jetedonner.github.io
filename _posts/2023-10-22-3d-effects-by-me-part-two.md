@@ -21,34 +21,33 @@ This is another Blender Project featuring a more realistic - almost cinematic - 
 ![](../../assets/img/github.png){: width="64" height="64" .align-left}
 <https://github.com/kimhauser/Blender-Effects-Wormholes-Rendered>
 
-### WormHole Effect - Red, Orange and Yellow
+### WormHole Effect - Red, Orange and Yellow (First try)
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/DoOF8QHW_M0" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 _Rendered Wormhole - Cinematic with Blender (Red-Orange-Yellow)_
 
-
 ## Wormhole Effects - Cinematic
-### WormHole Effect - Red, Orange and Yellow 
-The first version of a cinematic wormhole using this new technique. Colored with a red, orange to yellow color theme. This version has a correction for the nasty seam in the static and procedural texturing so the seam is not visible anymore. 
+### WormHole Effect - Cinematic with Blender (Red, Orange and Yellow, Seamless, Corrected!!!)
+The first version of a cinematic wormhole using this new technique. Colored with a red, orange to yellow color theme. This version has a correction for the nasty seam in the static and procedural texturing so the seam is not visible anymore. Also a unwanted visible refraction effect showing up once and then was removed and the movie was re-rendered.
 <div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/3cXDJOsMcxk" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow, Seamless)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/3yjMpI3bTbE" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow, Seamless, Corrected!!!)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-_Rendered Wormhole - Cinematic with Blender (Red-Orange-Yellow, Seamless)_
+_Rendered Wormhole - Cinematic with Blender (Red-Orange-Yellow, Seamless, Corrected!!!)_
 
-### Rendered Wormhole - Cinematic with Blender - (Blue-Purple)
+### Rendered Wormhole - Cinematic with Blender (Blue-Purple)
 The second version of a cinematic wormhole using this new technique. Colored with a blue to purple color theme.
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/wGnBSSlITzc" title="Rendered Wormhole - Cinematic with Blender - (Blue-Purple)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-_Rendered Wormhole - Cinematic with Blender - (Blue-Purple)_
+_Rendered Wormhole - Cinematic with Blender (Blue-Purple)_
 
-### Rendered Wormhole - Cinematic with Blender - (Green Glow)
+### Rendered Wormhole - Cinematic with Blender (Green Glow)
 The third version of a cinematic wormhole using this new technique. Colored with a dark and green glowing color theme.
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/o578vsHKbfg" title="Rendered Wormhole - Cinematic with Blender - (Green Glow)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-_Rendered Wormhole - Cinematic with Blender - (Green Glow)_
+_Rendered Wormhole - Cinematic with Blender (Green Glow)_
 
 ## Credits
-- [Wormhole VFX : Animate UV’s | Blender Tutorial](https://www.youtube.com/watch?v=K2WTH016rfk) - by CG Masters
+- [Wormhole VFX Animate UV’s|Blender Tutorial](https://www.youtube.com/watch?v=K2WTH016rfk) by CG Masters
