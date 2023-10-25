@@ -50,4 +50,4 @@ The third version of a cinematic wormhole using this new technique. Colored with
 _Rendered Wormhole - Cinematic with Blender (Green Glow)_
 
 ## Credits
-- [Wormhole VFX Animate UV’s|Blender Tutorial](https://www.youtube.com/watch?v=K2WTH016rfk) by CG Masters
+- [_Wormhole VFX Animate UVs / Blender Tutorial_](https://www.youtube.com/watch?v=K2WTH016rfk){:target="_blank" rel="noopener"}  by CG Masters
