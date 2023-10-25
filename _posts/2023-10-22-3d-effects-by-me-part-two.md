@@ -50,12 +50,18 @@ The third version of a cinematic wormhole using this new technique. Colored with
 _Rendered Wormhole - Cinematic with Blender (Green Glow)_
 
 ### Rendered Wormhole - Cinematic with Blender (Dark Blue and Green Glow)
-The third version of a cinematic wormhole using this new technique. Colored with a dark blue and green glowing color theme.
+The fourth version of a cinematic wormhole using this new technique. Colored with a dark blue and green glowing color theme.
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/-Hd2wKeAhVU" title="Rendered Wormhole - Cinematic with Blender - (Dark Blue and Green Glow)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 _Rendered Wormhole - Cinematic with Blender (Dark Blue and Green Glow)_
 
+### Rendered Wormhole - Cinematic with Blender (Dark Colorful Streaks)
+The fifth version of a cinematic wormhole using this new technique. Colored with a dark background and colorful streaks theme.
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/ZwpbmxmYQto" title="Rendered Wormhole - Cinematic with Blender - (Dark and Colorful Streaks)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+_Rendered Wormhole - Cinematic with Blender (Dark Colorful Streaks)_
 
 ## Credits
 - [_Wormhole VFX Animate UVs / Blender Tutorial_](https://www.youtube.com/watch?v=K2WTH016rfk){:target="_blank" rel="noopener"}  by CG Masters
