@@ -29,6 +29,13 @@ _Rendered Wormhole - Cinematic with Blender (Red-Orange-Yellow)_
 
 
 ## Wormhole Effects - Cinematic
+### WormHole Effect - Red, Orange and Yellow 
+The first version of a cinematic wormhole using this new technique. Colored with a red, orange to yellow color theme. This version has a correction for the nasty seam in the static and procedural texturing so the seam is not visible anymore. 
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/3cXDJOsMcxk" title="Rendered Wormhole - Cinematic with Blender - (Red-Orange-Yellow, Seamless)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+_Rendered Wormhole - Cinematic with Blender (Red-Orange-Yellow, Seamless)_
+
 ### Rendered Wormhole - Cinematic with Blender - (Blue-Purple)
 The second version of a cinematic wormhole using this new technique. Colored with a blue to purple color theme.
 <div class="container-responsive-iframe">
