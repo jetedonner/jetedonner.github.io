@@ -19,7 +19,78 @@ This page shows some - maybe - usefull code and Blueprint snippets for the Unrea
 ## Portal Helper-Functions
 This functions can help you with the calcualtions needed for teleporting Actors like Characters or Bullets through Teleportation-Portals. The snippets are hosted on [blueprintue.com](https://blueprintue.com/profile/jetedonner/){:target="_blank" rel="noopener"} and created by me with the help of [wiki.unrealengine.com](https://michaeljcole.github.io/wiki.unrealengine.com/Simple_Portals/#Overview){:target="_blank" rel="noopener"}
 
-### PortalConvertDirection
+### PortalConvertDirection NG
+
+Here you have some updated code to calculate the new location, rotation and velocity after teleporting an actor with a teleportal from one place to another. You might find the new *NG* version of the helper functions easier to understand and implement and also more accurate. Please take a look for your self and make your own choice. (If unsure take the NG versions of the conversion algorythms)
+
+#### PortalConvertLocation NG - C++ Sourcecode
+
+```c++
+FVector UPortalFunctionLibrary::ConvertLocationToActorSpace( FVector Location, AActor* Reference, AActor* Target )
+{
+    if( Reference == nullptr || Target == nullptr )
+    {
+        return FVector::ZeroVector;
+    }
+
+    FVector Direction       = Location - Reference->GetActorLocation();
+    FVector TargetLocation  = Target->GetActorLocation();
+
+    FVector Dots;
+    Dots.X  = FVector::DotProduct( Direction, Reference->GetActorForwardVector() );
+    Dots.Y  = FVector::DotProduct( Direction, Reference->GetActorRightVector() );
+    Dots.Z  = FVector::DotProduct( Direction, Reference->GetActorUpVector() );
+
+    FVector NewDirection    = Dots.X * Target->GetActorForwardVector()
+                            + Dots.Y * Target->GetActorRightVector()
+                            + Dots.Z * Target->GetActorUpVector();
+
+    return TargetLocation + NewDirection;
+}
+```
+
+
+### PortalConvertRotation NG
+
+```c++
+FRotator UPortalFunctionLibrary::ConvertRotationToActorSpace( FRotator Rotation, AActor* Reference, AActor* Target )
+{
+    if( Reference == nullptr || Target == nullptr )
+    {
+        return FRotator::ZeroRotator;
+    }
+
+    FTransform SourceTransform  = Reference->GetActorTransform();
+    FTransform TargetTransform  = Target->GetActorTransform();
+    FQuat QuatRotation          = FQuat( Rotation );
+
+    FQuat LocalQuat             = SourceTransform.GetRotation().Inverse() * QuatRotation;
+    FQuat NewWorldQuat          = TargetTransform.GetRotation() * LocalQuat;
+
+    return NewWorldQuat.Rotator();
+}
+```
+
+
+### PortalConvertVelocity NG
+
+```c++
+FVector UPortalFunctionLibrary::ConvertVelocityToActorSpace( FVector OldVelocity, AActor* Reference, AActor* Target )
+{
+    FVector Dots;
+    Dots.X  = FVector::DotProduct( OldVelocity, Reference->GetActorForwardVector() );
+    Dots.Y  = FVector::DotProduct( OldVelocity, Reference->GetActorRightVector() );
+    Dots.Z  = FVector::DotProduct( OldVelocity, Reference->GetActorUpVector() );
+
+    FVector NewVelocity     = Dots.X * Target->GetActorForwardVector()
+                            + Dots.Y * Target->GetActorRightVector()
+                            + Dots.Z * Target->GetActorUpVector();
+
+    return NewVelocity;
+}
+```
+
+### PortalConvertDirection - OLD
 This UE5.1 Blueprint Function is meant for Portal pairs to convert a input direction from the current portal to the traget portal.
 
 <iframe src="https://blueprintue.com/render/schzg-gp/" scrolling="no" width="100%" height="640" allowfullscreen></iframe>
