@@ -18,8 +18,9 @@ This is the sencond edition article of my endeavor in creating 3D Wormhole Effec
 This is another Blender Project featuring a more realistic - almost cinematic - kind of wormhole effect. It's made with a cylinder attached to a skelleton which is animated whith some modifiers and such. The base camera captures the UV Warped Cylinder and its textures which use some shader effects. Check it out - you can download the rendered video file or the source Blender file and adjust the settings as you like and do with it anything you want.
 
 ### Github repos with Blender project files
-![](../../assets/img/github.png){: width="64" height="64" .align-left}
-<https://github.com/kimhauser/Blender-Effects-Wormholes-Rendered>
+<!--![GitHubLogo](../../assets/img/github.png){: width="64" height="64" .align-left}-->
+<img align="left" width="64" height="64" src="../../assets/img/github.png">
+<https://github.com/jetedonner/Wormholes-Rendered-Blender-Effects>
 
 ### WormHole Effect - Red, Orange and Yellow (First try)
 <div class="container-responsive-iframe">
