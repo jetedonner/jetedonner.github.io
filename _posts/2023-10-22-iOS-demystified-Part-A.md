@@ -16,6 +16,10 @@ This is my first real deep endavour in iOS reversing and I want to let you be pa
 
 ### Tools
 #### nm
+nm (name mangling) is a Unix command used to dump the symbol table and their attributes from a binary executable file (including libraries, compiled object modules, shared-object files, and standalone executables). The output from nm distinguishes between various symbol types.
+
+This is a nice little tool which shows you useful informations about the symbol table of a library or executable on Linux and macOS.
+
 ```console
 dave@Aeon MacOS % nm --help
 OVERVIEW: LLVM symbol table dumper
@@ -86,5 +90,67 @@ llvm-nm XCOFF Specific Options:
 Pass @FILE as argument to read options from FILE.
 ```
 
+### CLI
+#### irecovery
+- libirecovery % ./tools/irecovery -vvv -s
+
+#### libimobiledevice
+- libimobiledevice % ./tools/idevice_id
+
+#### usbmuxd
+- usbmuxb % ./usbmuxd
+
+```console
+dave@Aeon src % sudo ./usbmuxd -v -f  
+[20:57:57.571][3] usbmuxd v1.1.1-56-g360619c starting up
+[20:57:57.572][4] Creating socket
+[20:57:57.572][4] Listening on /var/run/usbmuxd
+[20:57:57.572][2] chmod(/var/db/lockdown, 02775) failed: Operation not permitted
+[20:57:57.572][4] Initializing USB
+[20:57:57.572][3] Using libusb 1.0.26
+[20:57:57.576][4] Registering for libusb hotplug events
+[20:57:57.576][4] Found new device with v/p 05ac:12a8 at 1-1
+[20:57:57.576][4] Requesting current mode from device 1-1
+[20:57:57.576][4] 1 device detected
+[20:57:57.576][3] Initialization complete
+[20:57:57.577][3] Found CDC-NCM and Apple USB Multiplexor in device 1-1 configuration 5
+[20:57:57.577][4] Received response 5:3:3:0 for get_mode request for device 1-1
+[20:57:57.577][2] Skipping switch device 1-1 mode from 3 to 3
+[20:57:57.577][3] Found usbmux interface for device 1-1: 1
+[20:57:57.577][4] Found interface 1 with endpoints 04/85 for device 1-1
+[20:57:57.577][2] Could not claim interface 1 for device 1-1: LIBUSB_ERROR_ACCESS
+[20:57:57.577][2] Cannot find device entry while removing USB device 0x126705780 on location 0x10001
+[20:58:05.637][4] Found new device with v/p 05ac:12a8 at 1-1
+libusb: warning [darwin_open] USBDeviceOpen: another process has device opened for exclusive access
+[20:58:05.637][4] Requesting current mode from device 1-1
+[20:58:05.645][4] Received response 3:3:3:0 for get_mode request for device 1-1
+[20:58:05.645][2] Switching device 1-1 mode to 3
+[20:58:05.796][2] Cannot find device entry while removing USB device 0x116604080 on location 0x10001
+[20:58:05.796][2] Cannot find device entry while removing USB device 0x116604080 on location 0x10001
+[20:58:06.606][4] Found new device with v/p 05ac:12a8 at 1-1
+libusb: warning [darwin_open] USBDeviceOpen: another process has device opened for exclusive access
+[20:58:06.607][4] Requesting current mode from device 1-1
+[20:58:06.607][4] Client 7 accepted
+[20:58:06.607][2] Attempted to connect to nonexistent device 31
+[20:58:06.608][4] Client 8 accepted
+[20:58:06.608][3] Found CDC-NCM and Apple USB Multiplexor in device 1-1 configuration 5
+[20:58:06.608][4] Received response 5:3:3:0 for get_mode request for device 1-1
+[20:58:06.608][2] Skipping switch device 1-1 mode from 3 to 3
+[20:58:06.608][3] Found usbmux interface for device 1-1: 1
+[20:58:06.608][4] Found interface 1 with endpoints 04/85 for device 1-1
+[20:58:06.629][2] Could not claim interface 1 for device 1-1: LIBUSB_ERROR_ACCESS
+[20:58:06.629][2] Cannot find device entry while removing USB device 0x106604080 on location 0x10001
+[20:58:06.629][4] Client 7 connection closed
+[20:58:06.629][4] Client 7 is going to be disconnected
+[20:58:06.630][4] Client 7 accepted
+...
+[20:58:06.766][4] Client 8 connection closed
+[20:58:06.766][4] Client 8 is going to be disconnected
+```
+
+
 ## Credits
+- [_Linus Torvalds_](https://github.com/torvalds){:target="_blank" rel="noopener"} / [_Linux_](https://linux.com/torvalds){:target="_blank" rel="noopener"}
+- [_microsoft.com_](https://www.microsoft.com){:target="_blank" rel="noopener"}
 - [_apple.com_](https://www.apple.com){:target="_blank" rel="noopener"}
+- [_google.com_](https://www.google.com){:target="_blank" rel="noopener"}
