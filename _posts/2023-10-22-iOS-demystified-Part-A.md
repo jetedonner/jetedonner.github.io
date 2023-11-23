@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "iOS - Demistified Part A"
+title:  "iOS Internals - iOS demistified Part A"
 author: dave
 date:   2023-11-20 20:17:54 +0200
-categories: [iOS, Demistified Part A]
-tags: [Reversing, iOS, Demistified Part A]
+categories: [iOS Internals, iOS Demistified Part A]
+tags: [Reversing, iOS Internals, iOS Demistified Part A]
 ---
 
 ## Introduction - What about
@@ -13,6 +13,19 @@ WHAT IS THIS ABOUT:
 
 This is my first real deep endavour in iOS reversing and I want to let you be part of my troubles and successes. The article should be used as a map for your journey in reversing iOS.
 
+### Articles 
+#### History of Jailbreak
+Some very useful informations about the history of jailbreaking the iOS with detailed explaination
+- https://medium.com/@iponurovskiy/ios-jailbreaks-history-part-1-93797400c24 (Part 1) (mirror)
+- https://medium.com/@iponurovskiy/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%B4%D0%B6%D0%B5%D0%B9%D0%BB%D0%B1%D1%80%D0%B5%D0%B9%D0%BA%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-ios-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-9c1b234fc500 (Part 2) (mirror)
+
+### Supporting Projects
+- https://github.com/Maxmad68/swift-libimobiledevice
+- https://github.com/Shakshi3104/DeviceHardware
+- https://github.com/anatoliyv/AssistantKit
+- https://github.com/Arti3DPlayer/USBDeviceSwift
+- https://github.com/4eleven7/iMobileDevice
+- 
 
 ### Tools
 #### nm
@@ -21,7 +34,7 @@ nm (name mangling) is a Unix command used to dump the symbol table and their att
 This is a nice little tool which shows you useful informations about the symbol table of a library or executable on Linux and macOS.
 
 ```console
-dave@Aeon MacOS % nm --help
+nm --help
 OVERVIEW: LLVM symbol table dumper
 
 USAGE: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/nm [options] <input object files>
@@ -101,7 +114,7 @@ Pass @FILE as argument to read options from FILE.
 - usbmuxb % ./usbmuxd
 
 ```console
-dave@Aeon src % sudo ./usbmuxd -v -f  
+src % sudo ./usbmuxd -v -f  
 [20:57:57.571][3] usbmuxd v1.1.1-56-g360619c starting up
 [20:57:57.572][4] Creating socket
 [20:57:57.572][4] Listening on /var/run/usbmuxd
@@ -151,6 +164,6 @@ libusb: warning [darwin_open] USBDeviceOpen: another process has device opened f
 
 ## Credits
 - [_Linus Torvalds_](https://github.com/torvalds){:target="_blank" rel="noopener"} / [_Linux_](https://linux.com/torvalds){:target="_blank" rel="noopener"}
-- [_microsoft.com_](https://www.microsoft.com){:target="_blank" rel="noopener"}
 - [_apple.com_](https://www.apple.com){:target="_blank" rel="noopener"}
+- [_microsoft.com_](https://www.microsoft.com){:target="_blank" rel="noopener"}
 - [_google.com_](https://www.google.com){:target="_blank" rel="noopener"}
