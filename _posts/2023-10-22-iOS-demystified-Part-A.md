@@ -9,13 +9,14 @@ tags: [Reversing, iOS Internals, iOS Demistified Part A]
 
 ## Introduction - What about
 
-WHAT IS THIS ABOUT:
+WHAT IS THIS ALL ABOUT:
 
 This is my first real deep endavour in iOS reversing and I want to let you be part of my troubles and successes. The article should be used as a map for your journey in reversing iOS.
 
 ### Articles 
 #### History of Jailbreak
 Some very useful informations about the history of jailbreaking the iOS with detailed explaination
+- https://www.theiphonewiki.com/
 - https://medium.com/@iponurovskiy/ios-jailbreaks-history-part-1-93797400c24 (Part 1) (mirror)
 - https://medium.com/@iponurovskiy/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%B4%D0%B6%D0%B5%D0%B9%D0%BB%D0%B1%D1%80%D0%B5%D0%B9%D0%BA%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-ios-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-9c1b234fc500 (Part 2) (mirror)
 
@@ -25,9 +26,16 @@ Some very useful informations about the history of jailbreaking the iOS with det
 - https://github.com/anatoliyv/AssistantKit
 - https://github.com/Arti3DPlayer/USBDeviceSwift
 - https://github.com/4eleven7/iMobileDevice
-- 
+- https://github.com/imkira/mobiledevice
+- https://github.com/samdmarshall/SDMMobileDevice
+- https://github.com/doronz88/pymobiledevice3
+	- https://pymobiledevice3.readthedocs.io/
+	- https://jon-gabilondo-angulo-7635.medium.com/understanding-usbmux-and-the-ios-lockdown-service-7f2a1dfd07ae 
 
 ### Tools
+#### Old stuff
+- https://github.com/planetbeing/xpwn/tree/master
+
 #### nm
 nm (name mangling) is a Unix command used to dump the symbol table and their attributes from a binary executable file (including libraries, compiled object modules, shared-object files, and standalone executables). The output from nm distinguishes between various symbol types.
 
@@ -111,6 +119,7 @@ Pass @FILE as argument to read options from FILE.
 - libimobiledevice % ./tools/idevice_id
 
 #### usbmuxd
+- https://worthdoingbadly.com/usbmuxdebug/?source=post_page-----7f2a1dfd07ae--------------------------------
 - usbmuxb % ./usbmuxd
 
 ```console
@@ -160,7 +169,6 @@ libusb: warning [darwin_open] USBDeviceOpen: another process has device opened f
 [20:58:06.766][4] Client 8 connection closed
 [20:58:06.766][4] Client 8 is going to be disconnected
 ```
-
 
 ## Credits
 - [_Linus Torvalds_](https://github.com/torvalds){:target="_blank" rel="noopener"} / [_Linux_](https://linux.com/torvalds){:target="_blank" rel="noopener"}
