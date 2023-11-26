@@ -5,6 +5,7 @@ author: dave
 date:   2023-11-20 20:17:54 +0200
 categories: [iOS Internals, iOS Demistified Part A]
 tags: [Reversing, iOS Internals, iOS Demistified Part A]
+published: false
 ---
 
 ## Introduction - What about
