@@ -36,6 +36,7 @@ Some very useful informations about the history of jailbreaking the iOS with det
 ### Tools
 #### Old stuff
 - https://github.com/planetbeing/xpwn/tree/master
+- https://github.com/malus-security/iExtractor
 
 #### nm
 nm (name mangling) is a Unix command used to dump the symbol table and their attributes from a binary executable file (including libraries, compiled object modules, shared-object files, and standalone executables). The output from nm distinguishes between various symbol types.
