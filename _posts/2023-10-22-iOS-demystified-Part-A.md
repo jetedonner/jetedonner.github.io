@@ -20,6 +20,9 @@ Some very useful informations about the history of jailbreaking the iOS with det
 - https://www.theiphonewiki.com/
 - https://medium.com/@iponurovskiy/ios-jailbreaks-history-part-1-93797400c24 (Part 1) (mirror)
 - https://medium.com/@iponurovskiy/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%B4%D0%B6%D0%B5%D0%B9%D0%BB%D0%B1%D1%80%D0%B5%D0%B9%D0%BA%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-ios-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-9c1b234fc500 (Part 2) (mirror)
+- https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
+- https://docs.hackdiffe.rent/
+- 
 
 ### Supporting Projects
 - https://github.com/Maxmad68/swift-libimobiledevice
@@ -32,11 +35,17 @@ Some very useful informations about the history of jailbreaking the iOS with det
 - https://github.com/doronz88/pymobiledevice3
 	- https://pymobiledevice3.readthedocs.io/
 	- https://jon-gabilondo-angulo-7635.medium.com/understanding-usbmux-and-the-ios-lockdown-service-7f2a1dfd07ae 
+- https://github.com/rsms/peertalk
+- https://github.com/jensmeder/DarkLightning
 
 ### Tools
 #### Old stuff
 - https://github.com/planetbeing/xpwn/tree/master
+<<<<<<< Updated upstream
 - https://github.com/malus-security/iExtractor
+=======
+- https://github.com/PoomSmart/MGKeys
+>>>>>>> Stashed changes
 
 #### nm
 nm (name mangling) is a Unix command used to dump the symbol table and their attributes from a binary executable file (including libraries, compiled object modules, shared-object files, and standalone executables). The output from nm distinguishes between various symbol types.
