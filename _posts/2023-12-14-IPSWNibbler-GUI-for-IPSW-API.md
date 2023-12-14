@@ -5,7 +5,7 @@ author: dave
 date:   2023-12-14 14:37:54 +0200
 categories: [iOS Internals, iOS Demistified Part A]
 tags: [Reversing, iOS Internals, iOS Demistified Part A]
-published: false
+published: true 
 ---
 
 ## Introduction - IPSWNibbler
@@ -13,6 +13,16 @@ published: false
 The macOS App IPSW Nibbler is a GUI app for accessing the ipws api webservice https://api.ipsw.me. This webservice provides many useful informations about iOS devices and its OS packages in IPSW form. The GUI app IPSW Nibbler contains no informations about iOS and such but is just a easy to use UI to access the informations from the webservice Api.
 
 ### Features 
+You can find the blueprint of the api with a Definition of its features at: https://ipswdownloads.docs.apiary.io/api-description-document
+
+#### Device's
+
+#### Firmwares 
+
+#### Models
+
+#### Keys
+
 
 
 ## Credits
