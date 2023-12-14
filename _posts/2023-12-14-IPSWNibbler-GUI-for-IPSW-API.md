@@ -10,7 +10,7 @@ published: false
 
 ## Introduction - IPSWNibbler
 
-The macOS App IPSW Nibbler is a GUI app for accessing the ipws api webservice https://api.ipsw.me/v4/. This webservice provides many useful informations about iOS devices and its OS packages in IPSW form. The GUI app IPSW Nibbler contains no informations about iOS and such but is just a easy to use UI to access the informations from the webservice Api.
+The macOS App IPSW Nibbler is a GUI app for accessing the ipws api webservice https://api.ipsw.me. This webservice provides many useful informations about iOS devices and its OS packages in IPSW form. The GUI app IPSW Nibbler contains no informations about iOS and such but is just a easy to use UI to access the informations from the webservice Api.
 
 ### Features 
 
