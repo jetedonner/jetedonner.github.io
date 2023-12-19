@@ -2,9 +2,9 @@
 layout: post
 title:  "pymd3GUI - GUI for pymobiledevice3 CLI"
 author: dave
-date:   2023-12-14 14:37:54 +0200
+date:   2023-12-18 14:37:54 +0200
 categories: [iOS Internals, iOS Demistified Part A]
-tags: [Reversing, iOS Internals, iOS Demistified Part A]
+tags: [Reversing, iOS Tools, iOS Internals, iOS Demistified Part A]
 published: true 
 ---
 
