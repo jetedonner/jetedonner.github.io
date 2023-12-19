@@ -10,9 +10,11 @@ published: true
 
 ## Introduction - pymd3GUI
 
-The macOS App IPSW Nibbler is a GUI app for accessing the ipws api webservice https://api.ipsw.me. This webservice provides many useful informations about iOS devices and its OS packages in IPSW form. The GUI app IPSW Nibbler contains no informations about iOS and such but is just a easy to use UI to access the informations from the webservice Api.
+The python App pymd3GUI is a GUI wrapper for the python CLI App pymobiledevice3. It's Intention is to allow beginners and also advanced iOS users and reverse engineering enthusiasts to access the iDevice with a simple GUI interface. The App uses and needs the functionalities provided by pymobiledevice3.
 
 ### Features 
+- Basic and advanced informations
+- 
 You can find the blueprint of the api with a Definition of its features at: https://ipswdownloads.docs.apiary.io/api-description-document
 
 #### Device's
