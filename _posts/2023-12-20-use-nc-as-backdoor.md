@@ -43,17 +43,48 @@ Pictures
 ```
 
 #### The 'old fashioned' way
-##### Console on client for output
+With some (newer) versions of **nc** or on macOS for example you don't have the option of using the **-e** flag for executing commands on the target. But don't despair just yet, there is another way. You can use **nc** in another way to execute commands on the target and even get response of the executed commands. It's just a little more fingerworks to do.
+
+The basic setup involves a **server** where you accept commands just the way you would do with the **-e** command, but as long as you cannot use this flag, you will have to forward the output to the interpreter by your self. This can be done with:
+
+```bash
+nc -l 6969 | /bin/bash
+```
+This command on the server side will forward all incomming messages to _/bin/bash_ and execute it, so far so well! But what is with the response? If you setup the connection between server and client like this, the client will get no response what so ever from the server and that might a be little bit poor. So what can we do?
+
+What we can do, is to use the server as some kind of relay to execute the incomming command and then forward the result to another nc connection back to the client. So how will the setup Look like? First you setup a terminal on the client with the following command listening for results:
+
 ```bash
 nc -l 6968
 ```
 
-##### Console on server
+Then you setup the server with the relay listening for incomming commands, executeing them and forwardening the result back to the client with:
+
 ```bash
 nc -l 6969 | /bin/bash | nc 127.0.0.1 6968
 ```
 
-##### Console on client for sending commands
+All that is left to do now is to setup a client connection to the server from where you can send commands with the following:
+
+```bash
+nc 127.0.0.1 6969
+```
+
+Now you can send commands from the client to the server and receive the results of the executed commands in the second terminal on the client.
+
+### Overview
+
+##### Console on CLIENT for output
+```bash
+nc -l 6968
+```
+
+##### Console on SERVER
+```bash
+nc -l 6969 | /bin/bash | nc 127.0.0.1 6968
+```
+
+##### Console on CLIENT for sending commands
 ```bash
 nc 127.0.0.1 6969
 ```
