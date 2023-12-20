@@ -3,8 +3,8 @@ layout: post
 title:  "Use nc cli command as backdoor"
 author: dave
 date:   2023-12-20 15:30:59 +0200
-categories: [Reversing, *nix Security]
-tags: [Reversing, *nix Security, Networking]
+categories: [Reversing, nix Security]
+tags: [Reversing, nix Security, Networking]
 published: true 
 ---
 
