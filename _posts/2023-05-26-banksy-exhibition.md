@@ -13,7 +13,7 @@ This picture gallery is about my maternal uncle's funeral. His last wish was tha
 
 
 ![Cover Image of my Website](../../assets/img/roadtrips/2023-05-26-Banksy-Exhibition/20230526_150928.jpg){: width="963" height="722" }
-_My family and I at the funeral of my uncle_
+_My family and I at the the unofficial banksy exhibition in Zürich_
 
 ## Gallery
 {% include my-gallery3.html folder="/assets/img/roadtrips/2023-05-26-Banksy-Exhibition/" %}
