@@ -5,7 +5,7 @@ author: dave
 date:   2023-12-20 15:30:59 +0200
 categories: [Reversing, nix Security]
 tags: [Reversing, nix Security, Networking]
-published: true 
+published: false 
 ---
 
 ## Synopsis
