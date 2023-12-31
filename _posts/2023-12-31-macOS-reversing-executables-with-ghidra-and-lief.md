@@ -15,23 +15,34 @@ This post is a basic introduction for my journey into macOS executable reverse e
 Some times you might run in a situation where you want to be able to amend a existing exectuable on macOS and extend or edit its behavior.
 
 ## Table of content
-1. Tools of trade
+1. Example projects
+2. Tools of trade
 	1. Debugger / Disassembler
 	2. Hex Editor
 	3. File editor / modification
 	4. Assembler code compiler
 	5. Misc tools
-2. Description of macOS executable file format
-3. How to disassemble a macOS app
-4. How to debug a macOS app
-5. How to patch a macOS app
-6. How to add a section and new code to macOS app
-7. How to inject own library to macOS app
-8. Example projects / tutorials
+3. Description of macOS executable file format
+4. How to disassemble a macOS app
+5. How to debug a macOS app
+6. How to patch a macOS app
+7. How to add a section and new code to macOS app
+8. How to inject own library to macOS app
+9. Tutorials (see: Example projects)
 	1. Patching macOS app (with Ghidra)
 	2. Injecting library into macOS app (with Lief)
 	3. Adding section to macOS app (with Lief)
-9. Credits
+10. Credits
+
+## Example projects
+Here you can find the final sample projects with their source code which we use in the following articles and tutorials. If you like, you can download the final apps here, but all the app can also be built by going through the tutorials in this article.
+
+- [hello_world sample project](https://kimhauser.ch/downloads/github/reversing/hello_world.zip){:target="_blank" rel="noopener"}
+- lib4injection.dylib sample library
+- hello_nasm sample project
+
+
+### hello\_world example
 
 ## Tools of trade
 Here you have a list of (mostly) free tools which you need for file analysis, disassembling, debugging and modification. This list is by no means complete, but it should provide you with a basic overview of what comes in handy when you seriously want to start reverse engineering macOS apps, executables and libraries. With the tools in this list you should be able to follow this tutorials and recreate them on your own. Please feel free to contact or send me an update for this list of tools when you think you have a important amendment and / or addition.
@@ -99,18 +110,24 @@ The header section contains base information about the mach-o file and is someth
 	- For 64-bit architectures it is 0xfeedfacf
 
 ##### Load command table section
+The load commands are read immediately after the Mach-O header.
+
+The Mach-O header tells us how many load commands exist after the Mach-O header and the size in bytes to where the load commands end. The size of load commands is used as a redundancy check.
+
+When the last load command is read and the number of bytes for the load commands do not match, or if we go outside the number of bytes for load commands before reaching the last load command, then the file may be corrupted.
 
 ##### Padding section
 The padding section is used by OSX to sign the binary after the compilation by adding a custom command. The codesign utility extends the raw data area with the signature and adds a LC\_CODE\_SIGNATURE or a LC\_DYLIB\_CODE\_SIGN\_DRS command in the padding area.
 
 ##### Raw content section
+The raw content consists of the assembly code, rebase bytecode, signature, strings etc. This is the glue of the app and where you can find the code flow and functionalities.
 
 #### Mach-O file structure inspection with Lief
-If you'd like a detailed overview of the mach-o file structure of the executable your inspecting you can use **Lief** (see in Tools of trade) and run the following python script to print the information about the app to the console. Just create a python script file in the same directory where the hello_world executable resides, copy & paste the follwing python code into the script file and run the script from the console
+If you'd like a detailed overview of the mach-o file structure of the executable your inspecting you can use **Lief** (see in Tools of trade) and run the following python script to print the information about the app to the console. Just create a python script file in the same directory where the hello\_world executable resides, copy & paste the follwing python code into the script file and run the script from the console
 
 ```python
 import lief
-app = lief.parse("./hello_world")
+app = lief.parse("./hello\_world")
 print(app)
 ```
 
@@ -149,7 +166,7 @@ As an alternative to Lief you can also use the **otool** command line tool which
 It can even decompile an executable / library altough the output is very rough and simple (but it does the job). How ever if you want to deeply analyze a disassembly of a file you might be better off with a higher level kind of disassembler, just because of the limitation the console comes with.
 
 ```bash
-dave@Aeon c % otool hello_world
+dave@Aeon c % otool hello\_world
 Usage: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/otool [-arch arch_type] [-fahlLDtdorSTMRIHGvVcXmqQjCP] [-mcpu=arg] [--version] <object file> ...
 	-f print the fat headers
 	-a print the archive header
@@ -189,8 +206,8 @@ Usage: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctool
 If you want to get the load commands with otool you can do something like this:
 
 ```bash
-dave@Aeon c % otool -l hello_world
-hello_world:
+dave@Aeon c % otool -l hello\_world
+hello\_world:
 Load command 0
       cmd LC_SEGMENT_64
   cmdsize 72
@@ -220,11 +237,11 @@ Load command 1
 ### Patching macOS app (with Ghidra)
 For the tutorial about how to patch a macOS executable I use a small c app with a prompt asking the user to enter his secret and displays an appropriate message after checking the input. If the user doesn't enter the corret secret he will get an error. The goal of this tutorial is to patch the app in a way the user allways gets the success message, no matter if the secret is correct or not. We could also disable the whole prompt and check functionality, but for simplicity and for you to get the big picture, at this moment it's enough to just patch the check away. So let's dive in.
 
-#### Create a simple app with C
+#### Create a simple CLI executable with C
 Here you have my version of a simple app written with C and compiled on a MacBook Air M1 with Apple Silicon Chip (ARM64 Architecture).
 
 ##### Write the source file
-Open your Text editor of choice (I use Sublime 3) and create a new file, copy paste the following source code and save the file as **"hello_world.c"**
+Open your Text editor of choice (I use Sublime 3) and create a new file, copy paste the following source code and save the file as **hello\_world.c**
 
 ```c
 // Standard include
@@ -285,17 +302,17 @@ If you get an error you might be missing the "XCode command line tools". Downloa
 ```bash
 dave@Aeon c % xcode-select --install
 ```
-With clang installed you can use the following command in a terminal to compile the source "hello_world.c" into an executable. Notice: We create an executable with x86_64 architecture, more about that and why later. As you can see we have to include the "curses" library this is needed for the scanf() call.
+With clang installed you can use the following command in a terminal to compile the source "hello\_world.c" into an executable. Notice: We create an executable with x86_64 architecture, more about that and why later. As you can see we have to include the "curses" library this is needed for the scanf() call.
 
 ```bash
-dave@Aeon c % clang -target x86_64-apple-macos -arch x86_64 -o hello_world hello_world.c -lcurses
+dave@Aeon c % clang -target x86_64-apple-macos -arch x86_64 -o hello\_world hello\_world.c -lcurses
 ```
 
 ##### Make the file executable
 By default the compiler produce an executable which should be ready to go. But, if your file is not an executable after compilation, you might need to change its rights accordingly. Use the following command to change its access rights:
 
 ```bash
-dave@Aeon dev % chmod u+x hello_world
+dave@Aeon dev % chmod u+x hello\_world
 ```
 
 ##### CodeSign the executable
@@ -303,17 +320,17 @@ On macOS an executable can be code signed to verify the origin / author of an ap
 
 To create a valid signing certificat two options, you can create a self signed certificate. This is valid only for running the app on your local machine. To create a trusted certificate for others to use your app you need a Apple developer Account and create a certificate in the [Apple developer console](https://developer.apple.com/){:target="_blank" rel="noopener"}.
 
-Even if it's not needed for this tutorial example to code sign your executable you can do so, to play around with the differences between codsigned and unsigned apps. To code sign your executable **hello_world** app run the following command:
+Even if it's not needed for this tutorial example to code sign your executable you can do so, to play around with the differences between codsigned and unsigned apps. To code sign your executable **hello\_world** app run the following command:
 
 ```bash
-dave@Aeon dev % codesign --verbose=4 --timestamp --strict --options runtime -s "<YOUR SIGNING CERTIFICATE NAME>" hello_world --force
+dave@Aeon dev % codesign --verbose=4 --timestamp --strict --options runtime -s "<YOUR SIGNING CERTIFICATE NAME>" hello\_world --force
 ```
 
 ##### Run and test the executable 
 After successfully creating and signing (or not) the app it's time to test our work and see if it does what we want and see how the app behaves really. Run the following command to execute the app:
 
 ```bash
-dave@Aeon dev % ./hello_world
+dave@Aeon dev % ./hello\_world
 Please enter your secret: Test
 #=========================================================#
 |                        ERROR !!!!                       |
@@ -321,7 +338,7 @@ Please enter your secret: Test
 |       The entered secret does not match, try again      |
 |                                                         |
 #=========================================================#
-dave@Aeon dev % ./hello_world
+dave@Aeon dev % ./hello\_world
 Please enter your secret: S3CR3T
 #=========================================================#
 |                       SUCCESS !!!!                      |
@@ -343,14 +360,18 @@ A important and very interessting location in a executable is always the **entry
 
 This location is particularly interessting because from here you can start tracing your app till you find the sweet spot you're looking for and the action happens. Also on the other hand it's sometimes necessary to change the entry point to your own injected / amended code or make a jump to somewhere else in the app or a library you injected.
 
-Because our example **hello_world** app is really simple and our complete logic happens in the **main function**, which is the **entry point** of the app, this is also the spot we're interessted in. So let's go to the entry pont of **hello_world** and see what the code looks like.
+Because our example **hello\_world** app is really simple and our complete logic happens in the **main function**, which is the **entry point** of the app, this is also the spot we're interessted in. So let's go to the entry pont of **hello\_world** and see what the code looks like.
 
 ##### Ghidra main view
-![Overview of Ghidra - hello_world entry point](../../assets/img/macOS-reversing/Ghidra-hello_world-base-overview-.png)
+![Overview of Ghidra - hello\_world entry point](../../assets/img/macOS-reversing/Ghidra-hello\_world-base-overview-.png)
 
 ##### Ghidra - pseudo code
 Another reason why Ghidra is very handy is its aibility to show **pseudo code**. This is an already recreated pseudo c source code for the assambly which was disassembled by Ghidra. Of course this feature is also available with other disassemblers, but keep in mind, that Ghidra is really free and also used by a wide community world wide and therfore well maintained.
-![Pseudo code of Ghidra - hello_world entry point](../../assets/img/macOS-reversing/Ghidra-hello_world-base-pseudo-code-.png)
+![Pseudo code of Ghidra - hello\_world entry point](../../assets/img/macOS-reversing/Ghidra-hello\_world-base-pseudo-code-.png)
+
+### Injecting library into macOS app (with Lief)
+For this tutorial we can reuse the hello\_world app as a target or create a new simple CLI executable. This is up to you, I'm going to use the **unpatched version of the hello\_world app** we created in the previouse tutorial about patching an app.
+
 
 ## Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
