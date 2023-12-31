@@ -38,7 +38,7 @@ Some times you might run in a situation where you want to be able to amend a exi
 Executables and libraries on macOS use the so called Mach-O file format. In this sections you will get infos about the structure of the Mach-O file format, how to do modifications and an introduction of some internal aspects of the format.
 
 #### Mach-O file structure
-![mach-o file format overview](../assets/img/macOS-reversing/machoFileFormatOverview.png)(Source: [Lief Documentation](https://lief-project.github.io/doc/latest/tutorials/11_macho_modification.html){:target="_blank" rel="noopener"})
+![mach-o file format overview](../../assets/img/macOS-reversing/machoFileFormatOverview.png)(Source: [Lief Documentation](https://lief-project.github.io/doc/latest/tutorials/11_macho_modification.html){:target="_blank" rel="noopener"})
 
 ## How to disassemble a macOS app
 
@@ -109,7 +109,7 @@ int main() {
   // The secret to check against the user input
   char hardcoded_string[] = "S3CR3T";
 
-  // This msg will prompt the user to enter his / her secret
+  // This msg will prompt the user to enter his secret
   printf("Please enter your secret: ");
 
   // Will wait for user input and store the input in the variable "input"
@@ -210,10 +210,14 @@ A important and very interessting location in a executable is always the **entry
 
 This location is particularly interessting because from here you can start tracing your app till you find the sweet spot you're looking for and the action happens. Also on the other hand it's sometimes necessary to change the entry point to your own injected / amended code or make a jump to somewhere else in the app or a library you injected.
 
-Because our example **hello_world** app is really simple and our complete logic happens in the main function, which is the entry point of the app, this is also the spot we're interessted in. So let's go to the entry pont of **hello_world** and see what the code looks like.
+Because our example **hello_world** app is really simple and our complete logic happens in the **main function**, which is the **entry point** of the app, this is also the spot we're interessted in. So let's go to the entry pont of **hello_world** and see what the code looks like.
 
-![Overview of Ghidra - hello_world entry point](../assets/img/macOS-reversing/Ghidra-hello_world-base-overview-.png)
+##### Ghidra main view
+![Overview of Ghidra - hello_world entry point](../../assets/img/macOS-reversing/Ghidra-hello_world-base-overview-.png)
 
+##### Ghidra - pseudo code
+Another reason why Ghidra is very handy is its aibility to show **pseudo code**. This is an already recreated pseudo c source code for the assambly which was disassembled by Ghidra. Of course this feature is also available with other disassemblers, but keep in mind, that Ghidra is really free and also used by a wide community world wide and therfore well maintained.
+![Pseudo code of Ghidra - hello_world entry point](../../assets/img/macOS-reversing/Ghidra-hello_world-base-pseudo-code-.png)
 
 ## Credits
 <!--
