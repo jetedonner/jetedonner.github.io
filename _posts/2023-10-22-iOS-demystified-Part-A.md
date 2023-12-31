@@ -14,6 +14,55 @@ WHAT IS THIS ALL ABOUT:
 
 This is my first real deep endavour in iOS reversing and I want to let you be part of my troubles and successes. The article should be used as a map for your journey in reversing iOS.
 
+## The basics
+### Info about connected USB devices
+#### List all connected USB devices
+On macOS you can use the CLI command **system_profiler SPUSBDataType** or **ioreg -p IOUSB** to get an overview of the connected USB devices. This is mostly always the starting point of your endeavor. Use this tools to get familiar with the USB interface of your devices.
+
+##### system_profiler SPUSBDataType
+system_profiler reports on the hardware and software configuration of the system.  It can generate plain text reports or XML reports
+     which can be opened with System Information.app, or JSON reports
+
+```
+dave@Aeon ~ % system_profiler SPUSBDataType
+USB:
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8103USBXHCI
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8103USBXHCI
+
+        iPhone:
+
+          Product ID: 0x12a8
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 14.06
+          Serial Number: 00008110001241591460201E
+          Speed: Up to 480 Mb/s
+          Manufacturer: Apple Inc.
+          Location ID: 0x01100000 / 1
+          Current Available (mA): 500
+          Current Required (mA): 500
+          Extra Operating Current (mA): 1900
+          Sleep current (mA): 2400
+```
+
+##### ioreg -p IOUSB
+
+**ioreg** displays the I/O Kit registry.  It shows the hierarchical registry structure as an inverted tree.
+       
+
+```
+dave@Aeon ~ % ioreg -p IOUSB               
++-o Root  <class IORegistryEntry, id 0x100000100, retain 29>
+  +-o AppleT8103USBXHCI@00000000  <class AppleT8103USBXHCI, id 0x10000034c, registered, matched, active, busy 0 (2 ms), retain 39>
+  +-o AppleT8103USBXHCI@01000000  <class AppleT8103USBXHCI, id 0x100000348, registered, matched, active, busy 0 (751 ms), retain 98>
+    +-o iPhone@01100000  <class IOUSBHostDevice, id 0x100001384, registered, matched, active, busy 0 (276 ms), retain 95>
+```
+
 ### Articles 
 #### History of Jailbreak
 Some very useful informations about the history of jailbreaking the iOS with detailed explaination
