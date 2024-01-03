@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Reversing macOS executables with Ghidra and Lief"
+title:  "Reverse Engineering macOS executables with Ghidra and Lief"
 author: dave
 date:   2023-12-31 17:58:33 +0200
-categories: [Reversing, macOS]
-tags: [Reversing, macOS, Ghidra, Lief]
+categories: [Reverse Engineering, macOS]
+tags: [Reverse Engineering, macOS, Ghidra, Lief]
 published: true 
 ---
 
@@ -238,9 +238,9 @@ Load command 1
 
 ## <a id="howto-patch-macos-app"></a>How to patch a macOS app
 
-## <a id="howto-add-section-macos-app"></a>How to patch a macOS app
+## <a id="howto-add-section-macos-app"></a>How to add a section to a macOS app
 
-## <a id="howto-inject-library-macos-app"></a>How to patch a macOS app
+## <a id="howto-inject-library-macos-app"></a>How to inject a library into a macOS app
 
 ## <a id="tutorials"></a>Example projects / tutorials
 ### <a id="tutorial-patching-macos-app"></a>Patching macOS app (with Ghidra)
