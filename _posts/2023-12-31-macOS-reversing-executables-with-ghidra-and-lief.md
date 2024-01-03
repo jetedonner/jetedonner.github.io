@@ -238,8 +238,12 @@ Load command 1
 
 ## <a id="howto-patch-macos-app"></a>How to patch a macOS app
 
+## <a id="howto-add-section-macos-app"></a>How to patch a macOS app
+
+## <a id="howto-inject-library-macos-app"></a>How to patch a macOS app
+
 ## <a id="tutorials"></a>Example projects / tutorials
-### Patching macOS app (with Ghidra)
+### <a id="tutorial-patching-macos-app"></a>Patching macOS app (with Ghidra)
 For the tutorial about how to patch a macOS executable I use a small c app with a prompt asking the user to enter his secret and displays an appropriate message after checking the input. If the user doesn't enter the corret secret he will get an error. The goal of this tutorial is to patch the app in a way the user allways gets the success message, no matter if the secret is correct or not. We could also disable the whole prompt and check functionality, but for simplicity and for you to get the big picture, at this moment it's enough to just patch the check away. So let's dive in.
 
 #### Create a simple CLI executable with C
@@ -374,11 +378,12 @@ Because our example **hello_world** app is really simple and our complete logic 
 Another reason why Ghidra is very handy is its aibility to show **pseudo code**. This is an already recreated pseudo c source code for the assambly which was disassembled by Ghidra. Of course this feature is also available with other disassemblers, but keep in mind, that Ghidra is really free and also used by a wide community world wide and therfore well maintained.
 ![Pseudo code of Ghidra - hello_world entry point](../../assets/img/macOS-reversing/Ghidra-hello_world-base-pseudo-code-.png)
 
-### Injecting library into macOS app (with Lief)
+### <a id="tutorial-injecting-library-into-macos-app"></a>Injecting library into macOS app (with Lief)
 For this tutorial we can reuse the hello_world app as a target or create a new simple CLI executable. This is up to you, I'm going to use the **unpatched version of the hello_world app** we created in the previouse tutorial about patching an app.
 
+### <a id="tutorial-adding-section-macos-app"></a>Adding section to macOS app (with Ghidra)
 
-## Credits
+## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
 - [Mach-O Wikipedia](https://en.wikipedia.org/wiki/Mach-O)
 
