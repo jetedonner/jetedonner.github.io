@@ -15,26 +15,26 @@ This post is a basic introduction for my journey into macOS executable reverse e
 Some times you might run in a situation where you want to be able to amend a existing exectuable on macOS and extend or edit its behavior.
 
 ## Table of content
-1. Example projects
-2. Tools of trade
-	1. Debugger / Disassembler
-	2. Hex Editor
-	3. File editor / modification
-	4. Assembler code compiler
-	5. Misc tools
-3. Description of macOS executable file format
-4. How to disassemble a macOS app
-5. How to debug a macOS app
-6. How to patch a macOS app
-7. How to add a section and new code to macOS app
-8. How to inject own library to macOS app
-9. Tutorials (see: Example projects)
-	1. Patching macOS app (with Ghidra)
-	2. Injecting library into macOS app (with Lief)
-	3. Adding section to macOS app (with Lief)
-10. Credits
+1. [Example projects](#example-projects)
+2. [Tools of trade](#tools-of-trade)
+	1. [Debugger / Disassembler](#tools-of-trade-debugger-disassembler)
+	2. [Hex Editor](#tools-of-trade-hex-editor)
+	3. [File editor / modification](#tools-of-trade-file-editor)
+	4. [Assembler code compiler](#tools-of-trade-asm-compiler)
+	5. [Misc tools](#tools-of-trade-misc-tools)
+3. [Description of macOS executable file format](#description-macos-file-format)
+4. [How to disassemble a macOS app](#howto-disassemble-macos-app)
+5. [How to debug a macOS app](#howto-debug-macos-app)
+6. [How to patch a macOS app](#howto-patch-macos-app)
+7. [How to add a section and new code to macOS app](#howto-add-section-macos-app)
+8. [How to inject own library to macOS app](#howto-inject-library-macos-app)
+9. [Tutorials (see: Example projects)](#tutorials)
+	1. [Patching macOS app (with Ghidra)](#tutorial-patching-macos-app)
+	2. [Injecting library into macOS app (with Lief)](#tutorial-injecting-library-into-macos-app)
+	3. [Adding section to macOS app (with Lief)](#tutorial-adding-section-macos-app)
+10. [Credits](#credits)
 
-## Example projects
+## <a id="example-projects"></a>Example projects
 Here you can find the final sample projects with their source code which we use in the following articles and tutorials. If you like, you can download the final apps here, but all the app can also be built by going through the tutorials in this article.
 
 - [hello_world sample project](https://kimhauser.ch/downloads/github/reversing/hello_world.zip){:target="_blank" rel="noopener"}
@@ -44,10 +44,10 @@ Here you can find the final sample projects with their source code which we use 
 
 ### hello_world example
 
-## Tools of trade
+## <a id="tools-of-trade"></a>Tools of trade
 Here you have a list of (mostly) free tools which you need for file analysis, disassembling, debugging and modification. This list is by no means complete, but it should provide you with a basic overview of what comes in handy when you seriously want to start reverse engineering macOS apps, executables and libraries. With the tools in this list you should be able to follow this tutorials and recreate them on your own. Please feel free to contact or send me an update for this list of tools when you think you have a important amendment and / or addition.
 
-### Debugger and Disassembler
+### <a id="tools-of-trade-debugger-disassembler"></a>Debugger and Disassembler
 - **Free debuggers and disassembler**
 	- [XCode](https://developer.apple.com/xcode/){:target="_blank" rel="noopener"} - Extensive development IDE for macOS and iOS
 		- [Official Apple website](https://developer.apple.com/xcode/){:target="_blank" rel="noopener"}
@@ -64,29 +64,28 @@ Here you have a list of (mostly) free tools which you need for file analysis, di
 	- [IDA Pro](https://hex-rays.com/ida-pro/){:target="_blank" rel="noopener"} - This is an industry standart disassembler (Great tool but realy costy)
 	- [Hopper](https://www.hopperapp.com/){:target="_blank" rel="noopener"} - Great dissasembler and debugger for fair prices
 
-### Hex editor
+### <a id="tools-of-trade-hex-editor"></a>Hex editor
 - [Hex Fiend](https://hexfiend.com/){:target="_blank" rel="noopener"}
 	- [Official website](https://hexfiend.com/){:target="_blank" rel="noopener"}
 	- [Apple App Store](https://apps.apple.com/us/app/hex-fiend/id1342896380?mt=12){:target="_blank" rel="noopener"}
 	- Homebrew: **brew install --cask hex-fiend**
 - 
 
-### File editor / modification
+### <a id="tools-of-trade-file-editor"></a>File editor / modification
 - [Lief](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
 	- [Github repo](https://github.com/lief-project/LIEF){:target="_blank" rel="noopener"}
 
-### Assembler code compiler
+### <a id="tools-of-trade-asm-compiler"></a>Assembler code compiler
 - Nasm compiler
 
-### Misc tools
+### <a id="tools-of-trade-misc-tools"></a>Misc tools
 
 - XCode commandline tools
 - otool - object file displaying tool
 - clang
 - gcc
 
-
-## Description of macOS executable file format
+## <a id="description-macos-file-format"></a>Description of macOS executable file format
 ### Mach-O file format description
 Executables and libraries on macOS use the so called Mach-O file format. In this sections you will get infos about the structure of the Mach-O file format, how to do modifications and an introduction of some internal aspects of the format.
 
@@ -230,10 +229,13 @@ Load command 1
 ...
 ```
 
-## How to disassemble a macOS app
+## <a id="howto-disassemble-macos-app"></a>How to disassemble a macOS app
 
+## <a id="howto-debug-macos-app"></a>How to debug a macOS app
 
-## Example projects / tutorials
+## <a id="howto-patch-macos-app"></a>How to patch a macOS app
+
+## <a id="tutorials"></a>Example projects / tutorials
 ### Patching macOS app (with Ghidra)
 For the tutorial about how to patch a macOS executable I use a small c app with a prompt asking the user to enter his secret and displays an appropriate message after checking the input. If the user doesn't enter the corret secret he will get an error. The goal of this tutorial is to patch the app in a way the user allways gets the success message, no matter if the secret is correct or not. We could also disable the whole prompt and check functionality, but for simplicity and for you to get the big picture, at this moment it's enough to just patch the check away. So let's dive in.
 
