@@ -76,14 +76,17 @@ Here you have a list of (mostly) free tools which you need for file analysis, di
 	- [Github repo](https://github.com/lief-project/LIEF){:target="_blank" rel="noopener"}
 
 ### <a id="tools-of-trade-asm-compiler"></a>Assembler code compiler
-- Nasm compiler
+- [Nasm compiler](https://www.nasm.us/){:target="_blank" rel="noopener"}
 
 ### <a id="tools-of-trade-misc-tools"></a>Misc tools
 
-- XCode commandline tools
+- XCode commandline tools (XCode)
 - otool - object file displaying tool
+- nm
 - clang
 - gcc
+- lldb (gdb)
+- Calculator
 
 ## <a id="description-macos-file-format"></a>Description of macOS executable file format
 ### Mach-O file format description
