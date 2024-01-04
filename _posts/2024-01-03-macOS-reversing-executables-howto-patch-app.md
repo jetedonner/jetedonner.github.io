@@ -68,7 +68,8 @@ int main(int argc, char **argv) {
 }
 ```
 
-``àsm
+The assembler code for our hello_world
+```asm
                              **************************************************************
                              *                          FUNCTION                          *
                              **************************************************************
@@ -157,7 +158,35 @@ int main(int argc, char **argv) {
                              -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
        100003f50 0f              ??         0Fh
        100003f51 0b              ??         0Bh
+```
 
+
+The pseudo code for our hello_world
+
+```c
+undefined8 entry(uint param_1)
+
+{
+  int iVar1;
+  undefined local_118 [264];
+  long local_10;
+  
+  local_10 = *(long *)PTR____stack_chk_guard_100004008;
+  _printf("Enter your secret (%d): ",(ulong)param_1);
+  _scanf("%s",local_118);
+  iVar1 = _checkInput(local_118);
+  if (iVar1 == 0) {
+    _printf("SUCCESS\n");
+  }
+  else {
+    _printf("ERROR\n");
+  }
+  if (*(long *)PTR____stack_chk_guard_100004008 == local_10) {
+    return 0;
+  }
+                    /* WARNING: Subroutine does not return */
+  ___stack_chk_fail();
+}
 ```
 
 ## <a id="credits"></a>Credits
