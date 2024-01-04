@@ -25,6 +25,7 @@ If the app you want to Analyse is an "*.app" bundle you will First have to show 
 ### Our target HELLO WORLD app
 For simplicity we create a simple hello world app that asks the user for a secret and checks it with a hardcoded string. We'll use this simple hello world app for our tutorials to find out how to reverse engineer macOS apps. So let's take a look at our hello world c source code
 
+Create the hello world app by creating a file called hello_world.c with the following code in it:
 ```c
 // Standard include
 #include <stdio.h>
@@ -66,6 +67,27 @@ int main(int argc, char **argv) {
   }
   return 0;
 }
+```
+
+Compile the source code hello_world.c with:
+```bash
+clang -target x86_64-apple-macos -arch x86_64 -o hello_world hello_world.c
+```
+
+Make the file hello_world executable with:
+```bash
+chmod u+x hello_world 
+```
+
+Let's see what our executable hello_world looks like when we run it. Run it with ./hello_world
+```bash
+dave@Aeon patching_macOS_app % ./hello_world       
+Enter your secret:12345
+ERROR
+dave@Aeon patching_macOS_app % ./hello_world
+Enter your secret:S3CR3T
+SUCCESS
+dave@Aeon patching_macOS_app % 
 ```
 
 The assembler code for our hello_world
