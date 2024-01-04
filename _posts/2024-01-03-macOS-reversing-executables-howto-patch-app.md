@@ -12,7 +12,11 @@ published: true
 This post is a basic introduction about how to patch a simple macOS app. It shows you how to disassemble a macOS app with Ghidra, identify the sweet spot and apply the patch. Just follow the tutorial and implement the needed files yourself or download the final files to inspect them on your own.
 
 ## Problem description
-Some times you might run in a situation where you want to be able to amend a existing exectuable on macOS and extend or edit its behavior.
+Some times you might run in a situation where you want to be able to amend a existing exectuable on macOS and extend or edit its behavior. Most of the times this amendment involves just a tiny little Spot or Part of the App and you really litteraly just need to flip one or two bytes. This is where patching an App comes into play. Here I gona show you some basic techniques how to do that.
+
+## Tutorial - How to patch a macOS App 
+### Examining and disassembling the App
+First Thing you want to Do when it comes to modifying an App is examining the original files.
 
 ## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
