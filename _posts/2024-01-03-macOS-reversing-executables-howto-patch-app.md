@@ -68,6 +68,98 @@ int main(int argc, char **argv) {
 }
 ```
 
+``àsm
+                             **************************************************************
+                             *                          FUNCTION                          *
+                             **************************************************************
+                             undefined entry()
+             undefined         AL:1           <RETURN>
+             undefined8        Stack[-0x10]:8 local_10                                XREF[2]:     100003ea5(W), 
+                                                                                                   100003f33(R)  
+             undefined1        Stack[-0x118   local_118                               XREF[2]:     100003ed4(*), 
+                                                                                                   100003ee9(*)  
+             undefined4        Stack[-0x11c   local_11c                               XREF[1]:     100003ea9(W)  
+             undefined4        Stack[-0x120   local_120                               XREF[2]:     100003eb3(W), 
+                                                                                                   100003ec0(R)  
+             undefined8        Stack[-0x128   local_128                               XREF[1]:     100003eb9(W)  
+             undefined4        Stack[-0x12c   local_12c                               XREF[2]:     100003ef5(W), 
+                                                                                                   100003efb(R)  
+                             _main                                           XREF[2]:     Entry Point(*), 1000080ea(*)  
+                             entry
+       100003e90 55              PUSH       RBP
+       100003e91 48 89 e5        MOV        RBP,RSP
+       100003e94 48 81 ec        SUB        RSP,0x130
+                 30 01 00 00
+       100003e9b 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
+                 66 01 00 00
+       100003ea2 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
+       100003ea5 48 89 45 f8     MOV        qword ptr [RBP + local_10],RAX
+       100003ea9 c7 85 ec        MOV        dword ptr [RBP + local_11c],0x0
+                 fe ff ff 
+                 00 00 00 00
+       100003eb3 89 bd e8        MOV        dword ptr [RBP + local_120],EDI
+                 fe ff ff
+       100003eb9 48 89 b5        MOV        qword ptr [RBP + local_128],RSI
+                 e0 fe ff ff
+       100003ec0 8b b5 e8        MOV        ESI,dword ptr [RBP + local_120]
+                 fe ff ff
+       100003ec6 48 8d 3d        LEA        RDI,[s_Enter_your_secret_(%d):_100003f71]        = "Enter your secret (%d): "
+                 a4 00 00 00
+       100003ecd b0 00           MOV        AL,0x0
+       100003ecf e8 84 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                 00 00
+       100003ed4 48 8d b5        LEA        RSI=>local_118,[RBP + -0x110]
+                 f0 fe ff ff
+       100003edb 48 8d 3d        LEA        RDI,[s_%s_100003f8a]                             = "%s"
+                 a8 00 00 00
+       100003ee2 b0 00           MOV        AL,0x0
+       100003ee4 e8 75 00        CALL       <EXTERNAL>::_scanf                               int _scanf(char * param_1, ...)
+                 00 00
+       100003ee9 48 8d bd        LEA        RDI=>local_118,[RBP + -0x110]
+                 f0 fe ff ff
+       100003ef0 e8 5b ff        CALL       _checkInput                                      undefined _checkInput()
+                 ff ff
+       100003ef5 89 85 dc        MOV        dword ptr [RBP + local_12c],EAX
+                 fe ff ff
+       100003efb 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
+                 fe ff ff 00
+       100003f02 0f 85 13        JNZ        LAB_100003f1b
+                 00 00 00
+       100003f08 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f8d]                        = "SUCCESS\n"
+                 7e 00 00 00
+       100003f0f b0 00           MOV        AL,0x0
+       100003f11 e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                 00 00
+       100003f16 e9 0e 00        JMP        LAB_100003f29
+                 00 00
+                             LAB_100003f1b                                   XREF[1]:     100003f02(j)  
+       100003f1b 48 8d 3d        LEA        RDI,[s_ERROR_100003f96]                          = "ERROR\n"
+                 74 00 00 00
+       100003f22 b0 00           MOV        AL,0x0
+       100003f24 e8 2f 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                 00 00
+                             LAB_100003f29                                   XREF[1]:     100003f16(j)  
+       100003f29 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
+                 d8 00 00 00
+       100003f30 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
+       100003f33 48 8b 4d f8     MOV        RCX,qword ptr [RBP + local_10]
+       100003f37 48 39 c8        CMP        RAX,RCX
+       100003f3a 0f 85 0b        JNZ        LAB_100003f4b
+                 00 00 00
+       100003f40 31 c0           XOR        EAX,EAX
+       100003f42 48 81 c4        ADD        RSP,0x130
+                 30 01 00 00
+       100003f49 5d              POP        RBP
+       100003f4a c3              RET
+                             LAB_100003f4b                                   XREF[1]:     100003f3a(j)  
+       100003f4b e8 02 00        CALL       <EXTERNAL>::___stack_chk_fail                    undefined ___stack_chk_fail()
+                 00 00
+                             -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+       100003f50 0f              ??         0Fh
+       100003f51 0b              ??         0Bh
+
+```
+
 ## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
 - [Mach-O Wikipedia](https://en.wikipedia.org/wiki/Mach-O)
