@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
 ```
 
 The assembler code for our hello_world
-```asm
+```nasm
                              **************************************************************
                              *                          FUNCTION                          *
                              **************************************************************
