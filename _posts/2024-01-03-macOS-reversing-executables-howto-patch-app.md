@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
   char input[256];
 
   // This msg will prompt the user to enter his / her secret
-  printf("Enter your secret: ");
+  printf("Enter your secret:\n");
 
   // Will wait for user input and store the input in the variable "input"
   scanf("%s", input);
@@ -82,12 +82,42 @@ chmod u+x hello_world
 Let's see what our executable hello_world looks like when we run it. Run it with ./hello_world
 ```bash
 dave@Aeon patching_macOS_app % ./hello_world       
-Enter your secret:12345
+Enter your secret:
+12345
 ERROR
 dave@Aeon patching_macOS_app % ./hello_world
-Enter your secret:S3CR3T
+Enter your secret:
+S3CR3T
 SUCCESS
 dave@Aeon patching_macOS_app % 
+```
+
+The pseudo code for our hello_world
+
+```c
+undefined8 entry(uint param_1)
+
+{
+  int iVar1;
+  undefined local_118 [264];
+  long local_10;
+  
+  local_10 = *(long *)PTR____stack_chk_guard_100004008;
+  _printf("Enter your secret (%d): ",(ulong)param_1);
+  _scanf("%s",local_118);
+  iVar1 = _checkInput(local_118);
+  if (iVar1 == 0) {
+    _printf("SUCCESS\n");
+  }
+  else {
+    _printf("ERROR\n");
+  }
+  if (*(long *)PTR____stack_chk_guard_100004008 == local_10) {
+    return 0;
+  }
+                    /* WARNING: Subroutine does not return */
+  ___stack_chk_fail();
+}
 ```
 
 The assembler code for our hello_world
@@ -182,34 +212,25 @@ The assembler code for our hello_world
        100003f51 0b              ??         0Bh
 ```
 
+In the disassembly we can see the call to compare with CMP at 0x 100003efb (after CALL checkInput at 0x100003ef0) and decicion with JNZ at 0x100003f02 which is the point where the app decides if we entered the correct secret or not. So the answere to this challenge is simple. If we want to go the easiest way to get to the success functionality, we just have to make the app always go to the success branch. We can do this simply by NOP-ing out the descision branch. This is not very fancy, but very effective. What we wana do in this situation is to NOP the complete instruction "JNZ LAB_100003f1b". So we can do this by overwritting the instruction with the hex values "90" which is the opcode for NOP. The decision will look as follows after editing:
 
-The pseudo code for our hello_world
+```nasm
+       100003efb 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
+                 fe ff ff 00
+       100003f02 90              NOP
+       100003f03 90              NOP
+       100003f04 90              NOP
+       100003f05 90              NOP
+       100003f06 90              NOP
+       100003f07 90              NOP
+       100003f08 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f8d]                        = "SUCCESS\n"
+                 7e 00 00 00
+       100003f0f b0 00           MOV        AL,0x0
+       100003f11 e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                 00 00
 
-```c
-undefined8 entry(uint param_1)
-
-{
-  int iVar1;
-  undefined local_118 [264];
-  long local_10;
-  
-  local_10 = *(long *)PTR____stack_chk_guard_100004008;
-  _printf("Enter your secret (%d): ",(ulong)param_1);
-  _scanf("%s",local_118);
-  iVar1 = _checkInput(local_118);
-  if (iVar1 == 0) {
-    _printf("SUCCESS\n");
-  }
-  else {
-    _printf("ERROR\n");
-  }
-  if (*(long *)PTR____stack_chk_guard_100004008 == local_10) {
-    return 0;
-  }
-                    /* WARNING: Subroutine does not return */
-  ___stack_chk_fail();
-}
 ```
+
 
 ## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
