@@ -95,7 +95,7 @@ dave@Aeon patching_macOS_app %
 The pseudo code for our hello_world
 
 ```c
-undefined8 entry(uint param_1)
+undefined8 entry(void)
 
 {
   int iVar1;
@@ -103,7 +103,7 @@ undefined8 entry(uint param_1)
   long local_10;
   
   local_10 = *(long *)PTR____stack_chk_guard_100004008;
-  _printf("Enter your secret (%d): ",(ulong)param_1);
+  _printf("Enter your secret:\n");
   _scanf("%s",local_118);
   iVar1 = _checkInput(local_118);
   if (iVar1 == 0) {
@@ -120,96 +120,141 @@ undefined8 entry(uint param_1)
 }
 ```
 
-The assembler code for our hello_world
+The assembler code for our hello_world main (entry) function
 ```nasm
                              **************************************************************
                              *                          FUNCTION                          *
                              **************************************************************
                              undefined entry()
              undefined         AL:1           <RETURN>
-             undefined8        Stack[-0x10]:8 local_10                                XREF[2]:     100003ea5(W), 
-                                                                                                   100003f33(R)  
-             undefined1        Stack[-0x118   local_118                               XREF[2]:     100003ed4(*), 
-                                                                                                   100003ee9(*)  
-             undefined4        Stack[-0x11c   local_11c                               XREF[1]:     100003ea9(W)  
-             undefined4        Stack[-0x120   local_120                               XREF[2]:     100003eb3(W), 
-                                                                                                   100003ec0(R)  
-             undefined8        Stack[-0x128   local_128                               XREF[1]:     100003eb9(W)  
-             undefined4        Stack[-0x12c   local_12c                               XREF[2]:     100003ef5(W), 
-                                                                                                   100003efb(R)  
+             undefined8        Stack[-0x10]:8 local_10                                XREF[2]:     100003eb5(W), 
+                                                                                                   100003f3d(R)  
+             undefined1        Stack[-0x118   local_118                               XREF[2]:     100003ede(*), 
+                                                                                                   100003ef3(*)  
+             undefined4        Stack[-0x11c   local_11c                               XREF[1]:     100003eb9(W)  
+             undefined4        Stack[-0x120   local_120                               XREF[1]:     100003ec3(W)  
+             undefined8        Stack[-0x128   local_128                               XREF[1]:     100003ec9(W)  
+             undefined4        Stack[-0x12c   local_12c                               XREF[2]:     100003eff(W), 
+                                                                                                   100003f05(R)  
                              _main                                           XREF[2]:     Entry Point(*), 1000080ea(*)  
                              entry
-       100003e90 55              PUSH       RBP
-       100003e91 48 89 e5        MOV        RBP,RSP
-       100003e94 48 81 ec        SUB        RSP,0x130
+       100003ea0 55              PUSH       RBP
+       100003ea1 48 89 e5        MOV        RBP,RSP
+       100003ea4 48 81 ec        SUB        RSP,0x130
                  30 01 00 00
-       100003e9b 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
-                 66 01 00 00
-       100003ea2 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
-       100003ea5 48 89 45 f8     MOV        qword ptr [RBP + local_10],RAX
-       100003ea9 c7 85 ec        MOV        dword ptr [RBP + local_11c],0x0
+       100003eab 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
+                 56 01 00 00
+       100003eb2 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
+       100003eb5 48 89 45 f8     MOV        qword ptr [RBP + local_10],RAX
+       100003eb9 c7 85 ec        MOV        dword ptr [RBP + local_11c],0x0
                  fe ff ff 
                  00 00 00 00
-       100003eb3 89 bd e8        MOV        dword ptr [RBP + local_120],EDI
+       100003ec3 89 bd e8        MOV        dword ptr [RBP + local_120],EDI
                  fe ff ff
-       100003eb9 48 89 b5        MOV        qword ptr [RBP + local_128],RSI
+       100003ec9 48 89 b5        MOV        qword ptr [RBP + local_128],RSI
                  e0 fe ff ff
-       100003ec0 8b b5 e8        MOV        ESI,dword ptr [RBP + local_120]
-                 fe ff ff
-       100003ec6 48 8d 3d        LEA        RDI,[s_Enter_your_secret_(%d):_100003f71]        = "Enter your secret (%d): "
+       100003ed0 48 8d 3d        LEA        RDI,[s_Enter_your_secret:_100003f7b]             = "Enter your secret:\n"
                  a4 00 00 00
-       100003ecd b0 00           MOV        AL,0x0
-       100003ecf e8 84 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+       100003ed7 b0 00           MOV        AL,0x0
+       100003ed9 e8 84 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
                  00 00
-       100003ed4 48 8d b5        LEA        RSI=>local_118,[RBP + -0x110]
+       100003ede 48 8d b5        LEA        RSI=>local_118,[RBP + -0x110]
                  f0 fe ff ff
-       100003edb 48 8d 3d        LEA        RDI,[s_%s_100003f8a]                             = "%s"
-                 a8 00 00 00
-       100003ee2 b0 00           MOV        AL,0x0
-       100003ee4 e8 75 00        CALL       <EXTERNAL>::_scanf                               int _scanf(char * param_1, ...)
+       100003ee5 48 8d 3d        LEA        RDI,[s_%s_100003f8f]                             = "%s"
+                 a3 00 00 00
+       100003eec b0 00           MOV        AL,0x0
+       100003eee e8 75 00        CALL       <EXTERNAL>::_scanf                               int _scanf(char * param_1, ...)
                  00 00
-       100003ee9 48 8d bd        LEA        RDI=>local_118,[RBP + -0x110]
+       100003ef3 48 8d bd        LEA        RDI=>local_118,[RBP + -0x110]
                  f0 fe ff ff
-       100003ef0 e8 5b ff        CALL       _checkInput                                      undefined _checkInput()
+       100003efa e8 61 ff        CALL       _checkInput                                      undefined _checkInput()
                  ff ff
-       100003ef5 89 85 dc        MOV        dword ptr [RBP + local_12c],EAX
+       100003eff 89 85 dc        MOV        dword ptr [RBP + local_12c],EAX
                  fe ff ff
-       100003efb 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
+       100003f05 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
                  fe ff ff 00
-       100003f02 0f 85 13        JNZ        LAB_100003f1b
+       100003f0c 0f 85 13        JNZ        LAB_100003f25
                  00 00 00
-       100003f08 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f8d]                        = "SUCCESS\n"
-                 7e 00 00 00
-       100003f0f b0 00           MOV        AL,0x0
-       100003f11 e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+       100003f12 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f92]                        = "SUCCESS\n"
+                 79 00 00 00
+       100003f19 b0 00           MOV        AL,0x0
+       100003f1b e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
                  00 00
-       100003f16 e9 0e 00        JMP        LAB_100003f29
+       100003f20 e9 0e 00        JMP        LAB_100003f33
                  00 00
-                             LAB_100003f1b                                   XREF[1]:     100003f02(j)  
-       100003f1b 48 8d 3d        LEA        RDI,[s_ERROR_100003f96]                          = "ERROR\n"
-                 74 00 00 00
-       100003f22 b0 00           MOV        AL,0x0
-       100003f24 e8 2f 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                             LAB_100003f25                                   XREF[1]:     100003f0c(j)  
+       100003f25 48 8d 3d        LEA        RDI,[s_ERROR_100003f9b]                          = "ERROR\n"
+                 6f 00 00 00
+       100003f2c b0 00           MOV        AL,0x0
+       100003f2e e8 2f 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
                  00 00
-                             LAB_100003f29                                   XREF[1]:     100003f16(j)  
-       100003f29 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
-                 d8 00 00 00
-       100003f30 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
-       100003f33 48 8b 4d f8     MOV        RCX,qword ptr [RBP + local_10]
-       100003f37 48 39 c8        CMP        RAX,RCX
-       100003f3a 0f 85 0b        JNZ        LAB_100003f4b
+                             LAB_100003f33                                   XREF[1]:     100003f20(j)  
+       100003f33 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
+                 ce 00 00 00
+       100003f3a 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
+       100003f3d 48 8b 4d f8     MOV        RCX,qword ptr [RBP + local_10]
+       100003f41 48 39 c8        CMP        RAX,RCX
+       100003f44 0f 85 0b        JNZ        LAB_100003f55
                  00 00 00
-       100003f40 31 c0           XOR        EAX,EAX
-       100003f42 48 81 c4        ADD        RSP,0x130
+       100003f4a 31 c0           XOR        EAX,EAX
+       100003f4c 48 81 c4        ADD        RSP,0x130
                  30 01 00 00
-       100003f49 5d              POP        RBP
-       100003f4a c3              RET
-                             LAB_100003f4b                                   XREF[1]:     100003f3a(j)  
-       100003f4b e8 02 00        CALL       <EXTERNAL>::___stack_chk_fail                    undefined ___stack_chk_fail()
+       100003f53 5d              POP        RBP
+       100003f54 c3              RET
+                             LAB_100003f55                                   XREF[1]:     100003f44(j)  
+       100003f55 e8 02 00        CALL       <EXTERNAL>::___stack_chk_fail                    undefined ___stack_chk_fail()
                  00 00
                              -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
-       100003f50 0f              ??         0Fh
-       100003f51 0b              ??         0Bh
+       100003f5a 0f              ??         0Fh
+       100003f5b 0b              ??         0Bh
+
+```
+
+The disassembled code for the **checkInput()** function which is called from the main function after user types his secret
+```nasm
+                             //
+                             // __text 
+                             // __TEXT
+                             // ram:100003e60-ram:100003f5b
+                             //
+                             **************************************************************
+                             *                          FUNCTION                          *
+                             **************************************************************
+                             undefined _checkInput()
+             undefined         AL:1           <RETURN>
+             undefined8        Stack[-0x10]:8 local_10                                XREF[2]:     100003e68(W), 
+                                                                                                   100003e89(R)  
+             undefined1        Stack[-0x11]:1 local_11                                XREF[1]:     100003e86(W)  
+             undefined2        Stack[-0x13]:2 local_13                                XREF[1]:     100003e7c(W)  
+             undefined4        Stack[-0x17]:4 local_17                                XREF[2]:     100003e72(W), 
+                                                                                                   100003e8d(*)  
+                             _checkInput                                     XREF[3]:     Entry Point(*), 
+                                                                                          entry:100003efa(c), 1000080e8(*)  
+       100003e60 55              PUSH       RBP
+       100003e61 48 89 e5        MOV        RBP,RSP
+       100003e64 48 83 ec 10     SUB        RSP,0x10
+       100003e68 48 89 7d f8     MOV        qword ptr [RBP + local_10],RDI
+       100003e6c 8b 05 02        MOV        EAX,dword ptr [s_S3CR3T_100003f74]               = "S3CR3T"
+                 01 00 00
+       100003e72 89 45 f1        MOV        dword ptr [RBP + local_17],EAX
+       100003e75 66 8b 05        MOV        AX,word ptr [s_3T_100003f74+4]                   = "3T"
+                 fc 00 00 00
+       100003e7c 66 89 45 f5     MOV        word ptr [RBP + local_13],AX
+       100003e80 8a 05 f4        MOV        AL,byte ptr [s__100003f74+6]                     = ""
+                 00 00 00
+       100003e86 88 45 f7        MOV        byte ptr [RBP + local_11],AL
+       100003e89 48 8b 7d f8     MOV        RDI,qword ptr [RBP + local_10]
+       100003e8d 48 8d 75 f1     LEA        RSI=>local_17,[RBP + -0xf]
+       100003e91 e8 d8 00        CALL       <EXTERNAL>::_strcmp                              int _strcmp(char * param_1, char
+                 00 00
+       100003e96 48 83 c4 10     ADD        RSP,0x10
+       100003e9a 5d              POP        RBP
+       100003e9b c3              RET
+       100003e9c 0f              ??         0Fh
+       100003e9d 1f              ??         1Fh
+       100003e9e 40              ??         40h    @
+       100003e9f 00              ??         00h
+
 ```
 
 In the disassembly we can see the call to compare with CMP at 0x 100003efb (after CALL checkInput at 0x100003ef0) and decicion with JNZ at 0x100003f02 which is the point where the app decides if we entered the correct secret or not. So the answere to this challenge is simple. If we want to go the easiest way to get to the success functionality, we just have to make the app always go to the success branch. We can do this simply by NOP-ing out the descision branch. This is not very fancy, but very effective. What we wana do in this situation is to NOP the complete instruction "JNZ LAB_100003f1b". So we can do this by overwritting the instruction with the hex values "90" which is the opcode for NOP. The decision will look as follows after editing:
