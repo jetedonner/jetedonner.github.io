@@ -212,7 +212,7 @@ The assembler code for our hello_world
        100003f51 0b              ??         0Bh
 ```
 
-In the disassembly we can see the call to compare with CMP at 0x 100003efb (after CALL checkInput at 0x100003ef0) and decicion with JNZ at 0x100003f02 which is the point where the app decides if we entered the correct secret or not. So the answere to this challenge is simple. If we want to go the easiest way to get to the success functionality, we just have to make the app always go to the success branch. We can do this simply by NOP-ing out the descision branch. This is not very fancy, but very effective. What we wana do in this situation is to NOP the complete instruction "JNZ LAB_100003f1b". So we can do this by overwritting the instruction with the hex values "90" which is the opcode for NOP. The decision will look as follows after editing:
+In the disassembly we can see the **call to compare with CMP at 0x 100003efb** (after CALL checkInput at 0x100003ef0) and **decicion with JNZ at 0x100003f02** which is the point where the app decides if we entered the correct secret or not. So the answere to this challenge is quite simple. If we want to go the easiest way to get to the success functionality, we just have to make the app always go to the success branch. We can do this simply by NOP-ing out the descision branch. This is not very fancy, but yet very effective. What we wana do in this situation is to **NOP the complete instruction "JNZ LAB_100003f1b"**. So we can do this by overwritting the instruction with the hex values "90" which is the opcode for NOP. The decision will look as follows after editing:
 
 ```nasm
        100003efb 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
