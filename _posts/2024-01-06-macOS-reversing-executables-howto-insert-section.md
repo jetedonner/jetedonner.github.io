@@ -20,6 +20,18 @@ If patching a file is not an option and / or you want to add a bigger piece of c
 
 Of course again you will have to make the newly patched app executable again and recodesign it to get it running. But that's basically it. Try it yourself and play around with the LIEF script to get a feeling how it works.
 
+### Prepare the code to insert
+To create the code to insert you can write a little helper app that might look like this:
+
+```c
+#include <stdio.h>
+
+int checkOK(char input[256]) { return 0; }
+
+int main() { return 0; }
+```
+We will use the disassembled code from the checkOK() function to insert it into the new section we are going to create. Build the helper app with clang and disassemble the resulting executable with Ghidra
+
 
 ## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
