@@ -257,7 +257,10 @@ The disassembled code for the **checkInput()** function which is called from the
 
 ```
 
-In the disassembly we can see the **call to compare with CMP at 0x 100003efb** (after CALL checkInput at 0x100003ef0) and **decicion with JNZ at 0x100003f02** which is the point where the app decides if we entered the correct secret or not. So the answere to this challenge is quite simple. If we want to go the easiest way to get to the success functionality, we just have to make the app always go to the success branch. We can do this simply by NOP-ing out the descision branch. This is not very fancy, but yet very effective. What we wana do in this situation is to **NOP the complete instruction "JNZ LAB_100003f1b"**. So we can do this by overwritting the instruction with the hex values "90" which is the opcode for NOP. The decision will look as follows after editing:
+In the disassembly we can see the **call to compare with CMP at 0x 100003efb** (after CALL checkInput at 0x100003ef0) and **decicion with JNZ at 0x100003f02** which is the point where the app decides if we entered the correct secret or not. So the answere to this challenge is quite simple. If we want to go the easiest way to get to the success functionality, we just have to make the app always go to the success branch. We can do this simply by NOP-ing out the descision branch. This is not very fancy, but yet very effective. 
+
+### Patch using Ghidra
+What we wana do in this situation is to **NOP the complete instruction "JNZ LAB_100003f1b"**. So we can do this by overwritting the instruction with the hex values "90" which is the opcode for NOP. The decision will look as follows after editing:
 
 ```nasm
        100003eee e8 75 00        CALL       <EXTERNAL>::_scanf                               int _scanf(char * param_1, ...)
@@ -317,9 +320,46 @@ dave@Aeon patching_macOS_app %
 
 ```
 
-SUCCESS - yes, that's what we wanted to see and it's what we get. Due to the fact, that we NOPED the JNZ instruction to the error branch of the app the programm will always got to the success branch, no matter what we enter as secret. That's it - really simple and very basic, but also very effectiv indeed. 
+SUCCESS - yes, that's what we wanted to see and it's what we get. Due to the fact, that we NOPED the JNZ instruction to the error branch of the app away, the programm will always got to the success branch, no matter what we enter as secret. That's it - really simple and very basic, but also very effectiv indeed. 
 
-You can go ahead an play around with the hello_world app on your own to i.e. store the return value of the strcmp() function in checkInput() into a variable and the return this variable as result of checkInput(). From this you can again load the compiled hello_world into Ghidra and i.e. modify the checkInput() function in a way it always returns 0x0 so the following check in the main() function always succeeds. It's up to you to discover the posibilities of patching this demo app or other executables.
+You can go ahead an play around with the hello_world app on your own to i.e. store the return value of the strcmp() function in checkInput() into a variable and then return this variable as result of checkInput(). From this you can again load the compiled hello_world into Ghidra and i.e. modify the checkInput() function in a way it always returns 0x0 so the following check in the main() function always succeeds. It's up to you to push the posibilities of patching this demo app or other executables more and more.
+
+```c
+// This is the evil check function which decides if we get access or not
+int checkInput(char input[256]) {
+
+  // The secret to check against the user input
+  char hardcoded_string[] = "S3CR3T";
+
+  // Compare the value of the variable "input" with the variable "hardcoded_string"
+  int retVal = strcmp(input, hardcoded_string);
+
+  // Return the result of strcmp()
+  return retVal; // Patch this in disassembly so it always returns 0x0;
+}
+```
+
+### Patch using LIEF
+To patch the app you also can use LIEF. This is particullarly usefull if you want to automate certain tasks and / or have mutliple files with reoccuring tasks you want to execute. You can i.e. write a little python script for using LIEF to patch the app that looks someting like this:
+
+```python
+import lief
+
+# Open the original executable as LIEF binary
+app = lief.parse("./hello_world")
+
+# Patch the location of the JNZ decision with NOPs
+app.patch_address(0x100003f0c, [0x90, 0x90, 0x90, 0x90, 0x90, 0x90])
+
+# Remove original code signature of the executable
+app.remove_signature()
+
+# Create a new executable and save it to the filesystem
+app.write("./hello_world_lief_patched")
+```
+
+Of course again you will have to make the newly patched app executable again and recodesign it to get it running. But that's basically it. Try it yourself and play around with the LIEF script to get a feeling how it works.
+
 
 ## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
