@@ -92,7 +92,7 @@ SUCCESS
 dave@Aeon patching_macOS_app % 
 ```
 
-The pseudo code for our hello_world
+The pseudo code for our hello_world. If we compare it to our original c source code we'll find, that the pseudo code is really close to the orignal.
 
 ```c
 undefined8 entry(void)
@@ -119,6 +119,15 @@ undefined8 entry(void)
   ___stack_chk_fail();
 }
 ```
+
+One thing we discover here is the assignment of **PTR____stack_chk_guard_100004008** to var local_10. So what is this and why did the compiler insert it to the binary during compilation?
+
+> Stack_chk_guard is a security feature used in C and C++ programs to protect against stack-based buffer overflow attacks. A stack-based buffer overflow attack occurs when malicious code overflows a buffer on the stack, causing it to overwrite other memory locations on the stack and potentially taking control of the program execution.
+> 
+> Stack_chk_guard works by placing a random value, called a canary, on the stack before each function is called. When the function returns, the canary value is read and compared to the original value. If the canary value has changed, it indicates that the stack has been corrupted and the program is terminated.
+> 
+> This canary value is typically stored in a reserved symbol called \_\_stack_chk_guard. When a program is compiled with stack_chk_guard enabled, the compiler will insert code to store and compare the canary value. This code is transparent to the programmer and does not require any changes to the program's source code.
+
 
 The assembler code for our hello_world main (entry) function
 ```nasm
@@ -320,9 +329,9 @@ dave@Aeon patching_macOS_app %
 
 ```
 
-SUCCESS - yes, that's what we wanted to see and it's what we get. Due to the fact, that we NOPED the JNZ instruction to the error branch of the app away, the programm will always got to the success branch, no matter what we enter as secret. That's it - really simple and very basic, but also very effectiv indeed. 
+SUCCESS - yes, that's what we wanted to see and it's what we get. Due to the fact, that we NOPED the JNZ instruction to the error branch of the app away, the programm will always goto the success branch, no matter what we enter as secret. That's it - really simple and very basic, but also very effectiv indeed. 
 
-You can go ahead an play around with the hello_world app on your own to i.e. store the return value of the strcmp() function in checkInput() into a variable and then return this variable as result of checkInput(). From this you can again load the compiled hello_world into Ghidra and i.e. modify the checkInput() function in a way it always returns 0x0 so the following check in the main() function always succeeds. It's up to you to push the posibilities of patching this demo app or other executables more and more.
+You can go ahead an play around with the hello_world app on your own to i.e. store the return value of the strcmp() function in checkInput() into a variable and then return this variable as result of checkInput(). From this you can again load the compiled hello_world into Ghidra and i.e. modify the checkInput() function in a way it always returns 0x0 so the following check in the main() function always succeeds.
 
 ```c
 // This is the evil check function which decides if we get access or not
@@ -339,8 +348,26 @@ int checkInput(char input[256]) {
 }
 ```
 
+Another thing you could do, is to modify the string **"s_S3CR3T_100003f74" at 0x100003f74** to hold another secret you choose by modifying the string data in the \_\_cstring section.
+
+```nasm
+                             //
+                             // __cstring 
+                             // __TEXT
+                             // ram:100003f74-ram:100003fa3
+                             //
+                             s_3T_100003f78                                  XREF[1,2]:   _checkInput:100003e6c(R), 
+                             s__100003f7a                                                 _checkInput:100003e75(R), 
+                             s_S3CR3T_100003f74                                           _checkInput:100003e80(R)  
+       100003f74 53 33 43        ds         "S3CR3T"
+                 52 33 54 00
+
+```
+It's up to you to push the posibilities of patching this demo app further and get more experience.
+
+
 ### Patch using LIEF
-To patch the app you also can use LIEF. This is particullarly usefull if you want to automate certain tasks and / or have mutliple files with reoccuring tasks you want to execute. You can i.e. write a little python script for using LIEF to patch the app that looks someting like this:
+To patch the app you also can use LIEF. This is particullarly usefull if you want to automate certain tasks and / or have mutliple files with recurring tasks you want to execute. You can i.e. write a little python script for using LIEF to patch the app that looks someting like this:
 
 ```python
 import lief
