@@ -5,7 +5,7 @@ author: dave
 date:   2024-01-03 19:02:38 +0200
 categories: [Reverse Engineering, macOS]
 tags: [Reverse Engineering, macOS, Patch app]
-published: false 
+published: true 
 ---
 
 ## Synopsis
@@ -142,7 +142,7 @@ The assembler code for our hello_world main (entry) function
        100003ea1 48 89 e5        MOV        RBP,RSP
        100003ea4 48 81 ec        SUB        RSP,0x130
                  30 01 00 00
-       100003eab 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
+       100003eab 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 100010008
                  56 01 00 00
        100003eb2 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
        100003eb5 48 89 45 f8     MOV        qword ptr [RBP + local_10],RAX
@@ -189,7 +189,7 @@ The assembler code for our hello_world main (entry) function
        100003f2e e8 2f 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
                  00 00
                              LAB_100003f33                                   XREF[1]:     100003f20(j)  
-       100003f33 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 10000c008
+       100003f33 48 8b 05        MOV        RAX,qword ptr [->___stack_chk_guard]             = 100010008
                  ce 00 00 00
        100003f3a 48 8b 00        MOV        RAX=>___stack_chk_guard,qword ptr [RAX]          = ??
        100003f3d 48 8b 4d f8     MOV        RCX,qword ptr [RBP + local_10]
@@ -260,22 +260,66 @@ The disassembled code for the **checkInput()** function which is called from the
 In the disassembly we can see the **call to compare with CMP at 0x 100003efb** (after CALL checkInput at 0x100003ef0) and **decicion with JNZ at 0x100003f02** which is the point where the app decides if we entered the correct secret or not. So the answere to this challenge is quite simple. If we want to go the easiest way to get to the success functionality, we just have to make the app always go to the success branch. We can do this simply by NOP-ing out the descision branch. This is not very fancy, but yet very effective. What we wana do in this situation is to **NOP the complete instruction "JNZ LAB_100003f1b"**. So we can do this by overwritting the instruction with the hex values "90" which is the opcode for NOP. The decision will look as follows after editing:
 
 ```nasm
-       100003efb 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
+       100003eee e8 75 00        CALL       <EXTERNAL>::_scanf                               int _scanf(char * param_1, ...)
+                 00 00
+       100003ef3 48 8d bd        LEA        RDI=>local_118,[RBP + -0x110]
+                 f0 fe ff ff
+       100003efa e8 61 ff        CALL       _checkInput                                      undefined _checkInput()
+                 ff ff
+       100003eff 89 85 dc        MOV        dword ptr [RBP + local_12c],EAX
+                 fe ff ff
+       100003f05 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
                  fe ff ff 00
-       100003f02 90              NOP
-       100003f03 90              NOP
-       100003f04 90              NOP
-       100003f05 90              NOP
-       100003f06 90              NOP
-       100003f07 90              NOP
-       100003f08 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f8d]                        = "SUCCESS\n"
-                 7e 00 00 00
-       100003f0f b0 00           MOV        AL,0x0
-       100003f11 e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+
+
+       // START OF NOP MODIFICATION
+       
+       100003f0c 90              NOP
+       100003f0d 90              NOP
+       100003f0e 90              NOP
+       100003f0f 90              NOP
+       100003f10 90              NOP
+       100003f11 90              NOP
+
+       // END OF NOP MODIFICATION
+
+
+       100003f12 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f92]                        = "SUCCESS\n"
+                 79 00 00 00
+       100003f19 b0 00           MOV        AL,0x0
+       100003f1b e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                 00 00
+       100003f20 e9 0e 00        JMP        LAB_100003f33
                  00 00
 
 ```
 
+After you modified the assembly you have to write the code back to an executable. In Ghidra you can do this by clicking on Menu "File" > "Export Programm...". On the following screen you can choose a export location, the new filename and most important, the file type. Choose "Original File" as Format and click "Ok". When everything went fine, you will find a new executable at the choosen location. Before you can run it you will have to make it executable with:
+
+```bash
+dave@Aeon patching_macOS_app % chmod u+x hello_world_new
+```
+
+You also will have to code sign the app so it successfully runs. Do this with the following command:
+
+```bash
+dave@Aeon patching_macOS_app % codesign --verbose=4 --timestamp --strict --options runtime -s "Apple Development" hello_world_new --force
+```
+
+After that, your new executable is ready to run. Start the patched app - enter any secret you like and you will see something like the following:
+
+```bash
+dave@Aeon patching_macOS_app % ./hello_world_new
+Enter your secret:
+12345
+SUCCESS
+dave@Aeon patching_macOS_app % 
+
+```
+
+SUCCESS - yes, that's what we wanted to see and it's what we get. Due to the fact, that we NOPED the JNZ instruction to the error branch of the app the programm will always got to the success branch, no matter what we enter as secret. That's it - really simple and very basic, but also very effectiv indeed. 
+
+You can go ahead an play around with the hello_world app on your own to i.e. store the return value of the strcmp() function in checkInput() into a variable and the return this variable as result of checkInput(). From this you can again load the compiled hello_world into Ghidra and i.e. modify the checkInput() function in a way it always returns 0x0 so the following check in the main() function always succeeds. It's up to you to discover the posibilities of patching this demo app or other executables.
 
 ## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
