@@ -124,7 +124,7 @@ print(section)
 
 # app.main_command.entrypoint = section.virtual_address - __TEXT.virtual_address
 app.remove_signature()
-app.write("./hello_world_new_section")
+app.write("./hello_world_with_new_section")
 
 ```
 
