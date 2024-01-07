@@ -18,7 +18,7 @@ If patching a file is not an option and / or you want to add a bigger piece of c
 ## Tutorial - How to insert a new section into a macOS App
 
 ### The goal of this tutorial and its plan
-As a targte for this tutorial we can use the same original hello_world app we built for the last tutorial "Reverse Engineering macOS - How to patch app". Please make sure you use the original unpatched app and not an edited or patched version as this would render unexpected results. The plan of this tutorial is to add a new section with our own new check function, that always will validate our secret successfully, no matter what the user enters after the prompt. For this we basically need just a simple check function with the same signature as the original checkInput() function from the hello_world app. This function does nothing else but just return true (0x0) and then gets back to the main function that called it. To generate the code we want to insert into the new section we first build a little helper app that is written in c and the decompiled to get the binary representation of the new check function. We then can extract this part of the helper app and just add it to the new section we insert. So that's about it. Everything clear till now? Yes?! - So let's start.
+As a target app for this tutorial we can use the same original hello_world app we built for the last tutorial "Reverse Engineering macOS - How to patch app". Please make sure you use the original unpatched app and not an edited or patched version as this would render unexpected results. The plan of this tutorial is to add a new section with our own new check function, that always will validate our secret successfully, no matter what the user enters after the prompt. For this we basically need just a simple check function with the same signature as the original checkInput() function from the hello_world app. This function does nothing else but just return true (0x0) and then gets back to the main function that called it. To generate the code we want to insert into the new section we first build a little helper app that is written in c and the decompiled to get the binary representation of the new check function. We then can extract this part of the helper app and just add it to the new section we insert. So that's about it. Everything clear till now? Yes?! - So let's start.
 
 ### Prepare the code to insert
 For the sake of simplicity the code we are going to add in the section we insert does nothing more than just return a 0x0 so we can trick the check of our secret input to think the comparsion succeeded. To create the code we are going to insert we can write a little helper app. Create a new c sourcefile **helper_app.c** that looks like this:
@@ -172,9 +172,9 @@ relativeOffset = new_target_addr - 0x100003eff
 
 # Debug output the calculations for offset and argument hex values
 print(f'New Section-Addr: {hex(new_target_addr)} / Offset: {hex(relativeOffset)}')
-print(f'Call-Argument: {hex(relativeOffset)[8:]}, {hex(relativeOffset)[6:8]}')
+print(f'Call-Argument: {hex(relativeOffset)[8:]}, {hex(relativeOffset)[6:8]}, {hex(relativeOffset)[4:6]}, {hex(relativeOffset)[2:4]}')
 
-# Patch the call argument with the hex values for the offset to the new check function code
+# Patch the call argument with the hex values for the offset to the new _checkOK() function code (hex pairs in reverse order)
 # We patch @ 0x100003efb because that's where the offset argument hex value starts
 app.patch_address(0x100003efb, [int(hex(relativeOffset)[8:], 16), int(hex(relativeOffset)[6:8], 16), int(hex(relativeOffset)[4:6], 16), int(hex(relativeOffset)[2:4], 16)])
 
