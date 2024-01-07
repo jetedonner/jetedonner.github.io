@@ -87,7 +87,7 @@ This is the code we need, more specifically the HEX values of this code. So extr
 5548 89e5 4889 7df8 31c0 5dc3 0f1f 4000
 ```
 
-Make sure you save the code string with the right encoding and as binary file otherways the hex code might be saved as string and that's not what we want. You can check the content of the binary file new_section.raw with the **hexdump** cli command like this:
+Make sure you save the code string with the right encoding (as HEX string) and as binary file otherways the hex code might be saved as string and that's not what we want. You can check the content of the new binary file new_section.raw with the **hexdump** cli command like this:
 
 ```bash
 dave@Aeon insert_section % hexdump -C new_section.raw
@@ -98,6 +98,8 @@ dave@Aeon insert_section %
 NOTE: When you don't specify the '-C' argument the hex pairs are output in flipped order.
 
 ### Prepare the LIEF script for inserting the section
+
+Create a nee python script named insert_section.py and insert the following code as its content, save the file in the same directory as the other files.
 
 ```python
 
@@ -123,6 +125,27 @@ print(section)
 # app.main_command.entrypoint = section.virtual_address - __TEXT.virtual_address
 app.remove_signature()
 app.write("./hello_world_new_section")
+
+```
+
+### Insert the section and code
+
+```bash
+dave@Aeon insert_section % python3 insert_section.py
+```
+
+### Route the function call to new code
+
+One way to Reroute the call to our new check function is to use Ghidra to patch the file. If you followed alone the previouse tutorial you should have a basic picture how to do this with Ghidra. Anyway, here are the rouge steps to get the job done.
+
+1. Open the file hello_world_new_section in Ghidra.
+2. Check that the new section and code is contained in this executable.
+3. Find the Spot in the main function where the check is called.
+4. Patch the call instruction to execute the new insert check function begins.
+5. Export the patches Version of the App as new binary.
+6. Test it!
+
+```bash
 
 ```
 
