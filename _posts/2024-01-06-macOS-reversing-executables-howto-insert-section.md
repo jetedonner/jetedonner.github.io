@@ -143,11 +143,14 @@ One way to Reroute the call to our new check function is to use Ghidra to patch 
 3. Find the Spot in the main function where the check is called.
 4. Patch the call instruction to execute the new insert check function begins.
 5. Export the patches Version of the App as new binary.
-6. Test it!
+6. Make it executable and Sign it.
+7. Test it!
 
 ```bash
-
+dave@Aeon insert_section % ./hello_world_new_section
 ```
+The new App should now accept any secret you enter. If not, go through the last steps and try to Analyse what could be gone wrong.
+
 
 ## <a id="credits"></a>Credits
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
