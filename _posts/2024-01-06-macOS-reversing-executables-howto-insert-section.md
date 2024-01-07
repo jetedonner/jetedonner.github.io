@@ -17,7 +17,7 @@ If patching a file is not an option and / or you want to add a bigger piece of c
 
 ## Tutorial - How to insert a new section into a macOS App
 
-### The plan and goal of this tutorial
+### The goal of this tutorial and its plan
 As a targte for this tutorial we can use the same original hello_world app we built for the last tutorial "Reverse Engineering macOS - How to patch app". Please make sure you use the original unpatched app and not an edited or patched version as this would render unexpected results. The plan of this tutorial is to add a new section with our own new check function, that always will validate our secret successfully, no matter what the user enters after the prompt. For this we basically need just a simple check function with the same signature as the original checkInput() function from the hello_world app. This function does nothing else but just return true (0x0) and then gets back to the main function that called it. To generate the code we want to insert into the new section we first build a little helper app that is written in c and the decompiled to get the binary representation of the new check function. We then can extract this part of the helper app and just add it to the new section we insert. So that's about it. Everything clear till now? Yes?! - So let's start.
 
 ### Prepare the code to insert
@@ -97,59 +97,129 @@ dave@Aeon insert_section %
 ```
 NOTE: When you don't specify the '-C' argument the hex pairs are output in flipped order.
 
+### Check the target hello_world app in Ghidra
+
+Once again open the original hello_world from our last tutiôrial in Ghidra and disassemble it. Goto the main function and find the call to \_checkInput(). 
+
+```nasm
+
+       100003ed0 48 8d 3d        LEA        RDI,[s_Enter_your_secret:_100003f7b]             = "Enter your secret:\n"
+                 a4 00 00 00
+       100003ed7 b0 00           MOV        AL,0x0
+       100003ed9 e8 84 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                 00 00
+       100003ede 48 8d b5        LEA        RSI=>local_118,[RBP + -0x110]
+                 f0 fe ff ff
+       100003ee5 48 8d 3d        LEA        RDI,[s_%s_100003f8f]                             = "%s"
+                 a3 00 00 00
+       100003eec b0 00           MOV        AL,0x0
+       100003eee e8 75 00        CALL       <EXTERNAL>::_scanf                               int _scanf(char * param_1, ...)
+                 00 00
+       100003ef3 48 8d bd        LEA        RDI=>local_118,[RBP + -0x110]
+                 f0 fe ff ff
+       100003efa e8 61 ff        CALL       _checkInput                                      undefined _checkInput()
+                 ff ff
+       100003eff 89 85 dc        MOV        dword ptr [RBP + local_12c],EAX
+                 fe ff ff
+       100003f05 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
+                 fe ff ff 00
+       100003f0c 0f 85 13        JNZ        LAB_100003f25
+                 00 00 00
+       100003f12 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f92]                        = "SUCCESS\n"
+                 79 00 00 00
+       100003f19 b0 00           MOV        AL,0x0
+       100003f1b e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
+                 00 00
+       100003f20 e9 0e 00        JMP        LAB_100003f33
+                 00 00
+
+
+```
+
+What we need is the **Instruction Pointer** and the **address of the call to \_checkInput()**. The address of the call to \_checkInput() in my case is 0x100003efa and the instruction pointer at the time this call instruction will be executed is at the next instruction to the call of \_checkInput() - in my case 0x100003eff. We need this two values because we want to update the argument to the call of \_checkInput() with the offset of the new \_checkOK() function to the current instruction pointer. If we have this values we can proceed to prepare our LIEF script for modifieing and inserting the new section to out hello_world app.
+
+
 ### Prepare the LIEF script for inserting the section
 
-Create a nee python script named insert_section.py and insert the following code as its content, save the file in the same directory as the other files.
+Create a neW python script named **insert_section.py** and insert the following code as its content, save the file in the same directory as the other files.
 
 ```python
 
-import lief
+import lief # Standard LIEF import
+import subprocess # For chmod and codesign calls
 
+# Open the original hello_world target
 app = lief.parse("./hello_world")
 
+# Open the binary file with the code for the new section
 raw_shell = None
 with open("./new_section.raw", "rb") as f:
     raw_shell = list(f.read())
 
+# Get the __TEXT segment for offset calculations
 __TEXT = app.get_segment("__TEXT")
+
+# Create new section and add it
 section = lief.MachO.Section("__shell", raw_shell)
 section.alignment = 2
 section += lief.MachO.SECTION_FLAGS.SOME_INSTRUCTIONS
 section += lief.MachO.SECTION_FLAGS.PURE_INSTRUCTIONS
-
 section = app.add_section(section)
-print(section)
 
-# app.patch_address(4294982909, [232, 142, 239, 255])
+# Calculate the offset of instruction pointer to new fucntion code address
+new_target_addr = section.virtual_address + __TEXT.virtual_address
+relativeOffset = new_target_addr - 0x100003eff
 
-# app.main_command.entrypoint = section.virtual_address - __TEXT.virtual_address
+# Debug output the calculations for offset and argument hex values
+print(f'New Section-Addr: {hex(new_target_addr)} / Offset: {hex(relativeOffset)}')
+print(f'Call-Argument: {hex(relativeOffset)[8:]}, {hex(relativeOffset)[6:8]}')
+
+# Patch the call argument with the hex values for the offset to the new check function code
+# We patch @ 0x100003efb because that's where the offset argument hex value starts
+app.patch_address(0x100003efb, [int(hex(relativeOffset)[8:], 16), int(hex(relativeOffset)[6:8], 16), int(hex(relativeOffset)[4:6], 16), int(hex(relativeOffset)[2:4], 16)])
+
 app.remove_signature()
-app.write("./hello_world_with_new_section")
+
+# Save the new app
+newFilename = "hello_world_with_new_section"
+app.write("./" + newFilename)
+
+# Make it executable and codesign
+subprocess.run(["chmod", "+x", "./" + newFilename])
+subprocess.run(['codesign', '--verbose=4', '--timestamp', '--strict', '--options', 'runtime', '-s', 'Apple Development', newFilename , '--force'])
 
 ```
 
-### Insert the section and code
+For the ease of use we can add the call to chmod and codesign to the python script, just import subprocess and add the last two lines to the LIEF script.
+
+### Insert the section / code with the LIEF script
 
 ```bash
 dave@Aeon insert_section % python3 insert_section.py
 ```
 
-### Route the function call to new code
-
-One way to Reroute the call to our new check function is to use Ghidra to patch the file. If you followed alone the previouse tutorial you should have a basic picture how to do this with Ghidra. Anyway, here are the rouge steps to get the job done.
-
-1. Open the file hello_world_new_section in Ghidra.
-2. Check that the new section and code is contained in this executable.
-3. Find the Spot in the main function where the check is called.
-4. Patch the call instruction to execute the new insert check function begins.
-5. Export the patches Version of the App as new binary.
-6. Make it executable and Sign it.
-7. Test it!
+Test the newly created app with new section and \_checkOK() function.
 
 ```bash
-dave@Aeon insert_section % ./hello_world_new_section
+dave@Aeon insert_section % ./hello_world_with_new_section
+Enter your secret:
+12345 // Or anything else
+SUCCESS
 ```
-The new App should now accept any secret you enter. If not, go through the last steps and try to Analyse what could be gone wrong.
+
+The new App should now accept any secret you enter. If not, go through the last steps and try to analyse what could went wrong. You should get a command line output something like above.
+
+### Reroute the call to new checkOK function manually
+
+Another way to reroute the call to our new \_checkOK() function is to use Ghidra to patch the file. If you followed alone the previouse tutorial you should have a basic picture how to do this with Ghidra. Anyway, here are the rouge steps to get the job done.
+
+1. Open the file hello_world_with_new_section in Ghidra.
+2. Check that the new section and code is contained in this executable.
+3. Find the spot in the main function where the check is called.
+4. Patch the call instruction to execute the new insert check function begins.
+5. Export the patches Version of the App as new binary.
+6. Make it executable and sign it.
+7. Test it!
 
 
 ## <a id="credits"></a>Credits
