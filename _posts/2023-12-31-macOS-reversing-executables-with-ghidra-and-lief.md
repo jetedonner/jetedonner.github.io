@@ -62,7 +62,7 @@ Here you have a list of (mostly) free tools which you need for file analysis, di
 		- Homebrew: **brew install radare2**
 - **Commercial debuggers and disassembler**
 	- [IDA Pro](https://hex-rays.com/ida-pro/){:target="_blank" rel="noopener"} - This is an industry standart disassembler (Great tool but realy costy)
-	- [Hopper](https://www.hopperapp.com/){:target="_blank" rel="noopener"} - Great dissasembler and debugger for fair prices
+	- [Hopper](https://www.hopperapp.com/){:target="_blank" rel="noopener"} - Great disassembler and debugger for fair prices
 
 ### <a id="tools-of-trade-hex-editor"></a>Hex editor
 - [Hex Fiend](https://hexfiend.com/){:target="_blank" rel="noopener"}
