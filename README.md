@@ -1,6 +1,4 @@
-<center>
 [![Build and deploy](https://github.com/jetedonner/jetedonner.github.io/actions/workflows/pages-deploy.yml/badge.svg?branch=master)](https://github.com/jetedonner/jetedonner.github.io/actions/workflows/pages-deploy.yml)
-</center>
 
 <div align="center">
 
