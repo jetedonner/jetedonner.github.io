@@ -18,7 +18,7 @@ If patching a file is not an option and / or you want to add a bigger piece of c
 ## Tutorial - How to insert a new section into a macOS App
 
 ### The goal of this tutorial and its plan
-As a target app for this tutorial we can use the same original hello_world app we built for the last tutorial "Reverse Engineering macOS - How to patch app". Please make sure you use the original unpatched app and not an edited or patched version as this would render unexpected results. The plan of this tutorial is to add a new section with our own new check function, that always will validate our secret successfully, no matter what the user enters after the prompt. For this we basically need just a simple check function with the same signature as the original checkInput() function from the hello_world app. This function does nothing else but just return true (0x0) and then gets back to the main function that called it. To generate the code we want to insert into the new section we first build a little helper app that is written in c and the decompiled to get the binary representation of the new check function. We then can extract this part of the helper app and just add it to the new section we insert. So that's about it. Everything clear till now? Yes?! - So let's start.
+As a target app for this tutorial we can use the same original hello_world app we built for the last tutorial "Reverse Engineering macOS - How to patch app". Please make sure you use the original unpatched app and not an edited or patched version as this would render unexpected results. The plan of this tutorial is to add a new section with our own new check function, that always will validate our secret successfully, no matter what the user enters after the prompt. For this we basically need just a simple check function with the same signature as the original checkInput() function from the hello_world app. This function does nothing else but just return true (0x0) and then gets back to the main function that called it. To generate the code we want to insert into the new section we first build a little helper app that is written in c and then decompiled to get the binary (hex) representation of the new check function. We then can extract this part of the helper app and just add it to the new section we insert with the help of LIEF. So that's about it. Everything clear till now? Yes?! - So let's start.
 
 ### Prepare the code to insert
 For the sake of simplicity the code we are going to add in the section we insert does nothing more than just return a 0x0 so we can trick the check of our secret input to think the comparsion succeeded. To create the code we are going to insert we can write a little helper app. Create a new c sourcefile **helper_app.c** that looks like this:
@@ -99,7 +99,7 @@ NOTE: When you don't specify the '-C' argument the hex pairs are output in flipp
 
 ### Check the target hello_world app in Ghidra
 
-Once again open the original hello_world from our last tutiôrial in Ghidra and disassemble it. Goto the main function and find the call to \_checkInput(). 
+Once again open the original hello_world from our last tutorial in Ghidra and disassemble it. Goto the main function and find the call to \_checkInput(). 
 
 ```nasm
 
@@ -136,7 +136,7 @@ Once again open the original hello_world from our last tutiôrial in Ghidra and 
 
 ```
 
-What we need is the **Instruction Pointer** and the **address of the call to \_checkInput()**. The address of the call to \_checkInput() in my case is 0x100003efa and the instruction pointer at the time this call instruction will be executed is at the next instruction to the call of \_checkInput() - in my case 0x100003eff. We need this two values because we want to update the argument to the call of \_checkInput() with the offset of the new \_checkOK() function to the current instruction pointer. If we have this values we can proceed to prepare our LIEF script for modifieing and inserting the new section to out hello_world app.
+What we need is the **Instruction Pointer** and the **address of the call to \_checkInput()**. The address of the call to \_checkInput() in my case is 0x100003efa and the instruction pointer at the time this call instruction will be executed is at the next instruction to the call of \_checkInput() - in my case 0x100003eff. We need this two values because we want to update the argument to the call of \_checkInput() with the offset of the new \_checkOK() function to the current instruction pointer. If we have this values we can proceed to prepare our LIEF script for modifieing and inserting the new section to our hello_world app.
 
 
 ### Prepare the LIEF script for inserting the section
