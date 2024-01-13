@@ -211,13 +211,13 @@ The new App should now accept any secret you enter. If not, go through the last 
 
 ### Reroute the call to new checkOK function manually
 
-Another way to reroute the call to our new \_checkOK() function is to use Ghidra to patch the file. If you followed alone the previouse tutorial you should have a basic picture how to do this with Ghidra. Anyway, here are the rouge steps to get the job done.
+Another way to reroute the call to our new \_checkOK() function is to use Ghidra to patch the file. If you followed alone the previouse tutorial you should have a basic picture how to do this with Ghidra. Anyway, here are the rough steps to get the job done.
 
 1. Open the file hello_world_with_new_section in Ghidra.
 2. Check that the new section and code is contained in this executable.
-3. Find the spot in the main function where the check is called.
-4. Patch the call instruction to execute the new insert check function begins.
-5. Export the patches Version of the App as new binary.
+3. Find the spot in the main function where the \_checkInput() is called.
+4. Patch the call instruction to execute the new insert check function \_checkOK().
+5. Export the patched Version of the App as new binary.
 6. Make it executable and sign it.
 7. Test it!
 
