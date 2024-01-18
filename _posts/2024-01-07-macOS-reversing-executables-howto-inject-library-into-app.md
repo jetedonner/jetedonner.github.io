@@ -1,59 +1,86 @@
 ---
 layout: post
-title:  "Reverse Engineering macOS - How to insert a section into app"
+title:  "Reverse Engineering macOS - How to inject a new library into app"
 author: dave
-date:   2024-01-06 12:24:34 +0200
+date:   2024-01-07 19:32:13 +0200
 categories: [Reverse Engineering, macOS]
-tags: [Reverse Engineering, macOS, Insert section]
+tags: [Reverse Engineering, macOS, Inject Library]
 published: true 
 ---
 
 ## Synopsis
-This post is a basic introduction about how to insert a section into a simple macOS app. It shows you how to disassemble a macOS app with Ghidra, prepare a raw code file with the content for the new section and then how to insert the new section into the app with LIEF. Just follow the tutorial and implement the needed files yourself or download the final files to inspect them on your own.
+This post is a basic introduction about how to inject a new library into a simple macOS app. It shows you how to disassemble a macOS app with Ghidra, prepare a new source code file with the content for the new library and then how to inject the new "\*.dylib" into the app with LIEF. Just follow the tutorial and implement the needed files yourself or download the final files to inspect them on your own.
 
 ## Problem description
-If patching a file is not an option and / or you want to add a bigger piece of code to an existing app and there is not enough space available to modify the existing app as it is, you might want to insert a new section in to the app and place and reference your new code from there. This tutorial shows you just that and how to achive this with the help of LIEF.
+If patching a file is not an option and / or you want to add a lot of new code to an existing app and adding a new section is not an option, then you might want to inject a new library into an exeisting app and the call the code from this library. This tutorial shows you just that and how to achive this with the help of LIEF and Ghidra.
 
 
-## Tutorial - How to insert a new section into a macOS App
+## Tutorial - How to inject a new library into a macOS App
 
 ### The goal of this tutorial and its plan
-As a target app for this tutorial we can use the same original hello_world app we built for the last tutorial "Reverse Engineering macOS - How to patch app". Please make sure you use the original unpatched app and not an edited or patched version as this would render unexpected results. The plan of this tutorial is to add a new section with our own new check function, that always will validate our secret successfully, no matter what the user enters after the prompt. For this we basically need just a simple check function with the same signature as the original checkInput() function from the hello_world app. This function does nothing else but just return true (0x0) and then gets back to the main function that called it. To generate the code we want to insert into the new section we first build a little helper app that is written in c and the decompiled to get the binary representation of the new check function. We then can extract this part of the helper app and just add it to the new section we insert. So that's about it. Everything clear till now? Yes?! - So let's start.
+As a targte app for this tutorial we can use the same original hello_world app we built for the first tutorial "Reverse Engineering macOS - How to patch app". Please make sure you use the original unpatched app and not an edited or patched version as this would render unexpected results. The plan of this tutorial is to inject a new library that loads at app startup and that contains our own new check function, that always will validate our secret successfully, no matter what the user enters after the prompt. For this we basically need just a simple check function with the same signature as the original checkInput() function from the hello_world app. This function does nothing else but just return true (0x0) and then gets back to the main function that called it. To generate the code we want to insert into the new section we first build a little helper app that is written in c and the decompiled to get the binary representation of the new check function. We then can extract this part of the helper app and just add it to the new section we insert. So that's about it. Everything clear till now? Yes?! - So let's start.
 
 ### Prepare the code to insert
-For the sake of simplicity the code we are going to add in the section we insert does nothing more than just return a 0x0 so we can trick the check of our secret input to think the comparsion succeeded. To create the code we are going to insert we can write a little helper app. Create a new c sourcefile **helper_app.c** that looks like this:
+For the sake of simplicity the code we are going to add in the section we insert does nothing more than just return a 0x0 so we can trick the check of our secret input to think the comparsion succeeded. To create the code we are going to insert we can write a little helper app. Create a new c sourcefile **lib4inject.c** for a dylib library that looks like this:
 
 ```c
 #include <stdio.h>
 
-int checkOK(char input[256]) { 
-  return 0; 
-}
-
-int main() { 
-  return 0; 
+__attribute__((constructor))
+void my_constructor(void) {
+  printf("Called LIBRARY my_constructor():\n");
 }
 ```
 
 Compile the source code helper_app.c with:
 ```bash
-dave@Aeon insert_section % clang -target x86_64-apple-macos -arch x86_64 -o helper_app helper_app.c
+dave@Aeon insert_section % clang -target x86_64-apple-macos -arch x86_64 -shared -dynamiclib -o lib4inject.dylib lib4inject.c
 ```
 
-Make the file helper_app executable with:
+Codesign the lib4inject.dylib library with:
 ```bash
-dave@Aeon insert_section % chmod u+x helper_app 
+dave@Aeon injecting_library % codesign --verbose=4 --timestamp --strict --options runtime -s "Apple Development" lib4inject.dylib --force
 ```
 
-To make sure the helper_app compiled ok and is runnable execute it with:
+You can check the library and lookup its symbols with **nm -a** which should show you something like this:
 ```bash
-dave@Aeon insert_section % ./helper_app 
+dave@Aeon injecting_library % nm -a lib4inject.dylib   
+0000000000003f60 T _my_constructor
+                 U _printf
+dave@Aeon injecting_library % 
 ```
 
-If there is no error (you should see no output and the programm should exit cleanly) the app is ok.
+If the library is ok, we can continue by perparing the python script to inject the library into the hello_world app.
 
-We will then use Ghidra to disassemble the helper app and visit the code of the checkOK() function. To prepare it for inserting into the new section we are going to extract the hex values which define this function. The resulting disassembly with Ghidra will look something like this:
+### Prepare script for injecting the library into hello_world
 
+In this part of the tutorial series we will just inject the new library into the hello_world app and make the constructor being called first before the constructor of the main hello_world app. This can be really helpful if you need to setup or load somethings before the main app starts. Also if you need to edit the main app in life memory, but more about that later. First let's see how we inject our lib4injection.dylib into our hello_world app. 
+
+Create a new python script called **inject_library.py** and copy&paste the following code into it. Save it in the directory where the hello_world app and lib4injection.dylib lifes.
+
+```python
+
+import lief # Standard LIEF import
+import subprocess # For chmod and codesign calls
+
+# Open the original hello_world target
+app = lief.parse("./hello_world")
+
+# Add the new library into hello_world
+app.add_library("/Volumes/Data/dev/_reversing/lief/_own_tutorial/injecting_library/lib4inject.dylib")
+
+app.remove_signature()
+
+# Save the new app
+newFilename = "hello_world_with_injected_lib"
+app.write("./" + newFilename)
+
+# Make it executable and codesign
+subprocess.run(["chmod", "+x", "./" + newFilename])
+subprocess.run(['codesign', '--verbose=4', '--timestamp', '--strict', '--options', 'runtime', '-s', 'Apple Development', newFilename , '--force'])
+
+
+```
 
 ```nasm
                              //
@@ -208,45 +235,6 @@ SUCCESS
 ```
 
 The new App should now accept any secret you enter. If not, go through the last steps and try to analyse what could went wrong. You should get a command line output something like above.
-
-### Analyze the modified app
-
-If you open the newly created app in Ghidra and examine the checkInput() function call you will see something like the following:
-
-```nasm
-
-       100003ed0 48 8d 3d        LEA        RDI,[s_Enter_your_secret:_100003f7b]             = "Enter your secret:\n"
-                 a4 00 00 00
-       100003ed7 b0 00           MOV        AL,0x0
-       100003ed9 e8 84 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
-                 00 00
-       100003ede 48 8d b5        LEA        RSI=>local_118,[RBP + -0x110]
-                 f0 fe ff ff
-       100003ee5 48 8d 3d        LEA        RDI,[s_%s_100003f8f]                             = "%s"
-                 a3 00 00 00
-       100003eec b0 00           MOV        AL,0x0
-       100003eee e8 75 00        CALL       <EXTERNAL>::_scanf                               int _scanf(char * param_1, ...)
-                 00 00
-       100003ef3 48 8d bd        LEA        RDI=>local_118,[RBP + -0x110]
-                 f0 fe ff ff
-       100003efa e8 b1 ef        CALL       FUN_100002eb0                                    undefined FUN_100002eb0()
-                 ff ff
-       100003eff 89 85 dc        MOV        dword ptr [RBP + local_12c],EAX
-                 fe ff ff
-       100003f05 83 bd dc        CMP        dword ptr [RBP + local_12c],0x0
-                 fe ff ff 00
-       100003f0c 0f 85 13        JNZ        LAB_100003f25
-                 00 00 00
-       100003f12 48 8d 3d        LEA        RDI,[s_SUCCESS_100003f92]                        = "SUCCESS\n"
-                 79 00 00 00
-       100003f19 b0 00           MOV        AL,0x0
-       100003f1b e8 42 00        CALL       <EXTERNAL>::_printf                              int _printf(char * param_1, ...)
-                 00 00
-
-
-```
-
-There is a call to **FUN_100002eb0** now where before 
 
 ### Reroute the call to new checkOK function manually
 
