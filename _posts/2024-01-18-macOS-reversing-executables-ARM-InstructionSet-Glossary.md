@@ -2,7 +2,7 @@
 layout: post
 title:  "Reverse Engineering macOS - ARM Instruction set glossary"
 author: dave
-date:   2024-01-18 16:19:05 +0200
+date:   2024-01-18 16:12:05 +0200
 categories: [Reverse Engineering, macOS]
 tags: [Reverse Engineering, macOS, ASM Instructions]
 published: true 
@@ -17,7 +17,7 @@ If patching a file is not an option and / or you want to add a lot of new code t
 ## LLDB Help
 ### Commands
 #### register read pc
-Get the current 
+Get the current Program Counter
 
 ```lldb
 (lldb) register read pc
@@ -52,7 +52,7 @@ SUB{<c>}{<q>} {<Rd>,} <Rn>, <Rm>, RRX
 sub    x1, x17, #0x32
 ```
 
-#### Explaination
+#### Explaination
 Subtracts the value 0x32 from x17 and stores the result in x1.
 
 ### B (Branch)
@@ -66,7 +66,7 @@ B{<c>}{<q>} <label>
 ```nasm
 b      0x100076f04
 ```
-#### Explaination
+#### Explaination
 Branch (Jump) to 0x100076f04. Sets the pc to the target address (0x100076f04)
 
 ### STRB (register)
@@ -82,6 +82,7 @@ strb   w17, [x6, #0x1]
 ```
 
 #### Explaination
+
 Calculates a new address with x6 offest by 0x1 and stores the value of w17 at this address.
 
 #### Documentation
@@ -99,7 +100,7 @@ LDRB <Wt>, [<Xn|SP>, (<Wm>|<Xm>), <extend> {<amount>}]
 ldrb   w4, [x14, x2]
 ```
 
-#### Explaination
+#### Explaination
 Calculates a new address with x6 offest by 0x1 and stores the value of w17 at this address.
 
 #### Documentation
