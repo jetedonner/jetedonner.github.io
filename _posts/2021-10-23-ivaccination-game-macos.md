@@ -3,7 +3,7 @@ layout: post
 title:  "macOS - iVaccination Game"
 author: dave
 date:   2021-10-23 20:42:33 +0200
-categories: Projects Games
+categories: [Projects, Games]
 tags: [Games, macOS]
 ---
 

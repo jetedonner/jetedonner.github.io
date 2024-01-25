@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "S4 Weather Station App"
+title:  "Android - S4 Weather Station App"
 author: dave
 date:   2015-06-23 20:42:33 +0200
-categories: Projects Android
+categories: [Projects, Android]
 tags: [Projects, Android]
 ---
 

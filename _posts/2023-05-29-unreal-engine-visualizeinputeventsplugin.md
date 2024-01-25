@@ -3,7 +3,7 @@ layout: post
 title:  "Unreal Engine - VisualizeInputEventPlugin"
 author: dave
 date:   2023-05-29 17:14:58 +0200
-categories: UnrealEngine Plugins
+categories: [UnrealEngine, Plugins]
 tags: [UnrealEngine, Plugins, Games, Movies]
 ---
 

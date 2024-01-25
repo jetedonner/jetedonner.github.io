@@ -3,7 +3,7 @@ layout: post
 title:  "CSS ONLY Floating Menu Button"
 author: dave
 date:   2023-02-21 20:15:05 +0200
-categories: Projects HTML
+categories: [Projects, HTML]
 tags: [Projects, Snippets, HTML]
 published: true
 ---

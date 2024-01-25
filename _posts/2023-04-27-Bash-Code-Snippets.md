@@ -3,7 +3,7 @@ layout: post
 title:  "BASH code snippets"
 author: dave
 date:   2023-04-27 18:15:05 +0200
-categories: Projects BASH
+categories: [Projects, BASH]
 tags: [Projects, Snippets, BASH]
 published: true
 ---

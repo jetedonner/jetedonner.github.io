@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to DaVe's github pages"
 author: dave
 date:   2022-05-05 20:42:33 +0200
-categories: Personal
+categories: [Personal]
 tags: [Personal]
 pin: true
 published: false

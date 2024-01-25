@@ -3,7 +3,7 @@ layout: post
 title:  "kimhauser.ch - SSL and Server-Migration"
 author: dave
 date:   2023-03-29 00:58:27 +0200
-categories: Projects Website
+categories: [Projects, Website]
 tags: [Projects, Website]
 published: true
 comments: true

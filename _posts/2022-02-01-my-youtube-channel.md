@@ -3,7 +3,7 @@ layout: post
 title:  "Online movies - Youtube channel"
 author: dave
 date:   2022-02-01 10:06:09 +0200
-categories: Projects Movies
+categories: [Projects, Movies]
 tags: [Projects, Movies]
 ---
 

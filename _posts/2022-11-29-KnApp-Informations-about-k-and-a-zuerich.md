@@ -3,7 +3,7 @@ layout: post
 title:  "KnApp - Infos"
 author: dave
 date:   2022-11-29 19:52:36 +0200
-categories: Projects KnA
+categories: [Projects, KnA]
 tags: [Projects, KnA]
 published: true
 ---

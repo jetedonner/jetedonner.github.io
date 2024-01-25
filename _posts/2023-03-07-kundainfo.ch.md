@@ -3,7 +3,7 @@ layout: post
 title:  "kundainfo.ch - K&A Öffnungszeiten und Infos"
 author: dave
 date:   2023-03-07 19:13:08 +0200
-categories: Projects KnA
+categories: [Projects, KnA]
 tags: [Projects, KnA]
 published: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "macOS - Suake3D Game (Beta)"
 author: dave
 date:   2020-10-30 20:42:33 +0200
-categories: Projects Games
+categories: [Projects, Games]
 tags: [Games, macOS]
 ---
 

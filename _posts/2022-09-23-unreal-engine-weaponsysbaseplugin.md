@@ -3,7 +3,7 @@ layout: post
 title:  "Unreal Engine - WeaponSysBasePlugin"
 author: dave
 date:   2022-09-23 10:02:33 +0200
-categories: UnrealEngine Plugins
+categories: [UnrealEngine, Plugins]
 tags: [UnrealEngine, Plugins, Games]
 ---
 The `UE4 WeaponSysBase Plugin` provides you with many base classes and features to quickly and easily creating and implementing your own weapon system for your Unreal Engine Game

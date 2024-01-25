@@ -3,7 +3,7 @@ layout: post
 title:  "Nightshift Chess - Reporting tool for chessclub"
 author: dave
 date:   2021-05-08 20:14:06 +0200
-categories: Projects Private
+categories: [Projects, Private]
 tags: [Projects, Private]
 published: true
 ---
