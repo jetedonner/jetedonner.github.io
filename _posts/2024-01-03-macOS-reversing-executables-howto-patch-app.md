@@ -9,7 +9,7 @@ published: true
 ---
 
 ## Synopsis
-This post is a basic introduction about how to patch a simple macOS app. It shows you how to disassemble a macOS app with Ghidra, identify the sweet spot and apply the patch. Just follow the tutorial and implement the needed files yourself or download the final files to inspect them on your own.
+This post is a basic introduction about how to patch a simple macOS app. It shows you how to disassemble a macOS app with [Ghidra](https://github.com/NationalSecurityAgency/ghidra), identify the sweet spot and apply the patch manually and alternatively with the help of [LIEF](https://lief-project.github.io/). Just follow the tutorial and implement the needed files yourself or download the final files to inspect them on your own.
 
 ## Problem description
 Some times you might run in a situation where you want to be able to amend a existing exectuable on macOS and extend or edit its behavior. Most of the times this amendment involves just a tiny little Spot or Part of the App and you really litteraly just need to flip one or two bytes. This is where patching an App comes into play. Here I gona show you some basic techniques how to do that.
@@ -23,7 +23,7 @@ If the app you want to Analyse is an "*.app" bundle you will First have to show 
 
 
 ### Our target HELLO WORLD app
-For simplicity we create a simple hello world app that asks the user for a secret and checks it with a hardcoded string. We'll use this simple hello world app for our tutorials to find out how to reverse engineer macOS apps. So let's take a look at our hello world c source code
+For simplicity we create a simple hello world app that asks the user for a secret and checks it with a hardcoded string. We'll use this simple hello world app for our tutorials to find out how to reverse engineer macOS apps. So let's take a look at our hello world c source code ... (You also can downlaod all the files from this tutorial at the end of this page).
 
 Create the hello world app by creating a file called hello_world.c with the following code in it:
 ```c
@@ -387,7 +387,18 @@ app.write("./hello_world_lief_patched")
 
 Of course again you will have to make the newly patched app executable again and recodesign it to get it running. But that's basically it. Try it yourself and play around with the LIEF script to get a feeling how it works.
 
+## Download files
+Here you can find all files we use during this tutorial. The executables are compiled on macOS 14.2 M1 (ARM64).
+
+- Hello World App 
+	- [Source Code (hello_world.c)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.c.zip)
+	- [Original Executable (macOS ARM64)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.zip)
+	- [Patched Executable (macOS ARM64)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world_lief_patched.zip)
+- [LIEF python script for patching the Hello World App](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/patch_hello_world.py.zip)
+- [Complete file collection (all files in one archive)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/01-patch-macos-app-2024-02-03.zip)
+
 
 ## <a id="credits"></a>Credits
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
 - [Lief project](https://lief-project.github.io/){:target="_blank" rel="noopener"} - Library to Instrument Executable Formats
 - [Mach-O Wikipedia](https://en.wikipedia.org/wiki/Mach-O)
