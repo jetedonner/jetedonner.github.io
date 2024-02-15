@@ -7,7 +7,7 @@ categories: [Private, colleagues]
 tags: [Private, Colleagues, Pascale]
 published: true 
 ---
-![Main view of the property](../../../assets/img/projects/pascale/2024-02-15-Website-Main-View.png)
+![Main view of the property](../../assets/img/projects/pascale/2024-02-15-Website-Main-View.png)
 
 ## About
 This project is a website to help my best friend Pascale to find a room mate for her house. The website can be found at [pascale.kimhauser.ch](https://pascale.kimhauser.ch){:target="_blank" rel="noopener"}
