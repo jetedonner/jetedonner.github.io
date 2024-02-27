@@ -17,7 +17,14 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 </div>
 
 ## Features
-Calculates a new address with x6 offest by 0x1 and stores the value of w17 at this address.
+- General info about the target
+- Disassembler / Debugger
+- Break- and Watchpoints
+- Register / Variable viewer
+- Synchronized source code
+- Memory viewer
+- Search function
+- Commands interface
 
 ## Documentation
 
