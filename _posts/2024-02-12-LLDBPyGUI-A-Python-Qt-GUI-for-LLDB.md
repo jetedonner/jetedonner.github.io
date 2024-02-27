@@ -1,14 +1,20 @@
 ---
 layout: post
-title:  "LLDBPyGUI - A Python Qt6 GUI for the LLDB Python API"
+title:  "LLDBPyGUI - GUI for LLDB Debugger Python API with PyQt6"
 author: dave
 date:   2024-02-12 05:46:45 +0200
-categories: [Debugger, PyQt6]
-tags: [Debugger, PyQt6]
+categories: [Debugger, LLDB]
+tags: [Debugger, LLDB, PyQt6]
 published: true 
 ---
 
 ## Synopsis
+LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framework) LLDB. While LLDB comes with a umfangreich set of tools and also a C++ and Python API. I laks of providing a useful (at least for me) GUI as it's only working as a terminal application at this day of age. So I took some time and started a GUI wrapper project that is using the Python API of LLDB and began to implement a UI with the help of PyQt6. The project is still in a really early prototype stage at the moment, but I didn't want to let you miss the idea of mine and give you a short sneak-preview of the tool I have in mind.
+
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/WGJYLz1r118" title="Python GUI for the LLDB Debugger Python API" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Here are a few helper classes and GUI Widgets for PyQt6 ([Python Qt-Library](https://doc.qt.io/qtforpython-6/)). You can download and install them globally with PIP or just clone the GIT repo and use it locally as you need. The files are licensed under MIT License Terms and can be copied, amendet and redistributed as long as you include a reference to the original author. 
 
 ### Explaination
