@@ -5,7 +5,7 @@ author: dave
 date:   2024-02-03 21:43:26 +0200
 categories: [PyQt6, Custom Widgets]
 tags: [PyQt6, Custom Widgets]
-published: true 
+published: false 
 ---
 
 ## Synopsis

@@ -5,7 +5,7 @@ author: dave
 date:   2024-01-18 16:12:05 +0200
 categories: [Reverse Engineering, macOS]
 tags: [Reverse Engineering, macOS, ASM Instructions]
-published: true 
+published: false 
 ---
 
 ## Synopsis
