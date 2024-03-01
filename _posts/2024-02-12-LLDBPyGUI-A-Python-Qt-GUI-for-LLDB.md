@@ -8,7 +8,7 @@ tags: [Debugger, LLDB, PyQt6]
 published: true 
 ---
 # LLDBPyGUI
-(former pyLLDBGUI
+(former pyLLDBGUI)
 
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
 
@@ -34,7 +34,7 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 ## Requirements
 - lldb version 18.0.0
 ```bash
-ave@Aeon ~ % lldb --version
+ave@Aeon ~ % lldb --version 
 lldb version 18.0.0git (https://github.com/llvm/llvm-project.git revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47)
   clang revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
   llvm revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
@@ -67,3 +67,27 @@ Please keep in mind, that this release is only a really early Alpha release vers
 ## <a id="credits"></a>Credits
 - [developer.arm.com](https://developer.arm.com/documentation){:target="_blank" rel="noopener"}
 - [Mach-O Wikipedia](https://en.wikipedia.org/wiki/Mach-O){:target="_blank" rel="noopener"}
+
+### LLDB
+- [LLDB](https://lldb.llvm.org/){:target="_blank" rel="noopener"}
+
+### Python libs
+- [PyQt6](https://www.riverbankcomputing.com/software/pyqt){:target="_blank" rel="noopener"}
+- [ansi2html](https://github.com/pycontribs/ansi2html){:target="_blank" rel="noopener"}
+
+### Images and Icons
+- <a href="https://www.flaticon.com/free-icons/debug" title="debug icons">Debug icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/video-player" title="video player icons">Video player icons created by judanna - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/triangle" title="triangle icons">Triangle icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/pause" title="pause icons">Pause icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Gregor Cresnar Premium - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Plastic Donut - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/save" title="save icons">Save icons created by Flat Icons - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/edit" title="edit icons">Edit icons created by Flat Icons - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/recycle-bin" title="recycle bin icons">Recycle bin icons created by Uniconlabs - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Md Tanvirul Haque - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/reload" title="reload icons">Reload icons created by syafii5758 - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/add" title="add icons">Add icons created by Ilham Fitrotul Hayat - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by khulqi Rosyid - Flaticon</a>
