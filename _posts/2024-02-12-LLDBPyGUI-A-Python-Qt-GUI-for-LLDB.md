@@ -31,6 +31,25 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 - Search function
 - Commands interface
 
+## Requirements
+- lldb version 18.0.0
+```bash
+lldb version 18.0.0git (https://github.com/llvm/llvm-project.git revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47)
+  clang revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
+  llvm revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
+```
+ 
+## How to run
+To run the python app start a lldb instance with
+```bash
+ave@Aeon ~ % lldb
+[+] Loaded LLDBPyGUI version 0.0.1 - ALPHA PREVIEW (BUILD: 689)
+(LLDBPyGUI) spg
+```
+
+### Disclaimer
+Please keep in mind, that this release is only a really early Alpha release version that is intend to give you a first preview of what the app will look and function like. There is no waranty or garantie of working functionality or working feature what so ever. Anyhow every feedback or input from your side is very welcome as this will give me an idea what is important to you as an end user. So please feel free to send me any feedback about the app. Thank you!
+
 ## Documentation
 
 ## Download / Github
