@@ -34,12 +34,20 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 ## Requirements
 - lldb version 18.0.0
 ```bash
+ave@Aeon ~ % lldb --version
 lldb version 18.0.0git (https://github.com/llvm/llvm-project.git revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47)
   clang revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
   llvm revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
 ```
  
-## How to run
+## How to install and run the app
+To install the LLDBPyGUI app to LLDB you have to amend the .lldbinit file in you users home directory like so:
+
+```bash
+command script import /<pathToScript>/lldbpyGUI.py
+```
+(~/.lldbinit file)
+
 To run the python app start a lldb instance with
 ```bash
 ave@Aeon ~ % lldb
