@@ -61,7 +61,7 @@ Please keep in mind, that this release is only a really early Alpha release vers
 ## Documentation
 
 ## Download / Github
-- [Source code at GitHub](https://github.com/jetedonner/pyLLDBGUI)
+- [Source code at GitHub](https://github.com/jetedonner/LLDBPyGUI)
 <!-- - Zip file from mirror -->
 
 ## <a id="credits"></a>Credits
