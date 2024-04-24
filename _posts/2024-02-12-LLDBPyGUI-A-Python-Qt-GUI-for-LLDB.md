@@ -13,7 +13,7 @@ published: true
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
 
 ## Synopsis
-LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framework) LLDB. While LLDB comes with a comperhensive set of tools and also a C++ and Python API. I lacks of providing a useful (at least for me) GUI as it's only working as a terminal application at this day of age. So I took some time and started a GUI wrapper project that is using the Python API of LLDB and began to implement a UI with the help of PyQt6. The project is still in a really early prototype stage at the moment, but I didn't want to let you miss the idea of mine and give you a short sneak-preview of the tool I have in mind.
+LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framework) LLDB. While LLDB comes with a comperhensive set of tools and also a C++ and Python API. It lacks of providing a useful (at least for me) GUI as it's only working as a terminal application at this day of age. So I took some time and started a GUI wrapper project that is using the Python API of LLDB and began to implement a UI with the help of PyQt6. The project is still in a really early prototype stage at the moment, but I didn't want to let you miss the idea of mine and give you a short sneak-preview of the tool I have in mind.
 
 ## Movie Trailer
 <div class="container-responsive-iframe">
@@ -21,15 +21,15 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 </div>
 
 ## Features
-- General info about the target
+- General info about the target executable and linked libraries 
 - Disassembler / Debugger
 - Stacktrace viewer
 - Break- and Watchpoints
 - Register / Variable viewer
-- Synchronized source code
+- Synchronized source code view
 - Memory viewer
 - Search function
-- Commands interface
+- Commands interface (for lldb cmds)
 
 ## Requirements
 - lldb version 18.0.0
@@ -44,7 +44,7 @@ lldb version 18.0.0git (https://github.com/llvm/llvm-project.git revision 7e0c52
 To install the LLDBPyGUI app to LLDB you have to amend the .lldbinit file in you users home directory like so:
 
 ```bash
-command script import /<pathToScript>/lldbpyGUI.py
+command script import /<pathToGuiScripts>/lldbpyGUI.py
 ```
 (~/.lldbinit file)
 
@@ -56,12 +56,12 @@ ave@Aeon ~ % lldb
 ```
 
 ### Disclaimer
-Please keep in mind, that this release is only a really early Alpha release version that is intend to give you a first preview of what the app will look and function like. There is no waranty or garantie of working functionality or working feature what so ever. Anyhow every feedback or input from your side is very welcome as this will give me an idea what is important to you as an end user. So please feel free to send me any feedback about the app. Thank you!
+Please keep in mind, that this release is only a really early Alpha release version that is intend to give you a first preview of what the app will look and function like. There is no waranty or garantie of working functionality or working feature what so ever. Anyhow every feedback or input from your side is very welcome as this will give me an idea what is important to you as an end user. So please feel free to send me any feedback about the app and your opinion. Thank you!
 
 ## Documentation
 
 ## Download / Github
-- [Source code at GitHub](https://github.com/jetedonner/pyLLDBGUI)
+- [Source code at GitHub](https://github.com/jetedonner/LLDBPyGUI)
 <!-- - Zip file from mirror -->
 
 ## <a id="credits"></a>Credits
