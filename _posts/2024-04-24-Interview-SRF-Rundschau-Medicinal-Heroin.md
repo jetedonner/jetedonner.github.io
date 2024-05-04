@@ -4,7 +4,7 @@ title:  "Interview SRF Rundschau - Medicinal Heroin in Switzerland Zurich"
 author: dave
 date:   2024-04-24 23:00:37 +0200
 categories: [Private, Interviews]
-tags: [Private, Interviews]
+tags: [Private, Interviews, KnA]
 published: true 
 ---
 # Interview SRF Rundschau - Medicinal Heroin (Diaphin / Diamorphine)
