@@ -8,7 +8,7 @@ tags: [Projects, Quantum Computing]
 published: true
 ---
 
-![Quantum Computing - Kick Start](../../assets/img/projects/qc/qc-header-01.jpeg){: width="333" height="333" }
+![Quantum Computing - Kick Start](../../assets/img/projects/qc/qc-header-01-edt.png){: width="1024" height="640" }
 _Quantum Computing - Kick Start_
 
 # Kick Start Your Quantum Journey! 🚀
