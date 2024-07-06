@@ -17,6 +17,10 @@ Welcome to our platform dedicated to quantum computing! Whether you’re a curio
 ## Youtube Videos 
 - Quantum computing for beginners - Math and Algebra
 - https://youtu.be/tsbCSkvHhMo?si=QOY_aTyKlaeWzO9q
+- https://youtu.be/7zz3J4Sy1og?si=pq2FBNj2tZfhAQlq
+- https://youtu.be/hyctIDPRSqY?si=L8_Ec3gI2HIw9_b6
+- https://youtu.be/0HFzTYlhT2E?si=HpETJ-06fmo5z3_-
+- https://youtu.be/JOJ5zihcd6Q?si=0GHMjRTexNtm39XL
 
 ## Credits
 The Author of this Web-Page is [_Kim David Hauser_](https://kimhauser.ch){:target="_blank" rel="noopener"}
