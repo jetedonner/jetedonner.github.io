@@ -14,6 +14,9 @@ _Quantum Computing - Kick Start_
 # Kick Start Your Quantum Journey! 🚀
 Welcome to our platform dedicated to quantum computing! Whether you’re a curious beginner or an aspiring quantum coder, we’ve got you covered. Dive into the fascinating world of quantum mechanics, learn about qubits, gates, and entanglement, and explore the potential of this cutting-edge technology. Get ready to unravel the mysteries of quantum computing and embark on an exciting adventure!
 
+## Youtube Videos 
+- Quantum computing for beginners - Math and Algebra 
+
 ## Credits
 The Author of this Web-Page is [_Kim David Hauser_](https://kimhauser.ch){:target="_blank" rel="noopener"}
 
