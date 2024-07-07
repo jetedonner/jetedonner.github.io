@@ -16,7 +16,7 @@ Welcome to our platform dedicated to quantum computing! Whether you’re a curio
 
 ## Youtube Videos 
 - Quantum computing for beginners - Math and Algebra
-- https://youtu.be/tsbCSkvHhMo?si=QOY_aTyKlaeWzO9q
+- https://youtu.be/tsbCSkvHhMo?si=QOY_aTyKlaeWzO9q This quantum computing course provides a solid foundation in quantum computing, from the basics to an understanding of how popular quantum algorithms work. Quantum computing leverages the principles of quantum mechanics to process information at incredible speeds. 
 - https://youtu.be/7zz3J4Sy1og?si=pq2FBNj2tZfhAQlq
 - https://youtu.be/hyctIDPRSqY?si=L8_Ec3gI2HIw9_b6
 - https://youtu.be/0HFzTYlhT2E?si=HpETJ-06fmo5z3_-
