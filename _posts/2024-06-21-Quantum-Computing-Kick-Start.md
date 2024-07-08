@@ -15,8 +15,10 @@ _Quantum Computing - Kick Start_
 Welcome to our platform dedicated to quantum computing! Whether you’re a curious beginner or an aspiring quantum coder, we’ve got you covered. Dive into the fascinating world of quantum mechanics, learn about qubits, gates, and entanglement, and explore the potential of this cutting-edge technology. Get ready to unravel the mysteries of quantum computing and embark on an exciting adventure!
 
 ## Youtube Videos 
-- Quantum computing for beginners - Math and Algebra
-- https://youtu.be/tsbCSkvHhMo?si=QOY_aTyKlaeWzO9q This quantum computing course provides a solid foundation in quantum computing, from the basics to an understanding of how popular quantum algorithms work. Quantum computing leverages the principles of quantum mechanics to process information at incredible speeds. 
+- [Linear Algebra Course – Mathematics for Machine Learning and Generative AI (bear with her ... it's worth it!!!)](https://www.youtube.com/watch?v=rSjt1E9WHaQ)
+- [Quantum computing for beginners - Math and Algebra](https://youtu.be/tsbCSkvHhMo?si=QOY_aTyKlaeWzO9q) 
+	This quantum computing course provides a solid foundation in quantum computing, from the basics to an understanding of how popular quantum algorithms work. Quantum computing leverages the principles of quantum mechanics to process information at incredible speeds. 
+
 - https://youtu.be/7zz3J4Sy1og?si=pq2FBNj2tZfhAQlq
 - https://youtu.be/hyctIDPRSqY?si=L8_Ec3gI2HIw9_b6
 - https://youtu.be/0HFzTYlhT2E?si=HpETJ-06fmo5z3_-
@@ -26,6 +28,7 @@ Welcome to our platform dedicated to quantum computing! Whether you’re a curio
 The Author of this Web-Page is [_Kim David Hauser_](https://kimhauser.ch){:target="_blank" rel="noopener"}
 
 ### References
+- SEE Youtube video references ... ;-)
 - Quokka: Your Personal Quantum Computer by Chris Ferrie — Kickstarter
 - Quantum Computing in STEM Education | Science On Stage Europe
 - Google, GESDA and XPRIZE launch new competition in Quantum Applications (March 4, 2024)
