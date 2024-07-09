@@ -14,10 +14,16 @@ _Quantum Computing - Kick Start_
 # Kick Start Your Quantum Journey! 🚀
 Welcome to our platform dedicated to quantum computing! Whether you’re a curious beginner or an aspiring quantum coder, we’ve got you covered. Dive into the fascinating world of quantum mechanics, learn about qubits, gates, and entanglement, and explore the potential of this cutting-edge technology. Get ready to unravel the mysteries of quantum computing and embark on an exciting adventure!
 
-## Youtube Videos 
+## Youtube Videos
+
 - [Linear Algebra Course – Mathematics for Machine Learning and Generative AI (bear with her ... it's worth it!!!)](https://www.youtube.com/watch?v=rSjt1E9WHaQ)
-- [Quantum computing for beginners - Math and Algebra](https://youtu.be/tsbCSkvHhMo?si=QOY_aTyKlaeWzO9q) 
+- [Quantum computing for beginners - Math and Algebra](https://youtu.be/tsbCSkvHhMo) 
 	This quantum computing course provides a solid foundation in quantum computing, from the basics to an understanding of how popular quantum algorithms work. Quantum computing leverages the principles of quantum mechanics to process information at incredible speeds. 
+- [Google Werbung schalten mit KI - Google Ads deutsch 2023 / 2024](https://youtu.be/7zz3J4Sy1og)
+
+### Fundamentals
+- [Wikipedia Sine / Cosine - EN](https://en.wikipedia.org/wiki/Sine_and_cosine)
+- [Wikipedia Sinus / Kosinus - DE](https://de.wikipedia.org/wiki/Sinus_und_Kosinus)
 
 - https://youtu.be/7zz3J4Sy1og?si=pq2FBNj2tZfhAQlq
 - https://youtu.be/hyctIDPRSqY?si=L8_Ec3gI2HIw9_b6
