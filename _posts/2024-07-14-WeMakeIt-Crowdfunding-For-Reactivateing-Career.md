@@ -26,6 +26,6 @@ The money for this project will be invested entirely in the purchase of a new Ma
 <br><br>
 - [Werbung für Crowdfunding "Laptop für KI-Kurs / Wiedereinstig Arbeitsmarkt")](https://www.youtube.com/watch?v=QNWxVl62PZ0)
 
-
-<script src="https://wemakeit.com/static-assets/widgets/project.js" async="async"></script>
-<wemakeit-project locale="de" slug="notebook-for-ai-course"></wemakeit-project>
+## Spendensammlung - WeMakeIt
+<script src="https://wemakeit.com/static-assets/widgets/donation_box.js" async="async"></script>
+<wemakeit-donation-box color="blue" locale="de" slug="notebook-for-ai-course" type="card"></wemakeit-donation-box>
