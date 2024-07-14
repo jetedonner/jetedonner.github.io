@@ -23,7 +23,7 @@ The money for this project will be invested entirely in the purchase of a new Ma
 
 ## Youtube Videos
 <iframe width="640" height="315" src="https://www.youtube.com/embed/QNWxVl62PZ0" frameborder="0" allowfullscreen></iframe>
-<br><br>
+<br>
 
 - [Advertising for crowdfunding "Laptop for AI course / re-entry into the job market"](https://www.youtube.com/watch?v=QNWxVl62PZ0){:target="_blank" rel="noopener"}
 
