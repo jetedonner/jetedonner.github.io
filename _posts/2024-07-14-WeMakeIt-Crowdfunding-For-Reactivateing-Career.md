@@ -34,3 +34,6 @@ You can support the project by helping me to purchase a new laptop (MacBook Air 
 
 <script src="https://wemakeit.com/static-assets/widgets/donation_box.js" async="async"></script>
 <wemakeit-donation-box color="blue" locale="en" slug="notebook-for-ai-course" type="card"></wemakeit-donation-box>
+<br><br>
+<script src="https://wemakeit.com/static-assets/widgets/project.js" async="async"></script>
+<wemakeit-project locale="en" slug="notebook-for-ai-course"></wemakeit-project>
