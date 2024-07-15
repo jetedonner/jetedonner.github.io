@@ -11,6 +11,8 @@ published: true
 ![WeMakeIt - Reactivate my career](../../assets/img/projects/kikurs/kikurs_head_image-640x360_edt.png){: width="640" height="360" }
 _WeMakeIt - Reactivate my career_
 
+<script src="https://wemakeit.com/static-assets/widgets/donation_box.js" async="async"></script>
+<wemakeit-donation-box color="blue" locale="en" slug="notebook-for-ai-course" type="card"></wemakeit-donation-box>
 
 # WeMakeIt - Reactivate my career 🚀
 After more than 3 years at the social welfare office, I would like to get back into the primary labor market and make my contribution to society. I would like to give courses in the field of "artificial intelligence" for beginners and I have already started a website for presentation and registration. However, I noticed that my old laptop can no longer keep up with the new technology and so I would like to buy a new MacBook Air that meets the requirements. Unfortunately, the social welfare office cannot support me with this and that is why I became aware of "wemakeit.com". My goal is to get enough capital together for a new MacBook Air 2024 so that I can then complete the website for the presentation of the AI course, experiment with AI myself and also run the course.
