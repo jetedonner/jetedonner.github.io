@@ -32,4 +32,4 @@ The money for this project will be invested entirely in the purchase of a new Ma
 ## Fundraising - WeMakeIt
 You can support the project by helping me to purchase a new laptop (MacBook Air 2024) so that I can prepare professionally for the AI course and then complete it. You will thus enable me - after 3 long years of dependence on the welfare office - to re-enter working life, the primary labor market and a new, self-determined life. It would improve my life by 100%. Thank you in advance!
 
-<wemakeit-project locale="de" slug="notebook-for-ai-course"></wemakeit-project>
+<wemakeit-project locale="en" slug="notebook-for-ai-course"></wemakeit-project>
