@@ -29,16 +29,16 @@ In order to effectively combat the black market, cultivation and production woul
 # Subscribe the Petition
 Help solve this problem and sign the petition
 <script>
-    var OPWIDGET = {
-      "base_url": "https://www.openpetition.eu",
-      "api_key": "8d23f07d07661824b2d5dfdf0a90d90d5c70950d1154bb2646822f18df8fdfe8",
-      "options": {
-        "primarycolor": "#29b0cc",
-        "secondarycolor": "#3e3d40",
-        "backgroundcolor": "#ffffff",
-        "mainfontsize": "15px"
-      }
-    };
+var OPWIDGET = {
+	"base_url": "https://www.openpetition.eu",
+	"api_key": "0236091a0d9b2d57a9d55e3f6d4aef6b5dc53611c4bb059dde942894d4fa35d7",
+	"options": {
+		"primarycolor": "#29b0cc", // andere Farben: https://www.w3schools.com/colors/colors_picker.asp
+		"secondarycolor": "#3e3d40",
+		"backgroundcolor": "#ffffff",
+		"mainfontsize": "15px"
+	}
+};
 </script>
 <script src="https://www.openpetition.de/javascript/widget.js"></script>
 <noscript>Please activate JavaScript and reload the website.</noscript>
