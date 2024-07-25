@@ -69,7 +69,9 @@ By signing, you are helping to resolve this grey area once and for all. Let's fa
 - [legaleskokain.kimhauser.ch - "Legalization of small amounts of cocaine for personal use"](https://legaleskokain.kimhauser.ch){:target="_blank" rel="noopener"}
 
 ![Website Link - QR Code](../../assets/img/projects/legaleskokain.kimhauser.ch/QR-Code-Petition-URL-2024-07-25-01.jpg){: width="171" height="170" }
+
 <!--
+
 ## Realization and implementation of AI course / re-entry into the first labor market
 The money for this project will be invested entirely in the purchase of a new MacBook Air 2024 and will therefore be used to complete and refine the project fundamentals for the AI courses for beginners that I would like to give. By financing a new MacBook, you will enable me to re-enter the first labor market and thus break free from the social welfare office. I see myself as having a self-determined future and no longer being dependent on the social welfare office.
 
