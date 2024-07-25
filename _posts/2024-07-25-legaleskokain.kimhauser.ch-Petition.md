@@ -33,7 +33,7 @@ var OPWIDGET = {
 	"base_url": "https://www.openpetition.eu",
 	"api_key": "0236091a0d9b2d57a9d55e3f6d4aef6b5dc53611c4bb059dde942894d4fa35d7",
 	"options": {
-		"primarycolor": "#29b0cc", // andere Farben: https://www.w3schools.com/colors/colors_picker.asp
+		"primarycolor": "#29b0cc",
 		"secondarycolor": "#3e3d40",
 		"backgroundcolor": "#ffffff",
 		"mainfontsize": "15px"
