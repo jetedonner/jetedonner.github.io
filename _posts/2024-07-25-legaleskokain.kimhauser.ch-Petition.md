@@ -44,7 +44,7 @@ var OPWIDGET = {
 <noscript>Please activate JavaScript and reload the website.</noscript>
 
 ## Goals of the petition and website
-**Decriminalize**
+**Decriminalize Addicts**
 Addicts (with low incomes) should not be punished but protected. A legal forum is needed
 
 **Relieve the burden on the executive**
