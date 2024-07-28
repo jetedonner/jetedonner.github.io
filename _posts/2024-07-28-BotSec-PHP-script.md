@@ -18,6 +18,19 @@ This is an example usage of the "botsec.php" script. It'll redirect you to https
 ## Source on GitHub
 - [botsec on GitHub](https://github.com/kimhauser/botsec)
 
+## Implementation of the script
+* Open the file **botsec.php** and amend the array **$agentsToDeny** in the script with your own search-bots you want to deny
+* Also change the **$redirectLocation** variable to a location you want the bots to be redirected to if needed
+* Upload or place the script to your webserver where your root or main index.php file (or any other script you want the function to apply) is. 
+* Inlcude the botsec.php file like so:
+
+```php
+<?php
+    require("botsec.php");
+?>
+```
+* That's it. Every request to the website including the **botsec.php** script from a user-agent which is in the **$agentsToDeny** array is now beeing redirected to the URL stated in the **$redirectLocation** variable
+
 ## Testing the script
 You can test the botsec.php script with your own User-Agents like so:
 
