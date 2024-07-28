@@ -13,10 +13,10 @@ published: true
 
 - [BotSec - A PHP script for denying Search-Bots and reducing unwanted web-traffic](https://botsec.kimhauser.ch){:target="_blank" rel="noopener"}
 
-This is an example usage of the "botsec.php" script. It'll redirect you to https://google.com if the user-agent of the request is in the array to check.
+This is an example usage of the "botsec.php" script. It'll redirect you to [https://google.com](https://google.com){:target="_blank" rel="noopener"} if the user-agent of the request is in the array to check.
 
 ## Source on GitHub
-- [botsec on GitHub](https://github.com/kimhauser/botsec)
+- [botsec on GitHub](https://github.com/kimhauser/botsec){:target="_blank" rel="noopener"}
 
 ## Implementation of the script
 * Open the file **botsec.php** and amend the array **$agentsToDeny** in the script with your own search-bots you want to deny
