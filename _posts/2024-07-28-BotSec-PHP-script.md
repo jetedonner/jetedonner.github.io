@@ -16,7 +16,7 @@ published: true
 This is an example usage of the "botsec.php" script. It'll redirect you to [https://google.com](https://google.com){:target="_blank" rel="noopener"} if the user-agent of the request is in the array to check.
 
 ## Source on GitHub
-- [botsec on GitHub](https://github.com/kimhauser/botsec){:target="_blank" rel="noopener"}
+- [botsec on GitHub](https://github.com/jetedonner/botsec){:target="_blank" rel="noopener"}
 
 ## Implementation of the script
 * Open the file **botsec.php** and amend the array **$agentsToDeny** in the script with your own search-bots you want to deny
