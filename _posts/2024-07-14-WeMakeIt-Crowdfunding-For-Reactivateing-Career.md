@@ -5,7 +5,7 @@ author: dave
 date:   2024-07-14 21:44:47 +0200
 categories: [Projects, Career]
 tags: [Projects, Career]
-published: true
+published: false 
 ---
 
 ![WeMakeIt - Reactivate my career](../../assets/img/projects/kikurs/kikurs_head_image-640x360_edt.png){: width="640" height="360" }
