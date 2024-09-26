@@ -1,22 +1,40 @@
 ---
 layout: post
-title:  "BotSec - PHP script for denying Search-Bots"
+title:  "UE5 Customization - Get properties from parent object"
 author: dave
-date:   2024-07-28 19:28:14 +0200
-categories: [Projects, HTML]
-tags: [Projects, HTML]
+date:   2024-09-15 19:46:15 +0200
+categories: [UnrealEngine, Articles]
+tags: [UnrealEngine, Articles]
 published: true
 ---
 
-# botsec.php - Deny unwanted search-bots
- A PHP script for denying and redirecting unwanted search bots which may be causing a huge traffic on your website. You may use, copy, amend and redistribute this PHP script in all your projects whether it's personal or commercial. The script is licensed under [MIT license](https://opensource.org/license/mit){:target="_blank" rel="noopener"} and freely available for everyone.
+# UE5 Struct Customization - Get properties from parent object in a struct customization
+ This article intends to help you with property type customization of structs (USTRUCT) in unreal engine 5. Especially with how to get parent properties in a detail property customization of a custom struct. This information and affiliated projects are licensed under [MIT license](https://opensource.org/license/mit){:target="_blank" rel="noopener"} and freely available for everyone.
 
-- [botsec.php - A PHP script for denying Search-Bots and reducing unwanted web-traffic](https://botsec.kimhauser.ch){:target="_blank" rel="noopener"}
+## Article Overview
+- Introduction
+- Basic UE5 customization setup in C++
+- Get the parent object (UObject)
+- Editor layout
+- Source on GitHub
 
-This is an example usage of the "botsec.php" script. It'll redirect you to [https://google.com](https://google.com){:target="_blank" rel="noopener"} if the user-agent of the request is in the array to check.
+## Introduction
+
+## Basic UE5 customization setup in C++
+
+## Get the parent object (UObject)
+
+## Editor layout
 
 ## Source on GitHub
 - [botsec on GitHub](https://github.com/jetedonner/botsec){:target="_blank" rel="noopener"}
+
+# Credits
+## Author / Members
+- [Kim David Hauser](mailto:kim@kimhauser.ch){:target="_blank" rel="noopener"}
+
+
+
 
 ## Implementation of the script
 * Open the file **botsec.php** and amend the array **$agentsToDeny** in the script with your own search-bots you want to deny
@@ -46,6 +64,4 @@ You can test the botsec.php script with your own User-Agents like so:
     3. Click on "More Tools" > "Network Conditions"
     4. In the bottom panel you should see the User-Agent and you can chnge it
 
-# Credits
-## Author / Members
-- [Kim David Hauser](mailto:kim@kimhauser.ch){:target="_blank" rel="noopener"}
+
