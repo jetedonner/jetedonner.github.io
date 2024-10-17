@@ -5,7 +5,7 @@ author: dave
 date:   2024-09-15 19:46:15 +0200
 categories: [UnrealEngine, Articles]
 tags: [UnrealEngine, Articles]
-published: true
+published: false 
 ---
 
 # UE5 Struct Customization - Get properties from parent object in a struct customization
