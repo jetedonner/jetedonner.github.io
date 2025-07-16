@@ -55,6 +55,27 @@ command script import /<pathToGuiScripts>/lldbpyGUI.py
 To run the python app start a lldb instance with
 ```bash
 ave@Aeon ~ % lldb
+(LLDBPyGUI) pyg
+#=================================================================================#
+| Starting TEST ENVIRONMENT for LLDBPyGUI (ver. 0.0.2 - DEV PREVIEW)            |
+|                                                                                 |
+| Desc:                                                                           |
+| This python script is for development and testing while development             |
+| of the LLDB python GUI (LLDBPyGUI.py) - use at own risk! No Warranty!           |
+|                                                                                 |
+| Credits:                                                                        |
+| - LLDB                                                                          |
+| - lldbutil.py                                                                   |
+| - lui.py                                                                        |
+|                                                                                 |
+| Author / Copyright:                                                             |
+| Kim David Hauser (JeTeDonner), (C.) by kimhauser.ch 1991-2025                   |
+#=================================================================================#
+```
+
+*Old Version*
+```bash
+ave@Aeon ~ % lldb
 [+] Loaded LLDBPyGUI version 0.0.1 - ALPHA PREVIEW (BUILD: 689)
 (LLDBPyGUI) spg
 ```
