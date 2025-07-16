@@ -8,7 +8,7 @@ tags: [Debugger, LLDB, PyQt6]
 published: true 
 ---
 # LLDBPyGUI
- - VERSION: 0.0.2 - "Developer Preview"
+ - VERSION: 0.0.2 - "Developer Preview" as of 2025-07-16 13:20:59
 
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)
 
