@@ -8,7 +8,8 @@ tags: [Debugger, LLDB, PyQt6]
 published: true 
 ---
 # LLDBPyGUI
- - VERSION: 0.0.2 - "Developer Preview"
+
+ - VERSION: 0.0.2 - "Developer Preview" as of 2025-07-16 13:20:59
 
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)
 
@@ -75,6 +76,27 @@ command script import /<pathToGuiScripts>/lldbpyGUI.py
 (~/.lldbinit file)
 
 To run the python app start a lldb instance with
+```bash
+ave@Aeon ~ % lldb
+(LLDBPyGUI) pyg
+#=================================================================================#
+| Starting TEST ENVIRONMENT for LLDBPyGUI (ver. 0.0.2 - DEV PREVIEW)              |
+|                                                                                 |
+| Desc:                                                                           |
+| This python script is for development and testing while development             |
+| of the LLDB python GUI (LLDBPyGUI.py) - use at own risk! No Warranty!           |
+|                                                                                 |
+| Credits:                                                                        |
+| - LLDB                                                                          |
+| - lldbutil.py                                                                   |
+| - lui.py                                                                        |
+|                                                                                 |
+| Author / Copyright:                                                             |
+| Kim David Hauser (JeTeDonner), (C.) by kimhauser.ch 1991-2025                   |
+#=================================================================================#
+```
+
+*Old Version*
 ```bash
 ave@Aeon ~ % lldb
 [+] Loaded LLDBPyGUI version 0.0.1 - ALPHA PREVIEW (BUILD: 689)
