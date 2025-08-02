@@ -35,13 +35,35 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 - Search function
 - Commands interface (for lldb cmds)
 
-## Requirements
-- lldb version 18.0.0
+## Requirements (Important) 
+The following requirements are strictly needed. You might get the python scripts to load in earlier lldb / clang versions, but you are strictly advised to use at least version 22.0.0git because of the buggy nature of older LLDB Python API versions. Test it at your own risk and expense, no support or help will be provided for setting LLDBPyGUI up in older LLDB / LLVM versions.
+
+### macOS 
+- macOS Sequoia >= 15.1.1 - At the moment LLDBPyGUI is soly developed and tested on macOS 15.1.1. You are encouraged to test it on other os versions or systems -at your own risk and expense of course. Every seriouse feedback is very welcome and will be noticed and processed personally by meyself.
+
+### LLDB Python API base
+- lldb version 22.0.0git
+- clang version 22.0.0git
+
+## Setup / Installation
+### Compile LLDB (LLVM)
+To use LLDBPyGUI you need to have *lldb* and *clang* installed and working with python scripting option enabled. Usually the preinstalled versions (~=16.0.0) of this appss are outdated and will lead to many headaches and problems while using all the features of LLDBPyGUI to debug executables or libraries. So the current version of LLDBPyGUI is tailored only for LLDB v. 22.0.0git and above, troubles with other versions are your own problem and will not be supported.
+
+*Configure cmake*
+```bash
+cmake -S llvm -B build -G Ninja -DLLVM_ENABLE_PROJECTS="clang;lldb" -DCMAKE_BUILD_TYPE=Release -DLLDB_INCLUDE_TESTS=OFF -DLLDB_ENABLE_PYTHON=ON -DPython3_ROOT_DIR=/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9
+```
+
+*Build with cmake*
+```bash
+cmake --build build
+```
+
 ```bash
 ave@Aeon ~ % lldb --version 
-lldb version 18.0.0git (https://github.com/llvm/llvm-project.git revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47)
-  clang revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
-  llvm revision 7e0c5266309c1d2a0e6d766834415dff5cb65e47
+lldb version 22.0.0git (https://github.com/llvm/llvm-project.git revision 16a0892a9db1825ffa5e42b801e13215418d93b9)
+  clang revision 16a0892a9db1825ffa5e42b801e13215418d93b9
+  llvm revision 16a0892a9db1825ffa5e42b801e13215418d93b9
 ```
  
 ## How to install and run the app
