@@ -52,16 +52,16 @@ To use LLDBPyGUI you need to have *lldb* and *clang* installed and working with 
 
 *Configure cmake*
 ```bash
-cmake -S llvm -B build -G Ninja -DLLVM_ENABLE_PROJECTS="clang;lldb" -DCMAKE_BUILD_TYPE=Release -DLLDB_INCLUDE_TESTS=OFF -DLLDB_ENABLE_PYTHON=ON -DPython3_ROOT_DIR=/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9
+dave@Aeon ~ % cmake -S llvm -B build -G Ninja -DLLVM_ENABLE_PROJECTS="clang;lldb" -DCMAKE_BUILD_TYPE=Release -DLLDB_INCLUDE_TESTS=OFF -DLLDB_ENABLE_PYTHON=ON -DPython3_ROOT_DIR=/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9
 ```
 
 *Build with cmake*
 ```bash
-cmake --build build
+dave@Aeon ~ % cmake --build build
 ```
 
 ```bash
-ave@Aeon ~ % lldb --version 
+dave@Aeon ~ % lldb --version 
 lldb version 22.0.0git (https://github.com/llvm/llvm-project.git revision 16a0892a9db1825ffa5e42b801e13215418d93b9)
   clang revision 16a0892a9db1825ffa5e42b801e13215418d93b9
   llvm revision 16a0892a9db1825ffa5e42b801e13215418d93b9
@@ -77,7 +77,7 @@ command script import /<pathToGuiScripts>/lldbpyGUI.py
 
 To run the python app start a lldb instance with
 ```bash
-ave@Aeon ~ % lldb
+dave@Aeon ~ % lldb
 (LLDBPyGUI) pyg
 #=================================================================================#
 | Starting TEST ENVIRONMENT for LLDBPyGUI (ver. 0.0.2 - DEV PREVIEW)              |
@@ -98,7 +98,7 @@ ave@Aeon ~ % lldb
 
 *Old Version*
 ```bash
-ave@Aeon ~ % lldb
+dave@Aeon ~ % lldb
 [+] Loaded LLDBPyGUI version 0.0.1 - ALPHA PREVIEW (BUILD: 689)
 (LLDBPyGUI) spg
 ```
