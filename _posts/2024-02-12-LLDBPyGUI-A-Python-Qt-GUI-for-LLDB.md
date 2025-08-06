@@ -103,6 +103,9 @@ dave@Aeon ~ % lldb
 (LLDBPyGUI) spg
 ```
 
+### Community contribution
+As you can see this project is still under construction and not finished yet. So far I did what I could and what I thought was useful and would be needed. But let's face it, the product is not final yet and every help or contribution is very welcome. If you think this tool is useful for you but is missing some important function you need, please don't hesitate to contact me personally or even better send me any pull request via github. I really think this project is worth a glimp and could help many developers. Please keep in mind, that at this stage you have to meet several really specific conditions which are crucial for running this early Developer Preview of LLDBPyGUI.
+
 ### Disclaimer
 Please keep in mind, that this release is only a really early Alpha release version that is intend to give you a first preview of what the app will look and function like. There is no waranty or garantie of working functionality or working feature what so ever. Anyhow every feedback or input from your side is very welcome as this will give me an idea what is important to you as an end user. So please feel free to send me any feedback about the app and your opinion. Thank you!
 
