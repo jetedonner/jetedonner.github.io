@@ -103,6 +103,12 @@ dave@Aeon ~ % lldb
 (LLDBPyGUI) spg
 ```
 
+## Features
+
+### Helpers
+#### Shift+Click => Copy to Clipboard
+If you do any "Shift+Click" on a TreeView Or TableView the text under the cursor will be copied to clipboard for further use.
+
 ### Community contribution
 As you can see this project is still under construction and not finished yet. So far I did what I could and what I thought was useful and would be needed. But let's face it, the product is not final yet and every help or contribution is very welcome. If you think this tool is useful for you but is missing some important function you need, please don't hesitate to contact me personally or even better send me any pull request via github. I really think this project is worth a glimp and could help many developers. Please keep in mind, that at this stage you have to meet several really specific conditions which are crucial for running this early Developer Preview of LLDBPyGUI.
 
