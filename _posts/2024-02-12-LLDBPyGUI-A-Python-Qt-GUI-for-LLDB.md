@@ -5,7 +5,7 @@ author: dave
 date:   2025-07-16 13:06:53 +0200
 categories: [Debugger, LLDB]
 tags: [Debugger, LLDB, PyQt6]
-published: false 
+published: true 
 ---
 # LLDBPyGUI
 
@@ -49,6 +49,11 @@ The following requirements are strictly needed. You might get the python scripts
 ## Setup / Installation
 ### Compile LLDB (LLVM)
 To use LLDBPyGUI you need to have *lldb* and *clang* installed and working with python scripting option enabled. Usually the preinstalled versions (~=16.0.0) of this appss are outdated and will lead to many headaches and problems while using all the features of LLDBPyGUI to debug executables or libraries. So the current version of LLDBPyGUI is tailored only for LLDB v. 22.0.0git and above, troubles with other versions are your own problem and will not be supported.
+
+*Setup include path (i.e. add to ~/.zshrc or ~/.bashrc)*
+```bash
+dave@Aeon ~ % export SDKROOT=$(xcrun --show-sdk-path)
+```
 
 *Configure cmake*
 ```bash
@@ -105,9 +110,18 @@ dave@Aeon ~ % lldb
 
 ## Features
 
+### Shortcuts (mouse and keyboard)
+#### Shift click to copy
+You can almost 'shift+click' any gui element to copy it text value to clipboard. This can become very handy at some times :-)
+
+
+
 ### Helpers
-#### Shift+Click => Copy to Clipboard
-If you do any "Shift+Click" on a TreeView Or TableView the text under the cursor will be copied to clipboard for further use.
+#### Texts / TreeView / TableView => Shift+Click: Copy text to Clipboard
+If you do any "Shift+Click" on a Text-/Edit-Field, TreeView or TableView the text under the cursor will be copied to clipboard for further use. You can enable/disable this function in the settings.
+
+#### Console: Save Commands History
+The commands you enter to the consoles in LLDBPyGUI can be saved to a history file so you can go back or "scroll" through the commands you already entered. You can enable/disable this function in the settings.
 
 ### Community contribution
 As you can see this project is still under construction and not finished yet. So far I did what I could and what I thought was useful and would be needed. But let's face it, the product is not final yet and every help or contribution is very welcome. If you think this tool is useful for you but is missing some important function you need, please don't hesitate to contact me personally or even better send me any pull request via github. I really think this project is worth a glimp and could help many developers. Please keep in mind, that at this stage you have to meet several really specific conditions which are crucial for running this early Developer Preview of LLDBPyGUI.
