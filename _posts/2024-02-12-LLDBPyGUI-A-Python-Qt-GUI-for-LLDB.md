@@ -26,15 +26,21 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 </div>
 
 ## Features
-- General info about the target executable and linked libraries 
+- General info about the target executable, modules, sections and linked libraries 
 - Disassembler / Debugger
+    - Attach to pid / process
+    - Run Target executable
+    - Analyze modules and libraries
 - Stacktrace viewer
 - Break- and Watchpoints
 - Register / Variable viewer
 - Synchronized source code view
 - Memory viewer
 - Search function
-- Commands interface (for lldb cmds)
+- Commands interfaces (for lldb cmds)
+    - LLDB Console
+    - Python Console
+    - System shell redirect
 
 ## Requirements (Important) 
 The following requirements are strictly needed. You might get the python scripts to load in earlier lldb / clang versions, but you are strictly advised to use at least version 22.0.0git because of the buggy nature of older LLDB Python API versions. Test it at your own risk and expense, no support or help will be provided for setting LLDBPyGUI up in older LLDB / LLVM versions.
