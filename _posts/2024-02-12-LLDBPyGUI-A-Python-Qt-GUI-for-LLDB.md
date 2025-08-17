@@ -18,16 +18,17 @@ published: true
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
 
 ## Synopsis
-LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framework) LLDB. While LLDB comes with a comperhensive set of tools and also a C++ and Python API. It lacks of providing a useful (at least for me) GUI as it's only working as a terminal application at this day of age. So I took some time and started a GUI wrapper project that is using the Python API of LLDB and began to implement a UI with the help of PyQt6. The project is still in a really early prototype stage at the moment, but I didn't want to let you miss the idea of mine and give you a short sneak-preview of the tool I have in mind.
+LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framework) LLDB. While LLDB comes with a comperhensive set of tools and also a C++ and Python API. It lacks of providing a useful (at least for me) GUI as it's only working as a terminal application at this day of age. So I took some time and started a GUI wrapper project that is using the Python API of LLDB and began to implement a UI with the help of PyQt6. The project is still in a really early prototype stage at the moment, but I didn't want to let you miss the idea of mine and I'd like to give you a short sneak-preview of the tool I have in mind.
 
 ## Movie Trailer
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/WGJYLz1r118" title="Python GUI for the LLDB Debugger Python API" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-This is the first movie Trailer and preview of LLDBPyGUI, some of it's Main features and what is planed for this project4
+This is the first movie Trailer and preview of LLDBPyGUI, some of it's Main features and what is planed for this project and where it should go with this idea.
 
 ## Features
-- General info about the target executable, modules, sections and linked libraries 
+- General info about the target executable, file header, modules, sections, linked libraries and more.
+
 - Disassembler / Debugger
     - Attach to pid / process
     - Run Target executable
@@ -37,14 +38,14 @@ This is the first movie Trailer and preview of LLDBPyGUI, some of it's Main feat
 - Register / Variable viewer
 - Synchronized source code view
 - Memory viewer
-- Search function
+- Search functions
 - Commands interfaces (for lldb cmds)
     - LLDB Console
     - Python Console
     - System shell redirect
 
 ## Requirements (Important) 
-The following requirements are strictly needed. You might get the python scripts to load in earlier lldb / clang versions, but you are strictly advised to use at least version 22.0.0git because of the buggy nature of older LLDB Python API versions. Test it at your own risk and expense, no support or help will be provided for setting LLDBPyGUI up in older LLDB / LLVM versions.
+The following requirements are strictly recommended. You might get the python scripts to load in earlier lldb / clang versions, but you are strictly advised to use at least *lldb and clang version 22.0.0git* because of the buggy nature of older LLDB Python API versions. Test it at your own risk and expense, no support or help will be provided for setting LLDBPyGUI up in older LLDB / LLVM versions. Also this project - up until now is soley developed and tested on macOS.
 
 ### macOS 
 - macOS Sequoia >= 15.1.1 - At the moment LLDBPyGUI is soly developed and tested on macOS 15.1.1. You are encouraged to test it on other os versions or systems -at your own risk and expense of course. Every seriouse feedback is very welcome and will be noticed and processed personally by meyself.
