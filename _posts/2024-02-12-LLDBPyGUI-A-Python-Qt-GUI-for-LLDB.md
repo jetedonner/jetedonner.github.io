@@ -2,14 +2,14 @@
 layout: post
 title:  "LLDBPyGUI - GUI for LLDB Debugger Python API with PyQt6"
 author: dave
-date:   2025-07-16 13:06:53 +0200
+date:   2025-08-17 22:46:53 +0200
 categories: [Debugger, LLDB]
 tags: [Debugger, LLDB, PyQt6]
 published: true 
 ---
 # LLDBPyGUI
 
- - VERSION: 0.0.2 - "Developer Preview" as of 2025-07-16 13:20:59
+ - VERSION: 0.0.3 - "Developer Preview" as of 2025-08-17 22:46:53
 
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)
 
