@@ -24,6 +24,7 @@ LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framewor
 <div class="container-responsive-iframe">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/WGJYLz1r118" title="Python GUI for the LLDB Debugger Python API" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+This is the first movie Trailer and preview of LLDBPyGUI, some of it's Main features and what is planed for this project4
 
 ## Features
 - General info about the target executable, modules, sections and linked libraries 
