@@ -7,14 +7,21 @@ categories: [Debugger, LLDB]
 tags: [Debugger, LLDB, PyQt6]
 published: true 
 ---
+
+
+# !!! UNDER HEAVY CONSTRUCTION !!!
+
+
 # LLDBPyGUI
 
- - VERSION: 0.0.2 - "Developer Preview" as of 2025-07-16 13:20:59
+##  Versions
+### VERSION: 0.0.3 - "Developer Preview" as of 2025-09-03 00:22:08
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)  
 
-![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)
+### VERSION: 0.0.2 - "Developer Preview" as of 2025-07-16 13:20:59
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)  
 
-
-## Old version
+### Elder version
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
 
 ## Synopsis
@@ -113,8 +120,6 @@ dave@Aeon ~ % lldb
 ### Shortcuts (mouse and keyboard)
 #### Shift click to copy
 You can almost 'shift+click' any gui element to copy it text value to clipboard. This can become very handy at some times :-)
-
-
 
 ### Helpers
 #### Texts / TreeView / TableView => Shift+Click: Copy text to Clipboard
