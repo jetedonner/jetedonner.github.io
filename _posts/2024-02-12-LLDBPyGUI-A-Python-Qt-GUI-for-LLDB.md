@@ -15,13 +15,13 @@ published: true
 # LLDBPyGUI
 
 ##  Versions
-### VERSION: 0.0.3 - "Developer Preview" as of 2025-09-03 00:22:08
+### Version: 0.0.3 - "Developer Preview" as of 2025-09-03 00:22:08
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)  
 
-### VERSION: 0.0.2 - "Developer Preview" as of 2025-07-16 13:20:59
+### Version: 0.0.2 - "Developer Preview" as of 2025-07-16 13:20:59
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)  
 
-### Elder version
+### Version 0.0.1 - Initial Build / Proof of concept
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
 
 ## Synopsis
@@ -130,8 +130,11 @@ dave@Aeon ~ % lldb
 You can almost 'shift+click' any gui element to copy it text value to clipboard. This can become very handy at some times :-)
 
 ### Helpers
-#### Texts / TreeView / TableView => Shift+Click: Copy text to Clipboard
+#### Shift + Click: Copy text to Clipboard
 If you do any "Shift+Click" on a Text-/Edit-Field, TreeView or TableView the text under the cursor will be copied to clipboard for further use. You can enable/disable this function in the settings.
+
+#### Command + Hover: Show ASM Doc
+In the disassembly treeview you can now hover and press Command (on macOS) to show a quick doc from the underlaying mnamonic.
 
 #### Console: Save Commands History
 The commands you enter to the consoles in LLDBPyGUI can be saved to a history file so you can go back or "scroll" through the history of commands you already entered. You can enable/disable this function in the settings of LLDBPyGUI.
