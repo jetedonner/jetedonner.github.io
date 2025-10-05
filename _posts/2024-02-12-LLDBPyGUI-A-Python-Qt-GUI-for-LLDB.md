@@ -54,10 +54,11 @@ This is the first movie Trailer and preview of LLDBPyGUI, some of it's Main feat
     - System shell redirect
 
 ## Requirements (Important) 
-The following requirements are strictly recommended. You might get the python scripts to load in earlier lldb / clang versions, but you are strictly advised to use at least *lldb and clang version 22.0.0git* because of the buggy nature of older LLDB Python API versions. Test it at your own risk and expense, no support or help will be provided for setting LLDBPyGUI up in older LLDB / LLVM versions. Also this project - up until now is soley developed and tested on macOS.
+The following requirements are strictly recommended. You might get the python scripts to load in earlier macOS / lldb / clang versions, but you are strictly advised to use at least *macOS (Tahoe), lldb (22.0.git) and clang (22.0.git) versions*. This because of the buggy nature of older LLDB Python API versions. Test it at your own risk and expense, no support or help will be provided for setting LLDBPyGUI up in older macOS / LLDB / LLVM versions. Also this project - up until now is soley developed and tested on macOS.
 
-### macOS 
-- macOS Sequoia >= 15.1.1 - At the moment LLDBPyGUI is soly developed and tested on macOS 15.1.1. You are encouraged to test it on other os versions or systems -at your own risk and expense of course. Every seriouse feedback is very welcome and will be noticed and processed personally by meyself.
+### macOS
+- *[macOS Tahoe](https://www.apple.com/os/macos/){:target="_blank" rel="noopener"} >= 26.0.x*. Use macOS Tahoe for best results and the most seamless setup of LLDBPyGUI. You can use older macOS versions but then you'll have to compile a custom version of LLDB from source to use at least Python 3.9. Out of the box, older versions of macOS use Python 2.6 or similar. This older versions of python do not work well together with LLDBPyGUI.
+- macOS Sequoia >= 15.1.1 is minumum - At the moment LLDBPyGUI is soly developed and tested on macOS. Sequoia is the lowest macOS version I tested with. For the setup of LLDBPyGUI you will have to download the source of [LLVM / LLDB](https://llvm.org){:target="_blank" rel="noopener"} ([git repo](https://github.com/llvm/llvm-project){:target="_blank" rel="noopener"}) and compile it yourself for getting a custom build of LLDB that links to python >= 3.9 as its script interpreter. You are encouraged to test it on other os versions or systems - but at your own risk and expense of course. Every seriouse feedback is very welcome and will be noticed and processed personally, but please don't bother me with questions for setting LLDBPyGUI up on older macOS versions than Sequoia - I hope you understand.
 
 ### LLDB Python API base
 - lldb version 22.0.0git
