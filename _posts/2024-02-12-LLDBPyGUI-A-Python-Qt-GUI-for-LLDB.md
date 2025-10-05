@@ -13,8 +13,10 @@ published: true
 
 
 # LLDBPyGUI
-
 ##  Versions
+### Version: 0.0.4 - "Developer Preview" as of 2025-10-05 18:36:08
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)  
+
 ### Version: 0.0.3 - "Developer Preview" as of 2025-09-03 00:22:08
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)  
 
