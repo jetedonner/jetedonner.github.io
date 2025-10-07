@@ -1,0 +1,191 @@
+---
+layout: post
+title:  "LLDBPyGUI - GUI for LLDB Debugger Python API with PyQt6"
+author: dave
+date:   2025-10-12 13:18:08 +0200
+categories: [Debugger, LLDB]
+tags: [Debugger, LLDB, PyQt6, Reversing]
+published: true 
+---
+
+
+# <div style="text-align: center;"> --- UNDER HEAVY DEVELOPMENT --- </div>
+
+# LLDBPyGUI
+initiated: 2024-10-02
+
+
+##  Versions
+### Version: 0.0.4 - "Developer Preview" <small>(2025-10-05,  current)</small>
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)
+
+<details>
+  <summary>Older versions</summary>
+#### Version 0.0.3 - "Developer Preview" <small>(2025-09-03)</small>
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)
+
+#### Version 0.0.2 - "Developer Preview" <small>(2025-07-16)</small>
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)
+
+#### Version 0.0.1 - Initial Build / Proof of concept <small>(2024-10-02)</small>
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
+</details>
+
+## LLDBGUI
+
+
+## Synopsis
+LLDBPyGUI is a longtime missed gui of mine for the opensource debugger (framework) LLDB. While LLDB comes with a comperhensive set of tools and also a C++ and Python API. It lacks of providing a useful (at least for me) GUI as it's only working as a terminal application at this day of age. So I took some time and started a GUI wrapper project that is using the Python API of LLDB and began to implement a UI with the help of PyQt6. The project is still in a really early prototype stage at the moment, but I didn't want to let you miss the idea of mine and I'd like to give you a short sneak-preview of the tool I have in mind.
+
+## Movie Trailer
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/WGJYLz1r118" title="Python GUI for the LLDB Debugger Python API" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+This is the first movie Trailer and preview of LLDBPyGUI, some of it's Main features and what is planed for this project and where it should go with this idea.
+
+## Features
+- General info about the target executable, file header, modules, sections, linked libraries and more.
+
+- Disassembler / Debugger
+    - Attach to pid / process
+    - Run Target executable
+    - Analyze modules and libraries
+- Stacktrace viewer
+- Break- and Watchpoints
+- Register / Variable viewer
+- Synchronized source code view
+- Memory viewer
+- Search functions
+- Commands interfaces (for lldb cmds)
+    - LLDB Console
+    - Python Console
+    - System shell redirect
+
+## Requirements (Important) 
+The following requirements are strictly recommended. You might get the python scripts to load in earlier macOS / lldb / clang versions, but you are strictly advised to use at least *macOS (Tahoe), lldb (22.0.git) and clang (22.0.git) versions*. This because of the buggy nature of older LLDB Python API versions. Test it at your own risk and expense, no support or help will be provided for setting LLDBPyGUI up in older macOS / LLDB / LLVM versions. Also this project - up until now is soley developed and tested on macOS.
+
+### macOS
+- *[macOS Tahoe](https://www.apple.com/os/macos/){:target="_blank" rel="noopener"} >= 26.0.x*. Use macOS Tahoe for best results and the most seamless setup of LLDBPyGUI. You can use older macOS versions but then you'll have to compile a custom version of LLDB from source to use at least Python 3.9. Out of the box, older versions of macOS use Python 2.6 or similar. This older versions of python do not work well together with LLDBPyGUI.
+- macOS Sequoia >= 15.1.1 is minumum - At the moment LLDBPyGUI is soly developed and tested on macOS. Sequoia is the lowest macOS version I tested with. For the setup of LLDBPyGUI you will have to download the source of [LLVM / LLDB](https://llvm.org){:target="_blank" rel="noopener"} ([git repo](https://github.com/llvm/llvm-project){:target="_blank" rel="noopener"}) and compile it yourself for getting a custom build of LLDB that links to python >= 3.9 as its script interpreter. You are encouraged to test it on other os versions or systems - but at your own risk and expense of course. Every seriouse feedback is very welcome and will be noticed and processed personally, but please don't bother me with questions for setting LLDBPyGUI up on older macOS versions than Sequoia - I hope you understand.
+
+### LLDB Python API base
+- lldb version 22.0.0git
+- clang version 22.0.0git
+
+## Setup / Installation
+### Compile LLDB (LLVM)
+To use LLDBPyGUI you need to have *lldb* and *clang* installed and working with python scripting option enabled. Usually the preinstalled versions (~=16.0.0) of this appss are outdated and will lead to many headaches and problems while using all the features of LLDBPyGUI to debug executables or libraries. So the current version of LLDBPyGUI is tailored only for LLDB v. 22.0.0git and above, troubles with other versions are your own problem and will not be supported.
+
+*Setup include path (i.e. add to ~/.zshrc or ~/.bashrc)*
+```bash
+dave@Aeon ~ % export SDKROOT=$(xcrun --show-sdk-path)
+```
+
+*Configure cmake*
+```bash
+dave@Aeon ~ % cmake -S llvm -B build -G Ninja -DLLVM_ENABLE_PROJECTS="clang;lldb" -DCMAKE_BUILD_TYPE=Release -DLLDB_INCLUDE_TESTS=OFF -DLLDB_ENABLE_PYTHON=ON -DPython3_ROOT_DIR=/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9
+```
+
+*Build with cmake*
+```bash
+dave@Aeon ~ % cmake --build build
+```
+
+```bash
+dave@Aeon ~ % lldb --version 
+lldb version 22.0.0git (https://github.com/llvm/llvm-project.git revision 16a0892a9db1825ffa5e42b801e13215418d93b9)
+  clang revision 16a0892a9db1825ffa5e42b801e13215418d93b9
+  llvm revision 16a0892a9db1825ffa5e42b801e13215418d93b9
+```
+ 
+## How to install and run the app
+To install the LLDBPyGUI app to LLDB you have to amend the .lldbinit file in you users home directory like so:
+
+```bash
+command script import /<pathToGuiScripts>/lldbpyGUI.py
+```
+(~/.lldbinit file)
+
+To run the python app start a lldb instance with
+```bash
+dave@Aeon ~ % lldb
+(LLDBPyGUI) pyg
+#=================================================================================#
+| Starting TEST ENVIRONMENT for LLDBPyGUI (ver. 0.0.2 - DEV PREVIEW)              |
+|                                                                                 |
+| Desc:                                                                           |
+| This python script is for development and testing while development             |
+| of the LLDB python GUI (LLDBPyGUI.py) - use at own risk! No Warranty!           |
+|                                                                                 |
+| Credits:                                                                        |
+| - LLDB                                                                          |
+| - lldbutil.py                                                                   |
+| - lui.py                                                                        |
+|                                                                                 |
+| Author / Copyright:                                                             |
+| Kim David Hauser (JeTeDonner), (C.) by kimhauser.ch 1991-2025                   |
+#=================================================================================#
+```
+
+*Old Version*
+```bash
+dave@Aeon ~ % lldb
+[+] Loaded LLDBPyGUI version 0.0.1 - ALPHA PREVIEW (BUILD: 689)
+(LLDBPyGUI) spg
+```
+
+## Features
+
+### Shortcuts (mouse and keyboard)
+#### Shift click to copy
+You can almost 'shift+click' any gui element to copy it text value to clipboard. This can become very handy at some times :-)
+
+### Helpers
+#### Shift + Click: Copy text to Clipboard
+If you do any "Shift+Click" on a Text-/Edit-Field, TreeView or TableView the text under the cursor will be copied to clipboard for further use. You can enable/disable this function in the settings.
+
+#### Command + Hover: Show ASM Doc
+In the disassembly treeview you can now hover and press Command (on macOS) to show a quick doc from the underlaying mnamonic.
+
+#### Console: Save Commands History
+The commands you enter to the consoles in LLDBPyGUI can be saved to a history file so you can go back or "scroll" through the history of commands you already entered. You can enable/disable this function in the settings of LLDBPyGUI.
+
+### Community contribution
+As you can/will see this project is still under construction and not finished yet. So far I did what I could and what I thought was useful and would be needed. But let's face it, the product is not final yet and every help or contribution is very welcome. If you think this tool is useful for you but is missing some important function you need, please don't hesitate to contact me personally or even better send me any pull request via github. I really think this project is worth a glimp and could help many developers. Please keep in mind, that at this stage you have to meet several really specific conditions which are crucial for running this early Developer Preview of LLDBPyGUI.
+
+### Disclaimer
+Please keep in mind, that this release is only a really early Alpha release version that is intend to give you a first preview of what the app will look and function like. There is no waranty or garantie of working functionality or working feature what so ever. Anyhow every feedback or input from your side is very welcome as this will give me an idea what is important to you as an end user. So please feel free to send me any feedback about the app and your opinion. Thank you!
+
+## Documentation
+
+## Download / Github
+- [Source code at GitHub](https://github.com/jetedonner/LLDBPyGUI)
+<!-- - Zip file from mirror -->
+
+## <a id="credits"></a>Credits
+- [developer.arm.com](https://developer.arm.com/documentation){:target="_blank" rel="noopener"}
+- [Mach-O Wikipedia](https://en.wikipedia.org/wiki/Mach-O){:target="_blank" rel="noopener"}
+
+### LLDB
+- [LLDB](https://lldb.llvm.org/){:target="_blank" rel="noopener"}
+
+### Python libs
+- [PyQt6](https://www.riverbankcomputing.com/software/pyqt){:target="_blank" rel="noopener"}
+- [ansi2html](https://github.com/pycontribs/ansi2html){:target="_blank" rel="noopener"}
+
+### Images and Icons
+- <a href="https://www.flaticon.com/free-icons/debug" title="debug icons">Debug icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/video-player" title="video player icons">Video player icons created by judanna - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/triangle" title="triangle icons">Triangle icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/pause" title="pause icons">Pause icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Gregor Cresnar Premium - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Plastic Donut - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/save" title="save icons">Save icons created by Flat Icons - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/edit" title="edit icons">Edit icons created by Flat Icons - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/recycle-bin" title="recycle bin icons">Recycle bin icons created by Uniconlabs - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Md Tanvirul Haque - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/reload" title="reload icons">Reload icons created by syafii5758 - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/add" title="add icons">Add icons created by Ilham Fitrotul Hayat - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by khulqi Rosyid - Flaticon</a>
