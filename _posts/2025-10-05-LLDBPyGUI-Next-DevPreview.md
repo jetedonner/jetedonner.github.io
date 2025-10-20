@@ -9,6 +9,11 @@ published: false
 ---
 
 
+<script>
+	//alert("HI JS SCRIPT !!!!");
+	console.log("HELLO JS");
+</script>
+
 # <div style="text-align: center;"> --- UNDER HEAVY DEVELOPMENT --- </div>
 
 # LLDBPyGUI
@@ -32,6 +37,7 @@ initiated: 2024-10-02
 		![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
 		
 </details>
+
 
 ## LLDBGUI
 
