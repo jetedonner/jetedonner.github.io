@@ -111,14 +111,6 @@
   <script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
   <script>
     // console.log("HELLO JS");
-    // // alert("HI");
-    // fetch('https://searchdog.kimhauser.ch/logvisitor.php', {
-    //   method: 'POST',
-    //   mode: 'no-cors' // prevents CORS errors if you don’t need a response
-    // });
-  </script>
-  <script>
-    console.log("HELLO JS");
     fetch('https://searchdog.kimhauser.ch/logvisitor.php', {
       method: 'POST',
       headers: {
@@ -126,20 +118,21 @@
       },
       body: JSON.stringify({
         page: window.location.pathname,
+        completeurl: window.location.href,
         timestamp: new Date().toISOString()
       })
     })
     .then(response => {
-      console.log("HELLO JS => RESPONSE ...");
+      // console.log("HELLO JS => RESPONSE ...");
       if (!response.ok) throw new Error('Network response was not ok');
       return response.json();
     })
     .then(data => {
-      console.log("HELLO JS => DATA ...");
+      // console.log("HELLO JS => DATA ...");
       console.log('Server response:', data);
     })
     .catch(error => {
-      console.log("HELLO JS => ERROR ...");
+      // console.log("HELLO JS => ERROR ...");
       console.error('Fetch error:', error);
     });
   </script>
