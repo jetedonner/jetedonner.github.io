@@ -9,11 +9,6 @@ published: false
 ---
 
 
-<script>
-	//alert("HI JS SCRIPT !!!!");
-	console.log("HELLO JS");
-</script>
-
 # <div style="text-align: center;"> --- UNDER HEAVY DEVELOPMENT --- </div>
 
 # LLDBPyGUI

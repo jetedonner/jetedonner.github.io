@@ -109,6 +109,10 @@
   <!-- JavaScript -->
 
   <script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
+  <script>
+    console.log("HELLO JS");
+    alert("HI");
+  </script>
 
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
