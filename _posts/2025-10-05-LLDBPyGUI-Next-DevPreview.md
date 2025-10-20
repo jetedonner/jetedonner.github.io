@@ -21,14 +21,16 @@ initiated: 2024-10-02
 
 <details>
   <summary>Older versions</summary>
-#### Version 0.0.3 - "Developer Preview" <small>(2025-09-03)</small>
-![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)
+		
+		Version 0.0.3 - "Developer Preview" <small>(2025-09-03)</small>
+		![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)
 
-#### Version 0.0.2 - "Developer Preview" <small>(2025-07-16)</small>
-![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)
+		Version 0.0.2 - "Developer Preview" <small>(2025-07-16)</small>
+		![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-v0.0.2-2025-07-16-Teaser-Main-View-01_1920x1149-01.png)
 
-#### Version 0.0.1 - Initial Build / Proof of concept <small>(2024-10-02)</small>
-![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
+		Version 0.0.1 - Initial Build / Proof of concept <small>(2024-10-02)</small>
+		![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2024-02-28.png)
+		
 </details>
 
 ## LLDBGUI
