@@ -40,3 +40,32 @@ Unlike classical bits, which are either 0 or 1, qubits can exist in multiple sta
 - [OpenLearn – Free Course on Quantum Computing](https://www.open.edu/openlearn/science-maths-technology/introduction-quantum-computing)
 - [NASA & Los Alamos – Quantum Computing PDF Overview](https://ntrs.nasa.gov/api/citations/20220016348/downloads/PakinRieffel_IntroToQC_SC22.pdf)
 - [NIST – Quantum Computing Explained](https://www.nist.gov/quantum-information-science/quantum-computing-explained)
+
+
+# Quanten Computing 101 - Deutsch (German)
+
+## 🧠 Was ist Quantencomputing?
+Quantencomputing basiert auf Qubits (Quantenbits), die im Gegensatz zu klassischen Bits nicht nur den Zustand 0 oder 1 annehmen, sondern durch Superposition beide Zustände gleichzeitig. Zusätzlich können Qubits durch Verschränkung miteinander verbunden sein, was komplexe Berechnungen ermöglicht. Diese Eigenschaften erlauben es Quantencomputern, bestimmte Aufgaben exponentiell schneller zu lösen als klassische Rechner.
+
+## 🔍 Wichtige Konzepte
+- Superposition: Ein Qubit kann mehrere Zustände gleichzeitig einnehmen.
+- Verschränkung: Zwei oder mehr Qubits sind so miteinander verbunden, dass der Zustand eines Qubits den Zustand des anderen beeinflusst.
+- Interferenz: Quantenzustände können sich gegenseitig verstärken oder auslöschen, was zur Optimierung von Berechnungen genutzt wird.
+- Quantenvolumen: Maß für die Leistungsfähigkeit eines Quantencomputers, abhängig von Anzahl der Qubits, Fehlerraten und Konnektivität.
+
+## 🛠️ Anwendungen
+- Kryptografie: Quantencomputer könnten klassische Verschlüsselungsverfahren brechen, was zur Entwicklung von Post-Quanten-Kryptografie führt.
+- Materialforschung: Simulation von Molekülen und chemischen Reaktionen.
+- Optimierungsprobleme: Logistik, Verkehrsplanung, Finanzportfolios.
+- Maschinelles Lernen: Quantenalgorithmen könnten Trainingszeiten drastisch verkürzen.
+
+## 🧪 Aktuelle Entwicklungen
+- Unternehmen wie IBM, Google und Fraunhofer arbeiten an skalierbaren Quantenprozessoren.
+- Hybride Architekturen kombinieren klassische HPC-Systeme mit Quantencomputern.
+- Erste industrielle Use Cases entstehen in der Pharmaindustrie, Logistik und Finanzwelt.
+
+## 📚 Weiterführende Ressourcen
+- [Ateleris Academy – Einführung in das Quantencomputing](https://www.ateleris.ch/de/academy/introduction-to-quantum-computing/)
+- [IBM – Was ist Quantencomputing?](https://www.ibm.com/de-de/think/topics/quantum-computing)
+- [Bitkom – Präsentation zu Quantenprogrammierung](https://www.bitkom.org/sites/main/files/2021-05/bitzip-24-wittman-mattingley-scott-quanten-programmierung-folien.pdf)
+- [Simple Science – Grundlagenartikel](https://scisimple.com/de/articles/2025-09-29-eine-einfuehrung-in-die-quantencomputer--a9m6y61)
