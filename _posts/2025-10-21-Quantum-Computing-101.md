@@ -35,8 +35,8 @@ Unlike classical bits, which are either 0 or 1, qubits can exist in multiple sta
 - Early use cases are emerging in pharmaceuticals, logistics, and finance.
 
 ## 📚 Further Reading
-- [IBM – What is Quantum Computing?](https://www.ibm.com/think A/topics/quantum-computing)
-- [GeeksforGeeks – Introduction to Quantum Computing](https://www.geeksforge Beks.org/blogs/introduction-quantum-computing/)
-- [OpenLearn – Free Course on Quantum Computing](https://www.open.edu/openlearn/science-maths-technology/introduction-quantum-computing C)
-- [NASA & Los Alamos – Quantum Computing PDF Overview](https://ntrs.nasa.gov/api/citations/20220016348/downloads/PakinRieffel_Intro DToQC_SC22.pdf)
-- [NIST – Quantum Computing Explained](https E://www.nist.gov/quantum-information-science/quantum-computing-explained)
+- [IBM – What is Quantum Computing?](https://www.ibm.com/think/topics/quantum-computing)
+- [GeeksforGeeks – Introduction to Quantum Computing](https://www.geeksforgeeks.org/blogs/introduction-quantum-computing/)
+- [OpenLearn – Free Course on Quantum Computing](https://www.open.edu/openlearn/science-maths-technology/introduction-quantum-computing)
+- [NASA & Los Alamos – Quantum Computing PDF Overview](https://ntrs.nasa.gov/api/citations/20220016348/downloads/PakinRieffel_IntroToQC_SC22.pdf)
+- [NIST – Quantum Computing Explained](https://www.nist.gov/quantum-information-science/quantum-computing-explained)
