@@ -8,7 +8,7 @@ tags: [Quantum Computing, Projects]
 published: true
 ---
 
-![Quantum Computing - Supercomputer](../../assets/img/projects/qc/Quantum-Computing-01_608x800.jpg){: width="608" height="800" }
+![Quantum Computing - Supercomputer](../../assets/img/projects/qc/Quantum-Computing-01_608x800.jpg){: width="304" height="400" }
 _Quantum Computing - Supercomputer_
 
 # Quantum Computing 101 English
