@@ -8,7 +8,7 @@ tags: [Quantum Computing, Projects]
 published: true
 ---
 
-# Quantum Computing 101
+# Quantum Computing 101 - English
 
 ## 🧠 What Is Quantum Computing?
 Quantum computing harnesses the principles of quantum mechanics to solve problems that classical computers struggle with. It’s at the heart of a technological revolution with wide-ranging applications.
