@@ -82,3 +82,9 @@ Quantencomputing basiert auf Qubits (Quantenbits), die im Gegensatz zu klassisch
 
 ![Quantum Computing - Future](../../assets/img/projects/qc/MIT_Quantum-Potential-01_0.jpg){: width="1024" height="640" }
 _Quantum Computing - Future_
+
+# References / Credits
+
+- [Image 1(https://www.infoworld.com/article/2260047/what-is-quantum-computing-solutions-to-impossible-problems.html)
+- [Image 2(https://news.mit.edu/2025/why-some-quantum-materials-stall-while-others-scale-1015)
+- [Image 3(https://www.science.org/content/article/quantum-computers-take-key-step-toward-curbing-errors)
