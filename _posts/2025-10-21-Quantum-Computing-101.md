@@ -8,8 +8,8 @@ tags: [Quantum Computing, Projects]
 published: true
 ---
 
-![Quantum Computing - 101](../../assets/img/projects/qc/MIT_Quantum-Potential-01_0.jpg){: width="1024" height="640" }
-_Quantum Computing - 101_
+![Quantum Computing - Future](../../assets/img/projects/qc/MIT_Quantum-Potential-01_0.jpg){: width="1024" height="640" }
+_Quantum Computing - Future_
 
 # Quantum Computing 101 English
 
@@ -45,6 +45,9 @@ Unlike classical bits, which are either 0 or 1, qubits can exist in multiple sta
 - [OpenLearn – Free Course on Quantum Computing](https://www.open.edu/openlearn/science-maths-technology/introduction-quantum-computing)
 - [NASA & Los Alamos – Quantum Computing PDF Overview](https://ntrs.nasa.gov/api/citations/20220016348/downloads/PakinRieffel_IntroToQC_SC22.pdf)
 - [NIST – Quantum Computing Explained](https://www.nist.gov/quantum-information-science/quantum-computing-explained)
+
+![Quantum Computing - Microsoft Quantum Supercomputer](../../assets/img/projects/qc/microsoft-quantum-computer-source-ms-quantum-100832328-orig.jpg){: width="1024" height="576" }
+_Quantum Computing - Microsoft Quantum Supercomputer_
 
 
 # Quanten Computing 101 Deutsch
