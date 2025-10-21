@@ -76,3 +76,6 @@ Quantencomputing basiert auf Qubits (Quantenbits), die im Gegensatz zu klassisch
 - [IBM – Was ist Quantencomputing?](https://www.ibm.com/de-de/think/topics/quantum-computing)
 - [Bitkom – Präsentation zu Quantenprogrammierung](https://www.bitkom.org/sites/main/files/2021-05/bitzip-24-wittman-mattingley-scott-quanten-programmierung-folien.pdf)
 - [Simple Science – Grundlagenartikel](https://scisimple.com/de/articles/2025-09-29-eine-einfuehrung-in-die-quantencomputer--a9m6y61)
+
+![Quantum Computing - Supercomputer](../../assets/img/projects/qc/Quantum-Computing-01_608x800.jpg){: width="608" height="800" }
+_Quantum Computing - Supercomputer_
