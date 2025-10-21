@@ -8,6 +8,9 @@ tags: [Quantum Computing, Projects]
 published: true
 ---
 
+![Quantum Computing - 101](../../assets/img/projects/qc/MIT_Quantum-Potential-01_0.jpg){: width="1024" height="640" }
+_Quantum Computing - 101_
+
 # Quantum Computing 101 English
 
 [GoTo German Version 🇩🇪](#quanten-computing-101-deutsch)
