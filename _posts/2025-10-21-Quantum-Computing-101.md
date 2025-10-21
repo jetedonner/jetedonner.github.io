@@ -10,7 +10,7 @@ published: true
 
 # Quantum Computing 101 English
 
-[GoTo German Version](#quanten-computing-101-deutsch) 🇩🇪
+[GoTo German Version 🇩🇪](#quanten-computing-101-deutsch)
 
 ## 🧠 What Is Quantum Computing?
 Quantum computing harnesses the principles of quantum mechanics to solve problems that classical computers struggle with. It’s at the heart of a technological revolution with wide-ranging applications.
@@ -46,7 +46,7 @@ Unlike classical bits, which are either 0 or 1, qubits can exist in multiple sta
 
 # Quanten Computing 101 Deutsch
 
-[GoTo English Version](#quantum-computing-101-english) 🇬🇧
+[GoTo English Version 🇬🇧](#quantum-computing-101-english)
 
 ## 🧠 Was ist Quantencomputing?
 Quantencomputing basiert auf Qubits (Quantenbits), die im Gegensatz zu klassischen Bits nicht nur den Zustand 0 oder 1 annehmen, sondern durch Superposition beide Zustände gleichzeitig. Zusätzlich können Qubits durch Verschränkung miteinander verbunden sein, was komplexe Berechnungen ermöglicht. Diese Eigenschaften erlauben es Quantencomputern, bestimmte Aufgaben exponentiell schneller zu lösen als klassische Rechner.
