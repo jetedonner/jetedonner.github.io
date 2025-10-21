@@ -2,13 +2,15 @@
 layout: post
 title:  "Quantum Computing 101"
 author: dave
-date:   2025-10-21 12:06:30 +0200
+date:   2025-10-21 12:36:30 +0200
 categories: [Quantum Computing, Projects]
 tags: [Quantum Computing, Projects]
 published: true
 ---
 
-# Quantum Computing 101 - English
+# Quantum Computing 101 English
+
+[GoTo German Version](#quanten-computing-101-deutsch)
 
 ## 🧠 What Is Quantum Computing?
 Quantum computing harnesses the principles of quantum mechanics to solve problems that classical computers struggle with. It’s at the heart of a technological revolution with wide-ranging applications.
@@ -42,7 +44,7 @@ Unlike classical bits, which are either 0 or 1, qubits can exist in multiple sta
 - [NIST – Quantum Computing Explained](https://www.nist.gov/quantum-information-science/quantum-computing-explained)
 
 
-# Quanten Computing 101 - Deutsch (German)
+# Quanten Computing 101 Deutsch
 
 ## 🧠 Was ist Quantencomputing?
 Quantencomputing basiert auf Qubits (Quantenbits), die im Gegensatz zu klassischen Bits nicht nur den Zustand 0 oder 1 annehmen, sondern durch Superposition beide Zustände gleichzeitig. Zusätzlich können Qubits durch Verschränkung miteinander verbunden sein, was komplexe Berechnungen ermöglicht. Diese Eigenschaften erlauben es Quantencomputern, bestimmte Aufgaben exponentiell schneller zu lösen als klassische Rechner.
