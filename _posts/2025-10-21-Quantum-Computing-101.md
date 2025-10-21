@@ -85,6 +85,6 @@ _Quantum Computing - Future_
 
 # References / Credits
 
-- [Image 1(https://www.infoworld.com/article/2260047/what-is-quantum-computing-solutions-to-impossible-problems.html)
-- [Image 2(https://news.mit.edu/2025/why-some-quantum-materials-stall-while-others-scale-1015)
-- [Image 3(https://www.science.org/content/article/quantum-computers-take-key-step-toward-curbing-errors)
+- [Quantum Supercomputer Image 1](https://www.infoworld.com/article/2260047/what-is-quantum-computing-solutions-to-impossible-problems.html)
+- [Quantum Supercomputer Image 2](https://news.mit.edu/2025/why-some-quantum-materials-stall-while-others-scale-1015)
+- [Quantum Supercomputer Image 3](https://www.science.org/content/article/quantum-computers-take-key-step-toward-curbing-errors)
