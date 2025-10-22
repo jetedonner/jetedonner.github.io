@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "LLDBPyGUI - GUI for LLDB Debugger Python API with PyQt6"
+title:  "LLDBPyGUI - LLDB-GUI wiht Python API and PyQt6"
 author: dave
-date:   2025-10-05 13:18:08 +0200
+date:   2025-10-22 12:38:08 +0200
 categories: [Debugger, LLDB]
-tags: [Debugger, LLDB, PyQt6, Reversing]
-published: false 
+tags: [LLDB, Debugger, Disassembler, Python, PyQt6, Reversing]
+published: true
 ---
 
 
@@ -16,7 +16,10 @@ initiated: 2024-10-02
 
 
 ##  Versions
-### Version: 0.0.4 - "Developer Preview" <small>(2025-10-05,  current)</small>
+### Version: 0.0.5 - "Developer Preview" <small>(2025-10-22,  current)</small>
+![LLDBPyGUI](../../assets/img/projects/lldbpygui/LLDBPyGUI-MainView-2025-10-22-12-55-20.png)
+
+### Version: 0.0.4 - "Developer Preview" <small>(2025-10-05)</small>
 ![LLDBPyGUI](../../assets/img/projects/lldbpygui/MainView-2025-09-02-01.png)
 
 <details>

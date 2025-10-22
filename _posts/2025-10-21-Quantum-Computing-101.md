@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quantum Computing 101"
+title:  "Quantum Computing 101 (English / German)"
 author: dave
 date:   2025-10-21 12:36:30 +0200
 categories: [Quantum Computing, Projects]
@@ -84,7 +84,7 @@ Quantencomputing basiert auf Qubits (Quantenbits), die im Gegensatz zu klassisch
 _Quantum Computing - Future_
 
 # References / Credits
-## Images
+## Images used
 - [Quantum Computing - Supercomputer - Image 1](https://www.science.org/content/article/quantum-computers-take-key-step-toward-curbing-errors)
 - [Quantum Computing - Microsoft Quantum Supercomputer - Image 2](https://www.infoworld.com/article/2260047/what-is-quantum-computing-solutions-to-impossible-problems.html)
 - [Quantum Computing - Future - Image 3](https://news.mit.edu/2025/why-some-quantum-materials-stall-while-others-scale-1015)
