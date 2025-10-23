@@ -19,12 +19,12 @@ Appealing software solutions customized for your kind of business, requirements 
 ### Broad experience in a wide spread field of software engineering topics
 I can look back at a widespread field of different successful software projects in various areas. I develop for all major platforms and use the latest frameworks and APIs. Working independently gives me joy just the same as working in a team with other fellows. This may happen in an agile environment - or simply for piecework. Please make sure to check out my projects, articles, resume, and other references.
 
-## Other resources
-- [_github.com/jetedonner_](https://github.com/jetedonner){:target="_blank" rel="noopener"} - My Github repositories
-
-- [_searchdog.kimhauser.ch_](https://searchdog.kimhauser.ch){:target="_blank" rel="noopener"} - **My latest website**
-- [_kimhauser.ch_](https://kimhauser.ch){:target="_blank" rel="noopener"} - **My main website**
+## My resources
+- [_searchdog.kimhauser.ch_](https://searchdog.kimhauser.ch){:target="_blank" rel="noopener"} - My **latest website**
+- [_kimhauser.ch_](https://kimhauser.ch){:target="_blank" rel="noopener"} - My **main website**
 - [_archaic.kimhauser.ch_](https://archaic.kimhauser.ch){:target="_blank" rel="noopener"} - My **old main website**
+
+- [_github.com/jetedonner_](https://github.com/jetedonner){:target="_blank" rel="noopener"} - My Github repositories
 
 - [_suake3d.kimhauser.ch_](https://suake3d.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for Swift game Suake3D
 - [_ivaccination.kimhauser.ch_](https://ivaccination.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for Swift 2D game iVaccination
