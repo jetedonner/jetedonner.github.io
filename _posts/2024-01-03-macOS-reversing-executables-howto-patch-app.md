@@ -391,11 +391,11 @@ Of course again you will have to make the newly patched app executable again and
 Here you can find all files we use during this tutorial. The executables are compiled on macOS 14.2 M1 (ARM64).
 
 - Hello World App 
-	- [Source Code (hello_world.c)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.c.zip)
-	- [Original Executable (macOS ARM64)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.zip)
-	- [Patched Executable (macOS ARM64)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world_lief_patched.zip)
-- [LIEF python script for patching the Hello World App](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/patch_hello_world.py.zip)
-- [Complete file collection (all files in one archive)](http://kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/01-patch-macos-app-2024-02-03.zip)
+	- [Source Code (hello_world.c)](http://archaic.kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.c.zip)
+	- [Original Executable (macOS ARM64)](http://archaic.kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.zip)
+	- [Patched Executable (macOS ARM64)](http://archaic.kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world_lief_patched.zip)
+- [LIEF python script for patching the Hello World App](http://archaic.kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/patch_hello_world.py.zip)
+- [Complete file collection (all files in one archive)](http://archaic.kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/01-patch-macos-app-2024-02-03.zip)
 
 
 ## <a id="credits"></a>Credits

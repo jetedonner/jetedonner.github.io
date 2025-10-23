@@ -37,7 +37,7 @@ Some times you might run in a situation where you want to be able to amend a exi
 ## <a id="example-projects"></a>Example projects
 Here you can find the final sample projects with their source code which we use in the following articles and tutorials. If you like, you can download the final apps here, but all the app can also be built by going through the tutorials in this article.
 
-- [hello_world sample project](https://kimhauser.ch/downloads/github/reversing/hello_world.zip){:target="_blank" rel="noopener"}
+- [hello_world sample project](https://archaic.kimhauser.ch/downloads/github/reversing/hello_world.zip){:target="_blank" rel="noopener"}
 - lib4injection.dylib sample library
 - hello_nasm sample project
 
