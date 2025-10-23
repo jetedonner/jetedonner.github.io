@@ -177,6 +177,10 @@ Save i.e. as index.html (and don't forget to include the above CSS file)
 </html>
 ```
 
+### Run / Test Example
+Just place the two files in the same directory and link the CSS file correctly and you can test the effect by opening the index.html file in a browser (The Menubutton is bottom-right!!!). But you also can name the index.html as index.php and run a simple php webserver from this directory or whatever html renderer you need that supports CSS.
+
+## Effect Description
 The menu expands on hover and the burger icon of the menu button animates to an "X". No libraries are needed. JavaScript is needed only for setting the "active" state / CSS-Class to the menu, beside that no JS is needed and only pure CSS is used to render and animate this nice little menu.
 
 Use and ammend the code as you like. The source is provided "AS IS" no warranty. The source is free for all your projects and plans whether it's' free or commercial. A reference to the author is highly appreciated.
