@@ -21,13 +21,14 @@ I can look back at a widespread field of different successful software projects 
 
 ## Other resources
 - [_github.com/jetedonner_](https://github.com/jetedonner){:target="_blank" rel="noopener"} - My Github repositories
-- [_kimhauser.ch_](https://kimhauser.ch){:target="_blank" rel="noopener"} - My main website
-- [_job.kimhauser.ch_](https://job.kimhauser.ch){:target="_blank" rel="noopener"} - My job search related website
-- [_suake3d.kimhauser.ch_](https://suake3d.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for the Swift game Suake3D
-- [_ivaccination.kimhauser.ch_](https://ivaccination.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for the Swift 2D game iVaccination
-- [_art.kimhauser.ch_](https://art.kimhauser.ch){:target="_blank" rel="noopener"} - Art gallery site - Website with images of my paintings
-- [_chessclub.kimhauser.ch_](https://chessclub.kimhauser.ch){:target="_blank" rel="noopener"} - Night shift chessclub site - WebApp for recording chess game results for my chess club
-- [_covid.kimhauser.ch_](https://covid.kimhauser.ch){:target="_blank" rel="noopener"} - A feedback assistant for giving the swiss government a personal feedback about their COVID-19 management
-- [_youtube.com/@kimdhauser_](https://www.youtube.com/@kimdhauser){:target="_blank" rel="noopener"} - My Youtube channel - personal channel on youtube.com
 
-<!-- - <http://covidfeedback.kimhauser.ch> - COVID-Feedback - Web tool for giving the Swiss government feedback about the COVID management -->
+- [_searchdog.kimhauser.ch_](https://searchdog.kimhauser.ch){:target="_blank" rel="noopener"} - **My latest website**
+- [_kimhauser.ch_](https://kimhauser.ch){:target="_blank" rel="noopener"} - **My main website**
+- [_archaic.kimhauser.ch_](https://archaic.kimhauser.ch){:target="_blank" rel="noopener"} - My **old main website**
+
+- [_suake3d.kimhauser.ch_](https://suake3d.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for Swift game Suake3D
+- [_ivaccination.kimhauser.ch_](https://ivaccination.kimhauser.ch){:target="_blank" rel="noopener"} - Intro site for Swift 2D game iVaccination
+- [_art.kimhauser.ch_](https://art.kimhauser.ch){:target="_blank" rel="noopener"} - Art gallery site - Display for my paintings
+- [_chessclub.kimhauser.ch_](https://chessclub.kimhauser.ch){:target="_blank" rel="noopener"} - Night shift chessclub site - WebApp for recording chess game results
+- [_covid.kimhauser.ch_](https://covid.kimhauser.ch){:target="_blank" rel="noopener"} - A feedback assistant for giving the swiss government personal feedback about their COVID-19 management
+- [_youtube.com/@kimdhauser_](https://www.youtube.com/@kimdhauser){:target="_blank" rel="noopener"} - My personal Youtube channel
