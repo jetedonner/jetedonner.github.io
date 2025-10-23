@@ -17,7 +17,10 @@ This small snippet shows a CSS ONLY animated floating menu button.
 ![Codepen of CSSOnly Floating Menu Button](../../assets/img/snippets/CSSOnly-Floating-Menu-Button-Codepen_2023-04-14.png){: width="333" height="462" }
 
 ## Example
+You can build and run this yourselfs, just copy the following code to its appropriate file and try it yourselfs. Happy coding!
+
 ### CSS File
+Save i.e. as "main.css"
 ```css
 .menu-div {
   position: absolute;
@@ -137,32 +140,41 @@ button:is(.menu-item):active:after {
 }
 ```
 
-### HTMNL File
+### HTML File
+Save i.e. as index.html (and don't forget to include the above CSS file)
 ```html
-<h2 style="font-family: Helvetica">CSS-ONLY Animated Floating Menu Button</h2>
-<small style="font-family: Helvetica">This small snippet shows you how to implement a animated floating menu button - only using pure CSS and HTML. No libraries - what so ever needed. The menu button is fully responsive and also work on mobile devices like tablets and phones.</small>
-<div class="menu-div" id="divMenu" style="">
-  <button type="button" class="menu-item" style="background-color: lightgreen;" title="Fifth menu item!">
-    !
-  </button>
-  <button type="button" class="menu-item" style="background-color: lightsalmon;" title="Fourth menu item!">
-    E
-  </button>
-  <button type="button" class="menu-item" style="background-color: lightsteelblue;" title="Third menu item!">
-    V
-  </button>
-  <button type="button" class="menu-item" style="background-color: lightseagreen;" title="Second menu item!">
-    A
-  </button>
-  <button type="button" class="menu-item" style="background-color: lightcoral;" title="First menu item!">
-    D
-  </button>
-  <button type="button" class="menu-toggle" data-target=".menu-div">
-    <span class="icon-bar" style="top: -4px;"></span>
-    <span class="icon-bar" style="top: 0px;"></span>
-    <span class="icon-bar" style="top: 4px;"></span>
-  </button>
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="main.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h2 style="font-family: Helvetica">CSS-ONLY Animated Floating Menu Button</h2>
+		<small style="font-family: Helvetica">This small snippet shows you how to implement a animated floating menu button - only using pure CSS and HTML. No libraries - what so ever needed. The menu button is fully responsive and also work on mobile devices like tablets and phones.</small>
+		<div class="menu-div" id="divMenu" style="">
+		  <button type="button" class="menu-item" style="background-color: lightgreen;" title="Fifth menu item!">
+		    !
+		  </button>
+		  <button type="button" class="menu-item" style="background-color: lightsalmon;" title="Fourth menu item!">
+		    E
+		  </button>
+		  <button type="button" class="menu-item" style="background-color: lightsteelblue;" title="Third menu item!">
+		    V
+		  </button>
+		  <button type="button" class="menu-item" style="background-color: lightseagreen;" title="Second menu item!">
+		    A
+		  </button>
+		  <button type="button" class="menu-item" style="background-color: lightcoral;" title="First menu item!">
+		    D
+		  </button>
+		  <button type="button" class="menu-toggle" data-target=".menu-div">
+		    <span class="icon-bar" style="top: -4px;"></span>
+		    <span class="icon-bar" style="top: 0px;"></span>
+		    <span class="icon-bar" style="top: 4px;"></span>
+		  </button>
+		</div>
+	</body>
+</html>
 ```
 
 The menu expands on hover and the burger icon of the menu button animates to an "X". No libraries are needed. JavaScript is needed only for setting the "active" state / CSS-Class to the menu, beside that no JS is needed and only pure CSS is used to render and animate this nice little menu.
