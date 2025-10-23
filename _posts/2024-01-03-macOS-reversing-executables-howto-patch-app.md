@@ -390,6 +390,8 @@ Of course again you will have to make the newly patched app executable again and
 ## Download files
 Here you can find all files we use during this tutorial. The executables are compiled on macOS 14.2 M1 (ARM64).
 
+**IMPORTANT:** Your browser might block this download for security reasons. If you really want the files, you might want to copy the link and download the file manually after confirming the security message.
+
 - Hello World App 
 	- [Source Code (hello_world.c)](http://archaic.kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.c.zip)
 	- [Original Executable (macOS ARM64)](http://archaic.kimhauser.ch/downloads/reversing/tutorials/01-patch-macos-app/hello_world.zip)
