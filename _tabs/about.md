@@ -4,10 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-![Kim David Hauser](KimDavidHauserRound_326x326.png){: width="256" height="256" }
-_That's me - Kim David Hauser_
+![Kim-David Hauser](KimDavidHauserRound_326x326.png){: width="256" height="256" }
+_Yes, that's me - Kim-David Hauser_
 
-# Kim David Hauser
+# Kim-David Hauser
 Appealing software solutions customized for your kind of business, requirements and platforms. With over 30 years of experience in IT project conception, realization, and maintenance I can deliver you a professional and high quality - broad spread IT services. This provides you with a valuable resource of knowledge and information. My passion is everything about information technology, software development and IT security.
 
 ## My story
