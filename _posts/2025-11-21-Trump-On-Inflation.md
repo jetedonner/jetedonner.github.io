@@ -52,3 +52,6 @@ In short: Donald Trump’s tax policies, particularly the 2017 Tax Cuts and Jobs
 - Critics say: They disproportionately benefited corporations and high-income households, worsened deficits, and added demand-side pressure during an already overheated economy.
 
 So, while Trump’s tax policies shaped the economic environment, inflation in the U.S. was not primarily “because of” his taxes. It was more a result of tariffs, global shocks, and pandemic-era disruptions. His tax cuts did, however, play a role in boosting demand, which indirectly fed into inflationary pressures.
+
+## Resume and personal impression
+From my point of view, it was clear from the very beginning that the tax initiative introduced by Donald Trump would be a setback in some way. Personally, I believe the way the U.S. president conducts politics is not simply “unconventional”; it is neither wise nor well considered. In my opinion, it is truly a slap in the face to all principled politicians and citizens who have built and respected the democratic systems we rely on today. Trump exploits the system to its fullest extent, primarily for his own benefit. That is not acceptable, and we should unite to put an end to it immediately. People suffer from his misguided actions, and as always, it is the poor and vulnerable who feel the negative impacts the most. 
