@@ -118,7 +118,8 @@
       body: JSON.stringify({
         page: window.location.pathname,
         completeurl: window.location.href,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        channel: 'Github pages'
       })
     })
     .then(response => {
