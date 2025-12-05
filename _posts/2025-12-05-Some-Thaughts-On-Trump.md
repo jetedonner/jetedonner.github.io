@@ -8,7 +8,7 @@ tags: [Private, Politics]
 published: true
 ---
 
-# Some thaughts on Trump - Youtube video
+# One live one vote
 
 ## Movie Trailer
 <div class="container-responsive-iframe">
