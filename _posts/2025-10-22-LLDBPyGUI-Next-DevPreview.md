@@ -2,7 +2,7 @@
 layout: post
 title:  "LLDBPyGUI - LLDB-GUI wiht Python API and PyQt6"
 author: dave
-date:   2025-10-22 12:38:08 +0200
+date:   2025-12-05 13:04:08 +0200
 categories: [Debugger, LLDB]
 tags: [LLDB, Debugger, Disassembler, Python, PyQt6, Reversing]
 published: true
@@ -83,16 +83,19 @@ The following requirements are strictly recommended. You might get the python sc
 To use LLDBPyGUI you need to have *lldb* and *clang* installed and working with python scripting option enabled. Usually the preinstalled versions (~=16.0.0) of this appss are outdated and will lead to many headaches and problems while using all the features of LLDBPyGUI to debug executables or libraries. So the current version of LLDBPyGUI is tailored only for LLDB v. 22.0.0git and above, troubles with other versions are your own problem and will not be supported.
 
 *Setup include path (i.e. add to ~/.zshrc or ~/.bashrc)*
+
 ```bash
 dave@Aeon ~ % export SDKROOT=$(xcrun --show-sdk-path)
 ```
 
 *Configure cmake*
+
 ```bash
 dave@Aeon ~ % cmake -S llvm -B build -G Ninja -DLLVM_ENABLE_PROJECTS="clang;lldb" -DCMAKE_BUILD_TYPE=Release -DLLDB_INCLUDE_TESTS=OFF -DLLDB_ENABLE_PYTHON=ON -DPython3_ROOT_DIR=/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9
 ```
 
 *Build with cmake*
+
 ```bash
 dave@Aeon ~ % cmake --build build
 ```
@@ -110,12 +113,31 @@ To install the LLDBPyGUI app to LLDB you have to amend the .lldbinit file in you
 ```bash
 command script import /<pathToGuiScripts>/lldbpyGUI.py
 ```
+
 (~/.lldbinit file)
 
 To run the python app start a lldb instance with
+
 ```bash
 dave@Aeon ~ % lldb
 (LLDBPyGUI) pyg
+
+#=================================================================================#
+| TEST ENVIRONMENT for LLDBPyGUI (ver. 0.0.5, build 0.0.5.01)                     |
+|                                                                                 |
+| This python script is for development and testing while evaluating              |
+| the LLDB python GUI (LLDBPyGUI.py) - use at own risk! No Warranty!              |
+|                                                                                 |
+| jetedonner, (C.) by kimhauser.ch 1991-2025                                      |
+#=================================================================================#
+```
+
+*Old Version*
+
+```bash
+dave@Aeon ~ % lldb
+(LLDBPyGUI) pyg
+
 #=================================================================================#
 | Starting TEST ENVIRONMENT for LLDBPyGUI (ver. 0.0.2 - DEV PREVIEW)              |
 |                                                                                 |
@@ -133,7 +155,6 @@ dave@Aeon ~ % lldb
 #=================================================================================#
 ```
 
-*Old Version*
 ```bash
 dave@Aeon ~ % lldb
 [+] Loaded LLDBPyGUI version 0.0.1 - ALPHA PREVIEW (BUILD: 689)
