@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Some thaughts on Trump - Youtube video"
+title:  "Some thoughts on Trump - Youtube video"
 author: dave
 date:   2025-12-05 18:06:17 +0200
 categories: [Private, Politics]
