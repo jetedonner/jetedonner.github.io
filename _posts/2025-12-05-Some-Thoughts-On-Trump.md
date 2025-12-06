@@ -8,7 +8,7 @@ tags: [Private, Politics]
 published: true
 ---
 
-# One live one vote
+# One life one vote
 
 ## Movie Trailer
 <div class="container-responsive-iframe">
