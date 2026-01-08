@@ -14,3 +14,5 @@ _Translate selected text from chrome and say the translation - Shortcut Setup_
 
 This is a ready made macOS shortcut file with which you can read the selected text from the open google chrome app (you can change this to safari or other apps), translate it to german (you can change this as well) and than speak it as audio same as you would with the say command.
 
+## Github repository
+- [macOS shortcuts github repo by jetedonner](https://github.com/jetedonner/macOS-shortcuts){:target="_blank" rel="noopener"}
