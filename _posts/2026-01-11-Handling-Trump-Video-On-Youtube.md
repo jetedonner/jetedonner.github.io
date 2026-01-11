@@ -10,7 +10,7 @@ published: true
 
 # Handling Donald Trump and MAGA
 
-This movie is some review as well AS Inspiration from Europe for the current global situation influenced by USAs current President Donald J. Trump, his administration and the MAGA movement.
+This movie is some review as well as some Inspiration from Europe for the current global situation influenced by USAs current President Donald J. Trump, his administration and the MAGA movement.
 
 It's a recapitulation and some private thoughts from my friends and me sent to you from beautyful Switzerland in Europe.
 
