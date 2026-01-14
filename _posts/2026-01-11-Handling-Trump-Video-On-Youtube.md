@@ -20,18 +20,19 @@ It's a recapitulation and some private thoughts from my friends and me sent to y
 </div>
 Visit on Youtube: [https://www.youtube.com/watch?v=ZaM9uzmLt78](https://www.youtube.com/watch?v=ZaM9uzmLt78){:target="_blank" rel="noopener"}
 
-## Capitalism
+## Topics
+### Capitalism
 In my sight, one problem with our world - and it'sm becomming more real every day - is capitalism. This system drives us to become faster, more efficient and cheaper every turnaround. We all live in a finite system on a planet with limited resources. We only have one Earth, and our capitalist system simply doesn't work anymore. In fact, it has failed! Most of us are only realizing this now. This is problematic because it leads to vulnerabilities.
 
-## Treating Symptoms vs. Avoid Causes
+### Treating Symptoms vs. Avoid Causes
 
 
 
-## Health and Healthinsurance
+### Health and Healthinsurance
 
-## Climate change
+### Climate change
 
-## Global relationships
+### Global relationships
 
 ## Time for action
 It's time to face the truth and take action as long as it's not to late. I'm asking the rest of the world to come together and solve this problems.
