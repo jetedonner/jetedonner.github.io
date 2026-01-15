@@ -23,6 +23,9 @@ It's a recapitulation and some private thoughts from my friends and me sent to y
 Visit on Youtube: [https://www.youtube.com/watch?v=ZaM9uzmLt78](https://www.youtube.com/watch?v=ZaM9uzmLt78){:target="_blank" rel="noopener"}
 
 ## Topics
+### The whole Insanity
+These people are primitiv and evil. The only thing we can do is cut them off. We are in charge now! Get it on bitches!
+
 ### Capitalism
 In my sight, one problem with our world - and it'sm becomming more real every day - is capitalism. This system drives us to become faster, more efficient and cheaper every turnaround. We all live in a finite system on a planet with limited resources. We only have one Earth, and our capitalist system simply doesn't work anymore. In fact, it has failed! Most of us are only realizing this now. This is problematic because it leads to vulnerabilities.
 
