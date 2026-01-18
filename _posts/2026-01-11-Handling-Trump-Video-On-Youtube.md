@@ -30,7 +30,7 @@ These people are primitiv and evil. The only thing we can do is cut them off. We
 In my sight, one problem with our world - and it'sm becomming more real every day - is capitalism. This system drives us to become faster, more efficient and cheaper every turnaround. We all live in a finite system on a planet with limited resources. We only have one Earth, and our capitalist system simply doesn't work anymore. In fact, it has failed! Most of us are only realizing this now. This is problematic because it leads to vulnerabilities.
 
 ### Treating Symptoms vs. Avoid Causes
-
+Another major issue we are feeding is our perpetual manner of treating symptoms instead of eliminating the root causes. This is not an effective way of solving most of our todays global problems, in fact it sends us around in circles like following the path on a mobiusstrip witch delutes us we're making progress but in fact we always end up back where we started. If we effectively want to solve this global problems we have to be honest to ourselfs and take action in sustainable ways that eliminate and solve the root causes.
 
 
 ### Health and Healthinsurance
