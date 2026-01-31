@@ -9,7 +9,7 @@ published: true
 ---
 # OpenVoice V2 tutorial (Docker version, macOS)
 
-![OpenVoice - Docker](/assets/img/projects/openvoice/2026-01-31-01-docker-app-clone-voice-and-tts.gif)
+![OpenVoice - Docker](../../assets/img/projects/openvoice/2026-01-31-01-docker-app-clone-voice-and-tts.gif)
 
 ## Introduction
 This is a documentation about my endeavour setting up OpenVoice on macOS Tahoe as a free way for cloning (my own) voice and using it for text to speech. At the beginning it might seem a little confusing and overwhelming, but once you got it set up and understood the process, it's pretty simple and straight forward. As a part of this tutorial, I tried to list all the needed ressources and also published some python scripts you can use as a startpoint.
