@@ -89,7 +89,7 @@ vc_model.convert(
             output_path = save_path)
 
 ```
-- [Download python script (clone_and_speak.py)](../assets/files/OpenVoice/clone_and_speak.py)
+- [Download python script (clone_and_speak.py)](/assets/files/OpenVoice/clone_and_speak.py)
 
 
 ### Use own reference audio to clone voice
@@ -171,7 +171,7 @@ vc_model.convert(
             output_path = save_path)
 
 ```
-- [Download python script (speak_with_existing.py)](../assets/files/OpenVoice/speak_with_existing.py)
+- [Download python script (speak_with_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)
 
 ## Resources
 
