@@ -5,7 +5,7 @@ author: dave
 date:   2026-01-31 10:46:36 +0200
 categories: [Voice-Cloning, Text to Speech]
 tags: [Voice-Cloning, Text to Speech]	
-published: true
+published: false
 ---
 # OpenVoice V2 tutorial (Docker version, macOS)
 
