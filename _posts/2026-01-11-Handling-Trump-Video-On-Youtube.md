@@ -7,9 +7,9 @@ categories: [Trump, Private]
 tags: [Trump, Private]
 published: true
 ---
-## Personal matter
+<!-- ## Personal matter
 Hackers - unite against! Click here for more infos
-
+-->
 ## Introduction
 
 This movie is some review as well AS Inspiration from Europe for the current global situation influenced by USAs current President Donald J. Trump, his administration and the MAGA movement.
