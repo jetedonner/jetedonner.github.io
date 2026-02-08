@@ -93,8 +93,8 @@ dave@Ava OpenVoice % docker run -it \
 
 This mounts the OpenVoice folder in the Docker Container as "/workspace" (Set's it initially at container creation - used as default later on) where you can access it from whitin the Terminal in the Docker-Desktop app. For that open Docker-Desktop app and goto "Containers" in the sidebar menu. Now select the container you started in CLI and select "Open in Terminal" in the "Actions" menu of the container (Three dots). Now you can run the scripts with python.
 
-#### Create docker container - Option "remove at close"
-**IMPORTANT:** if you specify the "--rm" argument when running the docker container, docker will remove / delete the container when you stop it (and you have to set it up from the image again) - Keep that in mind! See the following command for automatically deleting the container when you stop it:
+#### Create docker container - Option 2 "remove at close"
+**IMPORTANT:** if you specify the "--rm" argument when running the docker container, docker will remove / delete the container when you stop it - and you have to set it up from the image again next you want to run it. Keep that in mind! See the following command for automatically deleting the container when you stop it:
 
 ```bash
 dave@Ava OpenVoice % docker run -it --rm \
@@ -106,7 +106,7 @@ dave@Ava OpenVoice % docker run -it --rm \
 
 Now you can run your python scripts inside the docker container terminal session (or host terminal console session) to automate the voice cloning and audio from text generation process. I.e. with the following call to the ready made python script you can download below.
 
-#### Inside a docker terminal console ()
+#### Inside a docker terminal console
 ```bash
 root@fe57531ee929:/workspace# python clone_and_speak.py 
 # Run this python script inside docker cli (i.e. Docker Desktop Terminal or inside the terminal shell after running / creating the docker container from macos terminal console)
