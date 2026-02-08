@@ -9,7 +9,7 @@ output_dir = 'outputs_v2'
 output_tmp = './tmp.wav'
 tts_lang = 'EN'
 voice_sample = "myvoice.wav"
-voice_clone = "myvoice_se_ng.npz"
+voice_clone = "myvoice_se.npz"
 speaker_key = "EN-Default"
 
 vc_model = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)
@@ -27,17 +27,19 @@ if torch.backends.mps.is_available():
 
 # This is for loading your cloned voice once it's saved
 data = np.load(voice_clone)
-src_se = data["se"]
-tgt_se = data["tone"]
+tgt_se = data["se"]
+tgt_tone = data["tone"]
 
-src_se = torch.tensor(src_se).float()
+tgt_se = torch.tensor(tgt_se).float()
 
-model.tts_to_file("The quick brown fox jumps over the lazy dog.", speaker_id, output_tmp, speed=0.9)
+model.tts_to_file("The quick brown fox jumps over the lazy dog. This audio was created with an already cloned and saved voice that was used to speak the text", speaker_id, output_tmp, speed=0.9)
 
 save_path = f'outputs_v2/output_v2_{speaker_key}.wav'
 
 vc_model.convert(
             audio_src_path = output_tmp, 
             src_se = source_se, 
-            tgt_se = src_se, 
+            tgt_se = tgt_se, 
             output_path = save_path)
+
+print(f'Using your saved cloned voice to text-to-speak finished successfully!\nYou find the audio output at: {save_path}')
