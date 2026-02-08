@@ -345,9 +345,12 @@ print(f'Using your saved cloned voice to text-to-speak finished successfully!\nY
 
 ## Resources
 
-| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | file_one.txt   |
-| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | report_final.pdf |
-| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | image_001.jpg  |
+| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | clone_and_speak.py | Complete workflow for cloning and speaking (inside docker)   |
+| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | clone_and_speak_standalone.py | Complete workflow for cloning and speaking (outside docker)   |
+| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | clone_voice_only.py | Clone voice and save only (inside docker)   |
+| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | speak_with_existing.py | Speak with saved voice (inside docker)   |
+| ![wav36.png](../../assets/img/projects/wav36.png) | myvoice.wav | A sample "my voice" file   |
+| ![ai-file36.png](../../assets/img/projects/ai-file36.png) | myvoice_se.npz | A sample cloned / saved voice   |
 
 ## Important tips
 - Don't mix OpenVoice V1 and V2 (checkpoints or code)
