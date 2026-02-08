@@ -157,6 +157,10 @@ print(f'Cloning your voice and using it to text-to-speak finished successfully!\
 
 ### Complete workflow for cloning and speaking - Version 2 (As standalone script)
 
+This standalone version of the ready made voice cloning python script is intend for running from the host terminal console with arguments for specifying the spoken text and the output path / filename for the generated audio file. It also downloads the "nltk" tagger in english 
+
+- nltk.download('averaged_perceptron_tagger_eng')
+
 ```python
 from openvoice.api import ToneColorConverter
 from openvoice import se_extractor
@@ -197,9 +201,6 @@ if __name__ == "__main__":
     print("Output file:", out_path)
 
     nltk.download('averaged_perceptron_tagger_eng')
-
-    # Your TTS logic here
-    # model.tts_to_file(text, speaker_id, out_path)
 
     ckpt_converter = 'checkpoints_v2/converter'
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
