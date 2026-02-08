@@ -19,24 +19,32 @@ As a part of this tutorial, I tried to list all the needed resources for setting
 ## Prerequisites on macOS Tahoe
 The following - **all free** - tools and apps are required to get started with this OpenVoice TTS tutorial. Please make sure you have them set up correctly before you begin the main task of cloning your own voice and using it as a source for text‑to‑speech.
 
-### Required Apps and Libraries
+### Required Apps and Tools
 - [Homebrew](https://brew.sh/)
 - [Git CLI](https://cli.github.com/) (and [GitHub Desktop](https://github.com/apps/desktop?ref_product=desktop&ref_type=engagement&ref_style=button))
-- [Python 3.9 or 3.10](https://www.python.org/downloads/macos/)
+- [Python 3.10 recommended](https://www.python.org/downloads/macos/) (>= 3.9)
 - Docker CLI (Via Homebrew - brew install docker)
 - [Docker-Desktop](https://www.docker.com/get-started/)
-- [VSCode (Also install python extensions)](https://code.visualstudio.com/download)
-- [OpenVoice checkpoints V2](https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip) (only for Version 2 TTS)
-- [MeloTTS](https://github.com/myshell-ai/MeloTTS)
-- [Anaconda Python (optional)](https://www.anaconda.com/download)
+- [VSCode](https://code.visualstudio.com/download) (Also install python extensions)
+- [Anaconda Python](https://www.anaconda.com/download) (optional)
 
-### Useful Python scripts
+
+### Required Sources and Libraries
+- [myshell-openvoice-docker](https://github.com/manzolo/myshell-openvoice-docker) (git repo)
+- [OpenVoice](https://github.com/myshell-ai/OpenVoice) (git repo)
+- [OpenVoice checkpoints V2](https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip) (only for Version 2 TTS)
+- [OpenVoice checkpoints V1](https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_1226.zip) (optional for Version 1 TTS)
+- [MeloTTS](https://github.com/myshell-ai/MeloTTS) (git repo)
+
+
+### Useful Python scripts and files
+<!--
 - [Download python script (clone\_and\_speak.py)](/assets/files/OpenVoice/clone_and_speak.py)
 - [Download python script (clone\_and\_speak\_standalone.py)](/assets/files/OpenVoice/clone_and_speak_standalone.py)
 - [Download python script (clone\_voice\_only.py)](/assets/files/OpenVoice/clone_voice_only.py)
-<!--  - [Download python script (clone\_and\_speak_standalone.py)](/assets/files/OpenVoice/clone_and_speak.py) -->
+- [Download python script (clone\_and\_speak_standalone.py)](/assets/files/OpenVoice/clone_and_speak.py)
 - [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)
-<!--  - A sample audio file (*.wav) of the voice you want to clone / use -->
+- A sample audio file (*.wav) of the voice you want to clone / use -->
 
 <!--
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak.py)](/assets/files/OpenVoice/clone_and_speak.py) | Complete workflow for cloning and speaking (inside docker)   |
@@ -51,6 +59,7 @@ The following - **all free** - tools and apps are required to get started with t
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak\_standalone.py)](/assets/files/OpenVoice/clone_and_speak_standalone.py)    |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_voice\_only.py)](/assets/files/OpenVoice/clone_voice_only.py)    |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)    |
+| ![pydoc24.png](projects/pydoc24.png) | [Download python script (install\_nltk\_dep.py)](/assets/files/OpenVoice/install_nltk_dep.py)    |
 | ![wav24.png](projects/wav24.png) | [Download sample voice (myvoice.wav)](/assets/files/OpenVoice/myvoice.wav)    |
 | ![ai-file24.png](projects/ai-file24.png) | [Download cloned sample voice (myvoice\_se.npz)](/assets/files/OpenVoice/myvoice_se.npz)    |
 
@@ -71,40 +80,53 @@ Navigate to the local folder with the cloned git repo of "myshell-openvoice-dock
 dave@Ava myshell-openvoice-docker % docker build -t myshell-openvoice .
 ```
 
-### Run the Docker container in CLI (on host)
-Open a Terminal session and navigate to the OpenVoice folder (the one where checkpoints_V2 is in) and execute the following command. 
+### Create docker container in CLI (on host, macOS)
+Open a Terminal session and navigate to the OpenVoice repo folder you cloned (make sure, that you extracted checkpoints_V2 into it) and execute the following command. 
 
 ```bash
-dave@Ava myshell-openvoice-docker % docker run -it \
+dave@Ava OpenVoice % docker run -it \
   --name openvoice \
   -v "$(pwd)":/workspace \
   myshell-openvoice \
   bash
 ```
 
-This mounts the OpenVoice folder in the Docker Container as "/workspace" where you can access it from whitin the Terminal in the Docker-Desktop app. For That open Docker-Desktop app and goto "Containers" in the sidebar menu. Now select the container you started in CLI and select "Open in Terminal" in the "Actions" menu of the container (Three dots). Now you can run the scripts with python (i.e. like the following). 
+This mounts the OpenVoice folder in the Docker Container as "/workspace" (Set's it initially at container creation - used as default later on) where you can access it from whitin the Terminal in the Docker-Desktop app. For that open Docker-Desktop app and goto "Containers" in the sidebar menu. Now select the container you started in CLI and select "Open in Terminal" in the "Actions" menu of the container (Three dots). Now you can run the scripts with python.
 
+#### Create docker container - Option "remove at close"
 **IMPORTANT:** if you specify the "--rm" argument when running the docker container, docker will remove / delete the container when you stop it (and you have to set it up from the image again) - Keep that in mind! See the following command for automatically deleting the container when you stop it:
 
 ```bash
-dave@Ava myshell-openvoice-docker % docker run -it --rm \
+dave@Ava OpenVoice % docker run -it --rm \
   --name openvoice \
   -v "$(pwd)":/workspace \
   myshell-openvoice \
   bash
 ```
 
-Now you can run your python scripts inside the docker container terminal session to automate the voice cloning and audio from text generation process. I.e. with the following call to the ready made python script you can download below.
+Now you can run your python scripts inside the docker container terminal session (or host terminal console session) to automate the voice cloning and audio from text generation process. I.e. with the following call to the ready made python script you can download below.
 
+#### Inside a docker terminal console ()
 ```bash
-dave@Ava myshell-openvoice-docker % docker exec openvoice python /workspace/clone_and_speak_standalone.py --text "Some text to speak" --out /workspace/out.wav
+root@fe57531ee929:/workspace# python clone_and_speak.py 
+# Run this python script inside docker cli (i.e. Docker Desktop Terminal or inside the terminal shell after running / creating the docker container from macos terminal console)
 ```
 
-or inside a docker terminal console:
-
+#### From host terminal console (macOS terminal)
 ```bash
-root@fe57531ee929:/workspace# python clone_and_speak.py # run this python script inside docker cli (i.e. Docker Desktop Terminal or inside the terminal shell after running the docker container from macos terminal console)
+dave@Ava OpenVoice % docker exec openvoice python /workspace/clone_and_speak_standalone.py --text "Some text to speak" --out /workspace/out.wav
+# Run this script inside docker container but start it from host terminal console and pass text and output filename as arguments
 ```
+
+**NOTE**
+You might get an error, that nltk is not installed. If so, you can use the following python commands to install it directly from within a python script.
+
+```python
+import nltk
+nltk.download('averaged_perceptron_tagger_eng')
+```
+- [Download python script (install\_nltk\_dep.py)](/assets/files/OpenVoice/install_nltk_dep.py)
+
 
 ## OpenVoice V2 python scripts
 Here are some python scripts / commands I made and want to share with you to clone / reload the own voice and generate a new audio output file using that own voice.
@@ -270,7 +292,7 @@ if __name__ == "__main__":
 
 #### Call the standalone script from terminal / cli
 ```bash
-dave@Ava myshell-openvoice-docker % docker exec openvoice python /workspace/clone_and_speak_standalone.py --text "Some text to speak" --out /workspace/out.wav
+dave@Ava OpenVoice % docker exec openvoice python /workspace/clone_and_speak_standalone.py --text "Some text to speak" --out /workspace/out.wav
 ```
 
 
@@ -374,6 +396,7 @@ print(f'Using your saved cloned voice to text-to-speak finished successfully!\nY
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak\_standalone.py)](/assets/files/OpenVoice/clone_and_speak_standalone.py)    |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_voice\_only.py)](/assets/files/OpenVoice/clone_voice_only.py)    |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)    |
+| ![pydoc24.png](projects/pydoc24.png) | [Download python script (install\_nltk\_dep.py)](/assets/files/OpenVoice/install_nltk_dep.py)    |
 | ![wav24.png](projects/wav24.png) | [Download sample voice (myvoice.wav)](/assets/files/OpenVoice/myvoice.wav)    |
 | ![ai-file24.png](projects/ai-file24.png) | [Download cloned sample voice (myvoice\_se.npz)](/assets/files/OpenVoice/myvoice_se.npz)    |
 
