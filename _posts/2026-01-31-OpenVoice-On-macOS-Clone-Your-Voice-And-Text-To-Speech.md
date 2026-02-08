@@ -345,9 +345,9 @@ print(f'Using your saved cloned voice to text-to-speak finished successfully!\nY
 
 ## Resources
 
-| ![pydoc256.png](../../assets/img/projects/pydoc256.png) | file_one.txt   |
-| ![pydoc256.png](../../assets/img/projects/pydoc256.png) | report_final.pdf |
-| ![pydoc256.png](../../assets/img/projects/pydoc256.png) | image_001.jpg  |
+| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | file_one.txt   |
+| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | report_final.pdf |
+| ![pydoc36.png](../../assets/img/projects/pydoc36.png) | image_001.jpg  |
 
 ## Important tips
 - Don't mix OpenVoice V1 and V2 (checkpoints or code)
