@@ -343,6 +343,12 @@ print(f'Using your saved cloned voice to text-to-speak finished successfully!\nY
 ```
 - [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)
 
+## Resources
+
+| ![pydoc256.png](/assets/img/projects/pydoc256.png) | file_one.txt   |
+| ![pydoc256.png](/assets/img/projects/pydoc256.png) | report_final.pdf |
+| ![pydoc256.png](/assets/img/projects/pydoc256.png) | image_001.jpg  |
+
 ## Important tips
 - Don't mix OpenVoice V1 and V2 (checkpoints or code)
 - Prepare to have enough free disk space for installation - around 13 to 15 GigaBytes (for docker container fully setup with all dependencies installed.
