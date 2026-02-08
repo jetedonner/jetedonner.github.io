@@ -38,21 +38,21 @@ The following - **all free** - tools and apps are required to get started with t
 - [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)
 <!--  - A sample audio file (*.wav) of the voice you want to clone / use -->
 
-
+<!--
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak.py)](/assets/files/OpenVoice/clone_and_speak.py) | Complete workflow for cloning and speaking (inside docker)   |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak\_standalone.py)](/assets/files/OpenVoice/clone_and_speak_standalone.py) | Complete workflow for cloning and speaking (outside docker)   |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_voice\_only.py)](/assets/files/OpenVoice/clone_voice_only.py) | Clone voice and save only (inside docker)   |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py) | Speak with saved voice (inside docker)   |
 | ![wav24.png](projects/wav24.png) | [Download python script (myvoice.wav)](/assets/files/OpenVoice/myvoice.wav) | A sample "my voice" file   |
 | ![ai-file24.png](projects/ai-file24.png) | [Download python script (myvoice\_se.npz)](/assets/files/OpenVoice/myvoice_se.npz) | A sample cloned / saved voice   |
-
+-->
 
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak.py)](/assets/files/OpenVoice/clone_and_speak.py)    |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak\_standalone.py)](/assets/files/OpenVoice/clone_and_speak_standalone.py)    |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_voice\_only.py)](/assets/files/OpenVoice/clone_voice_only.py)    |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)    |
-| ![wav24.png](projects/wav24.png) | [Download python script (myvoice.wav)](/assets/files/OpenVoice/myvoice.wav)    |
-| ![ai-file24.png](projects/ai-file24.png) | [Download python script (myvoice\_se.npz)](/assets/files/OpenVoice/myvoice_se.npz)    |
+| ![wav24.png](projects/wav24.png) | [Download sample voice (myvoice.wav)](/assets/files/OpenVoice/myvoice.wav)    |
+| ![ai-file24.png](projects/ai-file24.png) | [Download cloned sample voice (myvoice\_se.npz)](/assets/files/OpenVoice/myvoice_se.npz)    |
 
 
 ## Docker Desktop for macOS
@@ -361,18 +361,26 @@ print(f'Using your saved cloned voice to text-to-speak finished successfully!\nY
 - [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)
 
 ## Resources
-
+<!--
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak.py)](/assets/files/OpenVoice/clone_and_speak.py) | Complete workflow for cloning and speaking (inside docker)   |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak\_standalone.py)](/assets/files/OpenVoice/clone_and_speak_standalone.py) | Complete workflow for cloning and speaking (outside docker)   |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_voice\_only.py)](/assets/files/OpenVoice/clone_voice_only.py) | Clone voice and save only (inside docker)   |
 | ![pydoc24.png](projects/pydoc24.png) | [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py) | Speak with saved voice (inside docker)   |
 | ![wav24.png](projects/wav24.png) | [Download python script (myvoice.wav)](/assets/files/OpenVoice/myvoice.wav) | A sample "my voice" file   |
 | ![ai-file24.png](projects/ai-file24.png) | [Download python script (myvoice\_se.npz)](/assets/files/OpenVoice/myvoice_se.npz) | A sample cloned / saved voice   |
+-->
+
+| ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak.py)](/assets/files/OpenVoice/clone_and_speak.py)    |
+| ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_and\_speak\_standalone.py)](/assets/files/OpenVoice/clone_and_speak_standalone.py)    |
+| ![pydoc24.png](projects/pydoc24.png) | [Download python script (clone\_voice\_only.py)](/assets/files/OpenVoice/clone_voice_only.py)    |
+| ![pydoc24.png](projects/pydoc24.png) | [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)    |
+| ![wav24.png](projects/wav24.png) | [Download sample voice (myvoice.wav)](/assets/files/OpenVoice/myvoice.wav)    |
+| ![ai-file24.png](projects/ai-file24.png) | [Download cloned sample voice (myvoice\_se.npz)](/assets/files/OpenVoice/myvoice_se.npz)    |
 
 ## Important tips
-- Don't mix OpenVoice V1 and V2 (checkpoints or code)
-- Prepare to have enough free disk space for installation - around 13 to 15 GigaBytes (for docker container fully setup with all dependencies installed.
-- Make sure the qualtiy of the sample of your own voice you use for cloning has the best quality possible. This can make a hughe difference.
+- Don't mix OpenVoice V1 and V2 (checkpoints, voices or code)
+- Prepare to have enough free disk space for installation - around 13 to 15 GigaBytes (for docker container fully setup with all dependencies installed)
+- Make sure the qualtiy of the sample of the voice you use for cloning has the best quality possible. This can make a hughe difference.
 
 ## Alternatives
 - Coqui‑TTS (coqui-ai - free)
@@ -382,8 +390,14 @@ print(f'Using your saved cloned voice to text-to-speak finished successfully!\nY
 
 ## Credits
 - OpenVoice project
+- Flaticon
+- Copilot AI
+
+
+<!--
 - Google search
 - Copilot AI
 - Python
 - HuggingFace
 - Apple
+-->
