@@ -108,11 +108,11 @@ Now you can run your python scripts inside the docker container terminal session
 
 
 ### Install MeloTTS and Unidic
-Before you can run any of my cloning-scripts or creating a TTS model in your own python scripts, install  MeloTTS and Unidic with the following command in the host terminal console:
+Before you can run any of my cloning-scripts or creating a TTS model in your own python scripts, install  MeloTTS and Unidic with the following command in the Docker terminal console:
 
 ```bash
-dave@Ava OpenVoice % pip install git+https://github.com/myshell-ai/MeloTTS.git
-dave@Ava OpenVoice % python -m unidic download
+root@fe57531ee929:/workspace# pip install git+https://github.com/myshell-ai/MeloTTS.git
+root@fe57531ee929:/workspace# python -m unidic download
 ```
 
 #### Inside a docker terminal console
