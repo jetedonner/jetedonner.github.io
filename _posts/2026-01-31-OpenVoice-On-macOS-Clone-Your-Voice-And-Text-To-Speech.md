@@ -106,6 +106,15 @@ dave@Ava OpenVoice % docker run -it --rm \
 
 Now you can run your python scripts inside the docker container terminal session (or host terminal console session) to automate the voice cloning and audio from text generation process. I.e. with the following call to the ready made python script you can download below.
 
+
+### Install MeloTTS and Unidic
+Before you can run any of my cloning-scripts or creating a TTS model in your own python scripts, install  MeloTTS and Unidic with the following command in the host terminal console:
+
+```bash
+dave@Ava OpenVoice % pip install git+https://github.com/myshell-ai/MeloTTS.git
+dave@Ava OpenVoice % python -m unidic download
+```
+
 #### Inside a docker terminal console
 ```bash
 root@fe57531ee929:/workspace# python clone_and_speak.py 
@@ -381,6 +390,21 @@ print(f'Using your saved cloned voice to text-to-speak finished successfully!\nY
 
 ```
 - [Download python script (speak\_with\_existing.py)](/assets/files/OpenVoice/speak_with_existing.py)
+
+
+## Helper shell functions
+The following helper shell functions can be added to your ~/.zshrc or ~/.zprofile to create shortcut cli commands that can be used to quickly tts from the macOS terminal console.
+
+```bash
+function dtts(){
+    docker start openvoice
+    docker exec openvoice python /workspace/clone_and_speak_standalone.py --text "$1" --out /workspace/out.wav
+    docker cp openvoice:/workspace/out.wav ./"$2"
+    afplay ./"$2"
+    docker stop openvoice
+}
+```
+
 
 ## Resources
 <!--
