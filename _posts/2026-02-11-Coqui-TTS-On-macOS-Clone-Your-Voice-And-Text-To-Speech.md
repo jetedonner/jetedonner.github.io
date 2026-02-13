@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "OpenVoice V2 tutorial (Docker version, macOS)"
+title:  "Coqui-TTS tutorial (Docker version, macOS)"
 author: dave
-date:   2026-01-31 10:46:36 +0200
+date:   2026-02-13 15:42:04 +0200
 categories: [Voice-Cloning, Text to Speech]
-tags: [OpenVoice, Voice-Cloning, Text to Speech]	
-published: true
+tags: [Coqui-TTS, Voice-Cloning, Text to Speech]	
+published: false
 ---
-# OpenVoice V2 tutorial (Docker version, macOS)
+# Coqui-TTS tutorial (Docker version, macOS)
 
-![OpenVoice - Docker main view (Terminal)](projects/openvoice/2026-01-31-01-docker-app-clone-voice-and-tts.gif)
+![Coqui-TTS - Docker main view (Terminal)](projects/coqui-tts/2026-01-31-01-docker-app-clone-voice-and-tts.gif)
 
 ## Introduction
 This is a documentation about my endeavour setting up OpenVoice on macOS Tahoe in a free way for cloning (my own) voice and using it for text to speech. At the beginning it might seem a little confusing and overwhelming, but once you got it all set up and understood the process, it's pretty simple and straight forward.
@@ -438,21 +438,12 @@ function dtts(){
 - Make sure the qualtiy of the sample of the voice you use for cloning has the best quality possible. This can make a hughe difference.
 
 ## Alternatives
-- Coqui‑TTS (coqui-ai - free)
+- OpenVoice (openvoice - free)
 - StyleTTS 2 (limited cloning)
 - RVC - Retrieval‑based Voice Conversion (Voice conversion rather than TTS)
 - ElevenLabs Free Tier (Online, Paid version)
 
 ## Credits
-- OpenVoice project
+- Coqui-TTS project
 - Flaticon
 - Copilot AI
-
-
-<!--
-- Google search
-- Copilot AI
-- Python
-- HuggingFace
-- Apple
--->
