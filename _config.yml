@@ -201,6 +201,7 @@ exclude:
   - '*.gem'
   - '*.gemspec'
   - tools
+  - _includes/raw
   - README.md
   - CHANGELOG.md
   - LICENSE
