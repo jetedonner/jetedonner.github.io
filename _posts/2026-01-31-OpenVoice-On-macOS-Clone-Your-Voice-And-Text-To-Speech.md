@@ -458,6 +458,7 @@ function dtts(){
 -->
 
 <center>
+<!--
 <iframe  id="svgIframe" src="https://hitcounter.kimhauser.ch/svgng.svg?hash=32b58a33eb8dc7a9bc4eb0d915f7b956253373baedf8cad7f7703bad38be078a" style="border: 0px;"></iframe>
 <script>
 	// This javascript is for center-aligning the iframe which loads and displays the Hit-Counter SVG
@@ -469,8 +470,10 @@ function dtts(){
 		}
 	});
 </script>
-<!--
-<img src="https://hitcounter.kimhauser.ch/svgng.svg?hash=32b58a33eb8dc7a9bc4eb0d915f7b956253373baedf8cad7f7703bad38be078a"/> -->
+-->
+{% raw %}
+<img src="https://hitcounter.kimhauser.ch/svgng.svg?hash=32b58a33eb8dc7a9bc4eb0d915f7b956253373baedf8cad7f7703bad38be078a" />
+{% endraw %}
 </center>
 
 
