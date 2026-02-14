@@ -87,10 +87,12 @@
       {% endif %}
     {% endfor %}
 
-    {% if _src contains 'https://hitcounter.kimhauser.ch/svgng.svg' %}
+    {% if _src contains 'hitcounter.kimhauser.ch' %}
+      {% assign _src_prefix = 'kimwashere' %}
+      {% assign _img_content = _img_content | append: IMG_TAG | append: _left | append: _right %}
       {% continue %}
     {% endif %}
-    
+
     {% if _src %}
       {% unless _src contains '://' %}
 
