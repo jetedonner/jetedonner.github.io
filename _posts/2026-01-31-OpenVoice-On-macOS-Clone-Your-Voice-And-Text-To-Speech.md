@@ -449,7 +449,7 @@ function dtts(){
 - Copilot AI
 
 <center>
-{% include_relative assets/raw/hitcounter.html %}
+{% include_relative ../assets/raw/hitcounter.html %}
 </center>
 
                             
