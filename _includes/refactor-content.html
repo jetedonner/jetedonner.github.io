@@ -87,6 +87,10 @@
       {% endif %}
     {% endfor %}
 
+    {% if _src contains 'https://hitcounter.kimhauser.ch/svgng.svg' %}
+      {% continue %}
+    {% endif %}
+    
     {% if _src %}
       {% unless _src contains '://' %}
 
