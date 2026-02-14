@@ -448,11 +448,12 @@ function dtts(){
 - Flaticon
 - Copilot AI
 
-<div id="hitcounter"></div>
-
+<center>
+<img id="hitcounterImg"/>
 <script>
-document.getElementById("hitcounter").innerHTML =
-  '<img src="https://hitcounter.kimhauser.ch/svgng.svg?hash=32b58a33eb8dc7a9bc4eb0d915f7b956253373baedf8cad7f7703bad38be078a">';
+  const img = document.getElementById("hitcounterImg");
+  img.src = "https://hitcounter.kimhauser.ch/svgng.svg?hash=32b58a33eb8dc7a9bc4eb0d915f7b956253373baedf8cad7f7703bad38be078a";
 </script>
+</center>
 
-### End
+                            
