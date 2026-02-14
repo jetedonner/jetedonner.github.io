@@ -448,10 +448,8 @@ function dtts(){
 - Flaticon
 - Copilot AI
 
-{% raw %}
 <center>
-<img src='https://hitcounter.kimhauser.ch/svgng.svg%3Fhash="32b58a33eb8dc7a9bc4eb0d915f7b956253373baedf8cad7f7703bad38be078a"' />
+<img src="https://hitcounter.kimhauser.ch/svgng.svg?hash=%2232b58a33eb8dc7a9bc4eb0d915f7b956253373baedf8cad7f7703bad38be078a%22" />
 </center>
-{% endraw %}
 
                             
