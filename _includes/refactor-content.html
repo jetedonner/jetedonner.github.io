@@ -87,11 +87,12 @@
       {% endif %}
     {% endfor %}
 
-    {% if _src contains 'hitcounter.kimhauser.ch' %}
+    <!-- {% if _src contains 'hitcounter.kimhauser.ch' %} -->
+    {% unless _src contains 'hitcounter.kimhauser.ch' %}
       {% assign _src_prefix = 'kimwashere' %}
       {% assign _img_content = _img_content | append: IMG_TAG | append: _left | append: _right %}
       {% continue %}
-    {% endif %}
+    {% endunless %}
 
     {% if _src %}
       {% unless _src contains '://' %}
