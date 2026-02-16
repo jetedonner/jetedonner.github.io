@@ -435,7 +435,7 @@ function dtts(){
 ## Important tips
 - Don't mix OpenVoice V1 and V2 (checkpoints, voices or code)
 - Prepare to have enough free disk space for installation - around 13 to 15 GigaBytes (for docker container fully setup with all dependencies installed)
-- Make sure the qualtiy of the sample of the voice you use for cloning has the best quality possible. This can make a hughe difference.
+- Make sure the qualtiy of the sample of the voice you use for cloning has the best quality possible. This can make a hugh difference.
 
 ## Alternatives
 - Coqui‑TTS (coqui-ai - free)
