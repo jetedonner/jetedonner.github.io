@@ -18,6 +18,19 @@ This macOS shortcut lets you instantly extract the audio track from any selected
 ### Installation (without editing)
 Installation is easy. Just browse to the _Extract MP3 from Movie.shortcut_ file and doubleclick it - and done. You should have now a new "Quick action" Item in the chrome context menu when selecting a text in the finder app and doing a right click on the selection.
 
+### Shell script
+The following shell script does most of the work of this macOS Tahoe shortcut. You can put it into a "*.sh" file and use it as standalone script as well.
+
+```bash
+INPUT="$1"
+DIR="$(dirname "$INPUT")"
+BASE="$(basename "$INPUT" .mp4)"
+OUTPUT="$DIR/$BASE.mp3"
+
+# Convert using ffmpeg
+ffmpeg -i "$INPUT" -vn -acodec libmp3lame "$OUTPUT"
+```
+
 ## Github repository
 - [macOS shortcuts github repo by jetedonner](https://github.com/jetedonner/macOS-shortcuts){:target="_blank" rel="noopener"}
 
