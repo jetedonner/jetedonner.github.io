@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "macOS shortcut - extract audio from movie mp4 file and save as mp3 file"
+title:  "macOS shortcut - extract audio from movie file and save as mp3 file"
 author: dave
 date:   2026-02-16 22:52:50 +0200
 categories: [macOS, Tools]
