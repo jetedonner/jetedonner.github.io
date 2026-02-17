@@ -9,14 +9,14 @@ published: true
 ---
 
 ## Introduction
-![Translate and say text from chrome](../../assets/img/projects/shortcuts/Extract-Audio-As-MP3-From-Movie-MP4.png){: width="65%" }
-_Extract audio from movie mp4 file and save as mp3 file - Shortcut Setup_
+![Translate and say text from chrome](../../assets/img/projects/shortcuts/Extract-Audio-As-MP3-From-Movie-MP4-And-More.png){: width="65%" }
+_Extract audio from movie (mp4, avi, mov, mkv) file and save as mp3 file - Shortcut Setup_
 
 This macOS shortcut lets you instantly extract the audio track from any selected .mp4 movie file directly from Finder. Once triggered as a Quick Action, it takes the file you selected, converts the audio to MP3 using a built‑in shell workflow, and saves the result with the same filename but an .mp3 extension. No file pickers, no extra clicks — just a fast, reliable way to turn video files into standalone audio.
 
 ## How to install and use
 ### Installation (without editing)
-Installation is easy. Just browse to the _Extract MP3 from Movie.shortcut_ file and doubleclick it - and done. You should have now a new "Quick action" Item in the chrome context menu when selecting a text in the finder app and doing a right click on the selection.
+Installation is easy. Just browse to the _Extract MP3 from various Video formats.shortcut_ file and doubleclick it - and done. You should have now a new "Quick action" Item in the chrome context menu when selecting a text in the finder app and doing a right click on the selection.
 
 ### Shell script
 The following shell script (used by a "Run shell script" action in the shortcut workflow) does most of the work of this macOS shortcut. You can also save it as a "*.sh" file and use it as standalone script from CLI or wherever you please as well.
@@ -24,11 +24,12 @@ The following shell script (used by a "Run shell script" action in the shortcut 
 ```bash
 INPUT="$1"
 DIR="$(dirname "$INPUT")"
-BASE="$(basename "$INPUT" .mp4)"
-OUTPUT="$DIR/$BASE.mp3"
+BASE="$(basename "$INPUT")"
+BASENG="${BASE%.*}"
+OUTPUT="$DIR/$BASENG.mp3"
 
 # Convert using ffmpeg
-ffmpeg -i "$INPUT" -vn -acodec libmp3lame "$OUTPUT"
+ffmpeg -y -i "$INPUT" -vn -acodec libmp3lame "$OUTPUT"
 ```
 
 ## Github repository
