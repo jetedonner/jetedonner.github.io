@@ -19,8 +19,6 @@ Extract audio from any video using a Finder Quick Action and a SwiftUI desktop a
 
 The project demonstrates how to combine modern SwiftUI architecture with macOS system extensions, custom URL schemes, and a robust ffmpeg pipeline. It is built to feel like a native macOS feature rather than a standalone tool.
 
-[//]: ---
-
 ## 🎬 Project Goals
 AudioExtractor was created with several goals in mind:
 
@@ -33,8 +31,6 @@ AudioExtractor was created with several goals in mind:
 - Provide a reliable, extensible architecture for future enhancements.
 
 The result is a tool that blends seamlessly into macOS and behaves like a built‑in utility.
-
-[//]: ---
 
 ## 🧩 High‑Level Architecture
 AudioExtractor consists of two cooperating components:
@@ -74,8 +70,6 @@ audioextractor://process?file=/path/to/movie.mp4
 The main app parses this URL and begins processing.
 This architecture avoids the limitations of Finder Sync Extensions, which cannot operate globally across all folders or volumes.
 
-[//]: ---
-
 ## ⚙️ Finder Quick Action Implementation
 Why a Quick Action Instead of a Finder Sync Extension?
 
@@ -95,7 +89,6 @@ They cannot:
 - Integrate cleanly with SwiftUI apps
 
 This makes them ideal for system‑wide utilities like AudioExtractor.
-[//]: ---
 
 ### Activation Rule
 The Quick Action is configured to appear for all movie files:
@@ -118,7 +111,6 @@ This includes:
 - WebM
 - And any other UTType conforming to public.movie
 
-[//]: ---
 ### Robust File Loading
 Finder may provide the selected file in several different representations:
 
@@ -139,7 +131,6 @@ The extension includes a universal resolver that:
 
 This ensures compatibility across all volumes and file types.
 
-[//]: ---
 ### Launching the Main App
 
 Once the file URL is resolved, the extension constructs a custom URL:
@@ -151,7 +142,6 @@ NSWorkspace.shared.open(URL(string: urlString)!)
 
 macOS then launches the main app (or brings it to the foreground) and passes the URL to it.
 
-[//]: ---
 ## 🖥️ SwiftUI Main App
 
 URL Scheme Registration
@@ -180,7 +170,6 @@ audioextractor://process?file=/path/to/movie.mp4
 
 directly to the app.
 
-[//]: ---
 ### URL Handling in SwiftUI
 
 The app listens for incoming URLs:
@@ -196,8 +185,6 @@ The app listens for incoming URLs:
 
 This triggers the ffmpeg pipeline.
 
-[//]: ---
--
 ### ffmpeg Integration
 The app uses `rocess to run ffmpeg:
 - Launches ffmpeg with the selected file
@@ -207,8 +194,6 @@ The app uses `rocess to run ffmpeg:
 - Handles errors gracefully
 -
 Because the app is not sandboxed, ffmpeg can run without entitlements or restrictions.
-
-[//]: ---
 
 ### UI Features
 The SwiftUI interface includes:
@@ -223,8 +208,6 @@ The SwiftUI interface includes:
 
 The UI is designed to be minimal, responsive, and macOS‑native.
 
-[//]: ---
-
 ## 🎨 Quick Action Icon Setup
 
 Why `.icns` Is Not Used
@@ -237,8 +220,6 @@ Finder Quick Actions do not use `.ics files.
 - Bundle icons
 
 Quick Actions use template images stored in the extension’s asset catalog.
-
-[//]: ---
 
 ### Correct Icon Setup
 1. Add a PDF vector to the extension’s `Assets.xcassets
@@ -259,8 +240,6 @@ Finder automatically:
 
 Even if the PDF is large, Finder uses the vector to draw it at the correct size.
 
-[//]: ---
-
 ### Designing the Icon
 For best results:
 
@@ -271,8 +250,6 @@ For best results:
 - Export as PDF vector.
 
 This produces a clean, native‑looking Finder icon.
-
-[//]: ---
 
 ## 📦 Project Structure
 
@@ -298,8 +275,6 @@ AudioExtractor/
 
 This separation keeps the extension lightweight and the main app fully featured.
 
-[//]: ---
-
 ## 🚀 Usage
 
 1. Build and run the main app once to register the URL scheme.
@@ -309,8 +284,6 @@ System Settings → Privacy & Security → Extensions → Finder
 4. Choose Quick Actions → Extract Audio.
 5. The main app opens and begins extraction.
 6. View logs, progress, and output in the SwiftUI interface.
-
-[//]: ---
 
 ## 🛠️ Supported Formats
 
@@ -337,8 +310,6 @@ Output formats depend on your ffmpeg arguments and may include:
 
 The pipeline is fully customizable.
 
-[//]: ---
-
 ## 🔧 Extensibility
 
 AudioExtractor is designed to be extended.
@@ -353,8 +324,6 @@ Possible enhancements include:
 - Notifications when extraction completes
 
 The architecture supports all of these without major changes.
-
-[//]: ---
 
 ## 📚 Summary
 
