@@ -8,12 +8,14 @@ tags: [macOS, Tools]
 published: true
 ---
 
-# AudioExtractor for macOS
+# AudioExtractor for macOS (Beta version)
 
 ![Translate and say text from chrome](../../assets/img/projects/audioextractor/audioextractor-main-view-2026-03-02-01.png){: width="65%" }
 _Extract audio (mp3, wav, flac, ogg, m4a, ...) from movie (mp4, avi, mov, mkv, ...) file and save as mp3 file - Shortcut Setup_
 
 Extract audio from any video using a Finder Quick Action and a SwiftUI desktop app.
+
+This is a beta version so please give me your feedback. I'm very happy to take any input for what could be ammended or needs to be refined!
 
 **AudioExtractor** is a macOS utility designed to make audio extraction from video files effortless, fast, and fully integrated into the operating system. Instead of opening a dedicated app, navigating file pickers, or typing ffmpeg commands, you simply right‑click any video file in Finder and choose Extract Audio. The main SwiftUI app launches automatically, processes the file, and outputs clean audio in your preferred format.
 
