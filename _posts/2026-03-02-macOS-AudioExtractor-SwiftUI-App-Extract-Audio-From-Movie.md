@@ -5,7 +5,7 @@ author: dave
 date:   2026-03-02 19:31:37 +0200
 categories: [macOS, Tools]
 tags: [macOS, Tools]
-published: true
+published: false
 ---
 
 # AudioExtractor for macOS (Beta version)
