@@ -16,7 +16,7 @@ This macOS shortcut lets you instantly extract the audio track from any selected
 
 ## How to install and use
 ### Installation (without editing)
-Installation is easy. Just browse to the _Extract MP3 from various Video formats.shortcut_ file and doubleclick it - and done. You should have now a new "Quick action" Item in the chrome context menu when selecting a text in the finder app and doing a right click on the selection.
+Installation is easy. Just browse to the _Extract MP3 from various Video formats.shortcut_ file and doubleclick it - and done. You should have now a new "Quick action" Item in the context menu in the finder app when doing a right click on the selection.
 
 ### Shell script
 The following shell script (used by a "Run shell script" action in the shortcut workflow) does most of the work of this macOS shortcut. You can also save it as a "*.sh" file and use it as standalone script from CLI or wherever you please as well.
