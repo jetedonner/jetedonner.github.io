@@ -32,6 +32,9 @@ OUTPUT="$DIR/$BASENG.mp3"
 ffmpeg -y -i "$INPUT" -vn -acodec libmp3lame "$OUTPUT"
 ```
 
+## Dependencies 
+- ffmpeg (install with homebrew)
+
 ## Github repository
 - [macOS shortcuts github repo by jetedonner](https://github.com/jetedonner/macOS-shortcuts){:target="_blank" rel="noopener"}
 
