@@ -8,10 +8,16 @@ tags: [macOS, Tools]
 published: false 
 ---
 
-# AudioExtractor for macOS (Beta version)
+# "FFMpegSwiftLibrary for macOS (Beta version)
 
 ![Translate and say text from chrome](../../assets/img/projects/audioextractor/audioextractor-main-view-2026-03-02-01.png){: width="65%" }
 _Extract audio (mp3, wav, flac, ogg, m4a, ...) from movie (mp4, avi, mov, mkv, ...) file and save as mp3 file - Shortcut Setup_
+
+A Swift Package (macOS) wrapper library for the ffmpeg libraries api. This project is opensource and available free of charge. As long as you respect the ffmpeg license you are allowed to use it in any project, free or paid. Just make sure your project complies with the dependency licenses and include the corresponding license files where applicable. 
+
+You are very welcome to contribute to this project and / or send pull requests. You may also fork this repo and use it for your own extending project as long as you include the original licenses and credits. Please be cautious with the non-free ffmpeg libraries and make sure you respect the according conditions, especially if you want to release your projects in the apple app store.
+
+---
 
 Extract audio from any video using a Finder Quick Action and a SwiftUI desktop app.
 
