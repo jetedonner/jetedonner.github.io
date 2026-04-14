@@ -5,7 +5,7 @@ author: dave
 date:   2026-04-11 14:31:37 +0200
 categories: [macOS, Tools]
 tags: [macOS, Tools]
-published: false 
+published: true 
 ---
 
 # "FFMpegSwiftLibrary for macOS (Beta version)
@@ -15,7 +15,10 @@ _Extract audio (mp3, wav, flac, ogg, m4a, ...) from movie (mp4, avi, mov, mkv, .
 
 A Swift Package (macOS) wrapper library for the ffmpeg libraries api. This project is opensource and available free of charge. As long as you respect the ffmpeg license you are allowed to use it in any project, free or paid. Just make sure your project complies with the dependency licenses and include the corresponding license files where applicable. 
 
-You are very welcome to contribute to this project and / or send pull requests. You may also fork this repo and use it for your own extending project as long as you include the original licenses and credits. Please be cautious with the non-free ffmpeg libraries and make sure you respect the according conditions, especially if you want to release your projects in the apple app store.
+You are very welcome to contribute to this project and / or send pull requests. You may also fork this repo and use it for your own extending project as long as you include the original licenses and credits. Please be cautious with the non-free ffmpeg libraries and make sure you respect the according terms and conditions, especially if you want to release your paid project in the app store.
+
+## Introduction 
+The main purpose of this swift package is to provide a up-to-date wrapper library that supports the latest ffmpeg api version and its tools. It features a complete build workflow to download, configure and build ffmpeg as well as a final swift package with the resulting ffmpeg libraries as linked Frameworks. The current wrapper classes of the swift package project targets ffmpeg 8.1, so if you download and build later versions of ffmpeg please make sure, the wrapper complies with the new ffmpeg api structure. There are several test scripts to test the main function.
 
 ---
 
