@@ -21,6 +21,12 @@ Installation is easy. Just browse to the _Extract MP3 from various Video formats
 ### Shell script
 The following shell script (used by a "Run shell script" action in the shortcut workflow) does most of the work of this macOS shortcut. You can also save it as a "*.sh" file and use it as standalone script from CLI or wherever you please as well.
 
+## Install ffmpeg with Homebrew 
+```bash
+brew install ffmpeg 
+```
+
+## Shortcut shell script 
 ```bash
 INPUT="$1"
 DIR="$(dirname "$INPUT")"
