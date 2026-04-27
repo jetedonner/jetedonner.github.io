@@ -309,7 +309,7 @@ dave@Ava OpenVoice % docker exec openvoice python /workspace/clone_and_speak_sta
 
 
 ### Use own reference audio to clone voice
-That's a onetime job. Cloning your own voice is taking some time, but has to be done only once, the first time. After taht you have cloned your voice properly, you just need it to be passed to the TTS function that makes the audio sound like you.
+That's a onetime job. Cloning your own voice is taking some time, but has to be done only once, the first time. After that you have cloned your voice properly, you just need it to be passed to the TTS function that makes the audio sound like you.
 
 ```python
 from openvoice.api import ToneColorConverter
@@ -435,7 +435,7 @@ function dtts(){
 ## Important tips
 - Don't mix OpenVoice V1 and V2 (checkpoints, voices or code)
 - Prepare to have enough free disk space for installation - around 13 to 15 GigaBytes (for docker container fully setup with all dependencies installed)
-- Make sure the qualtiy of the sample of the voice you use for cloning has the best quality possible. This can make a hugh difference.
+- Make sure the quality of the sample of the voice you use for cloning has the best quality possible. This can make a hugh difference.
 
 ## Alternatives
 - Coqui‑TTS (coqui-ai - free)
