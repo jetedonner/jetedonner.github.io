@@ -20,13 +20,11 @@ Quantum computing harnesses the principles of quantum mechanics to solve problem
 
 Unlike classical bits, which are either 0 or 1, qubits can exist in multiple states simultaneously thanks to superposition. Through entanglement, qubits can be linked so that the state of one affects the other, enabling powerful parallel computations.
 
-
 ## 🔍 Key Concepts
 -  Superposition: A qubit can represent both 0 and 1 at the same time.
 -  Entanglement: Qubits can be interconnected, influencing each other’s states even across distances.
 -  Interference: Quantum states can amplify or cancel each other out, helping optimize calculations.
 -  Quantum Volume: A metric for quantum computer performance, factoring in qubit count, error rates, and connectivity.
-
 
 ## 🛠️ Applications
 - Cryptography: Quantum computers could break traditional encryption, prompting the rise of post-quantum cryptography.
