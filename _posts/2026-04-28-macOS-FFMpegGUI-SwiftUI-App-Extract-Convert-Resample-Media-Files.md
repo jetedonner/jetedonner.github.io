@@ -262,6 +262,12 @@ FFMpegGUI/
 │   └── Assets.xcassets
 │   └── ...
 │
+├── FFMpegSwiftLib/ # ffmpeg swift bridge lib
+│
+├── FFMpegGUISwiftManagerLib/  # General lib
+│
+├── FFMpegGUIXPCServiceLib/ # XPCService lib
+│
 └── FFMpegGUIAction/    # Finder Quick Action (extension) / Finder Context menu item
     ├── ActionViewController.swift
     ├── Info.plist
