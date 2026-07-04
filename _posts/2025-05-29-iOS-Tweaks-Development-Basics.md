@@ -5,7 +5,7 @@ author: dave
 date:   2025-05-29 00:38:58 +0200
 categories: [ios, reversing]
 tags: [ios, reversing]
-published: true
+published: false
 ---
 
 # iOS - Tweaks development basics - Ressources for beginners
@@ -19,10 +19,10 @@ published: true
 
 ## Introduction
 
-
+<!--
 ## Source on GitHub
 - [botsec on GitHub](https://github.com/jetedonner/botsec){:target="_blank" rel="noopener"}
-
+-->
 ## Credits
 
 - Take this site as a starting point for your begining journy into ios reversing ....
