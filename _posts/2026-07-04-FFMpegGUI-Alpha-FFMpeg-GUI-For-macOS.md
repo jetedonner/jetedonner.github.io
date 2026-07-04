@@ -8,6 +8,8 @@ tags: [macOS, Media, SwiftUI, Tools]
 published: true
 ---
 
+![FFMpegGUI for macOS](../../assets/img/projects/ffmpeggui-initial-main-view.png/ffmpeggui-initial-main-view.png){: width="85%" }
+
 # FFMpegGUI
 
 A High-Performance, Sandbox-Compliant macOS Audio/Video Processing Suite
