@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FFMpegGUI - SwiftUI app to analyze, convert, heakl and resample or remux media files on macOS"
+title:  "FFMpegGUI - SwiftUI app to analyze, convert, heal and resample or remux media files on macOS"
 author: dave
 date:   2026-07-04 17:07:49 +0200
 categories: [macOS, Media, SwiftUI]
