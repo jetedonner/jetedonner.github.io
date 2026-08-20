@@ -12,12 +12,12 @@ published: false
 
 # FFMpegGUI
 
-A High-Performance, Sandbox-Compliant macOS Audio/Video Processing Suite
+A High-Performance, Sandbox-Compliant macOS Audio/Video Processing Suite. This is a GUI wrapper app for the ffmpeg API (libraries and cli binaries).
 
 - Platform: macOS 14.0+
 - Language: Swift 5.10+
 - License: MIT
-- Technology: SwiftUI + XPC + FFmpeg
+- Technology: SwiftUI + Obj-C + XPC + FFmpeg
 
 ## Table of Contents
 1. Executive Overview & Vision
