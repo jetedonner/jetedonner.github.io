@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FFMpegGUI - GUI wrapper for ffmpeg. SwiftUI app to analyze, convert, heal and resample / remux media files on macOS"
+title:  "FFMpegGUI - SwiftUI GUI wrapper for ffmpeg"
 author: dave
 date:   2026-09-13 17:48:29 +0200
 categories: [macOS, Media, SwiftUI]
@@ -12,7 +12,7 @@ published: true
 
 # FFMpegGUI
 
-A High-Performance, Sandbox-Compliant macOS Audio/Video Processing Suite
+SwiftUI app to analyze, convert, heal and resample / remux media files on macOS. A High-Performance, Sandbox-Compliant macOS Audio/Video Processing Suite
 
 - Platform: macOS 14.0+
 - Language: Swift 5.10+
@@ -230,8 +230,7 @@ This is implemented inside PillView.swift via TokenTextView (wrapping an AppKit 
 "ffmpeg [ -vcodec ] h264 [ -acodec ] mp3"
 ```
 
-
-### 1. Rendering SwiftUI to Native Images:
+### Rendering SwiftUI to Native Images:
 Using macOS 13+ ImageRenderer, SwiftUI visual hierarchies are rasterized on the fly into retina-crisp NSImage instances:
 
 ```swift
@@ -239,7 +238,7 @@ let renderer = ImageRenderer(content: PillView(text: token))
    renderer.scale = NSScreen.main?.backingScaleFactor ?? 2.0
 ```
 
-### 2. NSTextAttachment Integration:
+### NSTextAttachment Integration:
 The rasterized image is embedded directly into the rich text representation:
 
 ```swift
@@ -354,6 +353,7 @@ cd FFMpegGUI
 ```
 
 #### Entitlements & Sandboxing Requirements
+
 Because the app utilizes sandboxing with an XPC service, ensure your Target Entitlements in Xcode are configured correctly:
 
 **FFMpegGUI.entitlements**
