@@ -45,6 +45,12 @@ Traditional FFmpeg wrappers on macOS run into critical design bottlenecks, parti
 - Architectural Separation of Concerns: Isolating FFmpeg runtimes and dynamic C-library loading (via CFFMpeg) into a separate helper process.
 - Visual Command Customization: Empowering power-users with an NSTextView rendering pipeline that visually parses complex terminal CLI flags into stylized, crisp vector graphics dynamically.
 
+## Youtube video
+<div class="container-responsive-iframe">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/hGbmpCcoERs" title="FFMpegGUI Trailer 2026 09 13 02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+Visit on Youtube: [https://www.youtube.com/watch?v=hGbmpCcoERs](https://www.youtube.com/watch?v=hGbmpCcoERs){:target="_blank" rel="noopener"}
+
 ## 1.1 ffmpeg Binaries vs. ffmpeg API Libraries
 FFMpegGUI comes with two different strategies of how to use the ffmpeg system to work with media files.
 
