@@ -5,19 +5,19 @@ author: dave
 date:   2026-07-04 17:07:49 +0200
 categories: [macOS, Media, SwiftUI]
 tags: [macOS, Media, SwiftUI, Tools]
-published: true
+published: false 
 ---
 
 ![FFMpegGUI for macOS](../../assets/img/projects/ffmpeggui-initial-main-view.png/ffmpeggui-initial-main-view.png){: width="85%" }
 
 # FFMpegGUI
 
-A High-Performance, Sandbox-Compliant macOS Audio/Video Processing Suite
+A High-Performance, Sandbox-Compliant macOS Audio/Video Processing Suite. This is a GUI wrapper app for the ffmpeg API (libraries and cli binaries).
 
 - Platform: macOS 14.0+
 - Language: Swift 5.10+
 - License: MIT
-- Technology: SwiftUI + XPC + FFmpeg
+- Technology: SwiftUI + Obj-C + XPC + FFmpeg
 
 ## Table of Contents
 1. Executive Overview & Vision
