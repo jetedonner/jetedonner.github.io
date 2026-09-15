@@ -5,7 +5,7 @@ author: dave
 date:   2026-09-13 17:48:29 +0200
 categories: [macOS, Media, SwiftUI]
 tags: [macOS, Media, SwiftUI, Tools]
-published: false
+published: true
 ---
 
 ![FFMpegGUI for macOS](../../assets/img/projects/FFMpegGUI/FFMpegGUI-First-Overall-MainView-03.png){: width="85%" }
@@ -193,15 +193,15 @@ When FFMpegGUI boots, it executes a multi-phase validation logic:
 
 ```bash
 [App Launch]
-     |
+     │
      v
-[Perform Startup Check] ------------------------> (File Found: parameters.json)
-     |                                                      |
+[Perform Startup Check] ------------------------► (File Found: parameters.json)
+     │                                                      │
      v (No cached JSON file)                                v
 [Run Bundled Python Scraper]                         [Load Parameters]
-     |                                                      |
-     +-------> Scrapes FFmpeg command parameters            |
-     |         to application support folder                v
+     │                                                      │
+     +-------► Scrapes FFmpeg command parameters            │
+     │         to application support folder                v
      v                                              [Launch Main UI]
 [Flush to Disk & Reload]
 ```
@@ -225,13 +225,13 @@ This is implemented inside PillView.swift via TokenTextView (wrapping an AppKit 
 
 ```bash
 "ffmpeg -vcodec h264 -acodec mp3"
-           |
+           │
            v (Token Search Engine)
 +----------------------------+
-|  "-vcodec" -> [ PillView ] |
-|  "-acodec" -> [ PillView ] |
+│  "-vcodec" -► [ PillView ] │
+│  "-acodec" -► [ PillView ] │
 +----------------------------+
-           |
+           │
            v (ImageRenderer Core Graphics Render)
 "ffmpeg [ -vcodec ] h264 [ -acodec ] mp3"
 ```
