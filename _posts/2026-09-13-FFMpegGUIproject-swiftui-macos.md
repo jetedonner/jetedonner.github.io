@@ -5,7 +5,7 @@ author: dave
 date:   2026-09-13 17:48:29 +0200
 categories: [macOS, Media, SwiftUI]
 tags: [macOS, Media, SwiftUI, Tools]
-published: false
+published: true 
 ---
 
 ![FFMpegGUI for macOS](../../assets/img/projects/FFMpegGUI/FFMpegGUI-First-Overall-MainView-03.png){: width="85%" }
