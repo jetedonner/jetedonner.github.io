@@ -25,9 +25,9 @@ SwiftUI app to analyze, convert, heal and resample / remux media files on macOS.
 3. The Sandbox Challenge: Security-Scoped Bookmarks
 4. XPC Service Architecture & IPC Topology
 5. Core Subsystems & Module Breakdown
-   • Boot Sequence & PyScraper Subsystem
-   • PillView & Custom NSViewRepresentable Tokenizer
-   • Dynamic Multi-Pane Layout & Watchdog Subsystem
+   - Boot Sequence & PyScraper Subsystem
+   - PillView & Custom NSViewRepresentable Tokenizer
+   - Dynamic Multi-Pane Layout & Watchdog Subsystem
 6. Data Flow & Serialization (NSSecureCoding)
 7. Dependencies & Package Topology
 8. Setup, Build, and Installation Guide
