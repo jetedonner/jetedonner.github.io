@@ -72,7 +72,7 @@ Swift wrappers interfacing with native dynamically linked (or statically built) 
 
 #### System Interaction Topology
 
-```bash
+```zsh
 ┌────────────────────────────────────────────────────────────────────────────────┐
 │                             macOS Kernel Sandbox                               │
 │                                                                                │
@@ -83,14 +83,14 @@ Swift wrappers interfacing with native dynamically linked (or statically built) 
 │   │  - Watchdog Monitor & Heartbeat │             │  - Integrity Checker   │   │
 │   │  - TokenTextView Renderer       │    NSXPC    │  - File Sanitizer      │   │
 │   └─────────────────────────────────┤ Connection  │  - Progress Updates    │   │
-│                    ▲                │<═══════════►│                        │   │
+│                    ▲                │◄═══════════►│                        │   │
 │                    │                │             └────────────────────────┘   │
-│                    v                │                                          │
-│         ┌───────────────────┐       │                                          │
-│         │  parameters.json  │       │                                          │
-│         │  AppSupport Directory     │                                          │
-│         └───────────────────┘       │                                          │
-└────────────────────────────────────────────────────────────────────────────────┘
+│                    ▼                │                                          │
+│      ┌────────────────────────┐     │                                          │
+│      │  parameters.json       │     │                                          │
+│      │  AppSupport Directory  │     │                                          │
+│      └────────────────────────┘     │                                          │
+└─────────────────────────────────────┴──────────────────────────────────────────┘
 ```
 
 ## 3. The Sandbox Challenge: Security-Scoped Bookmarks
