@@ -77,7 +77,7 @@ Swift wrappers interfacing with native dynamically linked (or statically built) 
 │                             macOS Kernel Sandbox                               │
 │                                                                                │
 │   ┌---------------------------------┐  Security   ┌------------------------┐   │
-│   │         MAIN GUI APP            │  Scoped     │   XPC HELPER SERVICE.  │   │
+│   │         MAIN GUI APP            │  Scoped     │   XPC HELPER SERVICE   │   │
 │   │  - SwiftUI Core Interface       │  Bookmarks  │  - FFMpegXPCService    │   │
 │   │  - Drag & Drop Delegates        ├------------►│  - libavcodec wrapper  │   │
 │   │  - Watchdog Monitor & Heartbeat │             │  - Integrity Checker   │   │
