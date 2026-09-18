@@ -73,24 +73,24 @@ Swift wrappers interfacing with native dynamically linked (or statically built) 
 #### System Interaction Topology
 
 ```zsh
-┌────────────────────────────────────────────────────────────────────────────────┐
+┌--------------------------------------------------------------------------------┐
 │                             macOS Kernel Sandbox                               │
 │                                                                                │
-│   ┌─────────────────────────────────┐  Security   ┌────────────────────────┐   │
-│   │         MAIN GUI APP            │  Scoped     │     XPC HELPER SERVICE │   │
+│   ┌---------------------------------┐  Security   ┌------------------------┐   │
+│   │         MAIN GUI APP            │  Scoped     │   XPC HELPER SERVICE.  │   │
 │   │  - SwiftUI Core Interface       │  Bookmarks  │  - FFMpegXPCService    │   │
-│   │  - Drag & Drop Delegates        ├────────────►│  - libavcodec wrapper  │   │
+│   │  - Drag & Drop Delegates        ├------------►│  - libavcodec wrapper  │   │
 │   │  - Watchdog Monitor & Heartbeat │             │  - Integrity Checker   │   │
 │   │  - TokenTextView Renderer       │    NSXPC    │  - File Sanitizer      │   │
-│   └─────────────────────────────────┤ Connection  │  - Progress Updates    │   │
-│                    ▲                │◄═══════════►│                        │   │
-│                    │                │             └────────────────────────┘   │
+│   └---------------------------------┤ Connection  │  - Progress Updates    │   │
+│                    ▲                │◄===========►│                        │   │
+│                    │                │             └------------------------┘   │
 │                    ▼                │                                          │
-│      ┌────────────────────────┐     │                                          │
+│      ┌------------------------┐     │                                          │
 │      │  parameters.json       │     │                                          │
 │      │  AppSupport Directory  │     │                                          │
-│      └────────────────────────┘     │                                          │
-└─────────────────────────────────────┴──────────────────────────────────────────┘
+│      └------------------------┘     │                                          │
+└-------------------------------------┴------------------------------------------┘
 ```
 
 ## 3. The Sandbox Challenge: Security-Scoped Bookmarks
