@@ -17,7 +17,7 @@ SwiftUI app to analyze, convert, heal and resample / remux media files on macOS.
 - Platform: macOS 14.0+
 - Language: Swift 5.10+
 - License: MIT
-- Technology: Swift / SwiftUI + Objective-C + XPC + FFmpeg
+- Technology: Swift / SwiftUI + Objective-C + XPC + FFmpeg API and binaries 
 
 ## Table of Contents
 1. Executive Overview & Vision
