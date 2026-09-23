@@ -47,9 +47,9 @@ Traditional FFmpeg wrappers on macOS run into critical design bottlenecks, parti
 
 ## Youtube video
 <div class="container-responsive-iframe">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/hGbmpCcoERs" title="FFMpegGUI Trailer 2026 09 13 02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/ukfRvxObeog" title="FFMpegGUI Trailer 2026 09 13 02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-Visit on Youtube: [https://www.youtube.com/watch?v=hGbmpCcoERs](https://www.youtube.com/watch?v=hGbmpCcoERs){:target="_blank" rel="noopener"}
+Visit on Youtube: [https://www.youtube.com/watch?v=ukfRvxObeog](https://www.youtube.com/watch?v=ukfRvxObeog){:target="_blank" rel="noopener"}
 
 ## 1.1 ffmpeg Binaries vs. ffmpeg API Libraries
 FFMpegGUI comes with two different strategies of how to use the ffmpeg system to work with media files.
@@ -79,13 +79,13 @@ Swift wrappers interfacing with native dynamically linked (or statically built) 
 │   ┌---------------------------------┐  Security   ┌------------------------┐   │
 │   │         MAIN GUI APP            │  Scoped     │   XPC HELPER SERVICE   │   │
 │   │  - SwiftUI Core Interface       │  Bookmarks  │  - FFMpegXPCService    │   │
-│   │  - Drag & Drop Delegates        ├------------►│  - libavcodec wrapper  │   │
+│   │  - Drag & Drop Delegates        ├------------>│  - libavcodec wrapper  │   │
 │   │  - Watchdog Monitor & Heartbeat │             │  - Integrity Checker   │   │
 │   │  - TokenTextView Renderer       │    NSXPC    │  - File Sanitizer      │   │
 │   └---------------------------------┤ Connection  │  - Progress Updates    │   │
-│                    ▲                │◄===========►│                        │   │
+│                    ^                │<===========>│                        │   │
 │                    │                │             └------------------------┘   │
-│                    ▼                │                                          │
+│                    v                │                                          │
 │      ┌------------------------┐     │                                          │
 │      │  parameters.json       │     │                                          │
 │      │  AppSupport Directory  │     │                                          │
@@ -227,10 +227,10 @@ This is implemented inside PillView.swift via TokenTextView (wrapping an AppKit 
 "ffmpeg -vcodec h264 -acodec mp3"
            │
            v (Token Search Engine)
-+----------------------------+
+┌----------------------------┐
 │  "-vcodec" -► [ PillView ] │
 │  "-acodec" -► [ PillView ] │
-+----------------------------+
+└----------------------------┘
            │
            v (ImageRenderer Core Graphics Render)
 "ffmpeg [ -vcodec ] h264 [ -acodec ] mp3"
@@ -301,32 +301,32 @@ This ensures that even when your backend processes encounter untrusted inputs or
 The FFMpegGUI ecosystem is structured as modular, reusable Swift Packages to ensure clean code segregation:
 
 ```bash
-                           '+---------------------------+
+                           ┌---------------------------┐
                            |        FFMpegGUI          |
                            |  (Main SwiftUI App Space) |
-                           +-------------+-------------+
+                           └-------------+-------------┘
                                          |
-               +-------------------------+-------------------------+
+               ┌-------------------------+-------------------------┐
                |                                                   |
                v                                                   v
-+-----------------------------+                     +-----------------------------+
+┌-----------------------------┐                     ┌-----------------------------┐
 | FFMpegGUIXPCServiceLib      |                     | FFMpegSwiftManagerLib       |
 | (XPC Protocol Interfaces)   |                     | (Core Configs & Delegates)  |
-+--------------+--------------+                     +--------------+--------------+
+└--------------+--------------┘                     └--------------+--------------┘
                |                                                   |
-               +-------------------------+-------------------------+
+               └-------------------------+-------------------------┘
                                          |
                                          v
-                            +-----------------------------+
+                            ┌-----------------------------┐
                             |     FFMpegSwiftLib          |
                             | (FFmpeg Object wrappers)    |
-                            +--------------+--------------+
+                            └--------------+--------------┘
                                            |
                                            v
-                            +-----------------------------+
+                            ┌-----------------------------┐
                             |        CFFMpeg              |
                             |  (Native C Framework Clang) |
-                            +-----------------------------+
+                            └-----------------------------┘
 ```
 
 ### Core Packages Description
