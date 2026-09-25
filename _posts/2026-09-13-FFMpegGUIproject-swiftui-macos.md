@@ -478,3 +478,12 @@ This document serves as an exhaustive structural guide for developers, security 
 
 ### REMARK:
 - GITHUB Repo is not yet public but will be comming soon - stay tuned!
+
+
+<center>
+<img id="hitcounterImg"/>
+<script>
+  const img = document.getElementById("hitcounterImg");
+  img.src = "https://hitcounter.kimhauser.ch/svgng.svg?hash= 4a0855814e029e6e4520e340948e5c5362b808d5b77b8c4cc89ca1ecd060288c";
+</script>
+</center>
